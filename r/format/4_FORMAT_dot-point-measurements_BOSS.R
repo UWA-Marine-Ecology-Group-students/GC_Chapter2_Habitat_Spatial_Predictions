@@ -5,7 +5,7 @@ rm(list=ls())
 # Libraries required ----
 # To connect to GlobalArchive
 library(devtools)
-#install_github("UWAMEGFisheries/GlobalArchive")
+# install_github("UWAMEGFisheries/GlobalArchive")
 library(GlobalArchive)
 
 # To tidy data
@@ -17,7 +17,7 @@ library(readr)
 library(ggplot2)
 
 # Study name ----
-study<-"2021-05_Abrolhos_BOSS" 
+study<-"2021-05_PtCloates_BOSS" 
 
 ## Set your working directory ----
 working.dir <- getwd() # this only works through github projects
@@ -25,17 +25,17 @@ working.dir <- getwd() # this only works through github projects
 ## Save these directory names to use later----
 data.dir <- paste(working.dir,"data",sep="/") 
 raw.dir <- paste(data.dir,"raw",sep="/") 
-tidy.dir <- paste(data.dir,"Tidy",sep="/")
-tm.export.dir <- paste(raw.dir,"TM Export",sep="/") 
-em.export.dir <- paste(raw.dir, "EM Export", sep = "/")
-error.dir <- paste(raw.dir,"errors to check",sep="/") 
+tidy.dir <- paste(data.dir,"tidy",sep="/")
+tm.export.dir <- paste(raw.dir,"tm export",sep="/") 
+em.export.dir <- paste(raw.dir, "em export", sep = "/")
+error.dir <- paste(data.dir,"errors to check",sep="/") 
 
 # Read in the metadata----
 setwd(em.export.dir)
 dir()
 
 # Read in metadata----
-metadata <- read_csv("2021-05_Abrolhos_BOSS_Metadata.csv") %>% # read in the file
+metadata <- read_csv("2021-05_PtCloates_BOSS_Metadata.csv") %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function 
   dplyr::select(sample, latitude, longitude, date, site, location, successful.count) %>% # select only these columns to keep
   mutate(sample=as.character(sample)) %>% # in this example dataset, the samples are numerical
@@ -48,46 +48,40 @@ setwd(tm.export.dir)
 dir()
 
 # read in the points annotations ----
-points <- read.delim("2021-05_Abrolhos_BOSS_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
+points <- read.delim("2021-05_PtCloates_BOSS_Dots_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
   select(sample,image.row,image.col,broad,morphology,type,fieldofview) %>% # select only these columns to keep
   glimpse() # preview
 
-length(unique(points$sample)) # 75 samples
+length(unique(points$sample)) # 36 samples
 
-no.annotations <- points%>%
+no.annotations <- points%>% #number of annotations
   group_by(sample)%>%
-  summarise(points.annotated=n()) # 3 have 81
+  summarise(points.annotated=n()) # 1 have 81
 
+# Check that the image names match the metadata samples -----
+missing.metadata <- anti_join(points,metadata, by = c("sample")) # samples in habitat that don't have a match in the metadata
+missing.habitat <- anti_join(metadata,points, by = c("sample"))
 
-relief <- read.delim("2021-05_Abrolhos_BOSS_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
+dir()
+relief <- read.delim("2021-05_PtCloates_BOSS_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
   select(sample,image.row,image.col,broad,morphology,type,fieldofview,relief) %>% # select only these columns to keep
   glimpse() # preview
 
-length(unique(relief$sample)) # 75 samples
+length(unique(relief$sample)) # 39 samples
 
 no.annotations <- relief%>%
   group_by(sample)%>%
   summarise(relief.annotated=n()) # all have 80
 
-
-substrate <- read.delim("2021-05_Abrolhos_BOSS_Substrate-Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
-  ga.clean.names() %>% # tidy the column names using GlobalArchive function
-  mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
-  mutate(sample=as.character(sample)) %>% 
-  select(sample,image.row,image.col,broad,morphology,type,fieldofview) %>% # select only these columns to keep
-  glimpse() # preview
-
-length(unique(substrate$sample)) # 75 samples
-
-no.annotations <- substrate%>%
-  group_by(sample)%>%
-  summarise(substrate.annotated=n()) # all have 80
+# Check that the image names match the metadata samples -----
+missing.metadata <- anti_join(relief,metadata, by = c("sample")) # samples in habitat that don't have a match in the metadata
+missing.habitat <- anti_join(metadata,relief, by = c("sample"))
 
 habitat <- bind_rows(points, relief)
 
@@ -211,3 +205,5 @@ write.csv(habitat.detailed.points,file=paste(study,"random-points_detailed.habit
 
 write.csv(habitat.broad.percent,file=paste(study,"random-points_percent-cover_broad.habitat.csv",sep = "_"), row.names=FALSE)
 write.csv(habitat.detailed.percent,file=paste(study,"random-points_percent-cover_detailed.habitat.csv",sep = "_"), row.names=FALSE)
+
+setwd(working.dir)
