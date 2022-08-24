@@ -26,8 +26,8 @@ working.dir <- getwd() # this only works through github projects
 data.dir <- paste(working.dir,"data",sep="/") 
 raw.dir <- paste(data.dir,"raw",sep="/") 
 tidy.dir <- paste(data.dir,"tidy",sep="/")
-tm.export.dir <- paste(raw.dir,"tm export",sep="/") 
-em.export.dir <- paste(raw.dir, "em export", sep = "/")
+tm.export.dir <- paste(raw.dir,"tm_export",sep="/") 
+em.export.dir <- paste(raw.dir, "em_export", sep = "/")
 error.dir <- paste(data.dir,"errors to check",sep="/") 
 
 # Read in the metadata----
@@ -55,7 +55,7 @@ points <- read.delim("2021-05_PtCloates_BOSS_Dots_Dot Point Measurements.txt",he
   select(sample,image.row,image.col,broad,morphology,type,fieldofview) %>% # select only these columns to keep
   glimpse() # preview
 
-length(unique(points$sample)) # 36 samples
+length(unique(points$sample)) # 39 samples
 
 no.annotations <- points%>% #number of annotations
   group_by(sample)%>%
@@ -78,6 +78,22 @@ length(unique(relief$sample)) # 39 samples
 no.annotations <- relief%>%
   group_by(sample)%>%
   summarise(relief.annotated=n()) # all have 80
+
+#Gabby added below to match abrolhos script
+substrate <- read.delim("2021-05_PtCloates_BOSS_Relief_Dot Point Measurements.txt",header=T,skip=4,stringAsFactors=FALSE) %>% #read in file
+  ga.clean.names() %>% #tidy the column names using GlobalArchive function
+  mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
+  mutate(sample=as.character(sample)) %>% 
+  select(sample,image.row,image.col,broad,morphology,type,fieldofview) %>% # select only these columns to keep
+  glimpse() # preview
+
+length(unique(substrate$sample)) # 75 samples
+
+no.annotations <- substrate%>%
+  group_by(sample)%>%
+  summarise(substrate.annotated=n()) # all have 80
+
+habitat <- bind_rows(points, relief)
 
 # Check that the image names match the metadata samples -----
 missing.metadata <- anti_join(relief,metadata, by = c("sample")) # samples in habitat that don't have a match in the metadata
@@ -124,6 +140,13 @@ broad.points <- habitat%>%
   dplyr::mutate(broad.total.points.annotated=rowSums(.[,2:(ncol(.))],na.rm = TRUE ))%>%
   ga.clean.names()%>%
   glimpse
+
+# test <- fov.points %>%
+#   anti_join(broad.points)
+# 
+# test <- fov.points %>%
+#   group_by(sample) %>%
+#   summarise(n=n())
 
 broad.percent.cover<-broad.points %>%
   group_by(sample)%>%
