@@ -40,3 +40,6 @@ vignettes/*.pdf
 
 # images folder
 project-template.png
+
+# data folder
+data/spatial/rasters/raw bathymetry
