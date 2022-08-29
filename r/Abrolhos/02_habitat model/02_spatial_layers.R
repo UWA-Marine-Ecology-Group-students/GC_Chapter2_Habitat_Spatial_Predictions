@@ -65,4 +65,4 @@ plot(preds)
 # Save the output
 saveRDS(preds, paste(paste0('data/spatial/rasters/', name), 'spatial_covariates.rds', sep = "_"))
 
-# rstudioapi::navigateToFile("02_spatial_layers.R")
+# rstudioapi::navigateToFile("add script name here.R")
