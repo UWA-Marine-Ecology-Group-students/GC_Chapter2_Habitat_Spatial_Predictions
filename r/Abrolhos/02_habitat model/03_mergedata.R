@@ -1,9 +1,9 @@
 ###
-# Project: ** Add here **
+# Project: ** GC_PhD_Chapter 2 Habitat Spatial Predictions**
 # Data:    BRUVS, BOSS Habitat data
 # Task:    Merging habitat data
 # Author:  Kingsley Griffin & Claude Spencer
-# Date:    ** Add here **
+# Date:    ** 5/09/2022 **
 ##
 
 # This script takes formatted habitat data from TransectMeasure and joins it with bathymetry derivatives for modelling
