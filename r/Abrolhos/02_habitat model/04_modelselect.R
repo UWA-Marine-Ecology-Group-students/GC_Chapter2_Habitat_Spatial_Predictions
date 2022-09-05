@@ -1,9 +1,9 @@
 ###
-# Project: ** Add here **
+# Project: ** GC_PhD_Chapter 2 Habitat Spatial Predictions **
 # Data:    BRUVS, BOSS Habitat data
 # Task:    Model selection 
 # Author:  Kingsley Griffin & Claude Spencer from @beckyfisher/FSSgam
-# Date:    ** Add here **
+# Date:    ** 5/09/2022 **
 
 # This script runs the FSS GAM model selection for broad habitat classes
 # This has been adapted from https://github.com/beckyfisher/FSSgam
@@ -26,7 +26,7 @@ library(RCurl)                                                                  
 library(corrr)
 
 # Install and load fssgam package----
-# devtools::install_github("beckyfisher/FSSgam_package")                        # Run once
+ devtools::install_github("beckyfisher/FSSgam_package")                        # Run once
 library(FSSgam)
 
 # Set your study name
