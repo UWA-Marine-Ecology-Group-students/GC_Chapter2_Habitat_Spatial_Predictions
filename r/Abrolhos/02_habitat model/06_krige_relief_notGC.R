@@ -1,12 +1,16 @@
 ###
-# Project: Parks - Abrolhos Post-Survey
+# Project: GC PhD Chapter 2 Habitat Spatial Preditctions
 # Data:    Relief data (scored during fish counts)
 # Task:    Kriging relief
 # author:  Kingsley Griffin
-# date:    Oct 2021
+# date:    6/09/2022
 ##
 
-library(INLA)
+# Clear your environment
+rm(list=ls())
+
+#library(INLA)    - note initially you have to manually add r-inla as its not on CRAN
+install.packages("INLA",repos = c(getOption("repos"),INLA="https://inla.r-inla-download.org/R/stable"), dep=TRUE)
 library(sp)
 library(ggnewscale)
 library(ggplot2)

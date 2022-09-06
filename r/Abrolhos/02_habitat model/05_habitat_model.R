@@ -1,9 +1,9 @@
 ###
-# Project: ** Add here **
+# Project: ** GC PhD Chapter 2 Habitat Spatial Predictions  **
 # Data:    BRUVS, BOSS Habitat data
 # Task:    Habitat spatial prediction
 # author:  Kingsley Griffin & Claude Spencer
-# date:    ** Add here **
+# date:    ** 6/09/2022 **
 ##
 
 # This script spatially predicts key habitat classes using bathymetry derivatives
