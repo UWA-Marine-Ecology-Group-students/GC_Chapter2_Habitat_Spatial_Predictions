@@ -2,7 +2,7 @@
 # Project: ** GC Ch2 Habitat Spatial Predictions**
 # Data:    BRUVS, BOSS Habitat data
 # Task:    Habitat figures
-# author:  Kingsley Griffin & Claude Spencer
+# author:  Kingsley Griffin & Claude Spencer & Gabrielle Cummins
 # date:    ** 6/09/2022 **
 ##
 
