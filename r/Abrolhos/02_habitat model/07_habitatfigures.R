@@ -84,10 +84,10 @@ spreddf <- readRDS(paste(paste0('output/fssgam - habitat/', name),
 
 # Figure 1: Categorical habitat maps ----
 # Assign habitat class colours
-hab_cols <- scale_fill_manual(values = c("Macroalgae" = "darkgoldenrod4",
-                                         "Rock" = "grey40",
-                                         "Sand" = "wheat",
-                                         "Sessile invertebrates" = "plum"
+hab_cols <- scale_fill_manual(values = c("Macroalgae" = "#d7f5dd",
+                                         "Rock" = "#fad3d2",
+                                         "Sand" = "#fffebf",
+                                         "Sessile invertebrates" = "#ecd7f5"
 ))
 
 #Build plot elements for site 1
@@ -161,9 +161,9 @@ p1.5 <- ggplot() +
                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
   coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
            ylim = c(-28.147530872, -27.951387525)) +
-  labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
-       colour = NULL, title = "Shallow Bank") +
-  annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
+  labs(x = "Longitude", y = "Latitude", fill = "Habitat",                                    # Labels  
+       colour = NULL, title = "Shallow Bank") + 
+     annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
            y = c(-28.078038504, -28.078038504, -28.078038504), 
            label = c("30m", "70m", "200m"),
            size = 2, colour = "grey54") +
