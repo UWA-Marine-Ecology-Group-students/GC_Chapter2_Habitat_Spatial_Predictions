@@ -89,8 +89,9 @@ plot(prasts)
 sprast <- mask(prasts, sbuff)
 plot(sprast)
 
-# Tidy and output data as a dataframe
-spreddf         <- as.data.frame(sprast, xy = TRUE, na.rm = T)
+# Tidy and output data as a dataframe #AND filter pipe for depth less than 30m
+spreddf         <- as.data.frame(sprast, xy = TRUE, na.rm = T) %>%
+  dplyr::filter(Z < -30)
 
 # Add a colum that categorises the dominant habitat class
 spreddf$dom_tag <- apply(spreddf[12:16], 1, # Set columns manually here
