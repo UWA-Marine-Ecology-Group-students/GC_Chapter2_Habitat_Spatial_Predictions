@@ -2,7 +2,7 @@
 # Project: GC_Ch2_SW_Habitat_modelselect
 # Data:    BRUVS, BOSS Habitat data
 # Task:    Model selection 
-# author:  Kingsley Griffin from @beckyfisher/FSSgam
+# author:  Kingsley Griffin from @beckyfisher/FSSgam +Gabby Cummins
 # date:    Sept 2022
 
 # Part 1-FSS modeling----
@@ -46,7 +46,7 @@ habi <- habi %>%
 
 head(habi)
 
-saveRDS(habi, "data/tidy/habitat_merged_allcols.rds")
+#saveRDS(habi, "data/tidy/habitat_merged_allcols.rds")
 
 habi <- habi %>% 
   mutate(biogenic_reef = broad.ascidians + broad.bryozoa +
