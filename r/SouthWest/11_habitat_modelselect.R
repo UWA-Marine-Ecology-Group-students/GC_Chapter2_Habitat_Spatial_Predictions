@@ -12,7 +12,7 @@ detach("package:plyr", unload=TRUE)#will error - don't worry
 library(tidyr)
 library(dplyr)
 library(mgcv)
-# library(MuMIn)
+library(MuMIn)
 # library(car)
 # library(doBy)
 library(gplots)
@@ -62,10 +62,10 @@ habi <- habi %>%
   glimpse()
 colnames(habi)
 
-saveRDS(habi, "data/tidy/habitat_merged.rds")
+#saveRDS(habi, "data/tidy/habitat_merged.rds")
 
-habi <- melt(habi, measure.vars = c(4:10))                               # collect all taxa tags for univariate stats
-head(habi)
+#habi <- melt(habi, measure.vars = c(4:10))                               # collect all taxa tags for univariate stats
+#head(habi)
 
 # Set predictor variables---
 pred.vars <- c("depth", "tpi", "roughness", "detrended") 

@@ -18,13 +18,13 @@ library(reshape2)
 library(mgcv)
 library(ggplot2)
 library(viridis)
-library(raster)
+library(terra)
 
 # Set your study name
 name <- "Abrolhos"                                                              # Change here
 
 # Set up CRS and load spatial covariates from 02_spatial_layers.R 
-wgscrs <- CRS("+proj=longlat +datum=WGS84 +south")                              # Latlong projection 
+wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Latlong projection 
 
 # read in
 habi   <- readRDS("data/tidy/Abrolhos_habitat-bathy-derivatives.rds")           # Merged data from 'R/03_mergedata.R'
@@ -36,7 +36,7 @@ preddf$depth <- abs(preddf$Z)                                                   
 habisp <- SpatialPointsDataFrame(coords = cbind(habi$longitude, 
                                                 habi$latitude), data = habi,
                                  proj4string = wgscrs)
-sbuff  <- raster::buffer(habisp, 10000)                                         # Buffer should be in metres
+sbuff  <- rast::buffer(habisp, 10000)                                         # Buffer should be in metres
 plot(sbuff)
 # Use formula from top model from '2_modelselect.R'
 m_kelps <- gam(cbind(kelps, broad.total.points.annotated - kelps) ~ 

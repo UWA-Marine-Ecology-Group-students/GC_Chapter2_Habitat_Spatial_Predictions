@@ -26,7 +26,7 @@ library(RCurl)                                                                  
 library(corrr)
 
 # Install and load fssgam package----
- devtools::install_github("beckyfisher/FSSgam_package")                        # Run once
+# devtools::install_github("beckyfisher/FSSgam_package")                        # Run once
 library(FSSgam)
 
 # Set your study name
@@ -36,19 +36,20 @@ name <- "Abrolhos"                                                              
 dat <- readRDS(paste(paste0('data/tidy/', name),                                # Merged data from 'R/01_mergedata.R'
                      'habitat-bathy-derivatives.rds', sep = "_")) %>% 
   dplyr::select(sample, longitude, latitude, depth,                             # Select columns to keep
-                tri, tpi, roughness, slope, aspect, detrended,                  # Bathymetry derivatives
+               TRI, TPI, roughness, slope, aspect, detrended,                  # Bathymetry derivatives
                 broad.total.points.annotated, kelps, rock, macroalgae, sand, inverts) %>% # Points annotated and habitat scores
   pivot_longer(cols = c("kelps", "rock", "macroalgae", "sand", "inverts"),      # Set your response columns here 
                names_to = "response", values_to = "number") %>%                 # Pivot habitat columns to long format for modelling
   glimpse()
 
 # Set predictor variables---
-pred.vars <- c("depth","tri", "tpi", "roughness", "slope", "aspect", "detrended") 
+pred.vars <- c("depth","TRI", "TPI", "roughness", "slope", "aspect", "detrended") 
 
 # Check for correlation of predictor variables- remove anything highly correlated (>0.95)---
 # Full correlation table
-round(cor(dat[ , pred.vars]), 2)
+corrtable <- as.data.frame(round(cor(dat[ , pred.vars]), 2))
 
+write.csv(corrtable, file = "output/Abrolhos/fssgam - habitat/correlation-table.csv")
 # Just correlations greater than your cutoff
 correlate(dat[,pred.vars], use = "complete.obs") %>%  
   gather(-term, key = "colname", value = "cor") %>% 
@@ -125,11 +126,14 @@ for(i in 1:length(resp.vars)){
   out.all   <- c(out.all, list(out.i))
   var.imp   <- c(var.imp, list(out.list$variable.importance$aic$variable.weights.raw))
   
+  
+  
   # plot the best models
   for(m in 1:nrow(out.i)){
     best.model.name <- as.character(out.i$modname[m])
     
-    png(file = paste(savedir, paste(m, resp.vars[i], "mod_fits.png", sep = ""), sep = "/"))
+    
+    png(file = paste(savedir, paste(m, resp.vars[i], "mod_fits.png", sep = "")))
     if(best.model.name != "null"){
       par(mfrow = c(3, 1), mar = c(9, 4, 3, 1))
       best.model = out.list$success.models[[best.model.name]]
@@ -144,5 +148,6 @@ names(out.all) <- resp.vars
 names(var.imp) <- resp.vars
 all.mod.fits <- do.call("rbind", out.all)
 all.var.imp  <- do.call("rbind", var.imp)
-write.csv(all.mod.fits[ , -2], file = paste(savedir,paste(name, "all.mod.fits.csv", sep = "."), sep = "/"))
-write.csv(all.var.imp,         file = paste(savedir, paste(name, "all.var.imp.csv", sep = "."), sep = "/"))
+write.csv(all.mod.fits[ , -2], file = paste(savedir,paste(name, "all.mod.fits.csv", sep = ".")))
+write.csv(all.var.imp,         file = paste(savedir, paste(name, "all.var.imp.csv", sep = ".")))
+

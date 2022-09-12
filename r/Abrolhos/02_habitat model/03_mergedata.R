@@ -14,7 +14,7 @@ rm(list = ls())
 # Load libraries
 library(reshape2)
 library(dplyr)
-library(raster)
+library(terra)
 library(sp)
 library(ggplot2)
 
@@ -36,19 +36,19 @@ hab  <- bind_rows(boss, bruv)                                                   
 
 # Extract bathy derivatives for modelling
 # Set up CRS and load spatial covariates from 02_spatial_layers.R 
-wgscrs <- CRS("+proj=longlat +datum=WGS84 +south")                              # Latlong projection 
-sppcrs <- CRS("+proj=utm +zone=50 +south +datum=WGS84 +units=m +no_defs")       # UTM projection
+wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Latlong projection 
 preds  <- readRDS(paste(paste0('data/spatial/rasters/', name), 
                        'spatial_covariates.rds', sep = "_"))
+preds <- rast(preds)
 
 # Align crs and check samples over bathy and extract terrain data
-allhab_sp <- SpatialPointsDataFrame(coords = hab[,c("longitude", "latitude")],
-                                    data = hab, proj4string = wgscrs)           # Convert the habitat data to a SpatialPoints dataframe
+allhab_sp <- vect(hab, geom = c("longitude", "latitude"), crs = wgscrs, keep = T)           # Convert to a spat vector
+
 # allhab_t <- spTransform(allhab_sp, CRS = sppcrs)
 plot(preds[[1]])                                                                # Plot the first bathymetry derivative
 plot(allhab_sp, add = T)                                                        # Add the sampling points to check if they align
 habt_df   <- as.data.frame(allhab_sp)                                           # Convert the habitat data back to a regular dataframe
-habi_df   <- cbind(habt_df, raster::extract(preds, allhab_sp))                  # Extract the bathymetry derivatives and join on as a dataframe
+habi_df   <- cbind(habt_df, terra::extract(preds, allhab_sp))                  # Extract the bathymetry derivatives and join on as a dataframe
 
 # Rename columns and combine habitat columns for modelling
 # Change this for your project needs!!
@@ -65,3 +65,4 @@ allhab <- habi_df %>%
 # Save the output
 saveRDS(allhab, paste(paste0('data/tidy/', name), 
                       'habitat-bathy-derivatives.rds', sep = "_"))
+
