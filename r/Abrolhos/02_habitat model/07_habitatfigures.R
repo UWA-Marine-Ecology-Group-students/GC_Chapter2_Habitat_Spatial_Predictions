@@ -23,7 +23,7 @@ rm(list = ls())
 library(reshape2)
 library(ggplot2)
 library(viridis)
-library(raster)
+library(terra)
 library(patchwork)
 library(sf)
 library(sfheaders)
@@ -36,16 +36,15 @@ library(smoothr)
 name <- "Abrolhos"                                                              # Change here
 
 # Set CRS for shapefiles
-wgscrs <- CRS("+proj=longlat +datum=WGS84")                                     # Lat long projection
-sppcrs <- CRS("+proj=utm +zone=50 +south +datum=WGS84 +units=m +no_defs")       # UTM projection - check your UTM Zone!
-
+wgscrs <- "+proj=longlat +datum=WGS84"                                    # Lat long projection
+     
 # Bring in spatial layers
 # Load aus outline, state and commonwealth marine parks
 aus     <- st_read("data/spatial/shapefiles/cstauscd_r.mif")                    # Geodata 100k coastline available: https://data.gov.au/dataset/ds-ga-a05f7892-eae3-7506-e044-00144fdd4fa6/
 aus     <- aus[aus$FEAT_CODE == "mainland", ]                                   # Add islands here if needed
 aumpa   <- st_read("data/spatial/shapefiles/AustraliaNetworkMarineParks.shp")   # All aus mpas
 st_crs(aus) <- st_crs(aumpa)                                                    # Set CRS to match - WGS84 and GDA94 effectively the same
-e <- extent(112, 116, -30, -26)                                                 # Change your extent here
+e <- ext(112, 116, -30, -26)                                                 # Change your extent here
 mpa <- st_crop(aumpa, e)                                                        # All commonwealth zones in the study area
 npz <- mpa[mpa$ZoneName %in% "National Park Zone", ]                            # Only National Park Zones in the study area
 
@@ -71,7 +70,7 @@ bathdf <- readRDS(paste(paste0('data/spatial/rasters/',
                                name), 'ga_bathy.rds', sep = "_"))
 
 # read in spatial predictions from 'R/05_habitat_model.R'
-spreddf <- readRDS(paste(paste0('output/fssgam - habitat/', name),
+spreddf <- readRDS(paste(paste0('output/Abrolhos/', name),
                          'spatial_habitat_predictions.rds', sep = "_")) %>%
   dplyr::mutate(dom_tag = as.factor(dom_tag)) %>%                               # Factorise
   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
@@ -125,21 +124,21 @@ preddf <- spreddf %>%
                                         "Sessile invertebrates" = 5)) %>%
   dplyr::select(x, y, dom_tag)
 
-predr <- rasterFromXYZ(preddf)
+predr <- rast(preddf)
 plot(predr)
 
-predr_smooth <- disaggregate(predr, fact = 10, method = "bilinear")
+predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
 plot(predr_smooth)
 
 smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
   dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
   dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
-
+crs(predr_smooth) <- wgscrs
 pred_stars <- st_as_stars(predr_smooth)
 
 dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
 
-st_write(dom.habs, "data/spatial/shapefiles/Abrolhos-dominant-habitat.shp", 
+st_write(dom.habs, "output/Abrolhos/Abrolhos-dominant-habitat.shp", 
          append = F)
 
 # Figure 1.5
@@ -216,241 +215,241 @@ png(filename = paste(paste("plots", name, sep = "/"),                   # Save t
 p22
 dev.off()
 
-# Figure 3. Bathymetry derivatives ----
-# depth
-pd <- ggplot() +
-  geom_tile(data = spreddf[spreddf$sitens == 1, ], aes(x, y, fill = depth)) +
-  scale_fill_viridis(option = "A", direction = -1,
-                     limits = c(0, max(spreddf$depth))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
-  labs(x= NULL, y = NULL, title = "Big Bank") +
-  guides(fill = "none") +
-  theme_minimal()
-
-pdb <- ggplot() +
-  geom_tile(data = spreddf[spreddf$sitens == 0, ], aes(x, y, fill = depth)) +
-  scale_fill_viridis(option = "A", direction = -1,
-                     limits = c(0, max(spreddf$depth))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
-  labs(x= NULL, y = NULL,
-       fill = "Depth", title = "Shallow Bank") +
-  theme_minimal()
-pd + pdb
-
-# tpi
-pt <- ggplot() +
-  geom_tile(data = spreddf[spreddf$sitens == 1, ], aes(x, y, fill = tpi)) +
-  scale_fill_viridis(option = "D", direction = 1,
-                     limits = c( min(spreddf$tpi), max(spreddf$tpi))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
-  labs(x= NULL, y = NULL) +
-  guides(fill = "none") +
-  theme_minimal()
-ptb <- ggplot() +
-  geom_tile(data = spreddf[spreddf$sitens == 0, ], aes(x, y, fill = tpi)) +
-  scale_fill_viridis(option = "D", direction = 1,
-                     limits = c( min(spreddf$tpi), max(spreddf$tpi))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
-  labs(x= NULL, y = NULL,
-       fill = "TPI") +
-  theme_minimal()
-pt + ptb
-
-# roughness
-pr <- ggplot() +
-  geom_tile(data = spreddf[spreddf$sitens == 1, ], aes(x, y, fill = roughness)) +
-  scale_fill_viridis(option = "D", direction = 1,
-                     limits = c( min(spreddf$roughness), max(spreddf$roughness))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
-  labs(x= NULL, y = NULL) +
-  guides(fill = "none") +
-  theme_minimal() 
-prb <- ggplot() +
-  geom_tile(data = spreddf[spreddf$sitens == 0, ], aes(x, y, fill = roughness)) +
-  scale_fill_viridis(option = "D", direction = 1,
-                     limits = c(min(spreddf$roughness), max(spreddf$roughness))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
-  labs(x= NULL, y = NULL,
-       fill = "Roughness") +
-  theme_minimal()
-pr + prb
-
-# detrended
-pdt <- ggplot() +
-  geom_tile(data = spreddf[spreddf$sitens == 1, ], aes(x, y, fill = detrended)) +
-  scale_fill_viridis(option = "D", direction = 1,
-                     limits = c( min(spreddf$detrended), max(spreddf$detrended))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
-  labs(x= NULL, y = NULL) +
-  guides(fill = "none") +
-  theme_minimal()
-pdtb <- ggplot() +
-  geom_tile(data = spreddf[spreddf$sitens == 0, ], aes(x, y, fill = detrended)) +
-  scale_fill_viridis(option = "D", direction = 1,
-                     limits = c(min(spreddf$detrended), max(spreddf$detrended))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
-  labs(x= NULL, y = NULL,
-       fill = "Detrended") +
-  theme_minimal() 
-pdt + pdtb
-
-# Figure 4. Predicted relief ----## relevant for fish things
-pcelldf <- readRDS('output/predicted_relief_site.rds')
-pcelldf$sitens <- ifelse(pcelldf$y > 6940000, 1, 0)
-pcelldf$prelief[pcelldf$prelief < 0] <- 0
-
-p4 <- ggplot() +
-  geom_tile(data = pcelldf[pcelldf$sitens == 1, ], aes(x, y, fill = prelief)) +
-  scale_fill_viridis(option = "C", direction = -1, 
-                     limits = c(0, max(pcelldf$prelief))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
-  labs(x= NULL, y = NULL, 
-       fill = "p. relief") +
-  guides(fill = "none") +
-  theme_minimal()
-
-p42 <- ggplot() +
-  geom_tile(data = pcelldf[pcelldf$sitens == 0, ], aes(x, y, fill = prelief)) +
-  scale_fill_viridis(option = "C", direction = -1, 
-                     limits = c(0, max(pcelldf$prelief))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
-  labs(x= NULL, y = NULL, 
-       fill = "Relief score") +
-  theme_minimal()
-
-# relief only
-p4 + p42 + plot_layout(widths = c(0.44, 0.56))
-ggsave("plots/spatial/site_relief_p.png", width = 10, height = 6, dpi = 160)
-
-# combined spatial layers
-
-(pd + pdb)   /
-  (pt + ptb)   /
-  (pr + prb)   /
-  (pdt + pdtb) /
-  (p4 + p42)   +
-  plot_layout(widths = c(0.44, 0.56)) &
-  theme(text = element_text(size = 8))
-ggsave("plots/spatial/site_spatial_layers.png", width = 10, height = 12, dpi = 160)
-
-
-# Figure 5. Relief spatial random effect
-p5 <- ggplot() +
-  geom_tile(data = pcelldf[pcelldf$sitens == 1, ], aes(x, y, fill = p_sp)) +
-  scale_fill_viridis(option = "B", 
-                     limits = c(min(pcelldf$p_sp), max(pcelldf$p_sp))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
-  geom_point(data = habi[habi$ns == 1, ], aes(longitude.1, latitude.1), 
-             alpha = 0.7, colour = "grey70", size = 1, shape = 3) +
-  labs(x= NULL, y = NULL, title = "Big Bank") +
-  guides(fill = "none") +
-  theme_minimal()
-
-p52 <- ggplot() +
-  geom_tile(data = pcelldf[pcelldf$sitens == 0, ], aes(x, y, fill = p_sp)) +
-  scale_fill_viridis(option = "B", 
-                     limits = c(min(pcelldf$p_sp), max(pcelldf$p_sp))) +
-  geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
-  geom_point(data = habi[habi$ns == 0, ], aes(longitude.1, latitude.1), 
-             alpha = 0.7, colour = "grey70", size = 2, shape = 3) +
-  labs(x= NULL, y = NULL, 
-       fill = "Spatial\ndependence", title = "Shallow Bank") +
-  theme_minimal()
-
-p5 + p52 + plot_layout(widths = c(0.44, 0.56))
-ggsave("plots/spatial/site_relief_spatialeffect.png", 
-       width = 10, height = 3, dpi = 160)
-
-# Figure 6. National Reef Model predictions
-# jac's map, eh
-# sort out the classes
-sitebathy <- readRDS('output/ga_bathy_fine.rds')                                # finer bathy
-colnames(sitebathy)[3] <- "Depth"
-# sitebathy <- sitebathy[sitebathy$Depth > -1000, ]                               # trim to reduce legend
-sitebathy <- sitebathy[sitebathy$x > 112.7 & sitebathy$x < 114.4, ] 
-sitebathy <- sitebathy[sitebathy$y > -28.4 & sitebathy$y < -26.6, ]
-
-jlevs  <- ratify(jacmap)
-jclass <- levels(jlevs)[[1]]
-jclass[["class"]] <- c("Shelf.unvegetated.soft.sediments",
-                       "Upper.slope.unvegetated.soft.sediments", 
-                       "Mid.slope.sediments",
-                       "Lower.slope.reef.and.sediments",
-                       "Abyssal.reef.and.sediments", 
-                       "Seamount.soft.sediments", 
-                       "Shelf.vegetated.sediments", 
-                       "Shallow.coral.reefs.less.than.30.m.depth", 
-                       "Mesophotic.coral.reefs", 
-                       "Rariophotic.shelf.reefs", 
-                       "Upper.slope.rocky.reefs.shelf.break.to.700.m.depth", 
-                       "Mid.slope.reef", 
-                       "Artificial.reefs.pipelines.and.cables")                 # The class names
-levels(jacmap) <- jclass
-
-jmap_df <- as.data.frame(jacmap, xy = TRUE, na.rm = TRUE)
-colnames(jmap_df)[3] <- "classname"
-jmap_df$classname <- gsub("\\.", " ", jmap_df$classname)                        # Replace . with space in names
-
-jcls_cols <- scale_fill_manual(values = c(
-  "Shallow coral reefs less than 30 m depth" = "coral2", 
-  "Shelf unvegetated soft sediments" = "cornsilk1",
-  "Shelf vegetated sediments" = "seagreen3",
-  "Mesophotic coral reefs" = "darkorange3",
-  "Rariophotic shelf reefs" = "steelblue3",
-  "Upper slope unvegetated soft sediments" = "wheat1",
-  "Mid slope sediments" = "#f7d29c"))  # navajowhite1 - made slightly darker
-
-waterr_cols <- scale_fill_manual(values = c("National Park" = "#c4cea6",
-                                            "Nature Reserve" = "#e4d0bb"),
-                                 guide = "none")
-
-# assign mpa colours - full levels are saved at end of script for future ref
-nmpa_cols <- scale_color_manual(breaks = c("National Park Zone", 
-                                           "Multiple Use Zone", 
-                                           "Special Purpose Zone"), 
-                                values = c("National Park Zone" = "#7bbc63",
-                                          "Multiple Use Zone" = "#b9e6fb",
-                                          "Special Purpose Zone" = "#6daff4"
-))
-
-ab_nmp$ZoneName <- factor(ab_nmp$ZoneName, levels = c("Multiple Use Zone", "Special Purpose Zone",
-                                                      "Habitat Protection Zone","National Park Zone"
-                                                      ))
-
-
-p7 <- ggplot() +
-  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.1) +
-  geom_sf(data = terrnp, aes(fill = leg_catego), alpha = 4/5, colour = NA) +
-  waterr_cols +
-  new_scale_fill() +  
-  geom_tile(data = jmap_df, aes(x, y, fill = classname)) +
-  jcls_cols +
-  geom_contour(data = sitebathy, aes(x = x, y = y, z = Depth),
-               breaks = c(-30, -70, -200, - 700, - 7000), colour = "black", alpha = 1, size = 0.18) +
-  geom_sf(data = ab_nmp, fill = NA, aes(colour = ZoneName)) +
-  nmpa_cols+
-  labs(color = "Australian Marine Parks") +
-  new_scale_color() +
-  geom_sf(data = cwatr, colour = "firebrick", alpha = 4/5, size = 0.2) +
-  # annotate("rect", xmin = 113.02, xmax = 113.29, ymin = -27.19, ymax = -27.08,
-  #          colour = "grey25", fill = "white", alpha = 1/5, size = 0.2) +
-  # annotate("text", x = 113.15, y = -27.05, size = 3, 
-  #          colour = "grey20", label = "swabrnpz09") +
-  # annotate("rect", xmin = 113.24, xmax = 113.58, ymin = -28.13, ymax = -28.02,
-  #          colour = "grey25", fill = "white", alpha = 1/5, size = 0.2) +
-  # annotate("text", x = 113.42, y = -27.99, size = 3,
-  #          colour = "grey20", label = "swabrnpz06") +
-  annotate("text", y = c(-27.875, -27.875,-27.875,-27.875, -26.87), 
-           x = c(114.07,  113.32, 113.15, 112.79, 113.167), 
-           label = c("30m", "70m", "200m", "700m", "70m"), size = 2) +
-  coord_sf(xlim = c(112.8, 114.3), ylim = c(-28.25, -26.7)) +
-  labs(fill = "Habitat classification", x = NULL, y = NULL) +
-  annotate("point", y = c(-27.7115), x = c(114.1714), size = 0.75) +
-  annotate("text", y = c(-27.7115), x = c(114.275),
-           label = c("Kalbarri"), size = 3) +
-  theme_minimal()
-
-png(filename = "plots/spatial/site_jmonk_natmap.png", width = 8, height = 6,
-    units = "in", res = 200)
-p7
-dev.off()
+# # Figure 3. Bathymetry derivatives ----
+# # depth
+# pd <- ggplot() +
+#   geom_tile(data = spreddf[spreddf$sitens == 1, ], aes(x, y, fill = depth)) +
+#   scale_fill_viridis(option = "A", direction = -1,
+#                      limits = c(0, max(spreddf$depth))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
+#   labs(x= NULL, y = NULL, title = "Big Bank") +
+#   guides(fill = "none") +
+#   theme_minimal()
+# 
+# pdb <- ggplot() +
+#   geom_tile(data = spreddf[spreddf$sitens == 0, ], aes(x, y, fill = depth)) +
+#   scale_fill_viridis(option = "A", direction = -1,
+#                      limits = c(0, max(spreddf$depth))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
+#   labs(x= NULL, y = NULL,
+#        fill = "Depth", title = "Shallow Bank") +
+#   theme_minimal()
+# pd + pdb
+# 
+# # tpi
+# pt <- ggplot() +
+#   geom_tile(data = spreddf[spreddf$sitens == 1, ], aes(x, y, fill = tpi)) +
+#   scale_fill_viridis(option = "D", direction = 1,
+#                      limits = c( min(spreddf$tpi), max(spreddf$tpi))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
+#   labs(x= NULL, y = NULL) +
+#   guides(fill = "none") +
+#   theme_minimal()
+# ptb <- ggplot() +
+#   geom_tile(data = spreddf[spreddf$sitens == 0, ], aes(x, y, fill = tpi)) +
+#   scale_fill_viridis(option = "D", direction = 1,
+#                      limits = c( min(spreddf$tpi), max(spreddf$tpi))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
+#   labs(x= NULL, y = NULL,
+#        fill = "TPI") +
+#   theme_minimal()
+# pt + ptb
+# 
+# # roughness
+# pr <- ggplot() +
+#   geom_tile(data = spreddf[spreddf$sitens == 1, ], aes(x, y, fill = roughness)) +
+#   scale_fill_viridis(option = "D", direction = 1,
+#                      limits = c( min(spreddf$roughness), max(spreddf$roughness))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
+#   labs(x= NULL, y = NULL) +
+#   guides(fill = "none") +
+#   theme_minimal() 
+# prb <- ggplot() +
+#   geom_tile(data = spreddf[spreddf$sitens == 0, ], aes(x, y, fill = roughness)) +
+#   scale_fill_viridis(option = "D", direction = 1,
+#                      limits = c(min(spreddf$roughness), max(spreddf$roughness))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
+#   labs(x= NULL, y = NULL,
+#        fill = "Roughness") +
+#   theme_minimal()
+# pr + prb
+# 
+# # detrended
+# pdt <- ggplot() +
+#   geom_tile(data = spreddf[spreddf$sitens == 1, ], aes(x, y, fill = detrended)) +
+#   scale_fill_viridis(option = "D", direction = 1,
+#                      limits = c( min(spreddf$detrended), max(spreddf$detrended))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
+#   labs(x= NULL, y = NULL) +
+#   guides(fill = "none") +
+#   theme_minimal()
+# pdtb <- ggplot() +
+#   geom_tile(data = spreddf[spreddf$sitens == 0, ], aes(x, y, fill = detrended)) +
+#   scale_fill_viridis(option = "D", direction = 1,
+#                      limits = c(min(spreddf$detrended), max(spreddf$detrended))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
+#   labs(x= NULL, y = NULL,
+#        fill = "Detrended") +
+#   theme_minimal() 
+# pdt + pdtb
+# 
+# # Figure 4. Predicted relief ----## relevant for fish things
+# pcelldf <- readRDS('output/predicted_relief_site.rds')
+# pcelldf$sitens <- ifelse(pcelldf$y > 6940000, 1, 0)
+# pcelldf$prelief[pcelldf$prelief < 0] <- 0
+# 
+# p4 <- ggplot() +
+#   geom_tile(data = pcelldf[pcelldf$sitens == 1, ], aes(x, y, fill = prelief)) +
+#   scale_fill_viridis(option = "C", direction = -1, 
+#                      limits = c(0, max(pcelldf$prelief))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
+#   labs(x= NULL, y = NULL, 
+#        fill = "p. relief") +
+#   guides(fill = "none") +
+#   theme_minimal()
+# 
+# p42 <- ggplot() +
+#   geom_tile(data = pcelldf[pcelldf$sitens == 0, ], aes(x, y, fill = prelief)) +
+#   scale_fill_viridis(option = "C", direction = -1, 
+#                      limits = c(0, max(pcelldf$prelief))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
+#   labs(x= NULL, y = NULL, 
+#        fill = "Relief score") +
+#   theme_minimal()
+# 
+# # relief only
+# p4 + p42 + plot_layout(widths = c(0.44, 0.56))
+# ggsave("plots/spatial/site_relief_p.png", width = 10, height = 6, dpi = 160)
+# 
+# # combined spatial layers
+# 
+# (pd + pdb)   /
+#   (pt + ptb)   /
+#   (pr + prb)   /
+#   (pdt + pdtb) /
+#   (p4 + p42)   +
+#   plot_layout(widths = c(0.44, 0.56)) &
+#   theme(text = element_text(size = 8))
+# ggsave("plots/spatial/site_spatial_layers.png", width = 10, height = 12, dpi = 160)
+# 
+# 
+# # Figure 5. Relief spatial random effect
+# p5 <- ggplot() +
+#   geom_tile(data = pcelldf[pcelldf$sitens == 1, ], aes(x, y, fill = p_sp)) +
+#   scale_fill_viridis(option = "B", 
+#                      limits = c(min(pcelldf$p_sp), max(pcelldf$p_sp))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 3, ], fill = NA, colour = "#7bbc63") +
+#   geom_point(data = habi[habi$ns == 1, ], aes(longitude.1, latitude.1), 
+#              alpha = 0.7, colour = "grey70", size = 1, shape = 3) +
+#   labs(x= NULL, y = NULL, title = "Big Bank") +
+#   guides(fill = "none") +
+#   theme_minimal()
+# 
+# p52 <- ggplot() +
+#   geom_tile(data = pcelldf[pcelldf$sitens == 0, ], aes(x, y, fill = p_sp)) +
+#   scale_fill_viridis(option = "B", 
+#                      limits = c(min(pcelldf$p_sp), max(pcelldf$p_sp))) +
+#   geom_sf(data = ab_npz[ab_npz$parkid == 2, ], fill = NA, colour = "#7bbc63") +
+#   geom_point(data = habi[habi$ns == 0, ], aes(longitude.1, latitude.1), 
+#              alpha = 0.7, colour = "grey70", size = 2, shape = 3) +
+#   labs(x= NULL, y = NULL, 
+#        fill = "Spatial\ndependence", title = "Shallow Bank") +
+#   theme_minimal()
+# 
+# p5 + p52 + plot_layout(widths = c(0.44, 0.56))
+# ggsave("plots/spatial/site_relief_spatialeffect.png", 
+#        width = 10, height = 3, dpi = 160)
+# 
+# # Figure 6. National Reef Model predictions
+# # jac's map, eh
+# # sort out the classes
+# sitebathy <- readRDS('output/ga_bathy_fine.rds')                                # finer bathy
+# colnames(sitebathy)[3] <- "Depth"
+# # sitebathy <- sitebathy[sitebathy$Depth > -1000, ]                               # trim to reduce legend
+# sitebathy <- sitebathy[sitebathy$x > 112.7 & sitebathy$x < 114.4, ] 
+# sitebathy <- sitebathy[sitebathy$y > -28.4 & sitebathy$y < -26.6, ]
+# 
+# jlevs  <- ratify(jacmap)
+# jclass <- levels(jlevs)[[1]]
+# jclass[["class"]] <- c("Shelf.unvegetated.soft.sediments",
+#                        "Upper.slope.unvegetated.soft.sediments", 
+#                        "Mid.slope.sediments",
+#                        "Lower.slope.reef.and.sediments",
+#                        "Abyssal.reef.and.sediments", 
+#                        "Seamount.soft.sediments", 
+#                        "Shelf.vegetated.sediments", 
+#                        "Shallow.coral.reefs.less.than.30.m.depth", 
+#                        "Mesophotic.coral.reefs", 
+#                        "Rariophotic.shelf.reefs", 
+#                        "Upper.slope.rocky.reefs.shelf.break.to.700.m.depth", 
+#                        "Mid.slope.reef", 
+#                        "Artificial.reefs.pipelines.and.cables")                 # The class names
+# levels(jacmap) <- jclass
+# 
+# jmap_df <- as.data.frame(jacmap, xy = TRUE, na.rm = TRUE)
+# colnames(jmap_df)[3] <- "classname"
+# jmap_df$classname <- gsub("\\.", " ", jmap_df$classname)                        # Replace . with space in names
+# 
+# jcls_cols <- scale_fill_manual(values = c(
+#   "Shallow coral reefs less than 30 m depth" = "coral2", 
+#   "Shelf unvegetated soft sediments" = "cornsilk1",
+#   "Shelf vegetated sediments" = "seagreen3",
+#   "Mesophotic coral reefs" = "darkorange3",
+#   "Rariophotic shelf reefs" = "steelblue3",
+#   "Upper slope unvegetated soft sediments" = "wheat1",
+#   "Mid slope sediments" = "#f7d29c"))  # navajowhite1 - made slightly darker
+# 
+# waterr_cols <- scale_fill_manual(values = c("National Park" = "#c4cea6",
+#                                             "Nature Reserve" = "#e4d0bb"),
+#                                  guide = "none")
+# 
+# # assign mpa colours - full levels are saved at end of script for future ref
+# nmpa_cols <- scale_color_manual(breaks = c("National Park Zone", 
+#                                            "Multiple Use Zone", 
+#                                            "Special Purpose Zone"), 
+#                                 values = c("National Park Zone" = "#7bbc63",
+#                                           "Multiple Use Zone" = "#b9e6fb",
+#                                           "Special Purpose Zone" = "#6daff4"
+# ))
+# 
+# ab_nmp$ZoneName <- factor(ab_nmp$ZoneName, levels = c("Multiple Use Zone", "Special Purpose Zone",
+#                                                       "Habitat Protection Zone","National Park Zone"
+#                                                       ))
+# 
+# 
+# p7 <- ggplot() +
+#   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.1) +
+#   geom_sf(data = terrnp, aes(fill = leg_catego), alpha = 4/5, colour = NA) +
+#   waterr_cols +
+#   new_scale_fill() +  
+#   geom_tile(data = jmap_df, aes(x, y, fill = classname)) +
+#   jcls_cols +
+#   geom_contour(data = sitebathy, aes(x = x, y = y, z = Depth),
+#                breaks = c(-30, -70, -200, - 700, - 7000), colour = "black", alpha = 1, size = 0.18) +
+#   geom_sf(data = ab_nmp, fill = NA, aes(colour = ZoneName)) +
+#   nmpa_cols+
+#   labs(color = "Australian Marine Parks") +
+#   new_scale_color() +
+#   geom_sf(data = cwatr, colour = "firebrick", alpha = 4/5, size = 0.2) +
+#   # annotate("rect", xmin = 113.02, xmax = 113.29, ymin = -27.19, ymax = -27.08,
+#   #          colour = "grey25", fill = "white", alpha = 1/5, size = 0.2) +
+#   # annotate("text", x = 113.15, y = -27.05, size = 3, 
+#   #          colour = "grey20", label = "swabrnpz09") +
+#   # annotate("rect", xmin = 113.24, xmax = 113.58, ymin = -28.13, ymax = -28.02,
+#   #          colour = "grey25", fill = "white", alpha = 1/5, size = 0.2) +
+#   # annotate("text", x = 113.42, y = -27.99, size = 3,
+#   #          colour = "grey20", label = "swabrnpz06") +
+#   annotate("text", y = c(-27.875, -27.875,-27.875,-27.875, -26.87), 
+#            x = c(114.07,  113.32, 113.15, 112.79, 113.167), 
+#            label = c("30m", "70m", "200m", "700m", "70m"), size = 2) +
+#   coord_sf(xlim = c(112.8, 114.3), ylim = c(-28.25, -26.7)) +
+#   labs(fill = "Habitat classification", x = NULL, y = NULL) +
+#   annotate("point", y = c(-27.7115), x = c(114.1714), size = 0.75) +
+#   annotate("text", y = c(-27.7115), x = c(114.275),
+#            label = c("Kalbarri"), size = 3) +
+#   theme_minimal()
+# 
+# png(filename = "plots/spatial/site_jmonk_natmap.png", width = 8, height = 6,
+#     units = "in", res = 200)
+# p7
+# dev.off()

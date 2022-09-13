@@ -23,20 +23,23 @@ library(terra)
 # Set your study name
 name <- "Abrolhos"                                                              # Change here
 
-# Set up CRS and load spatial covariates from 02_spatial_layers.R 
+# Set up WGSCRS and load spatial covariates from 02_spatial_layers.R 
 wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Latlong projection 
 
 # read in
 habi   <- readRDS("data/tidy/Abrolhos_habitat-bathy-derivatives.rds")           # Merged data from 'R/03_mergedata.R'
 preds  <- readRDS("data/spatial/rasters/Abrolhos_spatial_covariates.rds")       # Spatial covs from 'R/02_spatial_layers.R'
+preds <- rast(preds)
 preddf <- as.data.frame(preds, xy = TRUE, na.rm = TRUE)
 preddf$depth <- abs(preddf$Z)                                                   # Converts depth to absolute value - make sure you aren't predicting onto data with negative values!
 
 # reduce predictor space to fit survey area
-habisp <- SpatialPointsDataFrame(coords = cbind(habi$longitude, 
-                                                habi$latitude), data = habi,
-                                 proj4string = wgscrs)
-sbuff  <- rast::buffer(habisp, 10000)                                         # Buffer should be in metres
+# habisp <- SpatialPointsDataFrame(coords = cbind(habi$longitude, 
+#                                                 habi$latitude), data = habi,
+#                                  proj4string = wgscrs)
+habisp <- vect(habi, geom = c("longitude", "latitude"), crs = wgscrs, keep = T)  
+
+sbuff  <- terra::buffer(habisp, 10000)                                         # Buffer should be in metres
 plot(sbuff)
 # Use formula from top model from '2_modelselect.R'
 m_kelps <- gam(cbind(kelps, broad.total.points.annotated - kelps) ~ 
@@ -82,7 +85,7 @@ preddf <- cbind(preddf,
                 "prock" = predict(m_rock, preddf, type = "response"),
                 "pinverts" = predict(m_inverts, preddf, type = "response"))
 
-prasts <- rasterFromXYZ(preddf) 
+prasts <- rast(preddf) 
 plot(prasts)
 
 # subset to 10km from sites only
@@ -100,4 +103,4 @@ spreddf$dom_tag <- sub('.', '', spreddf$dom_tag)                                
 head(spreddf)                                                                   # Check to see if it all looks ok
 
 # Save the output
-saveRDS(spreddf, paste(paste0('output/fssgam - habitat/', name), 'spatial_habitat_predictions.rds', sep = "_"))
+saveRDS(spreddf, paste(paste0('output/Abrolhos/', name), 'spatial_habitat_predictions.rds', sep = "_"))

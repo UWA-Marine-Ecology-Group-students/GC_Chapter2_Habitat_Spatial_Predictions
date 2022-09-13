@@ -49,12 +49,11 @@ pred.vars <- c("depth","TRI", "TPI", "roughness", "slope", "aspect", "detrended"
 # Full correlation table
 corrtable <- as.data.frame(round(cor(dat[ , pred.vars]), 2))
 
-write.csv(corrtable, file = "output/Abrolhos/fssgam - habitat/correlation-table.csv")
+write.csv(corrtable, file = "output/Abrolhos/correlation-table.csv")
 # Just correlations greater than your cutoff
 correlate(dat[,pred.vars], use = "complete.obs") %>%  
   gather(-term, key = "colname", value = "cor") %>% 
-  dplyr::filter(abs(cor) > 0.8) %>%                                             # Set your cutoff here
-  dplyr::filter(row_number() %% 2 == 1)                                         # Removes duplicated rows
+  dplyr::filter(abs(cor) > 0.8)                                         # Removes duplicated rows
 
 # Review of individual predictors for even distribution---
 # Plot of likely transformations - Anna Cresswell loop
@@ -85,7 +84,7 @@ unique.vars = unique(as.character(dat$response))
 unique.vars.use = unique.vars
    
 # Run the full subset model selection----
-savedir   <- "output/fssgam - habitat"
+savedir   <- "output/Abrolhos"
 resp.vars <- unique.vars.use
 use.dat   <- as.data.frame(dat[dat$response %in% c(unique.vars.use), ])
 str(use.dat)
@@ -133,7 +132,7 @@ for(i in 1:length(resp.vars)){
     best.model.name <- as.character(out.i$modname[m])
     
     
-    png(file = paste(savedir, paste(m, resp.vars[i], "mod_fits.png", sep = "")))
+    png(file = paste(savedir, paste0(m, resp.vars[i], "mod_fits.png"), sep = "/"))
     if(best.model.name != "null"){
       par(mfrow = c(3, 1), mar = c(9, 4, 3, 1))
       best.model = out.list$success.models[[best.model.name]]
@@ -148,6 +147,6 @@ names(out.all) <- resp.vars
 names(var.imp) <- resp.vars
 all.mod.fits <- do.call("rbind", out.all)
 all.var.imp  <- do.call("rbind", var.imp)
-write.csv(all.mod.fits[ , -2], file = paste(savedir,paste(name, "all.mod.fits.csv", sep = ".")))
-write.csv(all.var.imp,         file = paste(savedir, paste(name, "all.var.imp.csv", sep = ".")))
+write.csv(all.mod.fits[ , -2], file = paste(savedir,paste(name, "all.mod.fits.csv", sep = "."), sep = "/"))
+write.csv(all.var.imp,         file = paste(savedir, paste(name, "all.var.imp.csv", sep = "."), sep = "/"))
 

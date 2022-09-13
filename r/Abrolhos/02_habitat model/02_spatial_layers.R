@@ -1,9 +1,9 @@
 ###
-# Project: ** **
+# Project: ** GC_Ch2_Habitat_Abrolhos**
 # Data:    Bathymetry Data
 # Task:    Prepare spatial layers for modelling
 # Author:  Kingsley Griffin & Claude Spencer
-# Date:    ** **
+# Date:    **13/09/2022 **
 ## 
 
 # This script formats bathymetry data and extracts bathymetry derivatives for modelling habitat and fish
