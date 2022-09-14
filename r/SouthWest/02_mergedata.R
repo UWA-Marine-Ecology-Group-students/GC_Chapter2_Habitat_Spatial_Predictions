@@ -23,6 +23,7 @@ name <- "SouthWest" # Change here
 
 # Load in tidy data from the formatting scripts
 hab <- read.csv("data/tidy/GC_2020-2021_south-west_BOSS-BRUV.Habitat.csv") %>%
+  mutate(id = paste(campaignid, sample, sep = "_")) %>%
   glimpse()
 
 

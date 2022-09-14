@@ -40,12 +40,13 @@ dat <- readRDS(paste(paste0('data/tidy/', name),                                
                 broad.total.points.annotated, reef, seagrasses, rock, macroalgae, sand, inverts) %>% # Points annotated and habitat scores
   pivot_longer(cols = c("reef", "seagrasses", "rock", "macroalgae", "sand", "inverts"),      # Set your response columns here 
                names_to = "response", values_to = "number") %>%                 # Pivot habitat columns to long format for modelling
+ # mutate(depth = ifelse(is.na(depth), Z, depth)) %>%
   glimpse()
 
-test <- dat %>% distinct(depth, TRI, TPI, roughness, slope, aspect, detrended) %>%
-  filter(!TRI == "NaN")
-
-corrtable <- as.data.frame(round(cor(test[ , pred.vars]), 2))
+# test <- dat %>% distinct(depth, TRI, TPI, roughness, slope, aspect, detrended) %>%
+#   filter(!TRI == "NaN")
+# 
+# corrtable <- as.data.frame(round(cor(test[ , pred.vars]), 2))
 # Set predictor variables---
 pred.vars <- c("depth","TRI", "TPI", "roughness", "slope", "aspect", "detrended") 
 

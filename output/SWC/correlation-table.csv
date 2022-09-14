@@ -1,8 +1,8 @@
 "","depth","TRI","TPI","roughness","slope","aspect","detrended"
 "depth",1,NA,NA,NA,NA,NA,NA
-"TRI",NA,1,NA,NA,NA,NA,NA
-"TPI",NA,NA,1,NA,NA,NA,NA
-"roughness",NA,NA,NA,1,NA,NA,NA
-"slope",NA,NA,NA,NA,1,NA,NA
-"aspect",NA,NA,NA,NA,NA,1,NA
-"detrended",NA,NA,NA,NA,NA,NA,1
+"TRI",NA,1,0.18,0.98,0.97,0.16,0.62
+"TPI",NA,0.18,1,0.23,0.3,0.08,0.27
+"roughness",NA,0.98,0.23,1,0.98,0.17,0.64
+"slope",NA,0.97,0.3,0.98,1,0.18,0.65
+"aspect",NA,0.16,0.08,0.17,0.18,1,0.22
+"detrended",NA,0.62,0.27,0.64,0.65,0.22,1

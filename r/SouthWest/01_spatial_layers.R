@@ -42,7 +42,7 @@ plot(bath_r)                                                                    
 # Crop the bathymetry to the general study area
 # tbath <- projectRaster(bath_r, crs = sppcrs)
 # tbath_c <- crop(tbath, extent(c(105000, 165000, 6880000, 7000000)))
-tbath_c <- crop(bath_r, ext(c(114.4, 115.2,-35.0, -33.5)))
+tbath_c <- crop(bath_r, ext(c(114.4, 115.2,-34.3, -33.5)))
 plot(tbath_c)
 fbath_df <- as.data.frame(tbath_c, xy = TRUE)                                   # Convert this to a dataframe
 saveRDS(fbath_df, paste(paste0('data/spatial/rasters/',                         # Save it for use in the next scripts
