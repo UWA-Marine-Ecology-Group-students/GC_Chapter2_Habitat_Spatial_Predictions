@@ -141,7 +141,7 @@ pred_stars <- st_as_stars(predr_smooth)
 
 dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
 
-st_write(dom.habs, "output/Abrolhos/Abrolhos-dominant-habitat.shp", 
+st_write(dom.habs, "output/SWC/SWC-dominant-habitat.shp", 
          append = F)
 
 # Figure 1.5
