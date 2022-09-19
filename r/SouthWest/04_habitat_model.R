@@ -56,12 +56,12 @@ m_macro <- gam(cbind(macroalgae, broad.total.points.annotated - macroalgae) ~
                data = habi, method = "REML", family = binomial("logit"))
 summary(m_macro)
 
-m_reef <- gam(cbind(reef, broad.total.points.annotated - reef) ~ 
-                 s(depth,     k = 5, bs = "cr")  + 
-                 s(detrended, k = 5, bs = "cr") + 
-                 s(roughness, k = 5, bs = "cr"), 
-               data = habi, method = "REML", family = binomial("logit"))
-summary(m_reef)
+# m_reef <- gam(cbind(reef, broad.total.points.annotated - reef) ~ 
+#                  s(depth,     k = 5, bs = "cr")  + 
+#                  s(detrended, k = 5, bs = "cr") + 
+#                  s(roughness, k = 5, bs = "cr"), 
+#                data = habi, method = "REML", family = binomial("logit"))
+# summary(m_reef)
 
 m_inverts <- gam(cbind(inverts, broad.total.points.annotated - inverts) ~ 
             s(depth,     k = 5, bs = "cr") + 
@@ -88,7 +88,7 @@ summary(m_rock)
 preddf <- cbind(preddf, 
                 "pseagrasses" = predict(m_seagrasses, preddf, type = "response"),
                 "pmacroalg" = predict(m_macro, preddf, type = "response"),
-                "preef" = predict(m_reef, preddf, type = "response"),
+                # "preef" = predict(m_reef, preddf, type = "response"),
                 "psand" = predict(m_sand, preddf, type = "response"),
                 "prock" = predict(m_rock, preddf, type = "response"),
                 "pinverts" = predict(m_inverts, preddf, type = "response"))
@@ -102,7 +102,7 @@ plot(sprast)
 
 # Tidy and output data as a dataframe #AND filter pipe for depth less than 30m
 spreddf         <- as.data.frame(sprast, xy = TRUE, na.rm = T) #%>%
-#  dplyr::filter(Z < -30)
+  #dplyr::filter(Z <- -30)
 
 # Add a colum that categorises the dominant habitat class
 spreddf$dom_tag <- apply(spreddf[12:16], 1, # Set columns manually here
@@ -112,3 +112,4 @@ head(spreddf)                                                                   
 
 # Save the output
 saveRDS(spreddf, paste(paste0('output/SWC/', name), 'spatial_habitat_predictions.rds', sep = "_"))
+
