@@ -34,7 +34,7 @@ cbaths      <- list.files("data/spatial/rasters/raw bathymetry",                
 cbathy      <- lapply(cbaths,                                                   # Loads all of the tiles
                  function(x){read.table(file = x, header = TRUE, sep = ",")})    
 cbathy      <- do.call("rbind", lapply(cbathy, as.data.frame))                  # Turns the list into a data frame
-cbathy      <- cbathy[cbathy$Z <= 0 & cbathy$X < 117, ]                         # Get rid of topography data above 0m, general crop to speed life up
+cbathy      <- cbathy[cbathy$Z <= 0 & cbathy$X < 118, ]                         # Get rid of topography data above 0m, general crop to speed life up
 bath_r      <- rast(cbathy)                                                      # Convert to a raster
 crs(bath_r) <- wgscrs                                                           # Set the CRS
 plot(bath_r)                                                                    # Plot to check everything looks ok
@@ -50,7 +50,7 @@ saveRDS(fbath_df, paste(paste0('data/spatial/rasters/',                         
 
 # Calculate terrain derivatives
 preds <- terrain(tbath_c, neighbors = 8,
-                 v = c("slope", "aspect", "TPI", "TRI", "roughness"),
+                 v = c("slope", "aspect", "TRI", "roughness"),
                  unit = "degrees")         # Remove here as necessary
 preds <- rast(list(tbath_c, preds))                                                  # Stack the derivatives with the bathymetry
 
