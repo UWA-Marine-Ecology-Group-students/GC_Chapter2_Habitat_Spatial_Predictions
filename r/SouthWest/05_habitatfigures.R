@@ -96,11 +96,11 @@ hab_cols <- scale_fill_manual(values = c("Seagrasses" = "#d7f5dd",
 p1 <- ggplot() +
   geom_tile(data = spreddf, aes(x, y, fill = dom_tag)) +
   hab_cols +                                                                    # Class colours
-  geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
-  # geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
-  #              breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
-  #              colour = "grey54",
-  #              alpha = 1, size = 0.5) +                                         # Transparency and linewidth
+  #geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
+  geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
+              breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
+              colour = "grey54",
+              alpha = 1, size = 0.5) +                                         # Transparency and linewidth
   coord_sf(xlim = c(114.1, 115.2),                              # Set plot limits
            ylim = c(-34.2, -33.5)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  

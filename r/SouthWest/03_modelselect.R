@@ -36,7 +36,7 @@ name <- "SouthWest"                                                             
 dat <- readRDS(paste(paste0('data/tidy/', name),                                # Merged data from 'R/01_mergedata.R'
                      'habitat-bathy-derivatives.rds', sep = "_")) %>% 
   dplyr::select(sample, longitude, latitude, depth,                             # Select columns to keep
-               TRI, TPI, roughness, slope, aspect, detrended,                  # Bathymetry derivatives
+               TRI, roughness, slope, aspect, detrended,                  # Bathymetry derivatives
                 broad.total.points.annotated, seagrasses, rock, macroalgae, sand, inverts, Z) %>% # Points annotated and habitat scores
   pivot_longer(cols = c("seagrasses", "rock", "macroalgae", "sand", "inverts"),      # Set your response columns here 
                names_to = "response", values_to = "number") %>%                 # Pivot habitat columns to long format for modelling
@@ -49,7 +49,7 @@ dat <- readRDS(paste(paste0('data/tidy/', name),                                
 # 
 # corrtable <- as.data.frame(round(cor(test[ , pred.vars]), 2))
 # Set predictor variables---
-pred.vars <- c("depth","TRI", "TPI", "roughness", "slope", "aspect", "detrended") 
+pred.vars <- c("depth","TRI", "roughness", "slope", "aspect", "detrended")
 
 # Check for correlation of predictor variables- remove anything highly correlated (>0.95)---
 # Full correlation table
@@ -65,7 +65,8 @@ correlate(dat[,pred.vars], use = "complete.obs") %>%
 # Plot of likely transformations - Anna Cresswell loop
 par(mfrow = c(3, 2))
 for (i in pred.vars) {
-  x<-dat[ , i]
+  # x<-dat[ , i] - This was the original code: doesn't work for negative numbers (doh!)
+  x<-abs(dat[ , i])
   x = as.numeric(unlist(x))
   hist((x))
   plot((x), main = paste(i))
@@ -76,7 +77,7 @@ for (i in pred.vars) {
 }
 
 # # Re-set the predictors for modeling----
-pred.vars <- c("depth","roughness", "detrended") 
+pred.vars <- c("depth","slope", "detrended") 
 
 # Check to make sure Response vector has no more than 80% zeros----
 unique.vars = unique(as.character(dat$response))
