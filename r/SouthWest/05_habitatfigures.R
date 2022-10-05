@@ -84,7 +84,7 @@ spreddf <- readRDS(paste(paste0('output/SWC/', name),
 
 # Figure 1: Categorical habitat maps ----
 # Assign habitat class colours
-hab_cols <- scale_fill_manual(values = c("Seagrasses" = "#d7f5dd",
+hab_cols <- scale_fill_manual(values = c(#"Seagrasses" = "#d7f5dd",
                                          # "Reef" = "#c8cbcf",
                                          "Macroalgae" = "#a1c2f7",
                                          "Rock" = "#fad3d2",
@@ -101,7 +101,7 @@ p1 <- ggplot() +
               breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
               colour = "grey54",
               alpha = 1, size = 0.5) +                                         # Transparency and linewidth
-  coord_sf(xlim = c(114.1, 115.2),                              # Set plot limits
+  coord_sf(xlim = c(114.2, 115.2),                              # Set plot limits
            ylim = c(-34.2, -33.5)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
        colour = NULL, title = "Capes region") +
@@ -147,7 +147,7 @@ st_write(dom.habs, "output/SWC/SWC-dominant-habitat.shp",
 # Figure 1.5
 smooth_plot <- smooth_df %>%
   dplyr::mutate(smoothed = dplyr::recode(smoothed,                                # Tidy names for plot legend
-                                        "1" = "Kelp",
+                                        "1" = "Seagrass",
                                         "2" = "Macroalgae",
                                         "3" = "Rock",
                                         "4" = "Sand",
@@ -161,10 +161,10 @@ p1.5 <- ggplot() +
                breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
                colour = "grey54",
                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
-  coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
-           ylim = c(-28.147530872, -27.951387525)) +
+  coord_sf(xlim = c(114.2, 115.2),                              # Set plot limits
+           ylim = c(-34.2, -33.5)) +
   labs(x = "Longitude", y = "Latitude", fill = "Habitat",                                    # Labels  
-       colour = NULL, title = "Shallow Bank") + 
+       colour = NULL, title = "Capes Region") + 
      annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
            y = c(-28.078038504, -28.078038504, -28.078038504), 
            label = c("30m", "70m", "200m"),
@@ -183,7 +183,7 @@ widehabit <- spreddf %>%
   tidyr::pivot_longer(cols = starts_with("p"),                                  # Careful here that you don't have any other columns starting with 'p'
                       values_to = "value", names_to = "variable") %>%
   dplyr::mutate(variable = dplyr::recode(variable,                              # Tidy variable names
-                pkelps = "Kelp",
+                pseagrasses = "Seagrasses",
                 pmacroalg = "Macroalgae",
                 prock = "Rock",
                 psand = "Sand",
@@ -206,15 +206,16 @@ p22 <- ggplot() +
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
             inherit.aes = F, size = 2, colour = "grey36") +
-  coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
-           ylim = c(-28.147530871, -27.951387524)) +
-  labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "Shallow Bank") +      # Labels
+  coord_sf(xlim = c(114.4, 115.0),                              # Set plot limits
+           ylim = c(-34.2, -33.5)) +
+  labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "Capes Region") +      # Labels
   theme_minimal() +
-  facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
+  theme(axis.text.x = element_text(angle = 90, size = 9)) +
+  facet_wrap(~variable, ncol = 2)                                               # Facet for each variable
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                      "habitat_class_predicted.png", sep = "_"),
-    width = 5, heigh = 10, res = 300, units = "in")                             # Change the dimensions here as necessary
+    width = 8, height = 10, res = 300, units = "in")                             # Change the dimensions here as necessary
 p22
 dev.off()
 

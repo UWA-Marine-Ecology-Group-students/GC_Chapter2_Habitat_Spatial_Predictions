@@ -102,7 +102,7 @@ preddf <- cbind(preddf,
                 # "preef" = predict(m_reef, preddf, type = "response"),
                 "psand" = predict(m_sand, preddf, type = "response"),
                 "prock" = predict(m_rock, preddf, type = "response"),
-                "pinverts" = predict(m_inverts, preddf, type = "response"))
+                "pinverts" = predict(m_inverts, preddf, type = "response"))c
 
 # reduce prediction area to within sampled range
 preddf <- preddf[preddf$depth > min(habi$Z) & 
