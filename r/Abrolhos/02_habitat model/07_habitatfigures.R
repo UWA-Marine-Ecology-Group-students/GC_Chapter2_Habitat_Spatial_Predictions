@@ -141,6 +141,7 @@ dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
 st_write(dom.habs, "output/Abrolhos/Abrolhos-dominant-habitat.shp", 
          append = F)
 
+
 # Figure 1.5
 smooth_plot <- smooth_df %>%
   dplyr::mutate(smoothed = dplyr::recode(smoothed,                                # Tidy names for plot legend
