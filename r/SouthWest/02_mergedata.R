@@ -27,7 +27,8 @@ hab <- read.csv("data/tidy/2020-2021_south-west_BOSS-BRUV.Habitat.csv") %>%
          depth = depth * -1) %>%
   glimpse()
 
-
+hab_filtered <- hab %>% 
+  filter(!campaignid %in% c("2021-03_West-Coast_BOSS"))
 #boss <- read.csv("data/tidy/GC_2020-2021_south-west_BOSS.Habitat.csv") %>% # Need to type filename manually
  # dplyr::mutate(method = "BOSS") %>%                                            # Change here
   #dplyr::filter(location %in% "NPZ6") %>%                                       # Only Shallow Bank
