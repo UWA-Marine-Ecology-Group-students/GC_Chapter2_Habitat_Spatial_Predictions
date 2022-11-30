@@ -1,8 +1,8 @@
 Dot Point Measurements
 
-Generated: Thursday 12 May 2022 16:01:29
+Generated: Tuesday 29 November 2022 11:54:48
 
-Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	Latitude	Longitude	Rugosity	Depth	Collector	Fishing status	Spare	Spare	BROAD	MORPHOLOGY	TYPE	FieldOfView	Relief	CODE			Radius %
+Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	Latitude	Longitude	Rugosity	Depth	Collector	Fishing status	Spare	Spare	BROAD	MORPHOLOGY	TYPE	RELIEF	CODE				Radius %
 1.jpg	      0		2049	1878													Unconsolidated	Sand	mud (fine sand)	Open		82001015			38.3
 1.jpg	      0		2073	853													Unconsolidated	Sand	mud (fine sand)	Open		82001015			70.4
 1.jpg	      0		1964	300													Unconsolidated	Sand	mud (fine sand)	Open		82001015			93.1
@@ -267,7 +267,7 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 13.jpg	      0		2058	1538													Unconsolidated	Sand	mud (fine sand)	Open		82001015			41.6
 13.jpg	      0		1958	752													Octocoral/Black	Branching (3D)		Open		11168902			65.6
 13.jpg	      0		1641	35													Open Water			Open					95.3
-13.jpg	      0		1897	780																					62.8
+13.jpg	      0		1897	780													Octocoral/Black	Branching (3D)				11168902			62.8
 13.jpg	      0		1647	1025													Open Water			Open					45.8
 13.jpg	      0		1838	1803													Unconsolidated	Sand	mud (fine sand)	Open		82001015			27.1
 13.jpg	      0		1992	587													Sponges	Massive forms		Open		10000903			74.0
@@ -939,7 +939,7 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 24.jpg	      0		1817	963													Unconsolidated	Sand	mud (fine sand)	Open		82001015			52.8
 24.jpg	      0		1845	196													Unconsolidated	Sand	mud (fine sand)	Open		82001015			88.0
 24.jpg	      0		1692	1618													Open Water			Open					23.1
-24.jpg	      0		1814	3																					96.6
+24.jpg	      0		1814	3													Unknown								96.6
 24.jpg	      0		1726	589													Open Water			Open					68.3
 24.jpg	      0		1776	816													Unconsolidated	Sand	mud (fine sand)	Open		82001015			58.6
 24.jpg	      0		1748	1538													Open Water			Open					27.7
@@ -1028,7 +1028,7 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 25.jpg	      0		1941	2542													Unconsolidated	Sand	mud (fine sand)	Open		82001015			41.5
 25.jpg	      0		1970	3014													Unconsolidated	Sand	mud (fine sand)	Open		82001015			61.7
 25.jpg	      0		2121	3352													Unconsolidated	Sand	mud (fine sand)	Open		82001015			80.5
-25.jpg	      0		1812	1925																					23.2
+25.jpg	      0		1812	1925													Unknown								23.2
 25.jpg	      0		1708	3360													Open Water			Open					73.1
 25.jpg	      0		1994	3233													Unconsolidated	Sand	mud (fine sand)	Open		82001015			72.1
 25.jpg	      0		1940	3580													Unconsolidated	Sand	mud (fine sand)	Open		82001015			87.3
@@ -1181,7 +1181,7 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 27.jpg	      0		1874	316													Unconsolidated	Sand	mud (fine sand)	Open		82001015			74.4
 27.jpg	      0		1693	1152													Open Water			Open					34.7
 27.jpg	      0		1875	84													Unconsolidated	Sand	mud (fine sand)	Open		82001015			84.8
-27.jpg	      0		2154	160																					86.3
+27.jpg	      0		2154	160													Unconsolidated	Sand	mud (fine sand)	Open		82001015			86.3
 27.jpg	      0		1971	435													Unconsolidated	Sand	mud (fine sand)	Open		82001015			70.9
 27.jpg	      0		1661	840													Open Water			Open					47.7
 27.jpg	      0		1959	3060													Unconsolidated	Sand	mud (fine sand)	Open		82001015			66.0
@@ -1489,7 +1489,7 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 31.jpg	      0		2144	2786													Unconsolidated	Sand	mud (fine sand)	Open		82001015			56.9
 31.jpg	      0		1813	3168													Unknown			Open					64.4
 31.jpg	      0		2012	2051													Sponges	Massive forms		Open		10000903			32.9
-31.jpg	      0		1682	1929																					16.3
+31.jpg	      0		1682	1929													Unknown								16.3
 31.jpg	      0		1976	2492													Unconsolidated	Sand	mud (fine sand)	Open		82001015			41.0
 31.jpg	      0		1831	3696													Unknown			Open					89.2
 31.jpg	      0		1986	3263													Unconsolidated	Sand	mud (fine sand)	Open		82001015			72.0
@@ -1497,7 +1497,7 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 31.jpg	      0		1659	3017													Open Water			Open					55.0
 31.jpg	      0		1836	3148													Sponges	Massive forms		Open		10000903			63.9
 31.jpg	      0		1627	2227													Open Water			Open					19.7
-31.jpg	      0		2154	3387																					81.1
+31.jpg	      0		2154	3387													Unconsolidated	Sand	mud (fine sand)	Open		82001015			81.1
 31.jpg	      0		1817	2107													Unknown			Open					24.4
 31.jpg	      0		1668	2773													Open Water			Open					43.9
 31.jpg	      0		2141	2594													Unconsolidated	Sand	mud (fine sand)	Open		82001015			50.3
@@ -1774,7 +1774,7 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 36.jpg	      0		1631	2895													Open Water			Open					28.7
 36.jpg	      0		1803	3772													Unknown			Open					67.4
 36.jpg	      0		1670	3634													Open Water			Open					60.4
-36.jpg	      0		2146	2923																					41.5
+36.jpg	      0		2146	2923													Unconsolidated	Sand	mud (fine sand)	Open		82001015			41.5
 36.jpg	      0		1907	2497													Unconsolidated	Sand	mud (fine sand)	Open		82001015			22.1
 36.jpg	      0		1687	3388													Open Water			Open					50.0
 36.jpg	      0		1611	3053													Open Water			Open					35.1
@@ -1993,7 +1993,7 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 4.jpg	      0		1958	1457													Unconsolidated	Sand	mud (fine sand)	Open		82001015			38.9
 4.jpg	      0		2111	1369													Unconsolidated	Sand	mud (fine sand)	Open		82001015			47.4
 4.jpg	      0		1752	1634													Unconsolidated	Sand	mud (fine sand)	Open		82001015			25.6
-4.jpg	      0		1699	857																					56.6
+4.jpg	      0		1699	857													Unknown								56.6
 4.jpg	      0		1926	458													Unconsolidated	Sand	mud (fine sand)	Open		82001015			78.7
 4.jpg	      0		2046	1311													Unconsolidated	Sand	mud (fine sand)	Open		82001015			46.8
 4.jpg	      0		1680	609													Unconsolidated	Sand	mud (fine sand)	Open		82001015			68.0
@@ -2006,7 +2006,7 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 4.jpg	      0		1914	1590													Unconsolidated	Sand	mud (fine sand)	Open		82001015			33.4
 4.jpg	      0		2149	566													Unconsolidated	Sand	mud (fine sand)	Open		82001015			78.7
 4.jpg	      0		1909	1986													Sponges	Hollow forms		Open		10000909			27.8
-4.jpg	      0		1878	3784																					92.8
+4.jpg	      0		1878	3784													Unconsolidated	Sand	mud (fine sand)	Open		82001015			92.8
 4.jpg	      0		1658	1990													Open Water			Open					15.6
 4.jpg	      0		1723	2873													Open Water			Open					48.3
 4.jpg	      0		1877	3731													Unconsolidated	Sand	mud (fine sand)	Open		82001015			90.2
@@ -2363,7 +2363,7 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 45.jpg	      0		758	494													Unconsolidated	Sand	mud (fine sand)	Open		82001015			68.3
 45.jpg	      0		691	1679													Unknown			Open					31.0
 45.jpg	      0		853	907													Unconsolidated	Sand	mud (fine sand)	Open		82001015			48.6
-45.jpg	      0		868	6																					88.8
+45.jpg	      0		868	6													Unconsolidated	Sand	mud (fine sand)	Open		82001015			88.8
 45.jpg	      0		691	700													Unconsolidated	Sand	mud (fine sand)	Open		82001015			61.0
 45.jpg	      0		1044	1991													Unconsolidated	Sand	mud (fine sand)	Open		82001015			16.2
 45.jpg	      0		995	2270													Unconsolidated	Sand	mud (fine sand)	Open		82001015			27.3

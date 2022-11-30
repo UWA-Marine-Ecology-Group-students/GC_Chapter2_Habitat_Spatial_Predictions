@@ -1,8 +1,8 @@
 Dot Point Measurements
 
-Generated: Thursday 12 May 2022 16:01:30
+Generated: Tuesday 29 November 2022 11:54:49
 
-Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	Latitude	Longitude	Rugosity	Depth	Collector	Fishing status	Spare	Spare	BROAD	MORPHOLOGY	TYPE	FieldOfView	Relief	CODE			Radius %
+Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	Latitude	Longitude	Rugosity	Depth	Collector	Fishing status	Spare	Spare	BROAD	MORPHOLOGY	TYPE	RELIEF	CODE				Radius %
 1.jpg	      0		139	197																Open					100.0
 1.jpg	      0		408	197																Open					94.2
 1.jpg	      0		677	197																Open	".0. Flat substrate, sandy, rubble with few features. ~0 substrate slope."				90.1

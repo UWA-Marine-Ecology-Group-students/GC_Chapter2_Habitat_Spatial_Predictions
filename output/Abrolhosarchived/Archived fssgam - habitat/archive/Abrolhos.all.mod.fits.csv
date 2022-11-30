@@ -1,0 +1,8 @@
+"","modname","AICc","BIC","r2.vals","r2.vals.unique","edf","edf.less.1","delta.AICc","delta.BIC","wi.AICc","wi.BIC","depth","roughness","detrended","cumsum.wi"
+"kelps.depth+roughness","depth+roughness",102.705313490114,113.122528523783,0.05863,NA,5.06,0,0,0,0.602,0.877,1,1,0,0.602
+"kelps.depth+detrended+roughness","depth+detrended+roughness",103.532170850671,117.065480432605,0.06085,NA,6.77,0,0.827,3.943,0.398,0.122,1,1,1,1
+"rock","depth+detrended+roughness",1292.36738761593,1314.96119083116,0.08723,NA,12.88,0,0,0,1,1,1,1,1,1
+"macroalgae","depth+detrended+roughness",736.325956581884,756.277548065575,0.28754,NA,10.83,0,0,0,1,0.997,1,1,1,1
+"sand.depth+detrended+roughness","depth+detrended+roughness",1842.81162699006,1865.25658366178,0.34047,NA,12.76,0,0,4.769,0.57,0.084,1,1,1,0.57
+"sand.depth+detrended","depth+detrended",1843.37444647898,1860.4877481598,0.34145,NA,8.92,0,0.563,0,0.43,0.916,1,0,1,1
+"inverts","depth+detrended+roughness",1178.41134881179,1200.99193292318,0.1551,NA,12.87,0,0,0,1,1,1,1,1,1
