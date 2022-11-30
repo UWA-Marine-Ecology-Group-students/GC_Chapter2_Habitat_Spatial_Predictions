@@ -44,3 +44,6 @@ sumstat <- rbind(sumstat, c("Abrolhos", "total", "total",
  
 sumstat
 
+#save the sumstat as .csv
+write.table(sumstat, file = "sumstats.csv", sep = " ", quote = FALSE, row.names = T)
+

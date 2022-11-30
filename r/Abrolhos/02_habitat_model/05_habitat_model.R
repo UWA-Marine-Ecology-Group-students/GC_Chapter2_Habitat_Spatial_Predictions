@@ -30,9 +30,13 @@ wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Lat
 habi   <- readRDS("data/tidy/Abrolhos_habitat-bathy-derivatives.rds")           # Merged data from 'R/03_mergedata.R'
 preds  <- readRDS("data/spatial/rasters/Abrolhos_spatial_covariates.rds")       # Spatial covs from 'R/02_spatial_layers.R'
 preds <- rast(preds)
+preds[[1]] <- clamp(preds[[1]], upper=-25, lower=-190, values=FALSE)
+preds <- mask(preds,preds[[1]])
+plot(preds)
 preddf <- as.data.frame(preds, xy = TRUE, na.rm = TRUE)
 preddf$depth <- abs(preddf$Z)                                                   # Converts depth to absolute value - make sure you aren't predicting onto data with negative values!
 
+summary(habi$depth)
 # reduce predictor space to fit survey area
 # habisp <- SpatialPointsDataFrame(coords = cbind(habi$longitude, 
 #                                                 habi$latitude), data = habi,
