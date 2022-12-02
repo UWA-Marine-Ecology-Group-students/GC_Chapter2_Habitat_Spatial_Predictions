@@ -1,9 +1,9 @@
 ###
 # Project: ** GC_PhD_Chapter 2 Habitat Spatial Predictions**
-# Data:    BRUVS, BOSS Habitat data
+# Data:    BRUVS, BOSS Habitat data for Pt Cloates
 # Task:    Merging habitat data
 # Author:  Kingsley Griffin & Claude Spencer
-# Date:    ** 5/09/2022 **
+# Date:    ** December 2022 **
 ##
 
 # This script takes formatted habitat data from TransectMeasure and joins it with bathymetry derivatives for modelling
@@ -19,7 +19,7 @@ library(sp)
 library(ggplot2)
 
 # Set your study name
-name <- "Abrolhos" # Change here
+name <- "PtCloates" # Change here
 
 # Load in tidy data from the formatting scripts
 boss <- read.csv("data/tidy/2021-05_Abrolhos_BOSS_random-points_broad.habitat.csv") %>% # Need to type filename manually
