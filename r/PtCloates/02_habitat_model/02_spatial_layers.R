@@ -1,9 +1,9 @@
 ###
-# Project: ** GC_Ch2_Habitat_Abrolhos**
+# Project: ** GC_Ch2_Habitat_PtCloates**
 # Data:    Bathymetry Data
 # Task:    Prepare spatial layers for modelling
-# Author:  Kingsley Griffin & Claude Spencer
-# Date:    **13/09/2022 **
+# Author:  Kingsley Griffin & Claude Spencer & Gabrielle Cummins
+# Date:    **30/11/2022 **
 ## 
 
 # This script formats bathymetry data and extracts bathymetry derivatives for modelling habitat and fish
@@ -22,7 +22,7 @@ library(stars)
 library(starsExtra)
 
 # Set your study name
-name <- "Abrolhos"                                                              # Change here
+name <- "PtCloates"                                                              # Change here
 
 # Set CRS for bathymetry data
 wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Latlong projection 
@@ -42,8 +42,17 @@ plot(bath_r)                                                                    
 # Crop the bathymetry to the general study area
 # tbath <- projectRaster(bath_r, crs = sppcrs)
 # tbath_c <- crop(tbath, extent(c(105000, 165000, 6880000, 7000000)))
-tbath_c <- crop(bath_r, ext(c(112.978992634, 113.622204887,-28.146712369, -27.081850499)))
+# lats <- read.csv("data/tidy/2021-05_PtCloates_synthesis_random-points_broad.habitat.csv") %>%
+#   glimpse() 
+# 
+# min(lats$latitude)
+# max(lats$latitude)
+# min(lats$longitude)
+# max(lats$longitude)
+
+tbath_c <- crop(bath_r, ext(c(113.2, 114.3,-23, -21.5)))
 plot(tbath_c)
+points(lats[,c("longitude","latitude")], pch = 20, cex = 1, col = "red")
 fbath_df <- as.data.frame(tbath_c, xy = TRUE)                                   # Convert this to a dataframe
 saveRDS(fbath_df, paste(paste0('data/spatial/rasters/',                         # Save it for use in the next scripts
                                name), 'ga_bathy.rds', sep = "_")) 

@@ -1,0 +1,70 @@
+Sample,Latitude,Longitude,Date,Time,Site,Location,Status,Depth,Observer,Successful.count,Successful.length,Video.notes,Raw.hdd.number,Con.hdd.number,Forwards.habitat.image.saved,Forwards.habitat.image.annotated,Downwards.habitat.image.saved,Downwards.habitat.image.annotated,Maxn.analyst,Maxn.complete.yyyymmdd,Maxn.checker,Length.analyst,Length.complete.date.yyyymmdd,Notes
+248,-22.7609,113.5473,20220519,8:27:25,,,No-take,76.6,Claude,Yes,,,RAW1,,,,,,Claude,20220815,,,,1 to check
+224,-22.7598,113.5487,20220519,8:44:41,,,No-take,76.1,Claude,Yes,,,RAW1,,,,,,Claude,20220815,,,,
+232,-22.7576,113.5368,20220519,8:59:18,,,No-take,90.9,Claude,Yes,,,RAW1,,,,,,Claude,20220815,,,,
+211,-22.7554,113.54,20220519,9:11:46,,,No-take,87.2,Claude,Yes,,Didn't put the chain on the bottom. eDNA,RAW1,,,,,,Claude,20220815,,,,some to check
+226,-22.7536,113.5408,20220519,9:30:58,,,No-take,86.6,Claude,Yes,,Whiteboard showed 203 (was actually 226) - correct on IPAD. Checked red lights GTG.,RAW1,,,,,,Claude,20220816,,,,2 unknowns. gymno and pristipomoides after period
+203,-22.7548,113.55,20220519,9:44:17,,,No-take,75.7,Claude,Yes,,eDNA,RAW1,,,,,,Claude,20220816,,,,drift macroalgae
+207,-22.7523,113.5552,20220519,10:00:48,,,No-take,71.4,Claude,Yes,,,RAW1,,,,,,Claude,20220816,,,,
+221,-22.7519,113.5483,20220519,10:12:53,,,No-take,78.4,Claude,Yes,,eDNA,RAW1,,,,,,Claude,20220816,,,,
+264,-22.7655,113.5389,20220519,10:34:40,,,No-take,81.6,Claude,Yes,,,RAW1,,,,,,Claude,20220816,,,,1 cod to check. coro and bulk trevally after period. 3 trout on the way up
+262,-22.7635,113.5347,20220519,10:45:55,,,No-take,91,Claude,Yes,,eDNA,RAW1,,,,,,Claude,20220816,,,,bulk fish in the distance on ledge. big red sniff cam after period
+265,-22.7561,113.529,20220519,10:58:59,,,No-take,99.2,Claude,Yes,,Synced white lights after drop.,RAW1,,,,,,Claude,20220816,,,,
+266,-22.7531,113.5301,20220519,11:11:08,,,No-take,98.5,Claude,Yes,,eDNA,RAW1,,,,,,Claude,20220816,,,,
+253,-22.7509,113.538,20220519,11:26:11,,,No-take,91.2,Claude,Yes,,,RAW1,,,,,,Claude,20220816,,,,
+270,-22.7511,113.5387,20220519,11:37:38,,,No-take,91,Claude,Yes,,Showed opcode after drop. Checked red lights GTG. eDNA.,RAW1,,,,,,Claude,20220816,,,,"apagonidae, blenniidae to check. get name of lizardfish from bruv"
+201,-22.7488,113.5378,20220519,11:50:14,,,No-take,94.9,Claude,Yes,,,RAW1,,,,,,Claude,20220816,,,,some unknowns/checks
+237,-22.7502,113.5462,20220519,12:02:40,,,No-take,81.8,Claude,Yes,,eDNA,RAW1,,,,,,Claude,20220816,,,,
+240,-22.749,113.5509,20220519,12:18:16,,,No-take,75,Claude,Yes,,,RAW1,,,,,,Claude,20220816,,,,school of something at the end OOR
+255,-22.7444,113.5428,20220521,13:59:38,,,No-take,87.3,Claude,Yes,,Checked red lights. GTG.,RAW1,,,,,,Claude,20220822,,,,pristipomoides aftre period
+216,-22.7451,113.5437,20220521,14:12:02,,,No-take,86.5,Claude,Yes,,eDNA,RAW1,,,,,,Claude,20220822,,,,
+269,-22.7429,113.5458,20220521,14:27:47,,,No-take,83.1,Claude,Yes,,B59 - preferential site,RAW1,,,,,,Claude,20220822,,,,school of fulvos some look a bit weird - one down as speciosus
+231,-22.7464,113.5529,20220521,14:43:17,,,No-take,73.9,Claude,Yes,,eDNA,RAW1,,,,,,Claude,20220822,,,,no fish
+245,-22.7436,113.5519,20220521,14:57:59,,,No-take,75.8,Claude,Yes,,,RAW1,,,,,,Claude,20220822,,,,no fish
+209,-22.7402,113.5521,20220521,15:13:08,,,No-take,76.7,Claude,Yes,,Red lights checked and white lights synced after drop. GTG. eDNA.,RAW1,,,,,,Claude,20220823,,,,no fish
+230,-22.7341,113.5543,20220523,8:31:26,,,No-take,76.9,Claude,Yes,,Cams 17 & 15 restarted. Resynced lights? eDNA - you turned off 2 cameras putting them in so used the flasher as initial sync point - C,RAW1,,,,,,Claude,20220823,,,,tips over. no fish
+274,-22.7343,113.5502,20220523,8:50:34,,,No-take,79.2,Claude,Yes,,,RAW1,,,,,,Claude,20220823,,,,
+205,-22.7321,113.5508,20220523,9:04:00,,,No-take,80.6,Claude,Yes,,After drop cam#14 off. BOSS flew into winch. Returned on camera 14 and white flashy lights resynced.,RAW1,,,,,,Claude,20220823,,,,"boss tips over, successful count = no? no fish"
+214,-22.733,113.5497,20220523,9:52:30,,,No-take,81.5,Claude,Yes,,eDNA,RAW1,,,,,,Claude,20220823,,,,tips over last 30 seconds
+256,-22.7326,113.5465,20220523,10:09:25,,,No-take,86.1,Claude,Yes,,,RAW1,,,,,,Claude,20220823,,,,check juv lineopunctatus
+233,-22.7305,113.5526,20220523,10:25:29,,,No-take,76.2,Claude,Yes,,,RAW1,,,,,,Claude,20220823,,,,1 unknown
+251,-22.7277,113.554,20220523,10:37:45,,,No-take,76.4,Claude,Yes,,After drop #12 was off. Restarted and resynced white flashers.,RAW1,,,,,,Claude,20220823,,,,
+212,-22.728,113.556,20220523,11:00:30,,,No-take,75,Claude,Yes,,eDNA. cams checked - GTG.,RAW1,,,,,,Claude,20220823,,,,
+227,-22.7262,113.5569,20220523,11:15:33,,,No-take,74.3,,No,,,RAW1,,,,,,,,,,,tips over and drags early on
+235,-22.7275,113.5434,20220525,11:43:41,,,No-take,93,Kaitlin,Yes,,All red lights on. ,RAW1,,,,,,Kaitlin,20220920,,,,no fish :(
+218,-22.726,113.5411,20220525,11:55:43,,,No-take,97.7,Kaitlin,Yes,,Showed whiteboard after drop.,RAW1,,,,,,Kaitlin,20220920,,,,
+249,-22.7248,113.5444,20220525,12:07:55,,,No-take,92.3,Kaitlin,Yes,,eDNA,RAW1,,,,,,Kaitln,20220920,,,,
+208,-22.7252,113.5464,20220525,12:23:31,,,No-take,89.2,Kaitlin,Yes,,,RAW1,,,,,,Kaitlin,20221027,,,,8 fish!!!
+228,-22.7233,113.5472,20220525,13:01:14,,,No-take,88,Kaitlin,Yes,,White flashy sync lights.,RAW1,,,,,,Kaitlin,20221028,,,,
+243,-22.7206,113.5573,20220525,13:14:20,,,No-take,74.4,Kaitlin,Yes,,eDNA,RAW1,,,,,,Kaitlin,20221028,,,,
+217,-22.7179,113.5593,20220525,13:28:40,,,No-take,73.2,Kaitlin,Yes,,,RAW1,,,,,,Kaitlin,20221028,,,,
+223,-22.7188,113.5517,20220525,13:41:07,,,No-take,80.5,Kaitlin,Yes,,,RAW1,,,,,,Kaitlin,20221028,,,,
+260,-22.7177,113.5525,20220525,13:53:04,,,No-take,83.6,Kaitlin,Yes,,B50 - preferential site. Checked red lights after drop. GTG. eDNA,RAW1,,,,,,Kaitlin,20221028,,,,Sharkies
+236,-22.717,113.5499,20220525,14:07:15,,,No-take,86.2,Kaitin,Yes,,,RAW1,,,,,,Kaitlin,20221028,,,,no fish :(
+215,-22.712,113.5562,20220525,14:19:59,,,No-take,79.6,Kaitlin,Yes,,,RAW1,,,,,,Kaitlin,20221028,,,,no fish (where have they gone?)
+225,-22.7084,113.5624,20220525,14:33:25,,,No-take,72.1,Kaitlin,Yes,,eDNA,RAW1,,,,,,Kaitlin,20221028,,,,
+252,-22.7054,113.5576,20220525,14:49:34,,,No-take,79.3,Kaitlin,Yes,,,RAW1,,,,,,Kaitlin,20221028,,,,still no fish (I blame the sharks from 4 vids ago)
+220,-22.7067,113.5554,20220525,15:00:42,,,No-take,80.8,Kaitlin,Yes,,,RAW1,,,,,,Kaitlin,20221028,,,,
+268,-22.7054,113.5501,20220525,15:12:08,,,No-take,90.6,Kaitlin,Yes,,eDNA,RAW1,,,,,,Kaitlin,20221028,,,,
+247,-22.7047,113.5467,20220525,15:26:15,,,No-take,96.4,Kaitlin,Yes,,,RAW1,,,,,,Kaitlin,20221028,,,,
+254,-22.6993,113.5499,20220525,15:40:10,,,No-take,96,Kaitlin,Yes,,White flashy light synced. Red lights checked. GTG,RAW1,,,,,,Kaitlin,20221028,,,,
+242,-22.7009,113.5519,20220525,15:53:38,,,No-take,88.5,Kaitlin,Yes,,eDNA,RAW1,,,,,,Kaitlin,20221028,,,,
+206,-22.7019,113.5608,20220525,16:07:23,,,No-take,76.6,Kaitlin,Yes,,,RAW1,,,,,,Kaitlin,20221028,,,,no fish
+257,-22.7001,113.5592,20220525,16:18:12,,,No-take,79.4,,,,B47 - preferential site,RAW1,,,,,,,,,,,
+229,-22.6961,113.5632,20220526,13:54:13,,,No-take,76.2,,,,Checked red lights - GTG.,RAW2,,,,,,,,,,,
+250,-22.6972,113.5605,20220526,14:06:02,,,No-take,78.1,,,,,RAW2,,,,,,,,,,,
+258,-22.6958,113.5593,20220526,14:20:39,,,No-take,79.6,,,,Synced white flashy lights before drop. eDNA,RAW2,,,,,,,,,,,
+234,-22.6938,113.5563,20220526,14:39:27,,,No-take,85.6,,,,,RAW2,,,,,,,,,,,
+213,-22.6919,113.5534,20220526,14:52:29,,,No-take,93.5,,,,Forgot to show whiteboard before - shown after.,RAW2,,,,,,,,,,,
+204,-22.6911,113.5576,20220526,15:07:11,,,No-take,85.8,,,,,RAW2,,,,,,,,,,,
+261,-22.6899,113.5608,20220526,15:21:00,,,No-take,78.8,,,,B51 - preferential site. eDNA,RAW2,,,,,,,,,,,
+222,-22.6884,113.561,20220526,15:37:06,,,No-take,78.2,,,,,RAW2,,,,,,,,,,,
+246,-22.6891,113.5588,20220526,15:52:13,,,No-take,84.3,,,,,RAW2,,,,,,,,,,,
+239,-22.6885,113.5564,20220526,16:04:43,,,No-take,90.5,,,,eDNA,RAW2,,,,,,,,,,,
+238,-22.6864,113.5594,20220527,8:35:45,,,No-take,85.9,,,,,RAW2,,,,,,,,,,,
+210,-22.686,113.5589,20220527,8:51:10,,,No-take,87.7,,,,Missed board completely.,RAW2,,,,,,,,,,,
+202,-22.6851,113.5571,20220527,9:03:52,,,No-take,91.4,,,,Showed whiteboard after drop.,RAW2,,,,,,,,,,,
+263,-22.684,113.5635,20220527,9:17:26,,,No-take,77.7,,,,B53 - preferential site. Showed whiteboard before drop.,RAW2,,,,,,,,,,,
+271,-22.6776,113.5654,20220527,9:32:15,,,No-take,79.5,,,,B61 - preferential site. eDNA,RAW2,,,,,,,,,,,
+273,-22.6741,113.5665,20220527,9:48:58,,,No-take,77.2,,,,B63 - preferential site. Red cams checked after drop - GTG.,RAW2,,,,,,,,,,,
+267,-22.6751,113.5615,20220527,10:02:00,,,No-take,88.4,,,,B57 - preferential site. eDNA,RAW2,,,,,,,,,,,

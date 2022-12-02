@@ -21,7 +21,7 @@ library(viridis)
 library(terra)
 
 # Set your study name
-name <- "Abrolhos"                                                              # Change here
+name <- "PtCloates"                                                              # Change here
 
 # Set up WGSCRS and load spatial covariates from 02_spatial_layers.R 
 wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Latlong projection 
