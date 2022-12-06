@@ -9,7 +9,7 @@ rm(list=ls())
 # Libraries required ----
 # To connect to GlobalArchive
 library(devtools)
-# install_github("UWAMEGFisheries/GlobalArchive")
+install_github("UWAMEGFisheries/GlobalArchive")
 library(GlobalArchive)
 
 # To tidy data
@@ -84,7 +84,7 @@ no.annotations <- relief%>%
   dplyr::summarise(relief.annotated=n()) # all have 80
 
 #Gabby added below to match abrolhos script
-substrate <- read.delim("2021-05_PtCloates_BOSS_Dot Point Measurements.txt", header=T,skip=4, stringsAsFactors = F) %>% #read in file
+substrate <- read.delim("2021-05_PtCloates_BOSS_Relief_Dot Point Measurements.txt",header=T,skip=4,stringAsFactors=FALSE) %>% #read in file
   ga.clean.names() %>% #tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
