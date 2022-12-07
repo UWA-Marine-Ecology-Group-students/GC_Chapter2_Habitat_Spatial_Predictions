@@ -15,6 +15,7 @@ rm(list = ls())
 
 # Load libraries - some more to add here
 library(sp)
+library(raster)
 library(terra)
 library(sf)
 library(stars)
@@ -61,9 +62,9 @@ detre <- as(object = detre, Class = "SpatRaster")                               
 names(detre) <- c("detrended", "lineartrend")
 preds <- rast(list(preds, detre))                                                    # Make a rasterstack
 plot(preds)
-preds <- wrap(preds)
 
-# Save the output
+#Save the output
+preds <- wrap(preds)
 saveRDS(preds, paste(paste0('data/spatial/rasters/', name), 'spatial_covariates.rds', sep = "_"))
 
 # rstudioapi::navigateToFile("add script name here.R")

@@ -39,19 +39,24 @@ hab  <- bind_rows(boss, bruv)                                                   
 wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Latlong projection 
 preds  <- readRDS(paste(paste0('data/spatial/rasters/', name), 
                        'spatial_covariates.rds', sep = "_"))
-preds <- rast(preds)
+#preds <- rast(preds)
+
 
 # Align crs and check samples over bathy and extract terrain data
-allhab_sp <- vect(hab, geom = c("longitude", "latitude"), crs = wgscrs, keep = T)           # Convert to a spat vector
+allhab_sp <- vect(hab, geom = c("longitude", "latitude"), crs = wgscrs)           # Convert to a spat vector
 
-# allhab_t <- spTransform(allhab_sp, CRS = sppcrs)
+#allhab_t <- spTransform(allhab_sp, CRS = sppcrs)
 plot(preds[[1]])                                                                # Plot the first bathymetry derivative
 plot(allhab_sp, add = T)                                                        # Add the sampling points to check if they align
 habt_df   <- as.data.frame(allhab_sp)                                           # Convert the habitat data back to a regular dataframe
+
+
 habi_df   <- cbind(habt_df, terra::extract(preds, allhab_sp))                  # Extract the bathymetry derivatives and join on as a dataframe
 
 # Rename columns and combine habitat columns for modelling
 # Change this for your project needs!!
+latlong <- hab %>% 
+  dplyr::select(sample, latitude, longitude, method)
 allhab <- habi_df %>%
   dplyr::rename(kelps = broad.kelps,                                            # Rename columns to simplify setting models
                 macroalgae = broad.macroalgae,
@@ -60,6 +65,8 @@ allhab <- habi_df %>%
   dplyr::mutate(inverts = broad.sponges + broad.octocoral.black +               # Make a sessile invertebrate column
                   broad.invertebrate.complex +  broad.hydroids + 
                   broad.bryozoa + broad.ascidians) %>%
+  dplyr::left_join(latlong) %>%
+  
   glimpse()                                                                     # Preview data
 
 # Save the output

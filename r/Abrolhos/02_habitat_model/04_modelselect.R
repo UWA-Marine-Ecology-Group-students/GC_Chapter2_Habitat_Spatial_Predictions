@@ -26,21 +26,21 @@ library(RCurl)                                                                  
 library(corrr)
 
 # Install and load fssgam package----
-# devtools::install_github("beckyfisher/FSSgam_package")                        # Run once
+#devtools::install_github("beckyfisher/FSSgam_package")                        # Run once
 library(FSSgam)
 
 # Set your study name
 name <- "Abrolhos"                                                              # Change here
 
 # Bring in and format the data----
-dat <- readRDS(paste(paste0('data/tidy/', name),                                # Merged data from 'R/01_mergedata.R'
-                     'habitat-bathy-derivatives.rds', sep = "_")) %>% 
+dat <- readRDS(paste(paste0('data/tidy/', name),                                # Merged data from 'R/03_mergedata.R'
+                     'habitat-bathy-derivatives.rds', sep = "_")) %>%  
   dplyr::select(sample, longitude, latitude, depth,                             # Select columns to keep
-               TRI, TPI, roughness, slope, aspect, detrended,                  # Bathymetry derivatives
-                broad.total.points.annotated, kelps, rock, macroalgae, sand, inverts) %>% # Points annotated and habitat scores
-  pivot_longer(cols = c("kelps", "rock", "macroalgae", "sand", "inverts"),      # Set your response columns here 
-               names_to = "response", values_to = "number") %>%                 # Pivot habitat columns to long format for modelling
-  glimpse()
+                TRI, TPI, roughness, slope, aspect, detrended,                  # Bathymetry derivatives
+                 broad.total.points.annotated, kelps, rock, macroalgae, sand, inverts) %>% # Points annotated and habitat scores
+   pivot_longer(cols = c("kelps", "rock", "macroalgae", "sand", "inverts"),      # Set your response columns here 
+                names_to = "response", values_to = "number") %>%                 # Pivot habitat columns to long format for modelling
+   glimpse()
 
 # Set predictor variables---
 pred.vars <- c("depth","TRI", "TPI", "roughness", "slope", "aspect", "detrended") 
