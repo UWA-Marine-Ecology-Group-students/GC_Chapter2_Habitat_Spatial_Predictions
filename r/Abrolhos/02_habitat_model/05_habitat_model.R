@@ -89,6 +89,7 @@ preddf <- cbind(preddf,
                 "prock" = predict(m_rock, preddf, type = "response"),
                 "pinverts" = predict(m_inverts, preddf, type = "response"))
 
+#glimpse(preddf) once rastor sorted. To get SE.
 prasts <- rast(preddf) 
 plot(prasts)
 
