@@ -177,7 +177,8 @@ dev.off()
 
 # Figure 2. Individual habitat class predictions ----
 # Melt classes for faceting
-widehabit <- spreddf %>%
+widehabitfit <- spreddf %>%
+  dplyr::select(pkelps, pmacroalgae) %>%
   tidyr::pivot_longer(cols = starts_with("p"),                                  # Careful here that you don't have any other columns starting with 'p'
                       values_to = "value", names_to = "variable") %>%
   dplyr::mutate(variable = dplyr::recode(variable,                              # Tidy variable names
@@ -186,6 +187,19 @@ widehabit <- spreddf %>%
                 prock = "Rock",
                 psand = "Sand",
                 pinverts = "Sessile invertebrates")) %>%
+  glimpse()
+
+###GC to make below SE dataframe
+widehabitse <- spreddf %>%
+  dplyr::select() %>%
+  tidyr::pivot_longer(cols = starts_with("p"),                                  # Careful here that you don't have any other columns starting with 'p'
+                      values_to = "value", names_to = "variable") %>%
+  dplyr::mutate(variable = dplyr::recode(variable,                              # Tidy variable names
+                                         pkelps = "Kelp",
+                                         pmacroalg = "Macroalgae",
+                                         prock = "Rock",
+                                         psand = "Sand",
+                                         pinverts = "Sessile invertebrates")) %>%
   glimpse()
 
 # Make a dataframe for your contour line annotations - doesn't work otherwise for facetted plots

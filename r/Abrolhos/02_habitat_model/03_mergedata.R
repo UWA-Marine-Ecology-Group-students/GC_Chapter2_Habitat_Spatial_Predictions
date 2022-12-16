@@ -48,7 +48,7 @@ allhab_sp <- vect(hab, geom = c("longitude", "latitude"), crs = wgscrs)         
 #allhab_t <- spTransform(allhab_sp, CRS = sppcrs)
 plot(preds[[1]])                                                                # Plot the first bathymetry derivative
 plot(allhab_sp, add = T)                                                        # Add the sampling points to check if they align
-habt_df   <- as.data.frame(allhab_sp)                                           # Convert the habitat data back to a regular dataframe
+habt_df   <- as.data.frame(allhab_sp, geom = "XY")                                           # Convert the habitat data back to a regular dataframe
 
 
 habi_df   <- cbind(habt_df, terra::extract(preds, allhab_sp))                  # Extract the bathymetry derivatives and join on as a dataframe

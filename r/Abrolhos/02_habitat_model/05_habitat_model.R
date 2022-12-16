@@ -29,7 +29,7 @@ wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Lat
 # read in
 habi   <- readRDS("data/tidy/Abrolhos_habitat-bathy-derivatives.rds")           # Merged data from 'R/03_mergedata.R'
 preds  <- readRDS("data/spatial/rasters/Abrolhos_spatial_covariates.rds")       # Spatial covs from 'R/02_spatial_layers.R'
-preds <- rast(preds)
+#preds <- rast(preds)
 preds[[1]] <- clamp(preds[[1]], upper=-25, lower=-190, values=FALSE)
 preds <- mask(preds,preds[[1]])
 plot(preds)
@@ -81,14 +81,20 @@ m_rock <- gam(cbind(rock, broad.total.points.annotated - rock) ~
               data = habi, method = "REML", family = binomial("logit"))
 summary(m_rock)
 
-# predict, rasterise and plot
-preddf <- cbind(preddf, 
-                "pkelps" = predict(m_kelps, preddf, type = "response"),
-                "pmacroalg" = predict(m_macro, preddf, type = "response"),
-                "psand" = predict(m_sand, preddf, type = "response"),
-                "prock" = predict(m_rock, preddf, type = "response"),
-                "pinverts" = predict(m_inverts, preddf, type = "response"))
+# # predict, rasterise and plot
+# preddf <- cbind(preddf, 
+#                 "pkelps" = predict(m_kelps, preddf, type = "response"),
+#                 "pmacroalg" = predict(m_macro, preddf, type = "response"),
+#                 "psand" = predict(m_sand, preddf, type = "response"),
+#                 "prock" = predict(m_rock, preddf, type = "response"),
+#                 "pinverts" = predict(m_inverts, preddf, type = "response"))
 
+preddf <- cbind(preddf, 
+                "pkelps" = predict(m_kelps, preddf, type = "response", se.fit = T),
+                "pmacroalg" = predict(m_macro, preddf, type = "response", se.fit = T),
+                "psand" = predict(m_sand, preddf, type = "response", se.fit = T),
+                "prock" = predict(m_rock, preddf, type = "response", se.fit = T),
+                "pinverts" = predict(m_inverts, preddf, type = "response", se.fit = T))
 #glimpse(preddf) once rastor sorted. To get SE.
 prasts <- rast(preddf) 
 plot(prasts)
