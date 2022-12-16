@@ -74,22 +74,22 @@ spreddf <- readRDS(paste(paste0('output/Abrolhos/', name),
                          'spatial_habitat_predictions.rds', sep = "_")) %>%
   dplyr::mutate(dom_tag = as.factor(dom_tag)) %>%                               # Factorise
   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
-                                 kelps = "Kelp",
-                                 macroalg = "Macroalgae",
-                                 rock = "Rock",
-                                 sand = "Sand",
-                                 inverts = "Sessile invertebrates")) %>%
+                                 kelps.fit = "Kelp",
+                                 macroalg.fit = "Macroalgae",
+                                 rock.fit = "Rock",
+                                 sand.fit = "Sand",
+                                 inverts.fit = "Sessile invertebrates")) %>%
   glimpse()
 
 # Figure 1: Categorical habitat maps ----
-# Assign habitat class colours
+# Assign habitat class colours ##WHAT HAPPENED TO KELP?!
 hab_cols <- scale_fill_manual(values = c("Macroalgae" = "#d7f5dd",
                                          "Rock" = "#fad3d2",
                                          "Sand" = "#fffebf",
                                          "Sessile invertebrates" = "#ecd7f5"
 ))
 
-#Build plot elements for site 1
+#Build plot elements for Dominant Habitat Figure 1
 p1 <- ggplot() +
   geom_tile(data = spreddf, aes(x, y, fill = dom_tag)) +
   hab_cols +                                                                    # Class colours
@@ -101,7 +101,7 @@ p1 <- ggplot() +
   coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
            ylim = c(-28.147530872, -27.951387525)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
-       colour = NULL, title = "Shallow Bank") +
+       colour = NULL, title = "Abrolhos - Shallow Bank") +
   annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
            y = c(-28.078038504, -28.078038504, -28.078038504), 
            label = c("30m", "70m", "200m"),
@@ -142,7 +142,7 @@ st_write(dom.habs, "output/Abrolhos/Abrolhos-dominant-habitat.shp",
          append = F)
 
 
-# Figure 1.5
+# Figure Dominant Habitat Smoothed
 smooth_plot <- smooth_df %>%
   dplyr::mutate(smoothed = dplyr::recode(smoothed,                                # Tidy names for plot legend
                                         "1" = "Kelp",
@@ -178,28 +178,28 @@ dev.off()
 # Figure 2. Individual habitat class predictions ----
 # Melt classes for faceting
 widehabitfit <- spreddf %>%
-  dplyr::select(pkelps, pmacroalgae) %>%
+  dplyr::select(pkelps.fit, pmacroalg.fit, prock.fit, psand.fit, pinverts.fit) %>%
   tidyr::pivot_longer(cols = starts_with("p"),                                  # Careful here that you don't have any other columns starting with 'p'
                       values_to = "value", names_to = "variable") %>%
   dplyr::mutate(variable = dplyr::recode(variable,                              # Tidy variable names
-                pkelps = "Kelp",
-                pmacroalg = "Macroalgae",
-                prock = "Rock",
-                psand = "Sand",
-                pinverts = "Sessile invertebrates")) %>%
+                pkelps.fit = "Kelp",
+                pmacroalg.fit = "Macroalgae",
+                prock.fit = "Rock",
+                psand.fit = "Sand",
+                pinverts.fit = "Sessile invertebrates")) %>%
   glimpse()
 
 ###GC to make below SE dataframe
 widehabitse <- spreddf %>%
-  dplyr::select() %>%
+  dplyr::select(pkelps.se.fit, pmacroalg.se.fit, psand.se.fit, prock.se.sit) %>%
   tidyr::pivot_longer(cols = starts_with("p"),                                  # Careful here that you don't have any other columns starting with 'p'
                       values_to = "value", names_to = "variable") %>%
   dplyr::mutate(variable = dplyr::recode(variable,                              # Tidy variable names
-                                         pkelps = "Kelp",
-                                         pmacroalg = "Macroalgae",
-                                         prock = "Rock",
-                                         psand = "Sand",
-                                         pinverts = "Sessile invertebrates")) %>%
+                                         pkelps.se.fit = "Kelp SE",
+                                         pmacroalg.se.fit = "Macroalgae SE",
+                                         prock.se.fit = "Rock SE",
+                                         psand.se.fit = "Sand SE",
+                                         pinverts.se.fit = "Sessile invertebrates SE")) %>%
   glimpse()
 
 # Make a dataframe for your contour line annotations - doesn't work otherwise for facetted plots
