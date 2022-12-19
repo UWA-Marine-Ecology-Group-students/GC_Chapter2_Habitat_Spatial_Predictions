@@ -93,7 +93,8 @@ hab_cols <- scale_fill_manual(values = c("Macroalgae" = "#d7f5dd",
 p1 <- ggplot() +
   geom_tile(data = spreddf, aes(x, y, fill = dom_tag)) +
   hab_cols +                                                                    # Class colours
-  geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
+  geom_sf(data = npz, fill = NA, colour = "#7bbc63") +  
+  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +      # Add national park zones
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
                breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
                colour = "grey54",
