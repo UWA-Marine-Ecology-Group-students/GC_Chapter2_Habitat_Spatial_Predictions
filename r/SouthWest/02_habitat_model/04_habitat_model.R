@@ -97,12 +97,12 @@ geom_point(data = habi, aes(x = depth, y = sand))
 
 # predict, rasterise and plot
 preddf <- cbind(preddf, 
-                "pseagrasses" = predict(m_seagrasses, preddf, type = "response"),
-                "pmacroalg" = predict(m_macro, preddf, type = "response"),
+                "pseagrasses" = predict(m_seagrasses, preddf, type = "response", se.fit = T),
+                "pmacroalg" = predict(m_macro, preddf, type = "response", se.fit = T),
                 # "preef" = predict(m_reef, preddf, type = "response"),
-                "psand" = predict(m_sand, preddf, type = "response"),
-                "prock" = predict(m_rock, preddf, type = "response"),
-                "pinverts" = predict(m_inverts, preddf, type = "response"))
+                "psand" = predict(m_sand, preddf, type = "response", se.fit = T),
+                "prock" = predict(m_rock, preddf, type = "response", se.fit = T),
+                "pinverts" = predict(m_inverts, preddf, type = "response", se.fit = T))
 
 # reduce prediction area to within sampled range
 preddf <- preddf[preddf$depth > min(habi$Z) & 
@@ -119,11 +119,17 @@ plot(prasts)
 rastdf         <- as.data.frame(prasts, xy = TRUE, na.rm = T) #%>%
   #dplyr::filter(Z <- -30)
 
-# Add a colum that categorises the dominant habitat class
-rastdf$dom_tag <- apply(rastdf[11:15], 1, # Set columns manually here
-                        FUN = function(x){names(which.max(x))})
-rastdf$dom_tag <- sub('.', '', rastdf$dom_tag)                          # Removes the p but not really sure why haha
-head(rastdf)                                                             # Check to see if it all looks ok
+#GC ATTEMPT
+rastdf$dom_tag <- apply(rastdf%>% dplyr::select(pseagrasses.fit, pmacroalg.fit, psand.fit, prock.fit, pinverts.fit), 1,
+                        FUN = function(x){names(which.max(x))}) 
+rastdf$dom_tag <- sub('.', '', rastdf$dom_tag)
+head(rastdf)  
+
+# # Add a colum that categorises the dominant habitat class
+# rastdf$dom_tag <- apply(rastdf[12:15], 1, # Set columns manually here
+#                         FUN = function(x){names(which.max(x))})
+# rastdf$dom_tag <- sub('.', '', rastdf$dom_tag)                          # Removes the p but not really sure why haha
+# head(rastdf)                                                             # Check to see if it all looks ok
 
 # Save the output
 saveRDS(rastdf, paste(paste0('output/SWC/', name), 'spatial_habitat_predictions.rds', sep = "_"))

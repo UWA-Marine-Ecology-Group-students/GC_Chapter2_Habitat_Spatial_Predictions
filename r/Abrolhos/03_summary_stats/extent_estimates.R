@@ -28,16 +28,35 @@ for(habi in unique(sumstat$habtype)){
 }
 
 #Ben's summary
-group_by(rastdf, dom_tag) %>% count() %>% mutate(area = n * 250 *250)
-rastdf.2 <- mutate(.data = rastdf, pkelp.area = pkelps.fit * 250 * 250)  
+# group_by(rastdf, dom_tag) %>% count() %>% mutate(area = n *250 *250)
+# rastdf.2 <- mutate(.data = rastdf, pkelps.area = pkelps.fit * 250 * 250)  
+# 
+# mutate(.data = rastdf, 
+#        pkelps.area = pkelps.fit * 250 * 250, 
+#        psand.area = psand.fit * 250 * 250,
+#        pmacroalg.area = pmacroalg.fit * 250 * 250,
+#        prock.area = prock.fit * 250 * 250, 
+#        pinverts.area = pinverts.fit * 250 * 250)  %>%
+#   summarise(pkelps.area.total = sum(pkelps.area), 
+#             psand.area.total = sum(psand.area),
+#             pmacroalg.area.total = sum(pmacroalg.area),
+#             prock.area.total = sum(prock.area),
+#             pinverts.area.total = sum(pinverts.area))
 
-mutate(.data = rastdf, 
-       pkelp.area = pkelps.fit * 250 * 250, 
-       psand.area #CONTINUE FORMATTING HERER LATER )   %>%
-  summarise(pkelp.area.total = sum(pkelp.area), 
-            psand.area.total = sum(psand.area))
-
-
+#Gabby SE
+# rastdf.3 <- mutate(.data = rastdf, pkelps.se.area = pkelps.se.fit * 250 * 250)  
+# 
+# mutate(.data = rastdf, 
+#        pkelps.se.area = pkelps.se.fit * 250 * 250, 
+#        psand.se.area = psand.se.fit * 250 * 250,
+#        pmacroalg.se.area = pmacroalg.se.fit * 250 * 250,
+#        prock.se.area = prock.se.fit * 250 * 250, 
+#        pinverts.se.area = pinverts.se.fit * 250 * 250)  %>%
+#   summarise(pkelps.se.area.total = sum(pkelps.se.area), 
+#             psand.se.area.total = sum(psand.se.area),
+#             pmacroalg.se.area.total = sum(pmacroalg.se.area),
+#             prock.se.area.total = sum(prock.se.area),
+#             pinverts.se.area.total = sum(pinverts.se.area))
 
 
 # convert units to area

@@ -44,6 +44,7 @@ aus     <- st_read("data/spatial/shapefiles/cstauscd_r.mif")                    
 aus     <- aus[aus$FEAT_CODE == "mainland", ]                                   # Add islands here if needed
 aumpa   <- st_read("data/spatial/shapefiles/AustraliaNetworkMarineParks.shp")   # All aus mpas
 st_crs(aus) <- st_crs(aumpa)                                                    # Set CRS to match - WGS84 and GDA94 effectively the same
+aus    <- aus[!aus$FEAT_CODE == c("sea"), ]
 e <- ext(114, 116, -35, -33)                                                 # Change your extent here
 mpa <- st_crop(aumpa, e)                                                        # All commonwealth zones in the study area
 npz <- mpa[mpa$ZoneName %in% "National Park Zone", ]                            # Only National Park Zones in the study area
@@ -97,15 +98,16 @@ p1 <- ggplot() +
   geom_tile(data = spreddf, aes(x, y, fill = dom_tag)) +
   hab_cols +                                                                    # Class colours
   #geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
+  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
               breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
               colour = "grey54",
               alpha = 1, size = 0.5) +                                         # Transparency and linewidth
-  coord_sf(xlim = c(114.2, 115.2),                              # Set plot limits
+   coord_sf(xlim = c(114.2, 115.2),                              # Set plot limits
            ylim = c(-34.2, -33.5)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
-       colour = NULL, title = "Capes region") +
-  annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
+       colour = NULL, title = "South West - Capes region") +
+     annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
            y = c(-28.078038504, -28.078038504, -28.078038504), 
            label = c("30m", "70m", "200m"),
            size = 2, colour = "grey54") +
@@ -190,6 +192,19 @@ widehabit <- spreddf %>%
                 pinverts = "Sessile invertebrates")) %>%
   glimpse()
 
+###GC to make below SE dataframe
+widehabitse <- spreddf %>%
+  dplyr::select(pseagrasses.se.fit, pmacroalg.se.fit, psand.se.fit, prock.se.fit, pinverts.se.fit, x, y) %>%
+  tidyr::pivot_longer(cols = starts_with("p"),                                  # Careful here that you don't have any other columns starting with 'p'
+                      values_to = "value", names_to = "variable") %>%
+  dplyr::mutate(variable = dplyr::recode(variable,                              # Tidy variable names
+                                         pseagrasses.se.fit = "Seagrasses SE",
+                                         pmacroalg.se.fit = "Macroalgae SE",
+                                         prock.se.fit = "Rock SE",
+                                         psand.se.fit = "Sand SE",
+                                         pinverts.se.fit = "Sessile invertebrates SE")) %>%
+  glimpse()
+
 # Make a dataframe for your contour line annotations - doesn't work otherwise for facetted plots
 dep_ann <- data.frame(x = c(113.433617268, 113.392982290, 113.255855826),                            
                       y = c(-28.087180374, -28.087180374, -28.087180374),
@@ -201,6 +216,7 @@ p22 <- ggplot() +
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, limits = c(0, max(widehabit$value))) +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
+  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #GC trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                breaks = c(0, -30, -70, -200), colour = "grey54",
                alpha = 1, size = 0.5) +
@@ -208,7 +224,7 @@ p22 <- ggplot() +
             inherit.aes = F, size = 2, colour = "grey36") +
   coord_sf(xlim = c(114.4, 115.0),                              # Set plot limits
            ylim = c(-34.2, -33.5)) +
-  labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "Capes Region") +      # Labels
+  labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "South West - Capes Region") +      # Labels
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 90, size = 9)) +
   facet_wrap(~variable, ncol = 2)                                               # Facet for each variable
