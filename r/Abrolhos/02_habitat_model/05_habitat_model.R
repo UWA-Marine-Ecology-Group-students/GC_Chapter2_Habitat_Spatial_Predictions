@@ -108,7 +108,7 @@ spreddf         <- as.data.frame(sprast, xy = TRUE, na.rm = T) #%>%
 #  dplyr::filter(Z < -30)
 
 # Add a colum that categorises the dominant habitat class
-spreddf$dom_tag <- apply(spreddf[12:16], 1, # Set columns manually here
+spreddf$dom_tag <- apply(spreddf%>% dplyr::select(pkelps.fit, pmacroalg.fit, psand.fit, prock.fit, pinverts.fit), 1, # Set columns manually here
                         FUN = function(x){names(which.max(x))})
 spreddf$dom_tag <- sub('.', '', spreddf$dom_tag)                                # Removes the p but not really sure why haha
 head(spreddf)                                                                   # Check to see if it all looks ok
