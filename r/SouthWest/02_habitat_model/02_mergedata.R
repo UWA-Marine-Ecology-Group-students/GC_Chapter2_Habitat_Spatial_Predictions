@@ -46,7 +46,7 @@ hab_filtered <- hab %>%
 wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Latlong projection 
 preds  <- readRDS(paste(paste0('data/spatial/rasters/', name), 
                        'spatial_covariates.rds', sep = "_"))
-preds <- rast(preds)
+#preds <- rast(preds)
 
 # Align crs and check samples over bathy and extract terrain data
 allhab_sp <- vect(hab, geom = c("longitude", "latitude"), crs = wgscrs, keep = T)           # Convert to a spat vector

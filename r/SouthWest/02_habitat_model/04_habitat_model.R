@@ -29,7 +29,7 @@ wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Lat
 # read in
 habi   <- readRDS("data/tidy/SouthWest_habitat-bathy-derivatives.rds")           # Merged data from 'R/03_mergedata.R'
 preds  <- readRDS("data/spatial/rasters/SouthWest_spatial_covariates.rds")       # Spatial covs from 'R/02_spatial_layers.R'
-preds <- rast(preds)
+#preds <- rast(preds)
 preddf <- as.data.frame(preds, xy = TRUE, na.rm = TRUE)
 preddf$depth <- preddf$Z                                                        #  Converts depth to absolute value - make sure you aren't predicting onto data with negative values!
 
@@ -93,7 +93,7 @@ summary(m_rock)
 
 
 ggplot() +
-  geom_point(data = habi, aes(x = depth, y = sand))
+geom_point(data = habi, aes(x = depth, y = sand))
 
 # predict, rasterise and plot
 preddf <- cbind(preddf, 
@@ -102,7 +102,7 @@ preddf <- cbind(preddf,
                 # "preef" = predict(m_reef, preddf, type = "response"),
                 "psand" = predict(m_sand, preddf, type = "response"),
                 "prock" = predict(m_rock, preddf, type = "response"),
-                "pinverts" = predict(m_inverts, preddf, type = "response"))c
+                "pinverts" = predict(m_inverts, preddf, type = "response"))
 
 # reduce prediction area to within sampled range
 preddf <- preddf[preddf$depth > min(habi$Z) & 

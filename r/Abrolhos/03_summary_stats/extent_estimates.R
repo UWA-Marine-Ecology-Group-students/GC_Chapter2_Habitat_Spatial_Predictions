@@ -6,6 +6,8 @@
 
 rm(list = ls())
 
+library(tidyverse)
+
 # load data
 rastdf <- readRDS("output/Abrolhos/Abrolhos_spatial_habitat_predictions.rds")
 
@@ -14,8 +16,8 @@ sumstat          <- data.frame(
   "location" = c("Abrolhos"),
   "habtype"  = c("kelps", "macroalg", 
                  "sand", "rock", "inverts"),
-  "phabname" = c("pkelps", "pmacroalg", "psand", 
-                 "prock", "pinverts"))
+  "phabname" = c("pkelps.fit", "pmacroalg.fit", "psand.fit", 
+                 "prock.fit", "pinverts.fit"))
 
 # calculate summary
 for(habi in unique(sumstat$habtype)){
@@ -24,6 +26,19 @@ for(habi in unique(sumstat$habtype)){
   sumstat$pcellsum[sumstat$habtype == habi]  <- 
     sum(rastdf[ , paste0(sumstat$phabname[sumstat$habtype == habi])])           # sum of predicted distributon for habitat x
 }
+
+#Ben's summary
+group_by(rastdf, dom_tag) %>% count() %>% mutate(area = n * 250 *250)
+rastdf.2 <- mutate(.data = rastdf, pkelp.area = pkelps.fit * 250 * 250)  
+
+mutate(.data = rastdf, 
+       pkelp.area = pkelps.fit * 250 * 250, 
+       psand.area #CONTINUE FORMATTING HERER LATER )   %>%
+  summarise(pkelp.area.total = sum(pkelp.area), 
+            psand.area.total = sum(psand.area))
+
+
+
 
 # convert units to area
 cellarea         <- 250 * 250                                                   # set this to the dimensions of the raster (based on bathy data) in metres

@@ -50,7 +50,7 @@ saveRDS(fbath_df, paste(paste0('data/spatial/rasters/',                         
 
 # Calculate terrain derivatives
 preds <- terrain(tbath_c, neighbors = 8,
-                 v = c("slope", "aspect", "TRI", "roughness"),
+                 v = c("slope", "aspect", "TPI", "TRI", "roughness"),
                  unit = "degrees")         # Remove here as necessary
 preds <- rast(list(tbath_c, preds))                                                  # Stack the derivatives with the bathymetry
 
@@ -61,9 +61,9 @@ detre <- as(object = detre, Class = "SpatRaster")                               
 names(detre) <- c("detrended", "lineartrend")
 preds <- rast(list(preds, detre))                                                    # Make a rasterstack
 plot(preds)
-preds <- wrap(preds)
 
 # Save the output
+preds <- wrap(preds)
 saveRDS(preds, paste(paste0('data/spatial/rasters/', name), 'spatial_covariates.rds', sep = "_"))
 
 # rstudioapi::navigateToFile("add script name here.R")
