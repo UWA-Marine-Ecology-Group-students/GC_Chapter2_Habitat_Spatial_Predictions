@@ -111,9 +111,9 @@ preddf <- preddf[preddf$depth > min(habi$Z) &
 prasts <- rast(preddf) 
 plot(prasts)
 
-# # subset to 10km from sites only
-# sprast <- mask(prasts, sbuff)
-# plot(sprast)
+# subset to 10km from sites only
+sprast <- mask(prasts, sbuff)
+plot(sprast)
 
 # Tidy and output data as a dataframe #AND filter pipe for depth less than 30m
 rastdf         <- as.data.frame(prasts, xy = TRUE, na.rm = T) #%>%
