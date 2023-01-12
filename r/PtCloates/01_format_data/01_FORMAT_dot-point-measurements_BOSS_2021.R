@@ -21,7 +21,7 @@ library(readr)
 library(ggplot2)
 
 # Study name ----
-study<-"2021-05_PtCloates_BOSS" 
+study<-"PtCloates_BOSS" 
 
 ## Set your working directory ----
 working.dir <- getwd() # this only works through github projects
@@ -38,28 +38,66 @@ error.dir <- paste(data.dir,"errors to check",sep="/")
 setwd(tm.export.dir)
 dir()
 
-# Read in metadata----
-metadata <- read_csv("2021-05_PtCloates_BOSS_Metadata.csv") %>% # read in the file
+# Read in metadata1----
+metadata1 <- read_csv("2021-05_PtCloates_BOSS_Metadata.csv") %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function 
   dplyr::select(sample, latitude, longitude, date, site, location, successful.count) %>% # select only these columns to keep
   mutate(sample=as.character(sample)) %>% # in this example dataset, the samples are numerical
   glimpse() # preview
 
-names(metadata)
+names(metadata1)
+
+# Read in metadata2----
+metadata2 <- read_csv("2022-05_PtCloates_BOSS_Metadata.csv") %>% # read in the file
+  ga.clean.names() %>% # tidy the column names using GlobalArchive function 
+  dplyr::select(sample, latitude, longitude, date, site, location, successful.count) %>% # select only these columns to keep
+  mutate(sample=as.character(sample)) %>% # in this example dataset, the samples are numerical
+  glimpse() # preview
+
+names(metadata2)
+
+#metadata
+metadata <- bind_rows(metadata1, metadata2) 
+
+length(unique(metadata$sample))
 
 # Read in habitat ----
 setwd(tm.export.dir)
 dir()
 
-# read in the points annotations ----
-points <- read.delim("2021-05_PtCloates_BOSS_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
+# read in the points1 annotations ----
+points1 <- read.delim("2021-05_PtCloates_BOSS_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
   select(sample,image.row,image.col,broad,morphology,type) %>% # select only these columns to keep
   glimpse() # preview
 
-length(unique(points$sample)) # 39 samples
+test <- points1 %>% 
+  group_by(sample) %>%
+  summarise(n = n())
+
+# read in the points2 annotations ----
+points2 <- read.delim("2022-05_PtCloates_BOSS_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
+  ga.clean.names() %>% # tidy the column names using GlobalArchive function
+  mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
+  mutate(sample=as.character(period)) %>% 
+  select(sample,image.row,image.col,broad,morphology,type) %>% # select only these columns to keep
+  glimpse() # preview
+
+test <- points2 %>% 
+  group_by(sample) %>%
+  summarise(n = n())
+
+points <- bind_rows(points1, points2)
+
+length(unique(points$sample)) # 91 samples
+
+test <- points %>% 
+  group_by(sample) %>%
+  summarise(n = n())
+
+test <- points %>% anti_join(metadata) %>% distinct(sample)
 
 no.annotations <- points%>% #number of annotations
   group_by(sample)%>%
@@ -82,20 +120,6 @@ length(unique(relief$sample)) # 39 samples
 no.annotations <- relief%>%
   group_by(sample)%>%
   dplyr::summarise(relief.annotated=n()) # all have 80
-
-#Gabby added below to match abrolhos script
-substrate <- read.delim("2021-05_PtCloates_BOSS_Dot Point Measurements.txt", header=T,skip=4, stringsAsFactors = F) %>% #read in file
-  ga.clean.names() %>% #tidy the column names using GlobalArchive function
-  mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
-  mutate(sample=as.character(sample)) %>% 
-  dplyr::select(sample,image.row,image.col,broad,morphology,type) %>% # select only these columns to keep
-  glimpse() # preview
-
-length(unique(substrate$sample)) # 75 samples
-
-no.annotations <- substrate%>%
-  group_by(sample)%>%
-  summarise(substrate.annotated=n()) # all have 80
 
 habitat <- bind_rows(points, relief)
 

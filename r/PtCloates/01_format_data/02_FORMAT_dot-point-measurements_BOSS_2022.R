@@ -21,7 +21,7 @@ library(readr)
 library(ggplot2)
 
 # Study name ----
-study<-"2021-05_PtCloates_BOSS" 
+study<-"2022-05_PtCloates_BOSS" 
 
 ## Set your working directory ----
 working.dir <- getwd() # this only works through github projects
@@ -39,7 +39,7 @@ setwd(tm.export.dir)
 dir()
 
 # Read in metadata----
-metadata <- read_csv("2021-05_PtCloates_BOSS_Metadata.csv") %>% # read in the file
+metadata <- read_csv("2022-05_PtCloates_BOSS_Metadata.csv") %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function 
   dplyr::select(sample, latitude, longitude, date, site, location, successful.count) %>% # select only these columns to keep
   mutate(sample=as.character(sample)) %>% # in this example dataset, the samples are numerical
@@ -52,7 +52,7 @@ setwd(tm.export.dir)
 dir()
 
 # read in the points annotations ----
-points <- read.delim("2021-05_PtCloates_BOSS_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
+points <- read.delim("2022-05_PtCloates_BOSS_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
@@ -65,12 +65,16 @@ no.annotations <- points%>% #number of annotations
   group_by(sample)%>%
   dplyr::summarise(points.annotated=n()) # 1 have 81
 
+test <- points %>% 
+  group_by(sample) %>%
+  summarise(n = n())
+
 # Check that the image names match the metadata samples -----
 missing.metadata <- anti_join(points,metadata, by = c("sample")) # samples in habitat that don't have a match in the metadata
 missing.habitat <- anti_join(metadata,points, by = c("sample"))
 
 dir()
-relief <- read.delim("2021-05_PtCloates_BOSS_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
+relief <- read.delim("2022-05_PtCloates_BOSS_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
@@ -84,7 +88,7 @@ no.annotations <- relief%>%
   dplyr::summarise(relief.annotated=n()) # all have 80
 
 #Gabby added below to match abrolhos script
-substrate <- read.delim("2021-05_PtCloates_BOSS_Relief_Dot Point Measurements.txt",header=T,skip=4,stringAsFactors=FALSE) %>% #read in file
+substrate <- read.delim("2022-05_PtCloates_BOSS_Relief_Dot Point Measurements.txt",header=T,skip=4,stringAsFactors=FALSE) %>% #read in file
   ga.clean.names() %>% #tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
