@@ -80,7 +80,7 @@ test <- points1 %>%
 # read in the points2 annotations ----
 points2 <- read.delim("2022-05_PtCloates_BOSS_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
-  mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
+  #mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(period)) %>% 
   select(sample,image.row,image.col,broad,morphology,type) %>% # select only these columns to keep
   glimpse() # preview
@@ -108,12 +108,21 @@ missing.metadata <- anti_join(points,metadata, by = c("sample")) # samples in ha
 missing.habitat <- anti_join(metadata,points, by = c("sample"))
 
 dir()
-relief <- read.delim("2021-05_PtCloates_BOSS_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
+relief1 <- read.delim("2021-05_PtCloates_BOSS_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
   select(sample,image.row,image.col,broad,morphology,type,relief) %>% # select only these columns to keep
   glimpse() # preview
+
+relief2 <- read.delim("2022-05_PtCloates_BOSS_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
+  ga.clean.names() %>% # tidy the column names using GlobalArchive function
+  #mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
+  mutate(sample=as.character(period)) %>% 
+  select(sample,image.row,image.col,broad,morphology,type,relief) %>% # select only these columns to keep
+  glimpse() # preview
+
+relief <- bind_rows(relief1, relief2)
 
 length(unique(relief$sample)) # 39 samples
 
@@ -133,30 +142,30 @@ habitat <- bind_rows(points, relief)
 missing.metadata <- anti_join(habitat,metadata, by = c("sample")) # samples in habitat that don't have a match in the metadata
 missing.habitat <- anti_join(metadata,habitat, by = c("sample")) # samples in the metadata that don't have a match in habitat
 
-# Create %fov----
-fov.points <- habitat%>%
-  dplyr::select(-c(broad,morphology,type,relief))%>%
-  dplyr::filter(!fieldofview=="")%>%
-  dplyr::filter(!is.na(fieldofview))%>%
-  dplyr::mutate(fieldofview=paste("fov",fieldofview,sep = "."))%>%
-  dplyr::mutate(count=1)%>%
-  spread(key=fieldofview,value=count, fill=0)%>%
-  dplyr::select(-c(image.row,image.col))%>%
-  dplyr::group_by(sample)%>%
-  dplyr::summarise_all(funs(sum))%>%
-  dplyr::mutate(fov.total.points.annotated=rowSums(.[,2:(ncol(.))],na.rm = TRUE ))%>%
-  ga.clean.names()
-
-fov.percent.cover<-fov.points %>%
-  group_by(sample)%>%
-  mutate_at(vars(starts_with("fov")),funs(./fov.total.points.annotated*100))%>%
-  dplyr::select(-c(fov.total.points.annotated))%>%
-  glimpse()
+# # Create %fov----FOV Only for 2021 not in 2022 data so hash out
+# fov.points <- habitat%>%
+#   dplyr::select(-c(broad,morphology,type,relief))%>%
+#   dplyr::filter(!fieldofview=="")%>%
+#   dplyr::filter(!is.na(fieldofview))%>%
+#   dplyr::mutate(fieldofview=paste("fov",fieldofview,sep = "."))%>%
+#   dplyr::mutate(count=1)%>%
+#   spread(key=fieldofview,value=count, fill=0)%>%
+#   dplyr::select(-c(image.row,image.col))%>%
+#   dplyr::group_by(sample)%>%
+#   dplyr::summarise_all(funs(sum))%>%
+#   dplyr::mutate(fov.total.points.annotated=rowSums(.[,2:(ncol(.))],na.rm = TRUE ))%>%
+#   ga.clean.names()
+# 
+# fov.percent.cover<-fov.points %>%
+#   group_by(sample)%>%
+#   mutate_at(vars(starts_with("fov")),funs(./fov.total.points.annotated*100))%>%
+#   dplyr::select(-c(fov.total.points.annotated))%>%
+#   glimpse()
 
 
 # CREATE catami_broad------
 broad.points <- habitat%>%
-  dplyr::select(-c(fieldofview,morphology,type,relief))%>%
+  dplyr::select(-c(morphology,type,relief))%>%
   filter(!broad%in%c("",NA,"Unknown","Open.Water","Open Water"))%>%
   dplyr::mutate(broad=paste("broad",broad,sep = "."))%>%
   dplyr::mutate(count=1)%>%
