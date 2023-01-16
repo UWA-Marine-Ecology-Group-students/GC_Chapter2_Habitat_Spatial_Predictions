@@ -1,6 +1,6 @@
 #CH2 GABBY's PhD HABITAT
-#PtCloatesFORMATTING BOSS 2021-05
-#Date created: December 2022
+#PtCloatesFORMATTING BOSS 2021-05 & 2022-05
+#Date created: December 2022 & JAN 2023
 
 
 # Clear memory ----
@@ -194,7 +194,7 @@ broad.percent.cover<-broad.points %>%
 
 # CREATE catami_morphology------
 detailed.points <- habitat%>%
-  dplyr::select(-c(fieldofview, relief))%>%
+  dplyr::select(-c(relief))%>%
   dplyr::filter(!morphology%in%c("",NA,"Unknown"))%>%
   dplyr::filter(!broad%in%c("",NA,"Unknown","Open.Water"))%>%
   dplyr::mutate(morphology=paste("detailed",broad,morphology,type,sep = "."))%>%
@@ -220,7 +220,7 @@ detailed.percent.cover<-detailed.points %>%
 relief.grid<-habitat%>%
   dplyr::filter(!broad%in%c("Open Water","Unknown"))%>%
   dplyr::filter(!relief%in%c("",NA))%>%
-  dplyr::select(-c(broad,morphology,type,fieldofview,image.row,image.col))%>%
+  dplyr::select(-c(broad,morphology,type,image.row,image.col))%>%
   dplyr::mutate(relief.rank=ifelse(relief==".0. Flat substrate, sandy, rubble with few features. ~0 substrate slope.",0,
                                    ifelse(relief==".1. Some relief features amongst mostly flat substrate/sand/rubble. <45 degree substrate slope.",1,
                                           ifelse(relief==".2. Mostly relief features amongst some flat substrate or rubble. ~45 substrate slope.",2,
@@ -240,22 +240,22 @@ setwd(tidy.dir)
 dir()
 
 habitat.broad.points <- metadata%>%
-  left_join(fov.points, by = "sample")%>%
+  #left_join(fov.points, by = "sample")%>%
   left_join(broad.points, by = "sample")%>%
   left_join(relief.grid)
 
 habitat.detailed.points <- metadata%>%
-  left_join(fov.points, by = "sample")%>%
+  #left_join(fov.points, by = "sample")%>%
   left_join(detailed.points, by = "sample")%>%
   left_join(relief.grid)
 
 habitat.broad.percent <- metadata%>%
-  left_join(fov.percent.cover, by = "sample")%>%
+  #left_join(fov.percent.cover, by = "sample")%>%
   left_join(broad.percent.cover, by = "sample")%>%
   left_join(relief.grid)
 
 habitat.detailed.percent <- metadata%>%
-  left_join(fov.percent.cover, by = "sample")%>%
+  #left_join(fov.percent.cover, by = "sample")%>%
   left_join(detailed.percent.cover, by = "sample")%>%
   left_join(relief.grid)
 
