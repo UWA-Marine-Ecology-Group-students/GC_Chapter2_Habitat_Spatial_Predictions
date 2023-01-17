@@ -30,7 +30,7 @@ library(corrr)
 library(FSSgam)
 
 # Set your study name
-name <- "Abrolhos"                                                              # Change here
+name <- "PtCloates"                                                              # Change here
 
 # Bring in and format the data----
 dat <- readRDS(paste(paste0('data/tidy/', name),                                # Merged data from 'R/01_mergedata.R'
@@ -49,7 +49,7 @@ pred.vars <- c("depth","TRI", "TPI", "roughness", "slope", "aspect", "detrended"
 # Full correlation table
 corrtable <- as.data.frame(round(cor(dat[ , pred.vars]), 2))
 
-write.csv(corrtable, file = "output/Abrolhos/correlation-table.csv")
+write.csv(corrtable, file = "output/PtCloates/correlation-table.csv")
 # Just correlations greater than your cutoff
 correlate(dat[,pred.vars], use = "complete.obs") %>%  
   gather(-term, key = "colname", value = "cor") %>% 
@@ -84,7 +84,7 @@ unique.vars = unique(as.character(dat$response))
 unique.vars.use = unique.vars
    
 # Run the full subset model selection----
-savedir   <- "output/Abrolhos"
+savedir   <- "output/PtCloates"
 resp.vars <- unique.vars.use
 use.dat   <- as.data.frame(dat[dat$response %in% c(unique.vars.use), ])
 str(use.dat)

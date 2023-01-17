@@ -1,3 +1,4 @@
+
 #CH2 GABBY's PhD HABITAT
 #PtCloatesFORMATTING BRUVS 2021-05 & 2022-05
 #Date created: JAN 2023
@@ -30,11 +31,11 @@ data.dir <- paste(working.dir,"data",sep="/")
 raw.dir <- paste(data.dir,"raw",sep="/") 
 tidy.dir <- paste(data.dir,"tidy",sep="/")
 tm.export.dir <- paste(raw.dir,"tm_export",sep="/") 
-em.export.dir <- paste(raw.dir, "em_export", sep = "/")
+# em.export.dir <- paste(raw.dir, "em_export", sep = "/")
 error.dir <- paste(data.dir,"errors to check",sep="/") 
 
 # Read in the metadata----
-setwd(em.export.dir)
+setwd(tm.export.dir)
 dir()
 
 # Read in metadata1----
@@ -75,19 +76,19 @@ forwards.points1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Forwards_Dot Poin
 # read in the forwards points2 annotations ----
 forwards.points2 <- read.delim("2022-05_PtCloates_stereo-BRUVS_Forwards_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
-  mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
-  mutate(sample=as.character(sample)) %>% 
+  #mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
+  mutate(sample=as.character(opcode)) %>% 
   select(sample,image.row,image.col,broad,morphology,type) %>% # select only these columns to keep
   glimpse() # preview
 
 #combine metadata to get Pt Cloates Forwards Points Data
 forwards.points <- bind_rows(forwards.points1, forwards.points2)
 
-length(unique(forwards.points$sample)) # 88 samples
+length(unique(forwards.points$sample)) # 62 samples
 
 #read in the backwards points1 annotations ---
 backwards.points1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Backwards_Dot Point Measurements.txt", header=T, skip=4, stringsAsFactors = FALSE) %>% #read in the file
-  ga.clean.names() %>% # yidy the column names using Global Archive function
+  ga.clean.names() %>% # tidy the column names using Global Archive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
   select(sample,image.row,image.col,broad,morphology,type) %>% # select only these columns to keep
@@ -129,8 +130,8 @@ forwards.relief1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Forwards_Relief_D
 #read in forwards relief Pt Cloates 2022
 forwards.relief2 <- read.delim("2022-05_PtCloates_stereo-BRUVS_Forwards_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
-  mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
-  mutate(sample=as.character(sample)) %>% 
+  #mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
+  mutate(sample=as.character(opcode)) %>% 
   select(sample,image.row,image.col,broad,morphology,type,relief) %>% # select only these columns to keep
   glimpse() # preview
 

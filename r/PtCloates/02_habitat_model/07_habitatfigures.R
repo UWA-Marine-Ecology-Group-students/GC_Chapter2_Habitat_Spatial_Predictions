@@ -33,7 +33,7 @@ library(stars)
 library(smoothr)
 
 # Set your study name
-name <- "Abrolhos"                                                              # Change here
+name <- "PtCloates"                                                              # Change here
 
 # Set CRS for shapefiles
 wgscrs <- "+proj=longlat +datum=WGS84"                                    # Lat long projection
@@ -44,7 +44,7 @@ aus     <- st_read("data/spatial/shapefiles/cstauscd_r.mif")                    
 aus     <- aus[aus$FEAT_CODE == "mainland", ]                                   # Add islands here if needed
 aumpa   <- st_read("data/spatial/shapefiles/AustraliaNetworkMarineParks.shp")   # All aus mpas
 st_crs(aus) <- st_crs(aumpa)                                                    # Set CRS to match - WGS84 and GDA94 effectively the same
-e <- ext(112, 116, -30, -26)                                                 # Change your extent here
+e <- ext(113, 114.5, -23, -21)                                                 # Change your extent here
 mpa <- st_crop(aumpa, e)                                                        # All commonwealth zones in the study area
 npz <- mpa[mpa$ZoneName %in% "National Park Zone", ]                            # Only National Park Zones in the study area
 

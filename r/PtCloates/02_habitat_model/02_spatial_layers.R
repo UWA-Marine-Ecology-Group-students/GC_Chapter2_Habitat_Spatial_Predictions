@@ -52,7 +52,7 @@ plot(bath_r)                                                                    
 
 tbath_c <- crop(bath_r, ext(c(113.2, 114.3,-23, -21.5)))
 plot(tbath_c)
-points(lats[,c("longitude","latitude")], pch = 20, cex = 1, col = "red")
+#points(lats[,c("longitude","latitude")], pch = 20, cex = 1, col = "red")
 fbath_df <- as.data.frame(tbath_c, xy = TRUE)                                   # Convert this to a dataframe
 saveRDS(fbath_df, paste(paste0('data/spatial/rasters/',                         # Save it for use in the next scripts
                                name), 'ga_bathy.rds', sep = "_")) 

@@ -27,8 +27,8 @@ name <- "PtCloates"                                                             
 wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Latlong projection 
 
 # read in
-habi   <- readRDS("data/tidy/Abrolhos_habitat-bathy-derivatives.rds")           # Merged data from 'R/03_mergedata.R'
-preds  <- readRDS("data/spatial/rasters/Abrolhos_spatial_covariates.rds")       # Spatial covs from 'R/02_spatial_layers.R'
+habi   <- readRDS("data/tidy/PtCloates_habitat-bathy-derivatives.rds")           # Merged data from 'R/03_mergedata.R'
+preds  <- readRDS("data/spatial/rasters/PtCloates_spatial_covariates.rds")       # Spatial covs from 'R/02_spatial_layers.R'
 preds <- rast(preds)
 preds[[1]] <- clamp(preds[[1]], upper=-25, lower=-190, values=FALSE)
 preds <- mask(preds,preds[[1]])
@@ -107,4 +107,4 @@ spreddf$dom_tag <- sub('.', '', spreddf$dom_tag)                                
 head(spreddf)                                                                   # Check to see if it all looks ok
 
 # Save the output
-saveRDS(spreddf, paste(paste0('output/Abrolhos/', name), 'spatial_habitat_predictions.rds', sep = "_"))
+saveRDS(spreddf, paste(paste0('output/PtCloates/', name), 'spatial_habitat_predictions.rds', sep = "_"))

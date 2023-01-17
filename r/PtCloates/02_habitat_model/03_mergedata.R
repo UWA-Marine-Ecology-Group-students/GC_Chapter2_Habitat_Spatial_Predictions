@@ -3,7 +3,7 @@
 # Data:    BRUVS, BOSS Habitat data for Pt Cloates
 # Task:    Merging habitat data
 # Author:  Kingsley Griffin & Claude Spencer
-# Date:    ** December 2022 **
+# Date:    ** Jan 2023 **
 ##
 
 # This script takes formatted habitat data from TransectMeasure and joins it with bathymetry derivatives for modelling
@@ -22,12 +22,12 @@ library(ggplot2)
 name <- "PtCloates" # Change here
 
 # Load in tidy data from the formatting scripts
-boss <- read.csv("data/tidy/2021-05_Abrolhos_BOSS_random-points_broad.habitat.csv") %>% # Need to type filename manually
+boss <- read.csv("data/tidy/PtCloates_BOSS_random-points_broad.habitat.csv") %>% # Need to type filename manually
   dplyr::mutate(method = "BOSS") %>%                                            # Change here
   dplyr::filter(location %in% "NPZ6") %>%                                       # Only Shallow Bank
   glimpse()
 
-bruv <- read.csv("data/tidy/2021-05_Abrolhos_BRUVs_random-points_broad.habitat.csv") %>% # Need to type filename manually
+bruv <- read.csv("data/tidy/PtCloates_BRUVs_random-points_broad.habitat.csv") %>% # Need to type filename manually
   dplyr::mutate(method = "BRUV") %>%                                            # Change here
   dplyr::filter(location %in% "NPZ6") %>%                                       # Only Shallow Bank
   glimpse()
@@ -40,6 +40,7 @@ wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Lat
 preds  <- readRDS(paste(paste0('data/spatial/rasters/', name), 
                        'spatial_covariates.rds', sep = "_"))
 preds <- rast(preds)
+plot(preds)
 
 # Align crs and check samples over bathy and extract terrain data
 allhab_sp <- vect(hab, geom = c("longitude", "latitude"), crs = wgscrs, keep = T)           # Convert to a spat vector
