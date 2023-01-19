@@ -40,9 +40,10 @@ dir()
 
 # Read in metadata1----
 metadata1 <- read_csv("2021-05_PtCloates_stereo-BRUVS_Metadata.csv") %>% # read in the file
-  ga.clean.names() %>% # tidy the column names using GlobalArchive function 
-  dplyr::select(sample, latitude, longitude, date, site, location, successful.count) %>% # select only these columns to keep
-  mutate(sample=as.character(sample)) %>% # in this example dataset, the samples are numerical
+  ga.clean.names() %>% # tidy the column names using GlobalArchive function                                                                                                                                                        
+  dplyr::select(sample, latitude, longitude, date, site, location, successful.count) %>%
+  dplyr::mutate(campaignid = "2021-05_PtCloates_stereo-BRUVS") %>% # select only these columns to keep
+  mutate(sample=as.character(sample)) %>%                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ample)) %>% # in this example dataset, the samples are numerical
   glimpse() # preview
 
 names(metadata1)
@@ -50,7 +51,8 @@ names(metadata1)
 # Read in metadata2----
 metadata2 <- read_csv("2022-05_PtCloates_stereo-BRUVS_Metadata.csv") %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function 
-  dplyr::select(sample, latitude, longitude, date, site, location, successful.count) %>% # select only these columns to keep
+  dplyr::select(sample, latitude, longitude, date, site, location, successful.count) %>% 
+  dplyr::mutate(campaignid = "2022-05_PtCloates_stereo-BRUVS") %>% # select only these columns to keep
   mutate(sample=as.character(sample)) %>% # in this example dataset, the samples are numerical
   glimpse() # preview
 
@@ -70,21 +72,32 @@ forwards.points1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Forwards_Dot Poin
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
-  select(sample,image.row,image.col,broad,morphology,type) %>% # select only these columns to keep
+  select(sample,image.row,image.col,broad,morphology,type) %>% 
+  dplyr::mutate(campaignid = "2021-05_PtCloates_stereo-BRUVS") %>%# select only these columns to keep
   glimpse() # preview
+
+length(unique(forwards.points1$sample))
 
 # read in the forwards points2 annotations ----
 forwards.points2 <- read.delim("2022-05_PtCloates_stereo-BRUVS_Forwards_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
   #mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(opcode)) %>% 
-  select(sample,image.row,image.col,broad,morphology,type) %>% # select only these columns to keep
+  select(sample,image.row,image.col,broad,morphology,type) %>% 
+  dplyr::mutate(campaignid = "2022-05_PtCloates_stereo-BRUVS") %>%# select only these columns to keep
   glimpse() # preview
+
+length(unique(forwards.points2$sample))
 
 #combine metadata to get Pt Cloates Forwards Points Data
 forwards.points <- bind_rows(forwards.points1, forwards.points2)
 
-length(unique(forwards.points$sample)) # 62 samples
+test <- forwards.points %>%
+  group_by(campaignid, sample)  %>%
+  summarise(n = n())
+
+#test2
+test2 <- metadata%>% anti_join(forwards.points)
 
 #read in the backwards points1 annotations ---
 backwards.points1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Backwards_Dot Point Measurements.txt", header=T, skip=4, stringsAsFactors = FALSE) %>% #read in the file
@@ -92,6 +105,7 @@ backwards.points1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Backwards_Dot Po
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
   select(sample,image.row,image.col,broad,morphology,type) %>% # select only these columns to keep
+  dplyr::mutate(campaignid = "2021-05_PtCloates_stereo-BRUVS") %>%
   glimpse() # preview
 
 #read in the backwards points2 annotations ---
@@ -100,6 +114,7 @@ backwards.points2 <- read.delim("2022-05_PtCloates_stereo-BRUVS_Backwards_Dot Po
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
   select(sample,image.row,image.col,broad,morphology,type) %>% # select only these columns to keep
+  dplyr::mutate(campaignid = "2022-05_PtCloates_stereo-BRUVS") %>%
   glimpse() # preview
 
 #combine metadata to get Pt Cloates Backwards Points Data
@@ -125,6 +140,7 @@ forwards.relief1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Forwards_Relief_D
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
   select(sample,image.row,image.col,broad,morphology,type,relief) %>% # select only these columns to keep
+  dplyr::mutate(campaignid = "2021-05_PtCloates_stereo-BRUVS") %>%
   glimpse() # preview
 
 #read in forwards relief Pt Cloates 2022
@@ -133,6 +149,7 @@ forwards.relief2 <- read.delim("2022-05_PtCloates_stereo-BRUVS_Forwards_Relief_D
   #mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(opcode)) %>% 
   select(sample,image.row,image.col,broad,morphology,type,relief) %>% # select only these columns to keep
+  dplyr::mutate(campaignid = "2022-05_PtCloates_stereo-BRUVS") %>%
   glimpse() # preview
 
 #combine metadata to get Pt Cloates BRUVS Forwards Relief Data
@@ -146,6 +163,7 @@ backwards.relief1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Backwards_Relief
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
   select(sample,image.row,image.col,broad,morphology,type,relief) %>% # select only these columns to keep
+  dplyr::mutate(campaignid = "2021-05_PtCloates_stereo-BRUVS") %>%
   glimpse() # preview
 
 #read in backwards relief Pt Cloates 2022
@@ -154,6 +172,7 @@ backwards.relief2 <- read.delim("2022-05_PtCloates_stereo-BRUVS_Backwards_Relief
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
   select(sample,image.row,image.col,broad,morphology,type,relief) %>% # select only these columns to keep
+  dplyr::mutate(campaignid = "2022-05_PtCloates_stereo-BRUVS") %>%
   glimpse() # preview
 
 #combine metadata to get Pt Cloates BRUVS Backwards Relief Data
@@ -269,22 +288,22 @@ dir()
 
 habitat.broad.points <- metadata%>%
   #left_join(fov.points, by = "sample")%>%
-  left_join(broad.points, by = "sample")%>%
+  left_join(broad.points)%>%
   left_join(relief.grid)
 
 habitat.detailed.points <- metadata%>%
   #left_join(fov.points, by = "sample")%>%
-  left_join(detailed.points, by = "sample")%>%
+  left_join(detailed.points)%>%
   left_join(relief.grid)
 
 habitat.broad.percent <- metadata%>%
   #left_join(fov.percent.cover, by = "sample")%>%
-  left_join(broad.percent.cover, by = "sample")%>%
+  left_join(broad.percent.cover)%>%
   left_join(relief.grid)
 
 habitat.detailed.percent <- metadata%>%
   #left_join(fov.percent.cover, by = "sample")%>%
-  left_join(detailed.percent.cover, by = "sample")%>%
+  left_join(detailed.percent.cover)%>%
   left_join(relief.grid)
 
 write.csv(habitat.broad.points,file=paste(study,"random-points_broad.habitat.csv",sep = "_"), row.names=FALSE)

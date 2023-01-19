@@ -1,6 +1,6 @@
 Dot Point Measurements
 
-Generated: Tuesday 17 January 2023 14:47:26
+Generated: Thursday 19 January 2023 14:29:20
 
 Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	Latitude	Longitude	Rugosity	Depth	Collector	Fishing status	Spare	Spare	OpCode	Period	Frame info 3	Frame info 4	Frame info 5	Frame info 6	BROAD	MORPHOLOGY	TYPE	RELIEF	CODE				Radius %
 10_1_01_Left_MAH00329.MP4_0043644.jpg	      0		836	925													10	1					Unconsolidated	Sand	mud (fine sand)		82001015				9.1
@@ -143,46 +143,46 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 16_1_01_Left_MAH00192.MP4_0075691.jpg	      0		1003	1318													16	1					Unconsolidated	Sand	mud (fine sand)		82001015				44.6
 16_1_01_Left_MAH00192.MP4_0075691.jpg	      0		1014	92													16	1					Unconsolidated	Sand	mud (fine sand)		82001015				100.0
 16_1_01_Left_MAH00192.MP4_0075691.jpg	      0		1051	247													16	1					Unconsolidated	Sand	mud (fine sand)		82001015				83.5
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		775	1248													17						Sponges	Erect forms			10000912				38.1
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		822	1333													17						Sponges	Erect forms			10000912				47.5
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		775	594													17						Sponges	Erect forms			10000912				38.0
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		753	357													17						Sponges	Erect forms			10000912				65.3
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		1052	540													17						Sponges	Erect forms			10000912				51.0
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		1062	1464													17						Unconsolidated	Sand	mud (fine sand)		82001015				68.3
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		982	952													17						Octocoral/Black	Branching (3D)			11168902				18.6
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		769	1090													17						Unconsolidated	Sand	mud (fine sand)		82001015				20.5
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		794	403													17						Sponges	Erect forms			10000912				59.6
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		805	490													17						Sponges	Erect forms			10000912				49.6
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		978	1106													17						Sponges	Erect forms			10000912				27.7
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		1003	798													17						Unconsolidated	Sand	mud (fine sand)		82001015				25.0
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		1045	1221													17						Invertebrate Complex	Complex 1							43.0
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		823	1286													17						Sponges	Erect forms			10000912				42.1
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		860	691													17						Octocoral/Black	Branching (3D)			11168902				26.7
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		759	641													17						Sponges	Erect forms			10000912				33.0
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		542	1743													17						Sponges	Erect forms			10000912				100.0
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		546	125													17						Unknown								96.9
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		572	1520													17						Unknown								74.8
-17__01_Left_MAH01244.MP4_0026664.jpg	      0		762	805													17						Unconsolidated	Sand	mud (fine sand)		82001015				15.1
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		771	71													18						Unconsolidated	Sand	mud (fine sand)		82001015				86.9
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		726	1341													18						Unknown								41.8
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		845	89													18						Unconsolidated	Sand	mud (fine sand)		82001015				85.3
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		899	1912													18						Unknown								100.0
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		650	632													18						Unconsolidated	Sand	mud (fine sand)		82001015				32.9
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		543	1660													18						Unknown								77.5
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		717	1356													18						Unknown								43.5
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		979	940													18						Unconsolidated	Sand	mud (fine sand)		82001015				20.2
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		646	356													18						Unconsolidated	Sand	mud (fine sand)		82001015				59.7
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		939	1527													18						Unconsolidated	Sand	mud (fine sand)		82001015				62.4
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		752	262													18						Unconsolidated	Sand	mud (fine sand)		82001015				67.7
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		748	751													18						Unconsolidated	Sand	mud (fine sand)		82001015				18.5
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		802	1849													18						Unconsolidated	Sand	mud (fine sand)		82001015				92.9
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		786	1380													18						Unknown								45.5
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		700	1717													18						Unconsolidated	Sand	mud (fine sand)		82001015				79.9
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		779	755													18						Unconsolidated	Sand	mud (fine sand)		82001015				17.8
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		707	61													18						Unconsolidated	Sand	mud (fine sand)		82001015				88.2
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		891	75													18						Unconsolidated	Sand	mud (fine sand)		82001015				87.2
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		700	689													18						Unconsolidated	Sand	mud (fine sand)		82001015				25.7
-18__01_Left_MAH00236.MP4_0023340.jpg	      0		1018	1187													18						Unconsolidated	Sand	mud (fine sand)		82001015				35.4
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		775	1248													17	1					Sponges	Erect forms			10000912				38.1
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		822	1333													17	1					Sponges	Erect forms			10000912				47.5
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		775	594													17	1					Sponges	Erect forms			10000912				38.0
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		753	357													17	1					Sponges	Erect forms			10000912				65.3
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		1052	540													17	1					Sponges	Erect forms			10000912				51.0
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		1062	1464													17	1					Unconsolidated	Sand	mud (fine sand)		82001015				68.3
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		982	952													17	1					Octocoral/Black	Branching (3D)			11168902				18.6
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		769	1090													17	1					Unconsolidated	Sand	mud (fine sand)		82001015				20.5
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		794	403													17	1					Sponges	Erect forms			10000912				59.6
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		805	490													17	1					Sponges	Erect forms			10000912				49.6
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		978	1106													17	1					Sponges	Erect forms			10000912				27.7
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		1003	798													17	1					Unconsolidated	Sand	mud (fine sand)		82001015				25.0
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		1045	1221													17	1					Invertebrate Complex	Complex 1							43.0
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		823	1286													17	1					Sponges	Erect forms			10000912				42.1
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		860	691													17	1					Octocoral/Black	Branching (3D)			11168902				26.7
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		759	641													17	1					Sponges	Erect forms			10000912				33.0
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		542	1743													17	1					Sponges	Erect forms			10000912				100.0
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		546	125													17	1					Unknown								96.9
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		572	1520													17	1					Unknown								74.8
+17__01_Left_MAH01244.MP4_0026664.jpg	      0		762	805													17	1					Unconsolidated	Sand	mud (fine sand)		82001015				15.1
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		771	71													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				86.9
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		726	1341													18	1					Unknown								41.8
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		845	89													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				85.3
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		899	1912													18	1					Unknown								100.0
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		650	632													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				32.9
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		543	1660													18	1					Unknown								77.5
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		717	1356													18	1					Unknown								43.5
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		979	940													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				20.2
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		646	356													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				59.7
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		939	1527													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				62.4
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		752	262													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				67.7
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		748	751													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				18.5
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		802	1849													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				92.9
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		786	1380													18	1					Unknown								45.5
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		700	1717													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				79.9
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		779	755													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				17.8
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		707	61													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				88.2
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		891	75													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				87.2
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		700	689													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				25.7
+18__01_Left_MAH00236.MP4_0023340.jpg	      0		1018	1187													18	1					Unconsolidated	Sand	mud (fine sand)		82001015				35.4
 19_1_01_Left_MAH00255.MP4_0005732.jpg	      0		568	784													19	1					Unknown								33.9
 19_1_01_Left_MAH00255.MP4_0005732.jpg	      0		740	524													19	1					Unconsolidated	Sand	mud (fine sand)		82001015				47.4
 19_1_01_Left_MAH00255.MP4_0005732.jpg	      0		777	1142													19	1					Octocoral/Black	Fan (2D)			11168912				32.3
@@ -903,26 +903,26 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 51_1_01_Left_MAH00234.MP4_0067622.jpg	      0		675	1288													51	1					Unconsolidated	Sand	mud (fine sand)		82001015				41.7
 51_1_01_Left_MAH00234.MP4_0067622.jpg	      0		934	1823													51	1					Unconsolidated	Sand	mud (fine sand)		82001015				100.0
 51_1_01_Left_MAH00234.MP4_0067622.jpg	      0		732	1132													51	1					Unknown								23.0
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		576	236																			Unknown								80.2
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		594	745																			Invertebrate Complex	Complex 1							35.6
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		982	1841																			Unconsolidated	Sand	mud (fine sand)		82001015				78.8
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		1060	114																			Unconsolidated	Sand	mud (fine sand)		82001015				90.8
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		689	1206																			Unconsolidated	Sand	mud (fine sand)		82001015				21.4
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		917	963																			Unconsolidated	Sand	mud (fine sand)		82001015				10.7
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		623	1563																			Octocoral/Black	Branching (3D)			11168902				54.5
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		859	1898																			Unknown								82.8
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		915	1744																			Unknown								68.6
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		563	468																			Unknown								59.9
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		1009	666																			Unconsolidated	Sand	mud (fine sand)		82001015				39.2
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		822	1531																			Unknown								47.7
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		960	456																			Unconsolidated	Sand	mud (fine sand)		82001015				56.7
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		769	1006																			Unconsolidated	Sand	mud (fine sand)		82001015				6.3
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		1048	13																			Unconsolidated	Sand	mud (fine sand)		82001015				100.0
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		663	1862																											81.0
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		945	535																			Unconsolidated	Sand	mud (fine sand)		82001015				49.0
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		963	1276																			Unconsolidated	Sand	mud (fine sand)		82001015				26.5
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		626	1334																			Unconsolidated	Sand	mud (fine sand)		82001015				34.8
-52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		1010	1209																			Unconsolidated	Sand	mud (fine sand)		82001015				24.1
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		576	236													52	1					Unknown								80.2
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		594	745													52	1					Invertebrate Complex	Complex 1							35.6
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		982	1841													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				78.8
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		1060	114													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				90.8
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		689	1206													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				21.4
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		917	963													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				10.7
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		623	1563													52	1					Octocoral/Black	Branching (3D)			11168902				54.5
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		859	1898													52	1					Unknown								82.8
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		915	1744													52	1					Unknown								68.6
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		563	468													52	1					Unknown								59.9
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		1009	666													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				39.2
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		822	1531													52	1					Unknown								47.7
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		960	456													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				56.7
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		769	1006													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				6.3
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		1048	13													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				100.0
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		663	1862													52	1													81.0
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		945	535													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				49.0
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		963	1276													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				26.5
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		626	1334													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				34.8
+52_1_01_Left_MAH00204.MP4_0041100.jpg	      0		1010	1209													52	1					Unconsolidated	Sand	mud (fine sand)		82001015				24.1
 53_1_01_Left_MAH00354.MP4_0013423.jpg	      0		906	1708													53	1					Unknown								59.6
 53_1_01_Left_MAH00354.MP4_0013423.jpg	      0		1011	1451													53	1					Unconsolidated	Sand	mud (fine sand)		82001015				39.4
 53_1_01_Left_MAH00354.MP4_0013423.jpg	      0		645	1670													53	1					Unknown								57.5
@@ -943,26 +943,26 @@ Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	L
 53_1_01_Left_MAH00354.MP4_0013423.jpg	      0		741	385													53	1					Unknown								67.7
 53_1_01_Left_MAH00354.MP4_0013423.jpg	      0		1050	171													53	1					Octocoral/Black	Branching (3D)			11168902				90.8
 53_1_01_Left_MAH00354.MP4_0013423.jpg	      0		658	1263													53	1					Sponges	Hollow forms			10000909				21.9
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		964	1754																			Unknown								75.4
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		747	1333																			Unknown								29.5
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		599	1146																			Open Water								24.5
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		614	1157																			Open Water								23.5
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		984	1245																			Unconsolidated	Sand	mud (fine sand)		82001015				26.5
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		887	886																			Unconsolidated	Sand	mud (fine sand)		82001015				20.6
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		622	977																			Open Water								22.4
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		972	1068																			Unconsolidated	Sand	mud (fine sand)		82001015				17.0
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		595	1450																			Open Water								47.4
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		993	145																			Unconsolidated	Sand	mud (fine sand)		82001015				100.0
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		803	1575																			Unconsolidated	Sand	mud (fine sand)		82001015				54.6
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		819	1430																			Unconsolidated	Sand	mud (fine sand)		82001015				39.1
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		955	159																			Unconsolidated	Sand	mud (fine sand)		82001015				97.8
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		1019	1853																			Unknown								87.0
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		743	233																			Unknown								89.1
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		884	763																			Octocoral/Black	Branching (3D)			11168902				33.1
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		921	845																			Unconsolidated	Sand	mud (fine sand)		82001015				26.1
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		690	1141																			Open Water								15.5
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		784	767																			Octocoral/Black	Whip			11168917				31.9
-54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		665	1357																			Open Water								35.0
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		964	1754													54	1					Unknown								75.4
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		747	1333													54	1					Unknown								29.5
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		599	1146													54	1					Open Water								24.5
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		614	1157													54	1					Open Water								23.5
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		984	1245													54	1					Unconsolidated	Sand	mud (fine sand)		82001015				26.5
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		887	886													54	1					Unconsolidated	Sand	mud (fine sand)		82001015				20.6
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		622	977													54	1					Open Water								22.4
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		972	1068													54	1					Unconsolidated	Sand	mud (fine sand)		82001015				17.0
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		595	1450													54	1					Open Water								47.4
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		993	145													54	1					Unconsolidated	Sand	mud (fine sand)		82001015				100.0
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		803	1575													54	1					Unconsolidated	Sand	mud (fine sand)		82001015				54.6
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		819	1430													54	1					Unconsolidated	Sand	mud (fine sand)		82001015				39.1
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		955	159													54	1					Unconsolidated	Sand	mud (fine sand)		82001015				97.8
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		1019	1853													54	1					Unknown								87.0
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		743	233													54	1					Unknown								89.1
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		884	763													54	1					Octocoral/Black	Branching (3D)			11168902				33.1
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		921	845													54	1					Unconsolidated	Sand	mud (fine sand)		82001015				26.1
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		690	1141													54	1					Open Water								15.5
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		784	767													54	1					Octocoral/Black	Whip			11168917				31.9
+54_1_01_Left_MAH00176.MP4_0065119.jpg	      0		665	1357													54	1					Open Water								35.0
 55.jpg	      0		845	813													55	1					Unconsolidated	Sand	mud (fine sand)		82001015				27.3
 55.jpg	      0		815	1897													55	1					Unknown								80.7
 55.jpg	      0		559	1824													55	1					Unknown								77.7
