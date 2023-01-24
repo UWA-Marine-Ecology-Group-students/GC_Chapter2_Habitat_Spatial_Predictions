@@ -1,8 +1,8 @@
 Dot Point Measurements
 
-Generated: Thursday 19 January 2023 14:29:18
+Generated: Tuesday 24 January 2023 14:45:35
 
-Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	Latitude	Longitude	Rugosity	Depth	Collector	Fishing status	Spare	Spare	Frame info 1	Frame info 2	Frame info 3	Frame info 4	Frame info 5	Frame info 6	BROAD	MORPHOLOGY	TYPE	RELIEF	CODE				Radius %
+Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	Latitude	Longitude	Rugosity	Depth	Collector	Fishing status	Spare	Spare	Frame info 1	Frame info 2	Frame info 3	Frame info 4	Frame info 5	Frame info 6	BROAD	MORPHOLOGY	TYPE	FieldOfView	Relief	CODE			Radius %
 1.JPG	      0		349	372																						Limited					100.0
 1.JPG	      0		1036	372																						Limited					84.0
 1.JPG	      0		1724	372																						Open	.1. Some relief features amongst mostly flat substrate/sand/rubble. <45 degree substrate slope.				84.0

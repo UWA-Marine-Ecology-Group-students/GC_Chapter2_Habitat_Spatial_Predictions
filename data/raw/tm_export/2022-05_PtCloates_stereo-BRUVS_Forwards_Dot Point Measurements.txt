@@ -1,6 +1,6 @@
 Dot Point Measurements
 
-Generated: Thursday 19 January 2023 14:29:20
+Generated: Tuesday 24 January 2023 14:53:07
 
 Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	Latitude	Longitude	Rugosity	Depth	Collector	Fishing status	Spare	Spare	OpCode	Period	Frame info 3	Frame info 4	Frame info 5	Frame info 6	BROAD	MORPHOLOGY	TYPE	RELIEF	CODE				Radius %
 10_1_01_Left_MAH00329.MP4_0043644.jpg	      0		836	925													10	1					Unconsolidated	Sand	mud (fine sand)		82001015				9.1
