@@ -44,7 +44,8 @@ st_crs(aus) <- gdacrs
 ausc <- st_crop(aus, e)
 
 # Commonwealth parks
-aumpa  <- st_read("data/spatial/shapefiles/AustraliaNetworkMarineParks.shp")    # All aus mpas
+aumpa  <- st_read("data/spatial/shapefiles/AustraliaNetworkMarineParks.shp") %>%    # All aus mpas
+  dplyr::mutate(ZoneName = ifelse(ZoneName %in% "Special Purpose Zone (Mining Exclusion)", "Special Purpose Zone", ZoneName))
 mpa <- st_crop(aumpa, e)                                                        # Crop to the study area
 # Reorder levels so everything plots nicely
 unique(mpa$ZoneName)
@@ -119,7 +120,7 @@ wampa_cols <- scale_colour_manual(values = c(
 nmpa_fills <- scale_fill_manual(values = c("Habitat Protection Zone" = "#fff8a3",
                                                       "National Park Zone" = "#7bbc63",
                                                       "Multiple Use Zone" = "#b9e6fb",
-                                                      "Special Purpose Zone (Mining Exclusion)" = "#c5bcc9",
+                                                      # "Special Purpose Zone (Mining Exclusion)" = "#c5bcc9",
                                            "Special Purpose Zone" = "#c5bcc9",
                                            "Recreational Use Zone" = "#ffb36b"),
                                            name = "Australian Marine Parks"
@@ -170,18 +171,22 @@ i1 <- ggplot() +
   geom_sf(data = mpa, aes(fill = ZoneName), alpha = 3/5, colour = NA) +
   nmpa_fills +
   labs(x = NULL, y = NULL, fill = "Australian Marine Parks") +
+  guides(fill = guide_legend(override.aes = list(size = 0.25), ncol = 2)) +
   new_scale_fill() +
   geom_sf(data = wampa, aes(fill = waname), alpha = 2/5, colour = NA) +
   wampa_fills +
   labs(fill = "State Marine Parks") +
+  guides(fill = guide_legend(override.aes = list(size = 0.25), ncol = 2)) +
   new_scale_fill() +
   geom_sf(data = cwatr, colour = "firebrick", alpha = 4/5, size = 0.2) +
   geom_point(data = nin, aes(longitude, latitude),
-             alpha = 1, shape = 10) +
+             alpha = 1, shape = 10, size = 0.5) +
   coord_sf(xlim = c(113.4, 113.8), 
            ylim = c(-22.5, -22.9)) +                           
   theme_minimal() +
-  theme(axis.text = element_text(size = 4))
+  theme(axis.text = element_text(size = 3),
+        legend.title = element_text(size = 4),
+        legend.text = element_text(size = 4))
 i1 
 
 # Inset 2 - Abrolhos
@@ -194,24 +199,28 @@ i2 <- ggplot() +
   #              breaks = c(0, -30, -70, -200, -700, -2000, -4000, -10000), colour = "white", alpha = 1, size = 0.2) +
   geom_sf(data = ausc, fill = "seashell2", colour = "grey80", size = 0.1) +
   new_scale_fill() +
-  geom_sf(data = terrnp, aes(fill = leg_catego), alpha = 4/5, colour = NA) +
-  labs(fill = "State Managed Areas") +
+  geom_sf(data = terrnp, aes(fill = leg_catego), alpha = 4/5, colour = NA, show.legend = F) +
   terr_fills +
   new_scale_fill() +
-  geom_sf(data = mpa, aes(fill = ZoneName), alpha = 3/5, colour = NA) +
+  geom_sf(data = mpa, aes(fill = factor(ZoneName)), alpha = 3/5, colour = NA) +
   nmpa_fills +
   labs(x = NULL, y = NULL, fill = "Australian Marine Parks") +
+  guides(fill = guide_legend(override.aes = list(size = 0.25), ncol = 2)) +
   new_scale_fill() +
-  geom_sf(data = wampa, aes(fill = waname), alpha = 2/5, colour = NA) +
+  geom_sf(data = wampa, aes(fill = factor(waname)), alpha = 2/5, colour = NA) +
   wampa_fills +
   labs(fill = "State Marine Parks") +
+  guides(fill = guide_legend(override.aes = list(size = 0.25), ncol = 2)) +
   new_scale_fill() +
   geom_sf(data = cwatr, colour = "firebrick", alpha = 4/5, size = 0.2) +
   geom_point(data = abr, aes(longitude, latitude),
-             alpha = 1, shape = 10) +
+             alpha = 1, shape = 10, size = 0.5) +
   coord_sf(xlim = c(113, 114.3), 
            ylim = c(min(abr$latitude), max(abr$latitude))) +                           
-  theme_minimal()
+  theme_minimal() +
+  theme(axis.text = element_text(size = 3),
+        legend.title = element_text(size = 4),
+        legend.text = element_text(size = 4)) 
 i2
 
 # Inset 3 - SwC
@@ -224,31 +233,36 @@ i3 <- ggplot() +
   #              breaks = c(0, -30, -70, -200, -700, -2000, -4000, -10000), colour = "white", alpha = 1, size = 0.2) +
   geom_sf(data = ausc, fill = "seashell2", colour = "grey80", size = 0.1) +
   new_scale_fill() +
-  geom_sf(data = terrnp, aes(fill = leg_catego), alpha = 4/5, colour = NA) +
+  geom_sf(data = terrnp, aes(fill = leg_catego), alpha = 4/5, colour = NA, show.legend = F) +
   labs(fill = "State Managed Areas") +
   terr_fills +
   new_scale_fill() +
   geom_sf(data = mpa, aes(fill = ZoneName), alpha = 3/5, colour = NA) +
   nmpa_fills +
   labs(x = NULL, y = NULL, fill = "Australian Marine Parks") +
+  guides(fill = guide_legend(override.aes = list(size = 0.25), ncol = 2)) +
   new_scale_fill() +
   geom_sf(data = wampa, aes(fill = waname), alpha = 2/5, colour = NA) +
   wampa_fills +
   labs(fill = "State Marine Parks") +
+  guides(fill = guide_legend(override.aes = list(size = 0.25), ncol = 2)) +
   new_scale_fill() +
   geom_sf(data = cwatr, colour = "firebrick", alpha = 4/5, size = 0.2) +
   geom_point(data = swc, aes(longitude, latitude),
-             alpha = 1, shape = 10) +
+             alpha = 1, shape = 10, size = 0.5) +
   coord_sf(xlim = c(min(swc$longitude), 115.1), 
            ylim = c(min(swc$latitude), max(swc$latitude))) +                           
-  theme_minimal()
+  theme_minimal() +
+  theme(axis.text = element_text(size = 3),
+        legend.title = element_text(size = 4),
+        legend.text = element_text(size = 4))
 i3
 
 # Aus inset
 i4 <- ggplot(data = aus) +
   geom_sf(fill = "seashell1", colour = "grey90", size = 0.05, alpha = 4/5) +
   geom_sf(data = aumpa, alpha = 5/6, colour = "grey85", size = 0.02) +
-  coord_sf(xlim = c(110, 160), ylim = c(-46, -9)) +
+  coord_sf(xlim = c(106, 160), ylim = c(-46, -9)) +
   annotate("rect", xmin = 108, xmax = 125, ymin = -37, ymax = -13,   # Change here 
            colour = "grey25", fill = "white", alpha = 1/5, size = 0.2) +
   theme_bw() +
@@ -276,22 +290,17 @@ i5 <- ggplot(data = aus) +
         panel.border = element_rect(colour = "grey70"))
 i5
 
-# layout <- "
-# AAE
-# BB#
-# CC#"
-# 
-# test <- i1 + i2 + i3 + (i4 + inset_element(i5, left = 0, bottom = 0.7, right = 0.3, top = 1)) + 
-#   plot_layout(design = layout, guides = "collect")
-# test
+design <- "
+14
+24
+35
+"
 
-layout1 <- i5 + inset_element(i4, left = 0.01, bottom = 0.75, right = 0.4, top = 1)
-layout1
+inset1 <- i5 + inset_element(i4, left = 0.01, bottom = 0.75, right = 0.4, top = 1)
+inset1
 
-ggsave("plots/overall-sampling-locations-inset.png", dpi = 300, width = 4, height = 6)
+layout <- i1 + i2 + i3 + inset1 + guide_area() + plot_layout(design = design, guides = "collect")
+layout
 
-layout2 <- i1 / i2 / i3 + plot_layout(guides = "collect") 
-layout2
-
-ggsave("plots/overall-sampling-locations-panes.png", dpi = 300, width = 10, height = 6)
+ggsave("plots/overall-sampling-locations.png", dpi = 300, width = 4, height = 6)
 
