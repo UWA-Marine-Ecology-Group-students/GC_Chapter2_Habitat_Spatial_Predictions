@@ -1,8 +1,8 @@
 Dot Point Measurements
 
-Generated: Thursday 19 January 2023 14:29:18
+Generated: Tuesday 24 January 2023 14:45:35
 
-Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	Latitude	Longitude	Rugosity	Depth	Collector	Fishing status	Spare	Spare	Frame info 1	Frame info 2	Frame info 3	Frame info 4	Frame info 5	Frame info 6	BROAD	MORPHOLOGY	TYPE	RELIEF	CODE				Radius %
+Filename	Frame	Time (mins)	Image row	Image col	Date	Location	Site #	Transect #	Latitude	Longitude	Rugosity	Depth	Collector	Fishing status	Spare	Spare	Frame info 1	Frame info 2	Frame info 3	Frame info 4	Frame info 5	Frame info 6	BROAD	MORPHOLOGY	TYPE	FieldOfView	Relief	CODE			Radius %
 1.jpg	      0		139	196																						Open					100.0
 1.jpg	      0		406	196																						Open					89.9
 1.jpg	      0		674	196																						Open	.3. Good relief structure with some overhangs. >45 substrate slope.				89.9
