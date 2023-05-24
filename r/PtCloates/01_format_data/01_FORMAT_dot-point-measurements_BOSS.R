@@ -49,7 +49,7 @@ metadata1 <- read_csv("2021-05_PtCloates_BOSS_Metadata.csv") %>% # read in the f
 names(metadata1)
 
 # Read in metadata2----
-metadata2 <- read_csv("2022-05_PtCloates_BOSS_Metadata.csv") %>% # read in the file
+metadata2 <- read_csv("2022-05_PtCloates_Naked_BOSS_Metadata.csv") %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function 
   dplyr::select(sample, latitude, longitude, date, site, location, successful.count) %>% # select only these columns to keep
   mutate(sample=as.character(sample)) %>% # in this example dataset, the samples are numerical
@@ -92,7 +92,7 @@ test <- points2 %>%
 
 points <- bind_rows(points1, points2)
 
-length(unique(points$sample)) # 91 samples
+length(unique(points$sample)) # 109 samples
 
 test <- points %>% 
   group_by(sample) %>%
