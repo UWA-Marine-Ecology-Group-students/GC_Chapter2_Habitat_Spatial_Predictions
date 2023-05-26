@@ -24,12 +24,10 @@ name <- "PtCloates" # Change here
 # Load in tidy data from the formatting scripts
 boss <- read.csv("data/tidy/PtCloates_BOSS_random-points_broad.habitat.csv") %>% # Need to type filename manually
   dplyr::mutate(method = "BOSS") %>%                                            # Change here
-  dplyr::filter(location %in% "NPZ6") %>%                                       # Only Shallow Bank
   glimpse()
 
 bruv <- read.csv("data/tidy/PtCloates_BRUVs_random-points_broad.habitat.csv") %>% # Need to type filename manually
   dplyr::mutate(method = "BRUV") %>%                                            # Change here
-  dplyr::filter(location %in% "NPZ6") %>%                                       # Only Shallow Bank
   glimpse()
 
 hab  <- bind_rows(boss, bruv)                                                   # Join together BOSS and BRUV data
