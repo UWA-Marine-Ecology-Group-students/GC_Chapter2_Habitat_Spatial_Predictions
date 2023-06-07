@@ -68,7 +68,7 @@ setwd(tm.export.dir)
 dir()
 
 # read in the forwards points1 annotations ----
-forwards.points1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Forwards_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
+forwards.points1 <- read.delim("2021-05_PtCloates_stereo_BRUVS_Forwards_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
@@ -100,7 +100,7 @@ test <- forwards.points %>%
 test2 <- metadata%>% anti_join(forwards.points)
 
 #read in the backwards points1 annotations ---
-backwards.points1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Backwards_Dot Point Measurements.txt", header=T, skip=4, stringsAsFactors = FALSE) %>% #read in the file
+backwards.points1 <- read.delim("2021-05_PtCloates_stereo_BRUVS_Backwards_Dot Point Measurements.txt", header=T, skip=4, stringsAsFactors = FALSE) %>% #read in the file
   ga.clean.names() %>% # tidy the column names using Global Archive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
@@ -135,7 +135,7 @@ missing.metadata <- anti_join(points,metadata, by = c("sample")) # samples in ha
 missing.habitat <- anti_join(metadata,points, by = c("sample"))
 
 # read in forwards relief Pt cloates 2021
-forwards.relief1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Forwards_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
+forwards.relief1 <- read.delim("2021-05_PtCloates_stereo_BRUVS_Forwards_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
@@ -158,7 +158,7 @@ forwards.relief <- bind_rows(forwards.relief1, forwards.relief2)
 length(unique(forwards.relief$sample)) # 88 samples
 
 #read in backwards relief Pt Cloates 2021
-backwards.relief1 <- read.delim("2021-05_PtCloates_stereo-BRUVS_Backwards_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
+backwards.relief1 <- read.delim("2021-05_PtCloates_stereo_BRUVS_Backwards_Relief_Dot Point Measurements.txt",header=T,skip=4,stringsAsFactors=FALSE) %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function
   mutate(sample=str_replace_all(.$filename,c(".png"="",".jpg"="",".JPG"=""))) %>%
   mutate(sample=as.character(sample)) %>% 
@@ -239,29 +239,29 @@ broad.percent.cover<-broad.points %>%
   glimpse()
 
 
-# CREATE catami_morphology------
-detailed.points <- habitat%>%
-  dplyr::select(-c(relief))%>%
-  dplyr::filter(!morphology%in%c("",NA,"Unknown"))%>%
-  dplyr::filter(!broad%in%c("",NA,"Unknown","Open.Water"))%>%
-  dplyr::mutate(morphology=paste("detailed",broad,morphology,type,sep = "."))%>%
-  dplyr::mutate(morphology=str_replace_all(.$morphology, c(".NA"="","[^[:alnum:] ]"="."," "="","10mm.."="10mm.")))%>%
-  dplyr::select(-c(broad,type))%>%
-  dplyr::mutate(count=1)%>%
-  dplyr::group_by(sample)%>%
-  spread(key=morphology,value=count,fill=0)%>%
-  dplyr::select(-c(image.row,image.col))%>%
-  dplyr::group_by(sample)%>%
-  dplyr::summarise_all(funs(sum))%>%
-  dplyr::mutate(detailed.total.points.annotated=rowSums(.[,2:(ncol(.))],na.rm = TRUE ))%>%
-  ga.clean.names()%>%
-  glimpse()
-
-detailed.percent.cover<-detailed.points %>%
-  group_by(sample)%>%
-  mutate_at(vars(starts_with("detailed")),funs(./detailed.total.points.annotated*100))%>%
-  dplyr::select(-c(detailed.total.points.annotated))%>%
-  glimpse()
+# # CREATE catami_morphology------
+# detailed.points <- habitat%>%
+#   dplyr::select(-c(relief))%>%
+#   dplyr::filter(!morphology%in%c("",NA,"Unknown"))%>%
+#   dplyr::filter(!broad%in%c("",NA,"Unknown","Open.Water"))%>%
+#   dplyr::mutate(morphology=paste("detailed",broad,morphology,type,sep = "."))%>%
+#   dplyr::mutate(morphology=str_replace_all(.$morphology, c(".NA"="","[^[:alnum:] ]"="."," "="","10mm.."="10mm.")))%>%
+#   dplyr::select(-c(broad,type))%>%
+#   dplyr::mutate(count=1)%>%
+#   dplyr::group_by(sample)%>%
+#   spread(key=morphology,value=count,fill=0)%>%
+#   dplyr::select(-c(image.row,image.col))%>%
+#   dplyr::group_by(sample)%>%
+#   dplyr::summarise_all(funs(sum))%>%
+#   dplyr::mutate(detailed.total.points.annotated=rowSums(.[,2:(ncol(.))],na.rm = TRUE ))%>%
+#   ga.clean.names()%>%
+#   glimpse()
+# 
+# detailed.percent.cover<-detailed.points %>%
+#   group_by(sample)%>%
+#   mutate_at(vars(starts_with("detailed")),funs(./detailed.total.points.annotated*100))%>%
+#   dplyr::select(-c(detailed.total.points.annotated))%>%
+#   glimpse()
 
 # Create relief----
 relief.grid<-habitat%>%
@@ -291,23 +291,23 @@ habitat.broad.points <- metadata%>%
   left_join(broad.points)%>%
   left_join(relief.grid)
 
-habitat.detailed.points <- metadata%>%
-  #left_join(fov.points, by = "sample")%>%
-  left_join(detailed.points)%>%
-  left_join(relief.grid)
+# habitat.detailed.points <- metadata%>%
+#   #left_join(fov.points, by = "sample")%>%
+#   left_join(detailed.points)%>%
+#   left_join(relief.grid)
 
 habitat.broad.percent <- metadata%>%
   #left_join(fov.percent.cover, by = "sample")%>%
   left_join(broad.percent.cover)%>%
   left_join(relief.grid)
 
-habitat.detailed.percent <- metadata%>%
-  #left_join(fov.percent.cover, by = "sample")%>%
-  left_join(detailed.percent.cover)%>%
-  left_join(relief.grid)
+# habitat.detailed.percent <- metadata%>%
+#   #left_join(fov.percent.cover, by = "sample")%>%
+#   left_join(detailed.percent.cover)%>%
+#   left_join(relief.grid)
 
 write.csv(habitat.broad.points,file=paste(study,"random-points_broad.habitat.csv",sep = "_"), row.names=FALSE)
-write.csv(habitat.detailed.points,file=paste(study,"random-points_detailed.habitat.csv",sep = "_"), row.names=FALSE)
+# write.csv(habitat.detailed.points,file=paste(study,"random-points_detailed.habitat.csv",sep = "_"), row.names=FALSE)
 
 
 write.csv(habitat.broad.percent,file=paste(study,"random-points_percent-cover_broad.habitat.csv",sep = "_"), row.names=FALSE)
