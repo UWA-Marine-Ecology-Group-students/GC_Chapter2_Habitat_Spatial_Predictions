@@ -245,10 +245,6 @@ habitat.broad.points <- metadata%>%
   left_join(broad.points, by = "sample")%>%
   left_join(relief.grid)
 
-habitat.detailed.points <- metadata%>%
-  #left_join(fov.points, by = "sample")%>%
-  left_join(detailed.points, by = "sample")%>%
-  left_join(relief.grid)
 
 habitat.broad.percent <- metadata%>%
   #left_join(fov.percent.cover, by = "sample")%>%

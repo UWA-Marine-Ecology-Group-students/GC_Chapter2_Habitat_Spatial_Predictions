@@ -180,7 +180,7 @@ backwards.relief <- bind_rows(backwards.relief1, backwards.relief2)
 
 length(unique(backwards.relief$sample)) # 64 samples
 
-relief <- rbind(forwards.relief, backwards.relief)
+relief <- bind_rows(forwards.relief, backwards.relief)
 
 no.annotations <- relief%>%
   group_by(sample)%>%
@@ -223,17 +223,18 @@ broad.points <- habitat%>%
   filter(!broad%in%c("",NA,"Unknown","Open.Water","Open Water"))%>%
   dplyr::mutate(broad=paste("broad",broad,sep = "."))%>%
   dplyr::mutate(count=1)%>%
-  dplyr::group_by(sample)%>%
+  dplyr::group_by(campaignid, sample)%>%
   tidyr::spread(key=broad,value=count,fill=0)%>%
   dplyr::select(-c(image.row,image.col))%>%
-  dplyr::group_by(sample)%>%
+  dplyr::group_by(campaignid, sample)%>%
   dplyr::summarise_all(funs(sum))%>%
-  dplyr::mutate(broad.total.points.annotated=rowSums(.[,2:(ncol(.))],na.rm = TRUE ))%>%
+  ungroup() %>%
+  dplyr::mutate(broad.total.points.annotated=rowSums(.[,3:(ncol(.))],na.rm = TRUE ))%>%
   ga.clean.names()%>%
-  glimpse
+  glimpse()
 
 broad.percent.cover<-broad.points %>%
-  group_by(sample)%>%
+  group_by(campaignid, sample)%>%
   mutate_at(vars(starts_with("broad")),funs(./broad.total.points.annotated*100))%>%
   dplyr::select(-c(broad.total.points.annotated))%>%
   glimpse()
@@ -266,7 +267,7 @@ broad.percent.cover<-broad.points %>%
 # Create relief----
 relief.grid<-habitat%>%
   dplyr::filter(!broad%in%c("Open Water","Unknown"))%>%
-  dplyr::filter(!relief%in%c("",NA))%>%
+  dplyr::filter(!relief%in%c("",NA, "Unknown"))%>%
   dplyr::select(-c(broad,morphology,type,image.row,image.col))%>%
   dplyr::mutate(relief.rank=ifelse(relief==".0. Flat substrate, sandy, rubble with few features. ~0 substrate slope.",0,
                                    ifelse(relief==".1. Some relief features amongst mostly flat substrate/sand/rubble. <45 degree substrate slope.",1,
@@ -276,11 +277,10 @@ relief.grid<-habitat%>%
                                                                ifelse(relief==".5. Exceptional structural complexity, numerous large holes and caves. Vertical wall. ~90 substrate slope.",5,relief)))))))%>%
   dplyr::select(-c(relief))%>%
   dplyr::mutate(relief.rank=as.numeric(relief.rank))%>%
-  dplyr::group_by(sample)%>%
+  dplyr::group_by(campaignid, sample)%>%
   dplyr::summarise(mean.relief= mean (relief.rank), sd.relief= sd (relief.rank))%>%
   dplyr::ungroup()%>%
   glimpse()
-
 
 # Write final habitat data----
 setwd(tidy.dir)
@@ -290,11 +290,6 @@ habitat.broad.points <- metadata%>%
   #left_join(fov.points, by = "sample")%>%
   left_join(broad.points)%>%
   left_join(relief.grid)
-
-# habitat.detailed.points <- metadata%>%
-#   #left_join(fov.points, by = "sample")%>%
-#   left_join(detailed.points)%>%
-#   left_join(relief.grid)
 
 habitat.broad.percent <- metadata%>%
   #left_join(fov.percent.cover, by = "sample")%>%
@@ -311,6 +306,6 @@ write.csv(habitat.broad.points,file=paste(study,"random-points_broad.habitat.csv
 
 
 write.csv(habitat.broad.percent,file=paste(study,"random-points_percent-cover_broad.habitat.csv",sep = "_"), row.names=FALSE)
-write.csv(habitat.detailed.percent,file=paste(study,"random-points_percent-cover_detailed.habitat.csv",sep = "_"), row.names=FALSE)
+#write.csv(habitat.detailed.percent,file=paste(study,"random-points_percent-cover_detailed.habitat.csv",sep = "_"), row.names=FALSE)
 
 setwd(working.dir)
