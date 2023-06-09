@@ -29,7 +29,8 @@ wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Lat
 # read in
 habi   <- readRDS("data/tidy/PtCloates_habitat-bathy-derivatives.rds")           # Merged data from 'R/03_mergedata.R'
 preds  <- readRDS("data/spatial/rasters/PtCloates_spatial_covariates.rds")       # Spatial covs from 'R/02_spatial_layers.R'
-preds <- rast(preds)
+preds <- rast(list(preds))
+#preds <- rast(preds)
 preds[[1]] <- clamp(preds[[1]], upper=-25, lower=-190, values=FALSE)
 preds <- mask(preds,preds[[1]])
 plot(preds)
@@ -46,19 +47,19 @@ habisp <- vect(habi, geom = c("longitude", "latitude"), crs = wgscrs, keep = T)
 sbuff  <- terra::buffer(habisp, 10000)                                         # Buffer should be in metres
 plot(sbuff)
 # Use formula from top model from '2_modelselect.R'
-m_kelps <- gam(cbind(kelps, broad.total.points.annotated - kelps) ~ 
-                 s(depth,     k = 5, bs = "cr")  + 
-                 s(detrended, k = 5, bs = "cr") + 
-                 s(roughness, k = 5, bs = "cr"), 
-               data = habi, method = "REML", family = binomial("logit"))
-summary(m_kelps)
+# m_kelps <- gam(cbind(kelps, broad.total.points.annotated - kelps) ~                 #No kelp at Pt Cloates
+#                  s(depth,     k = 5, bs = "cr")  + 
+#                  s(detrended, k = 5, bs = "cr") + 
+#                  s(roughness, k = 5, bs = "cr"), 
+#                data = habi, method = "REML", family = binomial("logit"))
+# summary(m_kelps)
 
-m_macro <- gam(cbind(macroalgae, broad.total.points.annotated - macroalgae) ~ 
-                 s(depth,     k = 5, bs = "cr")  + 
-                 s(detrended, k = 5, bs = "cr") + 
-                 s(roughness, k = 5, bs = "cr"), 
-               data = habi, method = "REML", family = binomial("logit"))
-summary(m_macro)
+# m_macro <- gam(cbind(macroalgae, broad.total.points.annotated - macroalgae) ~         #No macroalgae at Pt Cloates
+#                  s(depth,     k = 5, bs = "cr")  + 
+#                  s(detrended, k = 5, bs = "cr") + 
+#                  s(roughness, k = 5, bs = "cr"), 
+#                data = habi, method = "REML", family = binomial("logit"))
+# summary(m_macro)
 
 m_inverts <- gam(cbind(inverts, broad.total.points.annotated - inverts) ~ 
             s(depth,     k = 5, bs = "cr") + 
@@ -83,8 +84,8 @@ summary(m_rock)
 
 # predict, rasterise and plot
 preddf <- cbind(preddf, 
-                "pkelps" = predict(m_kelps, preddf, type = "response"),
-                "pmacroalg" = predict(m_macro, preddf, type = "response"),
+                #"pkelps" = predict(m_kelps, preddf, type = "response"),
+                #"pmacroalg" = predict(m_macro, preddf, type = "response"),
                 "psand" = predict(m_sand, preddf, type = "response"),
                 "prock" = predict(m_rock, preddf, type = "response"),
                 "pinverts" = predict(m_inverts, preddf, type = "response"))
@@ -101,7 +102,7 @@ spreddf         <- as.data.frame(sprast, xy = TRUE, na.rm = T) #%>%
 #  dplyr::filter(Z < -30)
 
 # Add a colum that categorises the dominant habitat class
-spreddf$dom_tag <- apply(spreddf[12:16], 1, # Set columns manually here
+spreddf$dom_tag <- apply(spreddf[12:14], 1, # Set columns manually here only 12 to 14 for Pt Cloates
                         FUN = function(x){names(which.max(x))})
 spreddf$dom_tag <- sub('.', '', spreddf$dom_tag)                                # Removes the p but not really sure why haha
 head(spreddf)                                                                   # Check to see if it all looks ok

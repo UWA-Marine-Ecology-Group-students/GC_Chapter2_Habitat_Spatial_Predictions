@@ -37,8 +37,8 @@ dat <- readRDS(paste(paste0('data/tidy/', name),                                
                      'habitat-bathy-derivatives.rds', sep = "_")) %>% 
   dplyr::select(sample, longitude, latitude, depth,                             # Select columns to keep
                TRI, TPI, roughness, slope, aspect, detrended,                  # Bathymetry derivatives
-                broad.total.points.annotated, kelps, rock, macroalgae, sand, inverts) %>% # Points annotated and habitat scores
-  pivot_longer(cols = c("kelps", "rock", "macroalgae", "sand", "inverts"),      # Set your response columns here 
+                broad.total.points.annotated, rock, sand, inverts) %>% # Points annotated and habitat scores
+  pivot_longer(cols = c("rock", "sand", "inverts"),      # Set your response columns here 
                names_to = "response", values_to = "number") %>%                 # Pivot habitat columns to long format for modelling
   glimpse()
 

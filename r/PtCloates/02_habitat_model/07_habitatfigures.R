@@ -70,7 +70,7 @@ bathdf <- readRDS(paste(paste0('data/spatial/rasters/',
                                name), 'ga_bathy.rds', sep = "_"))
 
 # read in spatial predictions from 'R/05_habitat_model.R'
-spreddf <- readRDS(paste(paste0('output/Abrolhos/', name),
+spreddf <- readRDS(paste(paste0('output/PtCloates/', name),
                          'spatial_habitat_predictions.rds', sep = "_")) %>%
   dplyr::mutate(dom_tag = as.factor(dom_tag)) %>%                               # Factorise
   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
@@ -83,7 +83,7 @@ spreddf <- readRDS(paste(paste0('output/Abrolhos/', name),
 
 # Figure 1: Categorical habitat maps ----
 # Assign habitat class colours
-hab_cols <- scale_fill_manual(values = c("Macroalgae" = "#d7f5dd",
+hab_cols <- scale_fill_manual(values = c(#"Macroalgae" = "#d7f5dd",
                                          "Rock" = "#fad3d2",
                                          "Sand" = "#fffebf",
                                          "Sessile invertebrates" = "#ecd7f5"

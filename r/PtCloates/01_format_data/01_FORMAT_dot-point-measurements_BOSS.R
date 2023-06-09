@@ -42,7 +42,7 @@ dir()
 # Read in metadata1----
 metadata1 <- read_csv("2021-05_PtCloates_BOSS_Metadata.csv") %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function 
-  dplyr::select(sample, latitude, longitude, date, site, location, successful.count) %>% # select only these columns to keep
+  dplyr::select(sample, latitude, longitude, date, site, location, depth, successful.count) %>% # select only these columns to keep
   mutate(sample=as.character(sample)) %>% # in this example dataset, the samples are numerical
   glimpse() # preview
 
@@ -51,7 +51,7 @@ names(metadata1)
 # Read in metadata2----
 metadata2 <- read_csv("2022-05_PtCloates_Naked_BOSS_Metadata.csv") %>% # read in the file
   ga.clean.names() %>% # tidy the column names using GlobalArchive function 
-  dplyr::select(sample, latitude, longitude, date, site, location, successful.count) %>% # select only these columns to keep
+  dplyr::select(sample, latitude, longitude, date, site, location, depth, successful.count) %>% # select only these columns to keep
   mutate(sample=as.character(sample)) %>% # in this example dataset, the samples are numerical
   glimpse() # preview
 
@@ -193,29 +193,29 @@ broad.percent.cover<-broad.points %>%
   glimpse()
 
 
-# CREATE catami_morphology------
-detailed.points <- habitat%>%
-  dplyr::select(-c(relief))%>%
-  dplyr::filter(!morphology%in%c("",NA,"Unknown"))%>%
-  dplyr::filter(!broad%in%c("",NA,"Unknown","Open.Water"))%>%
-  dplyr::mutate(morphology=paste("detailed",broad,morphology,type,sep = "."))%>%
-  dplyr::mutate(morphology=str_replace_all(.$morphology, c(".NA"="","[^[:alnum:] ]"="."," "="","10mm.."="10mm.")))%>%
-  dplyr::select(-c(broad,type))%>%
-  dplyr::mutate(count=1)%>%
-  dplyr::group_by(sample)%>%
-  spread(key=morphology,value=count,fill=0)%>%
-  dplyr::select(-c(image.row,image.col))%>%
-  dplyr::group_by(sample)%>%
-  dplyr::summarise_all(funs(sum))%>%
-  dplyr::mutate(detailed.total.points.annotated=rowSums(.[,2:(ncol(.))],na.rm = TRUE ))%>%
-  ga.clean.names()%>%
-  glimpse()
+# # CREATE catami_morphology------
+# detailed.points <- habitat%>%
+#   dplyr::select(-c(relief))%>%
+#   dplyr::filter(!morphology%in%c("",NA,"Unknown"))%>%
+#   dplyr::filter(!broad%in%c("",NA,"Unknown","Open.Water"))%>%
+#   dplyr::mutate(morphology=paste("detailed",broad,morphology,type,sep = "."))%>%
+#   dplyr::mutate(morphology=str_replace_all(.$morphology, c(".NA"="","[^[:alnum:] ]"="."," "="","10mm.."="10mm.")))%>%
+#   dplyr::select(-c(broad,type))%>%
+#   dplyr::mutate(count=1)%>%
+#   dplyr::group_by(sample)%>%
+#   spread(key=morphology,value=count,fill=0)%>%
+#   dplyr::select(-c(image.row,image.col))%>%
+#   dplyr::group_by(sample)%>%
+#   dplyr::summarise_all(funs(sum))%>%
+#   dplyr::mutate(detailed.total.points.annotated=rowSums(.[,2:(ncol(.))],na.rm = TRUE ))%>%
+#   ga.clean.names()%>%
+#   glimpse()
 
-detailed.percent.cover<-detailed.points %>%
-  group_by(sample)%>%
-  mutate_at(vars(starts_with("detailed")),funs(./detailed.total.points.annotated*100))%>%
-  dplyr::select(-c(detailed.total.points.annotated))%>%
-  glimpse()
+# detailed.percent.cover<-detailed.points %>%
+#   group_by(sample)%>%
+#   mutate_at(vars(starts_with("detailed")),funs(./detailed.total.points.annotated*100))%>%
+#   dplyr::select(-c(detailed.total.points.annotated))%>%
+#   glimpse()
 
 # Create relief----
 relief.grid<-habitat%>%
@@ -264,3 +264,4 @@ write.csv(habitat.broad.percent,file=paste(study,"random-points_percent-cover_br
 #write.csv(habitat.detailed.percent,file=paste(study,"random-points_percent-cover_detailed.habitat.csv",sep = "_"), row.names=FALSE)
 
 setwd(working.dir)
+
