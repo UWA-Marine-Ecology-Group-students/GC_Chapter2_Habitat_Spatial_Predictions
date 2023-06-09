@@ -163,11 +163,11 @@ missing.habitat <- anti_join(metadata,habitat, by = c("sample")) # samples in th
 #   dplyr::select(-c(fov.total.points.annotated))%>%
 #   glimpse()
 
-
+unique(habitat$broad)
 # CREATE catami_broad------
 broad.points <- habitat%>%
   dplyr::select(-c(morphology,type,relief))%>%
-  filter(!broad%in%c("",NA,"Unknown","Open.Water","Open Water"))%>%
+  filter(!broad%in%c("",NA,"Unknown","Open Water","Unscorable"))%>%
   dplyr::mutate(broad=paste("broad",broad,sep = "."))%>%
   dplyr::mutate(count=1)%>%
   dplyr::group_by(sample)%>%
@@ -251,16 +251,16 @@ habitat.broad.percent <- metadata%>%
   left_join(broad.percent.cover, by = "sample")%>%
   left_join(relief.grid)
 
-habitat.detailed.percent <- metadata%>%
+#habitat.detailed.percent <- metadata%>%
   #left_join(fov.percent.cover, by = "sample")%>%
-  left_join(detailed.percent.cover, by = "sample")%>%
-  left_join(relief.grid)
+  # left_join(detailed.percent.cover, by = "sample")%>%
+  # left_join(relief.grid)
 
 write.csv(habitat.broad.points,file=paste(study,"random-points_broad.habitat.csv",sep = "_"), row.names=FALSE)
-write.csv(habitat.detailed.points,file=paste(study,"random-points_detailed.habitat.csv",sep = "_"), row.names=FALSE)
+#write.csv(habitat.detailed.points,file=paste(study,"random-points_detailed.habitat.csv",sep = "_"), row.names=FALSE)
 
 
 write.csv(habitat.broad.percent,file=paste(study,"random-points_percent-cover_broad.habitat.csv",sep = "_"), row.names=FALSE)
-write.csv(habitat.detailed.percent,file=paste(study,"random-points_percent-cover_detailed.habitat.csv",sep = "_"), row.names=FALSE)
+#write.csv(habitat.detailed.percent,file=paste(study,"random-points_percent-cover_detailed.habitat.csv",sep = "_"), row.names=FALSE)
 
 setwd(working.dir)

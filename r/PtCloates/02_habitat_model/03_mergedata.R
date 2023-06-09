@@ -22,22 +22,34 @@ library(ggplot2)
 name <- "PtCloates" # Change here
 
 # Load in tidy data from the formatting scripts
-boss <- read.csv("data/tidy/PtCloates_BOSS_random-points_broad.habitat.csv") %>% # Need to type filename manually
+boss <- read_csv("data/tidy/PtCloates_BOSS_random-points_broad.habitat.csv") %>% # Need to type filename manually
   dplyr::mutate(method = "BOSS") %>%                                            # Change here
+  dplyr::mutate(broad.unconsolidated=broad.unconsolidated + broad.substrate.unconsolidated.soft.) %>%
+  dplyr::select(-c(broad.substrate.unconsolidated.soft.)) %>%
   glimpse()
 
-bruv <- read.csv("data/tidy/PtCloates_BRUVs_random-points_broad.habitat.csv") %>% # Need to type filename manually
-  dplyr::mutate(method = "BRUV") %>%                                            # Change here
+names(boss)
+
+bruv <- read_csv("data/tidy/PtCloates_BRUVs_random-points_broad.habitat.csv") %>% # Need to type filename manually
+  dplyr::mutate(method = "BRUV") %>%  
+  dplyr::mutate(sample= as.character(sample)) %>%# Change here
   glimpse()
 
-hab  <- bind_rows(boss, bruv)                                                   # Join together BOSS and BRUV data
+names(bruv)
+
+#boss$sample <- as.numeric(boss$sample)
+#boss["sample"][is.na(boss["sample"])] <- 1000
+
+hab  <- bind_rows(boss, bruv)  %>%                     # Join together BOSS and BRUV data
+  replace_na(list(broad.bryozoa=0))
+unique(hab$sample)              
 
 # Extract bathy derivatives for modelling
 # Set up CRS and load spatial covariates from 02_spatial_layers.R 
 wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Latlong projection 
 preds  <- readRDS(paste(paste0('data/spatial/rasters/', name), 
                        'spatial_covariates.rds', sep = "_"))
-preds <- rast(preds)
+preds <- rast(list(preds))
 plot(preds)
 
 # Align crs and check samples over bathy and extract terrain data
@@ -52,13 +64,13 @@ habi_df   <- cbind(habt_df, terra::extract(preds, allhab_sp))                  #
 # Rename columns and combine habitat columns for modelling
 # Change this for your project needs!!
 allhab <- habi_df %>%
-  dplyr::rename(kelps = broad.kelps,                                            # Rename columns to simplify setting models
-                macroalgae = broad.macroalgae,
+  dplyr::rename(                                          # Rename columns to simplify setting models
+                #macroalgae = broad.macroalgae,
                 sand = broad.unconsolidated,
                 rock = broad.consolidated) %>%
   dplyr::mutate(inverts = broad.sponges + broad.octocoral.black +               # Make a sessile invertebrate column
                   broad.invertebrate.complex +  broad.hydroids + 
-                  broad.bryozoa + broad.ascidians) %>%
+                  broad.bryozoa) %>%
   glimpse()                                                                     # Preview data
 
 # Save the output

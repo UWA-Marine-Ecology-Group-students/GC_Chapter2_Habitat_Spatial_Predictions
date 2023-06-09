@@ -62,7 +62,7 @@ preds <- terrain(tbath_c, neighbors = 8,
                  v = c("slope", "aspect", "TPI", "TRI", "roughness"),
                  unit = "degrees")         # Remove here as necessary
 preds <- rast(list(tbath_c, preds))                                                  # Stack the derivatives with the bathymetry
-
+plot(preds)
 # Calculate detrended bathymetry
 zstar <- st_as_stars(tbath_c)                                                   # Convert to a stars object
 detre <- detrend(zstar, parallel = 8)                                           # Detrend bathymetry - This usually runs quite slow!
