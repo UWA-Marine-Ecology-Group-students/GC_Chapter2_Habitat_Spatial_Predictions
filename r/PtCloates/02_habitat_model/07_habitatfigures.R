@@ -10,7 +10,7 @@
 
 # CONTENTS
 # Figure 1. Dominant habitat class map
-# Figure 2. Individual habitat class predictions - facetted plot
+# Figure 2. Individual habitat class predictions - faceted plot
 # Figure 3. Bathymetry derivatives
 # Figure 4. Predicted Relief
 # Figure 5. Relief spatial random effect
@@ -74,8 +74,8 @@ spreddf <- readRDS(paste(paste0('output/PtCloates/', name),
                          'spatial_habitat_predictions.rds', sep = "_")) %>%
   dplyr::mutate(dom_tag = as.factor(dom_tag)) %>%                               # Factorise
   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
-                                 kelps = "Kelp",
-                                 macroalg = "Macroalgae",
+                                 #kelps = "Kelp",
+                                 #macroalg = "Macroalgae",
                                  rock = "Rock",
                                  sand = "Sand",
                                  inverts = "Sessile invertebrates")) %>%
@@ -94,14 +94,15 @@ p1 <- ggplot() +
   geom_tile(data = spreddf, aes(x, y, fill = dom_tag)) +
   hab_cols +                                                                    # Class colours
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
+  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
                breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
                colour = "grey54",
                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
-  coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
-           ylim = c(-28.147530872, -27.951387525)) +
+  coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
+           ylim = c(-22.85, -22.60)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
-       colour = NULL, title = "Shallow Bank") +
+       colour = NULL, title = "Point Cloates") +
   annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
            y = c(-28.078038504, -28.078038504, -28.078038504), 
            label = c("30m", "70m", "200m"),
@@ -113,66 +114,66 @@ png(filename = paste(paste("plots", name, sep = "/"),                   # Save o
 p1
 dev.off()
 
-#saving the predictions as a shapefile
-# As a shapefile
-preddf <- spreddf %>%
-  dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
-                                        "Kelp" = 1,
-                                        "Macroalgae" = 2,
-                                        "Rock" = 3,
-                                        "Sand" = 4,
-                                        "Sessile invertebrates" = 5)) %>%
-  dplyr::select(x, y, dom_tag)
+# #saving the predictions as a shapefile
+# # As a shapefile
+# preddf <- spreddf %>%
+#   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
+#                                         #"Kelp" = 1,
+#                                         #"Macroalgae" = 2,
+#                                         "Rock" = 3,
+#                                         "Sand" = 4,
+#                                         "Sessile invertebrates" = 5)) %>%
+#   dplyr::select(x, y, dom_tag)
+# 
+# predr <- rast(preddf)
+# plot(predr)
+# 
+# predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
+# plot(predr_smooth)
+# 
+# smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
+#   dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
+#   dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
+# crs(predr_smooth) <- wgscrs
+# pred_stars <- st_as_stars(predr_smooth)
+# 
+# dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
+# 
+# st_write(dom.habs, "output/Abrolhos/Abrolhos-dominant-habitat.shp", 
+#          append = F)
 
-predr <- rast(preddf)
-plot(predr)
 
-predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
-plot(predr_smooth)
-
-smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
-  dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
-  dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
-crs(predr_smooth) <- wgscrs
-pred_stars <- st_as_stars(predr_smooth)
-
-dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
-
-st_write(dom.habs, "output/Abrolhos/Abrolhos-dominant-habitat.shp", 
-         append = F)
-
-
-# Figure 1.5
-smooth_plot <- smooth_df %>%
-  dplyr::mutate(smoothed = dplyr::recode(smoothed,                                # Tidy names for plot legend
-                                        "1" = "Kelp",
-                                        "2" = "Macroalgae",
-                                        "3" = "Rock",
-                                        "4" = "Sand",
-                                        "5" = "Sessile invertebrates"))
-
-p1.5 <- ggplot() +
-  geom_tile(data = smooth_plot, aes(x, y, fill = smoothed)) +
-  hab_cols +                                                                    # Class colours
- # geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
-  geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
-               breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
-               colour = "grey54",
-               alpha = 1, size = 0.5) +                                         # Transparency and linewidth
-  coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
-           ylim = c(-28.147530872, -27.951387525)) +
-  labs(x = "Longitude", y = "Latitude", fill = "Habitat",                                    # Labels  
-       colour = NULL, title = "Shallow Bank") + 
-     annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
-           y = c(-28.078038504, -28.078038504, -28.078038504), 
-           label = c("30m", "70m", "200m"),
-           size = 2, colour = "grey54") +
-  theme_minimal()
-png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
-                     "dominant_habitat_smoothed.png", sep = "_"),
-    width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
-p1.5
-dev.off()
+# # Figure 1.5
+# smooth_plot <- smooth_df %>%
+#   dplyr::mutate(smoothed = dplyr::recode(smoothed,                                # Tidy names for plot legend
+#                                         "1" = "Kelp",
+#                                         "2" = "Macroalgae",
+#                                         "3" = "Rock",
+#                                         "4" = "Sand",
+#                                         "5" = "Sessile invertebrates"))
+# 
+# p1.5 <- ggplot() +
+#   geom_tile(data = smooth_plot, aes(x, y, fill = smoothed)) +
+#   hab_cols +                                                                    # Class colours
+#  # geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
+#   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
+#                breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
+#                colour = "grey54",
+#                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
+#   coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
+#            ylim = c(-28.147530872, -27.951387525)) +
+#   labs(x = "Longitude", y = "Latitude", fill = "Habitat",                                    # Labels  
+#        colour = NULL, title = "Shallow Bank") + 
+#      annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
+#            y = c(-28.078038504, -28.078038504, -28.078038504), 
+#            label = c("30m", "70m", "200m"),
+#            size = 2, colour = "grey54") +
+#   theme_minimal()
+# png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
+#                      "dominant_habitat_smoothed.png", sep = "_"),
+#     width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
+# p1.5
+# dev.off()
 
 
 # Figure 2. Individual habitat class predictions ----
@@ -181,8 +182,8 @@ widehabit <- spreddf %>%
   tidyr::pivot_longer(cols = starts_with("p"),                                  # Careful here that you don't have any other columns starting with 'p'
                       values_to = "value", names_to = "variable") %>%
   dplyr::mutate(variable = dplyr::recode(variable,                              # Tidy variable names
-                pkelps = "Kelp",
-                pmacroalg = "Macroalgae",
+                #pkelps = "Kelp",
+                #pmacroalg = "Macroalgae",
                 prock = "Rock",
                 psand = "Sand",
                 pinverts = "Sessile invertebrates")) %>%
@@ -204,9 +205,9 @@ p22 <- ggplot() +
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
             inherit.aes = F, size = 2, colour = "grey36") +
-  coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
-           ylim = c(-28.147530871, -27.951387524)) +
-  labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "Shallow Bank") +      # Labels
+  coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
+           ylim = c(-22.85, -22.60)) +
+  labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "Point Cloates") +      # Labels
   theme_minimal() +
   facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
