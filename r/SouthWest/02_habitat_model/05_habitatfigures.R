@@ -211,7 +211,7 @@ dep_ann <- data.frame(x = c(113.433617268, 113.392982290, 113.255855826),
                       y = c(-28.087180374, -28.087180374, -28.087180374),
                       label = c("30m", "70m", "200m"))
 
-# Build the plot for the first site
+# Build the plot for predicted Habitat individual classes
 p22 <- ggplot() +
   geom_tile(data = widehabitfit, 
             aes(x, y, fill = value)) +
@@ -236,11 +236,12 @@ png(filename = paste(paste("plots", name, sep = "/"),                   # Save t
 p22
 dev.off()
 
+
 ## SE FIGURE###
 p23 <- ggplot() + 
   geom_tile(data = widehabitse,
             aes(x, y, fill = value)) +
-  scale_fill_viridis(direction = -1, option = "C", limits = c(0, max(widehabitse$value))) +
+  scale_fill_viridis(direction = -1, option = "C", limits = c(0.00, 0.12), breaks=seq(0.00,0.12,by=0.03)) +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +
     geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                  breaks = c(0, -30, -70, -200), colour = "grey54",
