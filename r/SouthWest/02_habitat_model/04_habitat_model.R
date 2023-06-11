@@ -125,11 +125,11 @@ rastdf$dom_tag <- apply(rastdf%>% dplyr::select(pseagrasses.fit, pmacroalg.fit, 
 rastdf$dom_tag <- sub('.', '', rastdf$dom_tag)
 head(rastdf)  
 
-# # Add a colum that categorises the dominant habitat class
-# rastdf$dom_tag <- apply(rastdf[12:15], 1, # Set columns manually here
-#                         FUN = function(x){names(which.max(x))})
-# rastdf$dom_tag <- sub('.', '', rastdf$dom_tag)                          # Removes the p but not really sure why haha
-# head(rastdf)                                                             # Check to see if it all looks ok
+# # # Add a colum that categorises the dominant habitat class
+#  rastdf$dom_tag <- apply(rastdf[12:15], 1, # Set columns manually here
+#                          FUN = function(x){names(which.max(x))})
+#  rastdf$dom_tag <- sub('.', '', rastdf$dom_tag)                          # Removes the p but not really sure why haha
+#  head(rastdf)                                                             # Check to see if it all looks ok
 
 # Save the output
 saveRDS(rastdf, paste(paste0('output/SWC/', name), 'spatial_habitat_predictions.rds', sep = "_"))

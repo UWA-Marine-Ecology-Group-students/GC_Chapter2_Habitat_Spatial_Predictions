@@ -31,8 +31,8 @@ test <- hab%>%
   group_by(campaignid)%>%
   summarise(n=n())
 
-hab_filtered <- hab %>% 
-  filter(!campaignid %in% c("2021-03_West-Coast_BOSS"))
+# hab_filtered <- hab %>% 
+#   filter(!campaignid %in% c("2021-03_West-Coast_BOSS"))
 #boss <- read.csv("data/tidy/GC_2020-2021_south-west_BOSS.Habitat.csv") %>% # Need to type filename manually
  # dplyr::mutate(method = "BOSS") %>%                                            # Change here
   #dplyr::filter(location %in% "NPZ6") %>%                                       # Only Shallow Bank

@@ -189,6 +189,17 @@ widehabit <- spreddf %>%
                 pinverts = "Sessile invertebrates")) %>%
   glimpse()
 
+##Make a dataframe for Standard Error (SE)
+widehabitse <- spreddf %>%
+  dplyr::select(psand.se.fit, prock.se.fit, pinverts.se.fit, x, y) %>%
+  tidyr::pivot_longer(cols = starts_with("p"),
+                      values_to = "value", names_to = "variable") %>%
+  dplyr::mutate(variable = dplyr::recode(variable,
+                                         prock.se.fit = "Rock SE",
+                                         psand.se.fit = "Sand SE",
+                                         pinverts.se.fit = "Sessile Invertebrates SE")) %>%
+  glimpse()
+
 # Make a dataframe for your contour line annotations - doesn't work otherwise for facetted plots
 dep_ann <- data.frame(x = c(113.433617268, 113.392982290, 113.255855826),                            
                       y = c(-28.087180374, -28.087180374, -28.087180374),
@@ -200,6 +211,7 @@ p22 <- ggplot() +
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, limits = c(0, max(widehabit$value))) +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
+  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                breaks = c(0, -30, -70, -200), colour = "grey54",
                alpha = 1, size = 0.5) +
@@ -215,6 +227,38 @@ png(filename = paste(paste("plots", name, sep = "/"),                   # Save t
                      "habitat_class_predicted.png", sep = "_"),
     width = 5, heigh = 10, res = 300, units = "in")                             # Change the dimensions here as necessary
 p22
+dev.off()
+
+#Build the plot for SE
+p23 <- ggplot() +
+  geom_tile(data = widehabitse,
+            aes(x, y, fill = value)) +
+  scale_fill_viridis(direction = -1, option = "C", limits = c(0, max(widehabitse$value))) +
+  geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
+  geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
+               breaks = c(0, -30, -70, -200), colour = "grey54",
+               alpha = 1, size = 0.5) +
+  geom_text(data = dep_ann,aes(x,y,label = label),
+            inherit.aes = F, size = 2, colour = "grey36") +
+  coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
+           ylim = c(-22.85, -22.60)) +
+  labs(x = NULL, y = NULL, fill = "Habitat (SE)", title = "Pt Cloates") +      # Labels
+  theme_minimal() +
+  facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
+
+png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
+                     "habitat_SE_predicted.png", sep = "_"),
+    width = 5, heigh = 10, res = 300, units = "in")  
+
+p23
+dev.off()
+
+indierror <- p22 + p23
+png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
+                     "habitat_indi_error_predicted.png", sep = "_"),
+    width = 5, height = 4, res = 300, units = "in") 
+
+indierror
 dev.off()
 
 # # Figure 3. Bathymetry derivatives ----

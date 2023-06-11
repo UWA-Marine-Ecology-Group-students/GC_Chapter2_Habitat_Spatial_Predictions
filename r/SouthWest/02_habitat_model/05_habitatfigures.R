@@ -75,19 +75,19 @@ spreddf <- readRDS(paste(paste0('output/SWC/', name),
                          'spatial_habitat_predictions.rds', sep = "_")) %>%
   dplyr::mutate(dom_tag = as.factor(dom_tag)) %>%                               # Factorise
   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
-                                 seagrasses = "Seagrasses",
+                                 seagrasses.fit = "Seagrasses",
                                  # reef = "Reef",
-                                 macroalg = "Macroalgae",
-                                 rock = "Rock",
-                                 sand = "Sand",
-                                 inverts = "Sessile invertebrates")) %>%
+                                 macroalg.fit = "Macroalgae",
+                                 rock.fit = "Rock",
+                                 sand.fit = "Sand",
+                                 inverts.fit = "Sessile invertebrates")) %>%
   glimpse()
 
 # Figure 1: Categorical habitat maps ----
 # Assign habitat class colours
-hab_cols <- scale_fill_manual(values = c("Seagrasses" = "#d7f5dd",
+hab_cols <- scale_fill_manual(values = c(#"Seagrasses" = "#d7f5dd",
                                          # "Reef" = "#c8cbcf",
-                                         "Macroalgae" = "#a1c2f7",
+                                         "Macroalgae" = "#d7f5dd",
                                          "Rock" = "#fad3d2",
                                          "Sand" = "#fffebf",
                                          "Sessile invertebrates" = "#ecd7f5"
@@ -103,8 +103,8 @@ p1 <- ggplot() +
               breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
               colour = "grey54",
               alpha = 1, size = 0.5) +                                         # Transparency and linewidth
-   coord_sf(xlim = c(114.2, 115.2),                              # Set plot limits
-           ylim = c(-34.2, -33.5)) +
+  coord_sf(xlim = c(114.2, 115.2),                              # Set plot limits
+          ylim = c(-34.2, -33.5)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
        colour = NULL, title = "South West - Capes region") +
      annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually

@@ -86,9 +86,9 @@ summary(m_rock)
 preddf <- cbind(preddf, 
                 #"pkelps" = predict(m_kelps, preddf, type = "response"),
                 #"pmacroalg" = predict(m_macro, preddf, type = "response"),
-                "psand" = predict(m_sand, preddf, type = "response"),
-                "prock" = predict(m_rock, preddf, type = "response"),
-                "pinverts" = predict(m_inverts, preddf, type = "response"))
+                "psand" = predict(m_sand, preddf, type = "response", se.fit = T),
+                "prock" = predict(m_rock, preddf, type = "response", se.fit = T),
+                "pinverts" = predict(m_inverts, preddf, type = "response", se.fit = T))
 
 prasts <- rast(preddf) 
 plot(prasts)
