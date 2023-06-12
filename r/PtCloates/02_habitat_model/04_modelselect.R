@@ -72,16 +72,17 @@ for (i in pred.vars) {
 # # Re-set the predictors for modeling----
 pred.vars <- c("depth","roughness", "detrended") 
 
+
 # Check to make sure Response vector has no more than 80% zeros----
 unique.vars = unique(as.character(dat$response))
-# unique.vars.use=character()
-# for(i in 1:length(unique.vars)){
-#   temp.dat=dat[which(dat$response==unique.vars[i]),]
-#   if(length(which(temp.dat$number==0))/nrow(temp.dat)<0.8){                     # This removes kelp for Abrolhos!
-#     unique.vars.use=c(unique.vars.use,unique.vars[i])}
-# }
-# unique.vars.use
-unique.vars.use = unique.vars
+unique.vars.use=character()
+for(i in 1:length(unique.vars)){
+  temp.dat=dat[which(dat$response==unique.vars[i]),]
+  if(length(which(temp.dat$number==0))/nrow(temp.dat)<0.8){                     # This removes kelp for Abrolhos!
+    unique.vars.use=c(unique.vars.use,unique.vars[i])}
+}
+unique.vars.use
+#unique.vars.use = unique.vars
    
 # Run the full subset model selection----
 savedir   <- "output/PtCloates"

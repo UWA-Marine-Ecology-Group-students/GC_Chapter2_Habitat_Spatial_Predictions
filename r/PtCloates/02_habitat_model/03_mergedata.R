@@ -68,7 +68,7 @@ allhab <- habi_df %>%
                 #macroalgae = broad.macroalgae,
                 sand = broad.unconsolidated,
                 rock = broad.consolidated) %>%
-  dplyr::mutate(inverts = broad.sponges + broad.octocoral.black +               # Make a sessile invertebrate column
+  dplyr::mutate(rock = ifelse(is.na(rock),0,rock), inverts = broad.sponges + broad.octocoral.black +               # Make a sessile invertebrate column
                   broad.invertebrate.complex +  broad.hydroids + 
                   broad.bryozoa) %>%
   glimpse()                                                                     # Preview data

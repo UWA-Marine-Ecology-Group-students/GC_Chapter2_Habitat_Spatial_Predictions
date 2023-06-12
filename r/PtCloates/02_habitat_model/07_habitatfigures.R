@@ -76,15 +76,15 @@ spreddf <- readRDS(paste(paste0('output/PtCloates/', name),
   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
                                  #kelps = "Kelp",
                                  #macroalg = "Macroalgae",
-                                 rock = "Rock",
-                                 sand = "Sand",
-                                 inverts = "Sessile invertebrates")) %>%
+                                 #rock = "Rock",
+                                 sand.fit = "Sand",
+                                 inverts.fit = "Sessile invertebrates")) %>%
   glimpse()
 
 # Figure 1: Categorical habitat maps ----
 # Assign habitat class colours
 hab_cols <- scale_fill_manual(values = c(#"Macroalgae" = "#d7f5dd",
-                                         "Rock" = "#fad3d2",
+                                         #"Rock" = "#fad3d2",
                                          "Sand" = "#fffebf",
                                          "Sessile invertebrates" = "#ecd7f5"
 ))

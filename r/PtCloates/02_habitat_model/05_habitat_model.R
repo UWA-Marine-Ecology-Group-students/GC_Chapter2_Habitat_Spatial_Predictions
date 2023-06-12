@@ -75,19 +75,19 @@ m_sand <- gam(cbind(sand, broad.total.points.annotated - sand) ~
               data = habi, method = "REML", family = binomial("logit"))
 summary(m_sand)
 
-m_rock <- gam(cbind(rock, broad.total.points.annotated - rock) ~ 
-                s(depth, k = 5, bs = "cr") + 
-                s(detrended,  k = 5, bs = "cr") + 
-                s(roughness,    k = 5, bs = "cr"), 
-              data = habi, method = "REML", family = binomial("logit"))
-summary(m_rock)
+# m_rock <- gam(cbind(rock, broad.total.points.annotated - rock) ~ 
+#                 s(depth, k = 5, bs = "cr") + 
+#                 s(detrended,  k = 5, bs = "cr") + 
+#                 s(roughness,    k = 5, bs = "cr"), 
+#               data = habi, method = "REML", family = binomial("logit"))
+# summary(m_rock)
 
 # predict, rasterise and plot
 preddf <- cbind(preddf, 
                 #"pkelps" = predict(m_kelps, preddf, type = "response"),
                 #"pmacroalg" = predict(m_macro, preddf, type = "response"),
                 "psand" = predict(m_sand, preddf, type = "response", se.fit = T),
-                "prock" = predict(m_rock, preddf, type = "response", se.fit = T),
+                #"prock" = predict(m_rock, preddf, type = "response", se.fit = T),
                 "pinverts" = predict(m_inverts, preddf, type = "response", se.fit = T))
 
 prasts <- rast(preddf) 
@@ -102,7 +102,7 @@ spreddf         <- as.data.frame(sprast, xy = TRUE, na.rm = T) #%>%
 #  dplyr::filter(Z < -30)
 
 # Add a colum that categorises the dominant habitat class
-spreddf$dom_tag <- apply(spreddf[12:14], 1, # Set columns manually here only 12 to 14 for Pt Cloates
+spreddf$dom_tag <- apply(spreddf%>%dplyr::select(psand.fit, pinverts.fit), 1, # Set columns manually here only 12 to 14 for Pt Cloates
                         FUN = function(x){names(which.max(x))})
 spreddf$dom_tag <- sub('.', '', spreddf$dom_tag)                                # Removes the p but not really sure why haha
 head(spreddf)                                                                   # Check to see if it all looks ok

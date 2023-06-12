@@ -2,7 +2,7 @@
 # Project: G Cummins Habitat Paper
 # Data:    Sample Metadata, Geoscience Australia 250m res bathy
 # Task:    Output WA wide plot including all sample metadata
-# author:  Claude Spencer
+# author:  Claude Spencer 
 # date:    January 2023
 ##
 
@@ -84,7 +84,7 @@ cwatr <- st_read("data/spatial/shapefiles/amb_coastal_waters_limit.shp")       #
 cwatr_c <- st_crop(cwatr, e)
 
 # Bathymetry data
-bathy <- rast("data/spatial/rasters/bath_250_good.tif")
+bathy <- rast("data/spatial/rasters/raw bathymetry/bath_250_good.tif")
 bath_c <- crop(bathy, e)
 bathdf <- as.data.frame(bath_c, xy = T, na.rm = T) %>%
   dplyr::rename(Z = bath_250_good) %>%
@@ -139,14 +139,31 @@ wampa_fills <- scale_fill_manual(values = c(
 name = "State Marine Parks")
 
 # Study metadata/sampling locations
-nin <- read.csv("data/tidy/PtCloates_BRUVS_random-points_broad.habitat.csv") %>%
+ninbruvs <- read_csv("data/tidy/PtCloates_BRUVS_random-points_broad.habitat.csv") %>%
   dplyr::select(sample, longitude, latitude) %>%
-  dplyr::filter(!is.na(latitude)) %>%                                           # Some full NA observations here
+  dplyr::filter(!is.na(latitude)) %>%    
+  dplyr::mutate(sample= as.character(sample)) %>%
   glimpse()
 
-abr <- read.csv("data/tidy/2021-05_Abrolhos_BOSS_random-points_broad.habitat.csv") %>%
+ninboss <- read_csv("data/tidy/PtCloates_BOSS_random-points_broad.habitat.csv") %>%
+  dplyr::select(sample, longitude, latitude) %>%
+  dplyr::mutate(sample= as.character(sample)) %>%
+  glimpse()
+
+nin  <- bind_rows(ninbruvs, ninboss)  
+
+
+abrboss <- read.csv("data/tidy/2021-05_Abrolhos_BOSS_random-points_broad.habitat.csv") %>%
+  dplyr::filter(location %in% "NPZ6") %>%  
+  dplyr::select(sample, longitude, latitude) %>%
+    glimpse()
+
+abrbruvs <- read.csv("data/tidy/2021-05_Abrolhos_BRUVs_random-points_broad.habitat.csv") %>%
+  dplyr::filter(location %in% "NPZ6") %>%  
   dplyr::select(sample, longitude, latitude) %>%
   glimpse()
+
+abr <- bind_rows(abrboss, abrbruvs) 
 
 swc <- read.csv("data/tidy/2020-2021_south-west_BOSS-BRUV.Habitat.csv") %>%
   dplyr::select(sample, longitude, latitude) %>%
