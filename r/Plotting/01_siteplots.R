@@ -197,7 +197,7 @@ i1 <- ggplot() +
   new_scale_fill() +
   geom_sf(data = cwatr, colour = "firebrick", alpha = 4/5, size = 0.2) +
   geom_point(data = nin, aes(longitude, latitude),
-             alpha = 1, shape = 10, size = 0.5) +
+             alpha = 0.6, shape = 10, size = 0.1) +
   coord_sf(xlim = c(113.4, 113.75), 
            ylim = c(-22.65, -22.85)) +                           
   theme_minimal() +
@@ -231,7 +231,7 @@ i2 <- ggplot() +
   new_scale_fill() +
   geom_sf(data = cwatr, colour = "firebrick", alpha = 4/5, size = 0.2) +
   geom_point(data = abr, aes(longitude, latitude),
-             alpha = 1, shape = 10, size = 0.5) +
+             alpha = 0.6, shape = 10, size = 0.1) +
   coord_sf(xlim = c(113.2, 113.8), 
            ylim = c(-28.0, -28.35)) +                           
   theme_minimal() +
@@ -266,7 +266,7 @@ i3 <- ggplot() +
   new_scale_fill() +
   geom_sf(data = cwatr, colour = "firebrick", alpha = 4/5, size = 0.2) +
   geom_point(data = swc, aes(longitude, latitude),
-             alpha = 1, shape = 10, size = 0.5) +
+             alpha = 0.6, shape = 10, size = 0.1) +
   coord_sf(xlim = c(min(swc$longitude), 115.1), 
            ylim = c(min(swc$latitude), max(swc$latitude))) +                           
   theme_minimal() +

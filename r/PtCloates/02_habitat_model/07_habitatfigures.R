@@ -235,6 +235,7 @@ p23 <- ggplot() +
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, option = "C", limits = c(0, max(widehabitse$value))) +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
+  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +      #Adding in land
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                breaks = c(0, -30, -70, -200), colour = "grey54",
                alpha = 1, size = 0.5) +
@@ -242,7 +243,7 @@ p23 <- ggplot() +
             inherit.aes = F, size = 2, colour = "grey36") +
   coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
            ylim = c(-22.85, -22.60)) +
-  labs(x = NULL, y = NULL, fill = "Habitat (SE)", title = "Pt Cloates") +      # Labels
+  labs(x = NULL, y = NULL, fill = "Habitat (SE)", title = "Point Cloates") +      # Labels
   theme_minimal() +
   facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
