@@ -176,26 +176,32 @@ dev.off()
 # dev.off()
 
 
+#Change SE.fit so there is no p in front - GC changed so that below code for figures works
+benthichab <- spreddf %>%
+  dplyr::rename(sand.se.fit = psand.se.fit) %>%
+  dplyr::rename(sessinv.se.fit = pinverts.se.fit) %>%
+glimpse()
+
 # Figure 2. Individual habitat class predictions ----
 # Melt classes for faceting
-widehabit <- spreddf %>%
+widehabit <- benthichab %>%
   tidyr::pivot_longer(cols = starts_with("p"),                                  # Careful here that you don't have any other columns starting with 'p'
                       values_to = "value", names_to = "variable") %>%
   dplyr::mutate(variable = dplyr::recode(variable,                              # Tidy variable names
                 #pkelps = "Kelp",
                 #pmacroalg = "Macroalgae",
-                prock = "Rock",
-                psand = "Sand",
-                pinverts = "Sessile invertebrates")) %>%
+                #prock = "Rock",
+                psand.fit = "Sand",
+                pinverts.fit = "Sessile Invertebrates")) %>%
   glimpse()
 
 ##Make a dataframe for Standard Error (SE)
 widehabitse <- spreddf %>%
-  dplyr::select(psand.se.fit, prock.se.fit, pinverts.se.fit, x, y) %>%
+  dplyr::select(psand.se.fit, pinverts.se.fit, x, y) %>%
   tidyr::pivot_longer(cols = starts_with("p"),
                       values_to = "value", names_to = "variable") %>%
   dplyr::mutate(variable = dplyr::recode(variable,
-                                         prock.se.fit = "Rock SE",
+                                         #prock.se.fit = "Rock SE",
                                          psand.se.fit = "Sand SE",
                                          pinverts.se.fit = "Sessile Invertebrates SE")) %>%
   glimpse()
