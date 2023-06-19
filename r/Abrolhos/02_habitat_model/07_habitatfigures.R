@@ -40,8 +40,10 @@ wgscrs <- "+proj=longlat +datum=WGS84"                                    # Lat 
      
 # Bring in spatial layers
 # Load aus outline, state and commonwealth marine parks
-aus     <- st_read("data/spatial/shapefiles/cstauscd_r.mif")                    # Geodata 100k coastline available: https://data.gov.au/dataset/ds-ga-a05f7892-eae3-7506-e044-00144fdd4fa6/
-aus     <- aus[aus$FEAT_CODE == "mainland", ]                                   # Add islands here if needed
+aus     <- st_read("data/spatial/shapefiles/cstauscd_r.mif") %>%                    # Geodata 100k coastline available: https://data.gov.au/dataset/ds-ga-a05f7892-eae3-7506-e044-00144fdd4fa6/
+dplyr::filter(FEAT_CODE %in% c("mainland", "island"))
+
+# aus     <- aus[aus$FEAT_CODE == "mainland" ]                                   # Add islands here if needed
 aumpa   <- st_read("data/spatial/shapefiles/AustraliaNetworkMarineParks.shp")   # All aus mpas
 st_crs(aus) <- st_crs(aumpa)                                                    # Set CRS to match - WGS84 and GDA94 effectively the same
 e <- ext(112, 116, -30, -26)                                                 # Change your extent here
@@ -78,7 +80,7 @@ spreddf <- readRDS(paste(paste0('output/Abrolhos/', name),
                                  macroalg.fit = "Macroalgae",
                                  rock.fit = "Rock",
                                  sand.fit = "Sand",
-                                 inverts.fit = "Sessile invertebrates")) %>%
+                                 inverts.fit = "Sessile Invertebrates")) %>%
   glimpse()
 
 # Figure 1: Categorical habitat maps ----
@@ -86,7 +88,7 @@ spreddf <- readRDS(paste(paste0('output/Abrolhos/', name),
 hab_cols <- scale_fill_manual(values = c("Macroalgae" = "#d7f5dd",
                                          "Rock" = "#fad3d2",
                                          "Sand" = "#fffebf",
-                                         "Sessile invertebrates" = "#ecd7f5"
+                                         "Sessile Invertebrates" = "#ecd7f5"
 ))
 
 #Build plot elements for Dominant Habitat Figure 1
@@ -99,8 +101,8 @@ p1 <- ggplot() +
                breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
                colour = "grey54",
                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
-  coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
-           ylim = c(-28.147530872, -27.951387525)) +
+  coord_sf(xlim = c(113.169637818, 113.65),                              # Set plot limits
+           ylim = c(-28.35, -27.95)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
        colour = NULL, title = "Abrolhos - Shallow Bank") +
   annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
@@ -114,66 +116,66 @@ png(filename = paste(paste("plots", name, sep = "/"),                   # Save o
 p1
 dev.off()
 
-#saving the predictions as a shapefile
-# As a shapefile
-preddf <- spreddf %>%
-  dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
-                                        "Kelp" = 1,
-                                        "Macroalgae" = 2,
-                                        "Rock" = 3,
-                                        "Sand" = 4,
-                                        "Sessile invertebrates" = 5)) %>%
-  dplyr::select(x, y, dom_tag)
+# #saving the predictions as a shapefile
+# # As a shapefile
+# preddf <- spreddf %>%
+#   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
+#                                         "Kelp" = 1,
+#                                         "Macroalgae" = 2,
+#                                         "Rock" = 3,
+#                                         "Sand" = 4,
+#                                         "Sessile Invertebrates" = 5)) %>%
+#   dplyr::select(x, y, dom_tag)
+# 
+# predr <- rast(preddf)
+# plot(predr)
+# 
+# predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
+# plot(predr_smooth)
+# 
+# smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
+#   dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
+#   dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
+# crs(predr_smooth) <- wgscrs
+# pred_stars <- st_as_stars(predr_smooth)
+# 
+# dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
+# 
+# st_write(dom.habs, "output/Abrolhos/Abrolhos-dominant-habitat.shp", 
+#          append = F)
 
-predr <- rast(preddf)
-plot(predr)
 
-predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
-plot(predr_smooth)
-
-smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
-  dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
-  dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
-crs(predr_smooth) <- wgscrs
-pred_stars <- st_as_stars(predr_smooth)
-
-dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
-
-st_write(dom.habs, "output/Abrolhos/Abrolhos-dominant-habitat.shp", 
-         append = F)
-
-
-# Figure Dominant Habitat Smoothed
-smooth_plot <- smooth_df %>%
-  dplyr::mutate(smoothed = dplyr::recode(smoothed,                                # Tidy names for plot legend
-                                        "1" = "Kelp",
-                                        "2" = "Macroalgae",
-                                        "3" = "Rock",
-                                        "4" = "Sand",
-                                        "5" = "Sessile invertebrates"))
-
-p1.5 <- ggplot() +
-  geom_tile(data = smooth_plot, aes(x, y, fill = smoothed)) +
-  hab_cols +                                                                    # Class colours
- # geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
-  geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
-               breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
-               colour = "grey54",
-               alpha = 1, size = 0.5) +                                         # Transparency and linewidth
-  coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
-           ylim = c(-28.147530872, -27.951387525)) +
-  labs(x = "Longitude", y = "Latitude", fill = "Habitat",                                    # Labels  
-       colour = NULL, title = "Shallow Bank") + 
-     annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
-           y = c(-28.078038504, -28.078038504, -28.078038504), 
-           label = c("30m", "70m", "200m"),
-           size = 2, colour = "grey54") +
-  theme_minimal()
-png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
-                     "dominant_habitat_smoothed.png", sep = "_"),
-    width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
-p1.5
-dev.off()
+# # Figure Dominant Habitat Smoothed
+# smooth_plot <- smooth_df %>%
+#   dplyr::mutate(smoothed = dplyr::recode(smoothed,                                # Tidy names for plot legend
+#                                         "1" = "Kelp",
+#                                         "2" = "Macroalgae",
+#                                         "3" = "Rock",
+#                                         "4" = "Sand",
+#                                         "5" = "Sessile Invertebrates"))
+# 
+# p1.5 <- ggplot() +
+#   geom_tile(data = smooth_plot, aes(x, y, fill = smoothed)) +
+#   hab_cols +                                                                    # Class colours
+#  # geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
+#   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
+#                breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
+#                colour = "grey54",
+#                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
+#   coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
+#            ylim = c(-28.147530872, -27.951387525)) +
+#   labs(x = "Longitude", y = "Latitude", fill = "Habitat",                                    # Labels  
+#        colour = NULL, title = "Shallow Bank") + 
+#      annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
+#            y = c(-28.078038504, -28.078038504, -28.078038504), 
+#            label = c("30m", "70m", "200m"),
+#            size = 2, colour = "grey54") +
+#   theme_minimal()
+# png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
+#                      "dominant_habitat_smoothed.png", sep = "_"),
+#     width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
+# p1.5
+# dev.off()
 
 
 # Figure 2. Individual habitat class predictions ----
@@ -187,7 +189,7 @@ widehabitfit <- spreddf %>%
                 pmacroalg.fit = "Macroalgae",
                 prock.fit = "Rock",
                 psand.fit = "Sand",
-                pinverts.fit = "Sessile invertebrates")) %>%
+                pinverts.fit = "Sessile Invertebrates")) %>%
   glimpse()
 
 ###GC to make below SE dataframe
@@ -200,7 +202,7 @@ widehabitse <- spreddf %>%
                                          pmacroalg.se.fit = "Macroalgae SE",
                                          prock.se.fit = "Rock SE",
                                          psand.se.fit = "Sand SE",
-                                         pinverts.se.fit = "Sessile invertebrates SE")) %>%
+                                         pinverts.se.fit = "Sessile Invertebrates SE")) %>%
   glimpse()
 
 # Make a dataframe for your contour line annotations - doesn't work otherwise for facetted plots

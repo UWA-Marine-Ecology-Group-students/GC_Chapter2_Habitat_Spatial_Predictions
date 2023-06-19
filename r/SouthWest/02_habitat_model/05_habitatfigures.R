@@ -243,6 +243,7 @@ p23 <- ggplot() +
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, option = "C", limits = c(0.00, 0.12), breaks=seq(0.00,0.12,by=0.03)) +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +
+  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +
     geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                  breaks = c(0, -30, -70, -200), colour = "grey54",
                  alpha = 1, size = 0.5) +
