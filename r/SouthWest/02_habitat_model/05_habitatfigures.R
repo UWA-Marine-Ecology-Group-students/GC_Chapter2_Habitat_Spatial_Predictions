@@ -85,7 +85,7 @@ spreddf <- readRDS(paste(paste0('output/SWC/', name),
 
 # Figure 1: Categorical habitat maps ----
 # Assign habitat class colours
-hab_cols <- scale_fill_manual(values = c(#"Seagrasses" = "#d7f5dd",
+hab_cols <- scale_fill_manual(values = c("Seagrasses" = "#c8cbcf",
                                          # "Reef" = "#c8cbcf",
                                          "Macroalgae" = "#d7f5dd",
                                          "Rock" = "#fad3d2",
