@@ -100,7 +100,7 @@ p1 <- ggplot() +
   #geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
-              breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
+              breaks = c(- 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
               colour = "grey54",
               alpha = 1, size = 0.5) +                                         # Transparency and linewidth
   coord_sf(xlim = c(114.2, 115.2),                              # Set plot limits
