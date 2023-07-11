@@ -207,7 +207,7 @@ widehabitse <- spreddf %>%
   glimpse()
 
 # Make a dataframe for your contour line annotations - doesn't work otherwise for facetted plots
-dep_ann <- data.frame(x = c(115.0, 114.79, 114.51),                            
+dep_ann <- data.frame(x = c(115.02, 114.8, 114.55),                            
                       y = c(-34.0, -34.0, -34.0),
                       label = c("30m", "70m", "200m"))
 
@@ -223,7 +223,7 @@ p22 <- ggplot() +
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
             inherit.aes = F, size = 2, colour = "#000000") +
-  coord_sf(xlim = c(114.4, 115.0),                              # Set plot limits
+  coord_sf(xlim = c(114.4, 115.05),                              # Set plot limits
            ylim = c(-34.2, -33.5)) +
   labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "South West - Capes Region") +      # Labels
   theme_minimal(base_size = 9) +
@@ -249,7 +249,7 @@ p23 <- ggplot() +
                  alpha = 1, size = 0.5) +
     geom_text(data = dep_ann,aes(x,y,label = label),
               inherit.aes = F, size = 2, colour = "#000000") +
-    coord_sf(xlim = c(114.4, 115.0),                              # Set plot limits
+    coord_sf(xlim = c(114.4, 115.05),                              # Set plot limits
              ylim = c(-34.2, -33.5)) +
     labs(x = NULL, y = NULL, fill = "Habitat (SE)", title = "South West - Capes Region") +      # Labels
     theme_minimal(base_size = 9) +
