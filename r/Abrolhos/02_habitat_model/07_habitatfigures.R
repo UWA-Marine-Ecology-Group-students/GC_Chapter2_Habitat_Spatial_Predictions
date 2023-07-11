@@ -85,10 +85,10 @@ spreddf <- readRDS(paste(paste0('output/Abrolhos/', name),
 
 # Figure 1: Categorical habitat maps ----
 # Assign habitat class colours ##WHAT HAPPENED TO KELP?!
-hab_cols <- scale_fill_manual(values = c("Macroalgae" = "#d7f5dd",
-                                         "Rock" = "#fad3d2",
-                                         "Sand" = "#fffebf",
-                                         "Sessile Invertebrates" = "#ecd7f5"
+hab_cols <- scale_fill_manual(values = c("Macroalgae" = "#009E73",
+                                         "Rock" = "#D55E00",
+                                         "Sand" = "#F0E442",
+                                         "Sessile Invertebrates" = "#56B4E9"
 ))
 
 #Build plot elements for Dominant Habitat Figure 1
@@ -99,16 +99,16 @@ p1 <- ggplot() +
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +      # Add national park zones
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
                breaks = c(- 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
-               colour = "grey54",
+               colour = "#000000",
                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
   coord_sf(xlim = c(113.169637818, 113.65),                              # Set plot limits
-           ylim = c(-28.35, -27.95)) +
+           ylim = c(-28.15, -27.95)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
        colour = NULL, title = "Abrolhos - Shallow Bank") +
   annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
            y = c(-28.078038504, -28.078038504, -28.078038504), 
            label = c("30m", "70m", "200m"),
-           size = 2, colour = "grey54") +
+           size = 2, colour = "#000000") +
   theme_minimal()
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
                      "dominant_habitat.png", sep = "_"),
@@ -217,10 +217,10 @@ p22 <- ggplot() +
   scale_fill_viridis(direction = -1, limits = c(0, max(widehabitfit$value))) +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
-               breaks = c(0, -30, -70, -200), colour = "grey54",
+               breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-            inherit.aes = F, size = 2, colour = "grey36") +
+            inherit.aes = F, size = 2, colour = "#000000") +
   coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
            ylim = c(-28.147530871, -27.951387524)) +
   labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "Abrolhos - Shallow Bank") +      # Labels
@@ -240,10 +240,10 @@ p23 <- ggplot() +
   scale_fill_viridis(direction = -1, option = "C", limits = c(0, max(widehabitse$value))) +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
-               breaks = c(0, -30, -70, -200), colour = "grey54",
+               breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-            inherit.aes = F, size = 2, colour = "grey36") +
+            inherit.aes = F, size = 2, colour = "#000000") +
   coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
            ylim = c(-28.147530871, -27.951387524)) +
   labs(x = NULL, y = NULL, fill = "Habitat (SE)", title = "Abrolhos - Shallow Bank") +      # Labels

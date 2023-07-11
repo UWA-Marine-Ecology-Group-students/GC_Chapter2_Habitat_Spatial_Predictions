@@ -83,11 +83,12 @@ spreddf <- readRDS(paste(paste0('output/PtCloates/', name),
 
 # Figure 1: Categorical habitat maps ----
 # Assign habitat class colours
-hab_cols <- scale_fill_manual(values = c(#"Macroalgae" = "#d7f5dd",
-                                         #"Rock" = "#fad3d2",
-                                         "Sand" = "#fffebf",
-                                         "Sessile invertebrates" = "#ecd7f5"
+hab_cols <- scale_fill_manual(values = c(#"Macroalgae" = "#009E73",
+                                         #"Rock" = "#D55E00",
+                                         "Sand" = "#F0E442",
+                                         "Sessile invertebrates" = "#56B4E9"
 ))
+
 
 #Build plot elements for site 1
 p1 <- ggplot() +
@@ -96,17 +97,17 @@ p1 <- ggplot() +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
-               breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
-               colour = "grey54",
+               breaks = c( - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
+               colour = "#000000",
                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
   coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
            ylim = c(-22.85, -22.60)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
-       colour = NULL, title = "Point Cloates") +
-  annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
-           y = c(-28.078038504, -28.078038504, -28.078038504), 
+       colour = NULL, title = "Ningaloo - Point Cloates") +
+  annotate("text", x = c(113.65, 113.57, 113.51),          # Add contour labels manually
+           y = c(-22.75, -22.75, -22.75), 
            label = c("30m", "70m", "200m"),
-           size = 2, colour = "grey54") +
+           size = 2, colour = "#000000") +
   theme_minimal()
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
                      "dominant_habitat.png", sep = "_"),
@@ -207,8 +208,8 @@ widehabitse <- spreddf %>%
   glimpse()
 
 # Make a dataframe for your contour line annotations - doesn't work otherwise for facetted plots
-dep_ann <- data.frame(x = c(113.433617268, 113.392982290, 113.255855826),                            
-                      y = c(-28.087180374, -28.087180374, -28.087180374),
+dep_ann <- data.frame(x = c(113.66, 113.57, 113.52),                            
+                      y = c(-22.75, -22.75, -22.75), 
                       label = c("30m", "70m", "200m"))
 
 # Build the plot for the first site
@@ -219,10 +220,10 @@ p22 <- ggplot() +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
-               breaks = c(0, -30, -70, -200), colour = "grey54",
+               breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-            inherit.aes = F, size = 2, colour = "grey36") +
+            inherit.aes = F, size = 2, colour = "#000000") +
   coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
            ylim = c(-22.85, -22.60)) +
   labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "Point Cloates") +      # Labels
@@ -243,10 +244,10 @@ p23 <- ggplot() +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +      #Adding in land
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
-               breaks = c(0, -30, -70, -200), colour = "grey54",
+               breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-            inherit.aes = F, size = 2, colour = "grey36") +
+            inherit.aes = F, size = 2, colour = "#000000") +
   coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
            ylim = c(-22.85, -22.60)) +
   labs(x = NULL, y = NULL, fill = "Habitat (SE)", title = "Point Cloates") +      # Labels

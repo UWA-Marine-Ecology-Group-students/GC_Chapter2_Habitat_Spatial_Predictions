@@ -85,12 +85,12 @@ spreddf <- readRDS(paste(paste0('output/SWC/', name),
 
 # Figure 1: Categorical habitat maps ----
 # Assign habitat class colours
-hab_cols <- scale_fill_manual(values = c("Seagrasses" = "#c8cbcf",
+hab_cols <- scale_fill_manual(values = c("Seagrasses" = "#E69F00",
                                          # "Reef" = "#c8cbcf",
-                                         "Macroalgae" = "#d7f5dd",
-                                         "Rock" = "#fad3d2",
-                                         "Sand" = "#fffebf",
-                                         "Sessile invertebrates" = "#ecd7f5"
+                                         "Macroalgae" = "#009E73",
+                                         "Rock" = "#D55E00",
+                                         "Sand" = "#F0E442",
+                                         "Sessile invertebrates" = "#56B4E9"
 ))
 
 #Build plot elements for site 1
@@ -101,16 +101,16 @@ p1 <- ggplot() +
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
               breaks = c(- 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
-              colour = "grey54",
+              colour = "#000000",
               alpha = 1, size = 0.5) +                                         # Transparency and linewidth
   coord_sf(xlim = c(114.2, 115.2),                              # Set plot limits
           ylim = c(-34.2, -33.5)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
        colour = NULL, title = "South West - Capes region") +
-     annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
-           y = c(-28.078038504, -28.078038504, -28.078038504), 
+     annotate("text", x = c(115.0, 114.79, 114.51),          # Add contour labels manually
+           y = c(-34.0, -34.0, -34.0), 
            label = c("30m", "70m", "200m"),
-           size = 2, colour = "grey54") +
+           size = 2, colour = "#000000") +
   theme_minimal()
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
                      "dominant_habitat.png", sep = "_"),
@@ -207,8 +207,8 @@ widehabitse <- spreddf %>%
   glimpse()
 
 # Make a dataframe for your contour line annotations - doesn't work otherwise for facetted plots
-dep_ann <- data.frame(x = c(113.433617268, 113.392982290, 113.255855826),                            
-                      y = c(-28.087180374, -28.087180374, -28.087180374),
+dep_ann <- data.frame(x = c(115.0, 114.79, 114.51),                            
+                      y = c(-34.0, -34.0, -34.0),
                       label = c("30m", "70m", "200m"))
 
 # Build the plot for predicted Habitat individual classes
@@ -219,10 +219,10 @@ p22 <- ggplot() +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #GC trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
-               breaks = c(0, -30, -70, -200), colour = "grey54",
+               breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-            inherit.aes = F, size = 2, colour = "grey36") +
+            inherit.aes = F, size = 2, colour = "#000000") +
   coord_sf(xlim = c(114.4, 115.0),                              # Set plot limits
            ylim = c(-34.2, -33.5)) +
   labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "South West - Capes Region") +      # Labels
@@ -245,10 +245,10 @@ p23 <- ggplot() +
   geom_sf(data = npz, fill = NA, colour = "#7bbc63") +
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +
     geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
-                 breaks = c(0, -30, -70, -200), colour = "grey54",
+                 breaks = c(-30, -70, -200), colour = "#000000",
                  alpha = 1, size = 0.5) +
     geom_text(data = dep_ann,aes(x,y,label = label),
-              inherit.aes = F, size = 2, colour = "grey36") +
+              inherit.aes = F, size = 2, colour = "#000000") +
     coord_sf(xlim = c(114.4, 115.0),                              # Set plot limits
              ylim = c(-34.2, -33.5)) +
     labs(x = NULL, y = NULL, fill = "Habitat (SE)", title = "South West - Capes Region") +      # Labels
