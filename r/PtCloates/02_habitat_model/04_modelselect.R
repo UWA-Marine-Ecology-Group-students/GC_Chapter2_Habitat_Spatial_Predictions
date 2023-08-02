@@ -70,7 +70,7 @@ for (i in pred.vars) {
 }
 
 # # Re-set the predictors for modeling----
-pred.vars <- c("depth","roughness", "detrended") 
+pred.vars <- c("depth","roughness", "detrended", "aspect", "TPI") 
 
 
 # Check to make sure Response vector has no more than 80% zeros----
@@ -122,7 +122,7 @@ for(i in 1:length(resp.vars)){
   mod.table <- out.list$mod.data.out  # look at the model selection table
   mod.table <- mod.table[order(mod.table$AICc), ]
   mod.table$cumsum.wi <- cumsum(mod.table$wi.AICc)
-  out.i     <- mod.table[which(mod.table$delta.AICc <= 2), ]
+  out.i     <- mod.table[which(mod.table$delta.AICc <= 100), ]
   out.all   <- c(out.all, list(out.i))
   var.imp   <- c(var.imp, list(out.list$variable.importance$aic$variable.weights.raw))
   

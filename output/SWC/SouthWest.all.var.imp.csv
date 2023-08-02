@@ -1,6 +1,6 @@
-"","depth","roughness","detrended"
-"seagrasses",1,1,1
-"rock",1,1,1
-"macroalgae",1,1,1
-"sand",1,1,1
-"inverts",1,1,1
+"","depth","roughness","detrended","aspect"
+"seagrasses",1,1,1,0
+"rock",1,1,1,0
+"macroalgae",1,0,1,1
+"sand",1,1,1,0
+"inverts",1,1,0,1
