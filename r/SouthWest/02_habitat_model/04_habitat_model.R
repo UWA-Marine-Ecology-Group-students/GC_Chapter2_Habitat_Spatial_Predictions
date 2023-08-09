@@ -66,18 +66,12 @@ m_seagrasses <- gam(cbind(seagrasses, broad.total.points.annotated - seagrasses)
 summary(m_seagrasses)
 
 m_macro <- gam(cbind(macroalgae, broad.total.points.annotated - macroalgae) ~
-                 s(depth,     k = 5, bs = "cr")  +
-                 s(detrended, k = 5, bs = "cr") +
-                 s(roughness, k = 5, bs = "cr"),
+                 s(aspect,     k = 5, bs = "cr")  +
+                 s(depth, k = 5, bs = "cr") +
+                 s(detrended, k = 5, bs = "cr"),
                data = habi, method = "REML", family = binomial("logit"))
 summary(m_macro)
 
-# m_macro <- gam(cbind(macroalgae, broad.total.points.annotated - macroalgae) ~ 
-#                  # s(depth,     k = 5, bs = "cr"),   
-#                  s(detrended, k = 5, bs = "cr") +
-#                  s(slope, k = 5, bs = "cr"),
-#                data = habi, method = "REML", family = binomial("logit"))
-# summary(m_macro)
 
 # m_reef <- gam(cbind(reef, broad.total.points.annotated - reef) ~ 
 #                  s(depth,     k = 5, bs = "cr")  + 
@@ -87,8 +81,8 @@ summary(m_macro)
 # summary(m_reef)
 
 m_inverts <- gam(cbind(inverts, broad.total.points.annotated - inverts) ~ 
-            s(depth,     k = 5, bs = "cr") + 
-            s(detrended, k = 5, bs = "cr") + 
+            s(aspect,     k = 5, bs = "cr") + 
+            s(depth, k = 5, bs = "cr") + 
             s(roughness,       k = 5, bs = "cr"), 
           data = habi, method = "REML", family = binomial("logit"))
 summary(m_inverts)
@@ -108,8 +102,8 @@ m_rock <- gam(cbind(rock, broad.total.points.annotated - rock) ~
 summary(m_rock)
 
 
-ggplot() +
-geom_point(data = habi, aes(x = depth, y = sand))
+# ggplot() +
+# geom_point(data = habi, aes(x = depth, y = sand))
 
 # predict, rasterise and plot
 preddf <- cbind(preddf, 

@@ -76,7 +76,7 @@ spreddf <- readRDS(paste(paste0('output/Abrolhos/', name),
                          'spatial_habitat_predictions.rds', sep = "_")) %>%
   dplyr::mutate(dom_tag = as.factor(dom_tag)) %>%                               # Factorise
   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
-                                 kelps.fit = "Kelp",
+                                 #kelps.fit = "Kelp",
                                  macroalg.fit = "Macroalgae",
                                  rock.fit = "Rock",
                                  sand.fit = "Sand",
@@ -95,7 +95,7 @@ hab_cols <- scale_fill_manual(values = c("Macroalgae" = "#009E73",
 p1 <- ggplot() +
   geom_tile(data = spreddf, aes(x, y, fill = dom_tag)) +
   hab_cols +                                                                    # Class colours
-  geom_sf(data = npz, fill = NA, colour = "seagreen1", linewidth = 1) +  
+  geom_sf(data = npz, fill = NA, colour = "seagreen1", linewidth = 0.5) +  
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +      # Add national park zones
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
                breaks = c(- 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
@@ -180,12 +180,14 @@ dev.off()
 
 # Figure 2. Individual habitat class predictions ----
 # Melt classes for faceting
+
+
 widehabitfit <- spreddf %>%
-  dplyr::select(pkelps.fit, pmacroalg.fit, prock.fit, psand.fit, pinverts.fit, x, y) %>%
+  dplyr::select(pmacroalg.fit, prock.fit, psand.fit, pinverts.fit, x, y) %>%
   tidyr::pivot_longer(cols = starts_with("p"),                                  # Careful here that you don't have any other columns starting with 'p'
                       values_to = "value", names_to = "variable") %>%
   dplyr::mutate(variable = dplyr::recode(variable,                              # Tidy variable names
-                pkelps.fit = "Kelp",
+                #pkelps.fit = "Kelp",
                 pmacroalg.fit = "Macroalgae",
                 prock.fit = "Rock",
                 psand.fit = "Sand",
@@ -198,7 +200,7 @@ widehabitse <- spreddf %>%
   tidyr::pivot_longer(cols = starts_with("p"),                                  # Careful here that you don't have any other columns starting with 'p'
                       values_to = "value", names_to = "variable") %>%
   dplyr::mutate(variable = dplyr::recode(variable,                              # Tidy variable names
-                                         pkelps.se.fit = "Kelp SE",
+                                         #pkelps.se.fit = "Kelp SE",
                                          pmacroalg.se.fit = "Macroalgae SE",
                                          prock.se.fit = "Rock SE",
                                          psand.se.fit = "Sand SE",
@@ -215,7 +217,7 @@ p22 <- ggplot() +
   geom_tile(data = widehabitfit, 
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, limits = c(0, max(widehabitfit$value))) +
-  geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
+  geom_sf(data = npz, fill = NA, colour = "seagreen1", linewidth = 2) +                          # National park zones
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
@@ -238,7 +240,7 @@ p23 <- ggplot() +
   geom_tile(data = widehabitse, 
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, option = "C", limits = c(0, max(widehabitse$value))) +
-  geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
+  geom_sf(data = npz, fill = NA, colour = "seagreen1", linewidth = 2) +                          # National park zones
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +

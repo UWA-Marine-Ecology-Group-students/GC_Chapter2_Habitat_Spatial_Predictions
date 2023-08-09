@@ -103,7 +103,7 @@ p1 <- ggplot() +
   labs(fill = "Habitat") +
   new_scale_fill()+
   new_scale_colour()+
-  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +  # Add national park zones
+  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), colour = "seagreen1", linewidth = 0.5) +  # Add national park zones
   npz_cols + 
   new_scale_colour() +
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
@@ -125,6 +125,7 @@ png(filename = paste(paste("plots", name, sep = "/"),                   # Save o
     width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
 p1
 dev.off()
+
 
 # #saving the predictions as a shapefile
 # # As a shapefile
@@ -228,7 +229,7 @@ p22 <- ggplot() +
   geom_tile(data = widehabit, 
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, limits = c(0, max(widehabit$value))) +
-  geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
+  geom_sf(data = npz, fill = NA, colour = "seagreen1", linewidth = 0.5) +                          # National park zones
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                breaks = c(-30, -70, -200), colour = "#000000",
@@ -252,7 +253,7 @@ p23 <- ggplot() +
   geom_tile(data = widehabitse,
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, option = "C", limits = c(0, max(widehabitse$value))) +
-  geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # National park zones
+  geom_sf(data = npz, fill = NA, colour = "seagreen1", linewidth = 0.5) +                          # National park zones
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +      #Adding in land
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                breaks = c(-30, -70, -200), colour = "#000000",

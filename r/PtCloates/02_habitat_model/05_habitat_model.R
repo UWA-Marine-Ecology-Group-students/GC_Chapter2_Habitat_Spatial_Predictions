@@ -64,14 +64,14 @@ plot(sbuff)
 m_inverts <- gam(cbind(inverts, broad.total.points.annotated - inverts) ~ 
             s(depth,     k = 5, bs = "cr") + 
             s(detrended, k = 5, bs = "cr") + 
-            s(roughness,       k = 5, bs = "cr"), 
+            s(TPI,       k = 5, bs = "cr"), 
           data = habi, method = "REML", family = binomial("logit"))
 summary(m_inverts)
 
 m_sand <- gam(cbind(sand, broad.total.points.annotated - sand) ~ 
                 s(depth,     k = 5, bs = "cr") + 
                 s(detrended, k = 5, bs = "cr") + 
-                s(roughness,       k = 5, bs = "cr"), 
+                s(TPI,       k = 5, bs = "cr"), 
               data = habi, method = "REML", family = binomial("logit"))
 summary(m_sand)
 

@@ -46,17 +46,17 @@ habisp <- vect(habi, geom = c("longitude", "latitude"), crs = wgscrs, keep = T)
 sbuff  <- terra::buffer(habisp, 10000)                                         # Buffer should be in metres
 plot(sbuff)
 # Use formula from top model from '2_modelselect.R'
-m_kelps <- gam(cbind(kelps, broad.total.points.annotated - kelps) ~ 
-                 s(depth,     k = 5, bs = "cr")  + 
-                 s(detrended, k = 5, bs = "cr") + 
-                 s(roughness, k = 5, bs = "cr"), 
-               data = habi, method = "REML", family = binomial("logit"))
-summary(m_kelps)
+# m_kelps <- gam(cbind(kelps, broad.total.points.annotated - kelps) ~ 
+#                  s(depth,     k = 5, bs = "cr")  + 
+#                  s(detrended, k = 5, bs = "cr") + 
+#                  s(roughness, k = 5, bs = "cr"), 
+#                data = habi, method = "REML", family = binomial("logit"))
+# summary(m_kelps)
 
 m_macro <- gam(cbind(macroalgae, broad.total.points.annotated - macroalgae) ~ 
-                 s(depth,     k = 5, bs = "cr")  + 
-                 s(detrended, k = 5, bs = "cr") + 
-                 s(roughness, k = 5, bs = "cr"), 
+                 s(aspect,     k = 5, bs = "cr")  + 
+                 s(depth, k = 5, bs = "cr") + 
+                 s(detrended, k = 5, bs = "cr"), 
                data = habi, method = "REML", family = binomial("logit"))
 summary(m_macro)
 
@@ -68,9 +68,9 @@ m_inverts <- gam(cbind(inverts, broad.total.points.annotated - inverts) ~
 summary(m_inverts)
 
 m_sand <- gam(cbind(sand, broad.total.points.annotated - sand) ~ 
-                s(depth,     k = 5, bs = "cr") + 
-                s(detrended, k = 5, bs = "cr") + 
-                s(roughness,       k = 5, bs = "cr"), 
+                s(aspect,     k = 5, bs = "cr") + 
+                s(depth, k = 5, bs = "cr") + 
+                s(detrended,       k = 5, bs = "cr"), 
               data = habi, method = "REML", family = binomial("logit"))
 summary(m_sand)
 
@@ -90,7 +90,7 @@ summary(m_rock)
 #                 "pinverts" = predict(m_inverts, preddf, type = "response"))
 
 preddf <- cbind(preddf, 
-                "pkelps" = predict(m_kelps, preddf, type = "response", se.fit = T),
+                #"pkelps" = predict(m_kelps, preddf, type = "response", se.fit = T),
                 "pmacroalg" = predict(m_macro, preddf, type = "response", se.fit = T),
                 "psand" = predict(m_sand, preddf, type = "response", se.fit = T),
                 "prock" = predict(m_rock, preddf, type = "response", se.fit = T),
@@ -108,7 +108,7 @@ spreddf         <- as.data.frame(sprast, xy = TRUE, na.rm = T) #%>%
 #  dplyr::filter(Z < -30)
 
 # Add a colum that categorises the dominant habitat class
-spreddf$dom_tag <- apply(spreddf%>% dplyr::select(pkelps.fit, pmacroalg.fit, psand.fit, prock.fit, pinverts.fit), 1, # Set columns manually here
+spreddf$dom_tag <- apply(spreddf%>% dplyr::select(pmacroalg.fit, psand.fit, prock.fit, pinverts.fit), 1, # Set columns manually here
                         FUN = function(x){names(which.max(x))})
 spreddf$dom_tag <- sub('.', '', spreddf$dom_tag)                                # Removes the p but not really sure why haha
 head(spreddf)                                                                   # Check to see if it all looks ok
