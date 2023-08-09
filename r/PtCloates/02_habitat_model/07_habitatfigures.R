@@ -31,6 +31,7 @@ library(dplyr)
 library(rgdal)
 library(stars)
 library(smoothr)
+library(ggnewscale)
 
 # Set your study name
 name <- "PtCloates"                                                              # Change here
@@ -89,12 +90,22 @@ hab_cols <- scale_fill_manual(values = c(#"Macroalgae" = "#009E73",
                                          "Sessile invertebrates" = "#56B4E9"
 ))
 
+npz_cols <- scale_fill_manual(values = c(#"Macroalgae" = "#009E73",
+  #"Rock" = "#D55E00",
+  "National Park Zone" = "green"
+  
+))
 
 #Build plot elements for site 1
 p1 <- ggplot() +
   geom_tile(data = spreddf, aes(x, y, fill = dom_tag)) +
-  hab_cols +                                                                    # Class colours
-  geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
+  hab_cols +   # Class colours
+  labs(fill = "Habitat") +
+  new_scale_fill()+
+  new_scale_colour()+
+  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +  # Add national park zones
+  npz_cols + 
+  new_scale_colour() +
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
                breaks = c( - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
@@ -102,7 +113,7 @@ p1 <- ggplot() +
                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
   coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
            ylim = c(-22.85, -22.60)) +
-  labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
+  labs(x = NULL, y = NULL,                                     # Labels  
        colour = NULL, title = "Ningaloo - Point Cloates") +
   annotate("text", x = c(113.65, 113.57, 113.51),          # Add contour labels manually
            y = c(-22.75, -22.75, -22.75), 
