@@ -85,22 +85,27 @@ spreddf <- readRDS(paste(paste0('output/Abrolhos/', name),
 
 # Figure 1: Categorical habitat maps ----
 # Assign habitat class colours ##WHAT HAPPENED TO KELP?!
-hab_cols <- scale_fill_manual(values = c("Macroalgae" = "#009E73",
+hab_cols <- scale_fill_manual(values = c("Macroalgae" = "seagreen",
                                          "Rock" = "#D55E00",
                                          "Sand" = "#F0E442",
                                          "Sessile Invertebrates" = "#56B4E9"
 ))
 
+npz_cols <- scale_colour_manual(values = c("National Park Zone" = "#7bbc63"),
+                                name = "Australian Marine Parks")
+
 #Build plot elements for Dominant Habitat Figure 1
 p1 <- ggplot() +
   geom_tile(data = spreddf, aes(x, y, fill = dom_tag)) +
   hab_cols +                                                                    # Class colours
-  geom_sf(data = npz, fill = NA, colour = "seagreen1", linewidth = 0.5) +  
-  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +      # Add national park zones
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
                breaks = c(- 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
                colour = "#000000",
-               alpha = 1, size = 0.5) +                                         # Transparency and linewidth
+               alpha = 1, size = 0.5) + 
+  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +  
+  npz_cols+
+  new_scale_colour() +
+  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +      # Add national park zones
   coord_sf(xlim = c(113.169637818, 113.65),                              # Set plot limits
            ylim = c(-28.15, -27.95)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
@@ -217,7 +222,9 @@ p22 <- ggplot() +
   geom_tile(data = widehabitfit, 
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, limits = c(0, max(widehabitfit$value))) +
-  geom_sf(data = npz, fill = NA, colour = "seagreen1", linewidth = 2) +                          # National park zones
+  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # National park zones
+  npz_cols+
+  new_scale_colour()+
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
@@ -240,7 +247,9 @@ p23 <- ggplot() +
   geom_tile(data = widehabitse, 
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, option = "C", limits = c(0, max(widehabitse$value))) +
-  geom_sf(data = npz, fill = NA, colour = "seagreen1", linewidth = 2) +                          # National park zones
+  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # National park zones
+  npz_cols+
+  new_scale_colour()+
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +

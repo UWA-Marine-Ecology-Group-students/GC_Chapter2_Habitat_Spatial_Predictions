@@ -90,27 +90,24 @@ hab_cols <- scale_fill_manual(values = c(#"Macroalgae" = "#009E73",
                                          "Sessile invertebrates" = "#56B4E9"
 ))
 
-npz_cols <- scale_fill_manual(values = c(#"Macroalgae" = "#009E73",
-  #"Rock" = "#D55E00",
-  "National Park Zone" = "green"
-  
-))
+npz_cols <- scale_colour_manual(values = c("National Park Zone" = "#7bbc63"),
+                                name = "Australian Marine Parks")
 
 #Build plot elements for site 1
 p1 <- ggplot() +
   geom_tile(data = spreddf, aes(x, y, fill = dom_tag)) +
   hab_cols +   # Class colours
   labs(fill = "Habitat") +
-  new_scale_fill()+
-  new_scale_colour()+
-  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), colour = "seagreen1", linewidth = 0.5) +  # Add national park zones
-  npz_cols + 
-  new_scale_colour() +
-  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
+  new_scale_fill() +
+  # new_scale_colour()+
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
                breaks = c( - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
                colour = "#000000",
                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
+  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +  # Add national park zones
+  npz_cols +
+  new_scale_colour() +
+  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
            ylim = c(-22.85, -22.60)) +
   labs(x = NULL, y = NULL,                                     # Labels  
