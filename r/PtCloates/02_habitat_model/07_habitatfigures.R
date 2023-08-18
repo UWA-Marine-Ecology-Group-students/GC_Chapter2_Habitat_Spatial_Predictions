@@ -124,33 +124,33 @@ p1
 dev.off()
 
 
-# #saving the predictions as a shapefile
-# # As a shapefile
-# preddf <- spreddf %>%
-#   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
-#                                         #"Kelp" = 1,
-#                                         #"Macroalgae" = 2,
-#                                         "Rock" = 3,
-#                                         "Sand" = 4,
-#                                         "Sessile invertebrates" = 5)) %>%
-#   dplyr::select(x, y, dom_tag)
-# 
-# predr <- rast(preddf)
-# plot(predr)
-# 
-# predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
-# plot(predr_smooth)
-# 
-# smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
-#   dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
-#   dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
-# crs(predr_smooth) <- wgscrs
-# pred_stars <- st_as_stars(predr_smooth)
-# 
-# dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
-# 
-# st_write(dom.habs, "output/Abrolhos/Abrolhos-dominant-habitat.shp", 
-#          append = F)
+#saving the predictions as a shapefile
+# As a shapefile
+preddf <- spreddf %>%
+  dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
+                                        #"Kelp" = 1,
+                                        #"Macroalgae" = 2,
+                                        #"Rock" = 3,
+                                        "Sand" = 1,
+                                        "Sessile invertebrates" = 2)) %>%
+  dplyr::select(x, y, dom_tag)
+
+predr <- rast(preddf)
+plot(predr)
+
+predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
+plot(predr_smooth)
+
+smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
+  dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
+  dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
+crs(predr_smooth) <- wgscrs
+pred_stars <- st_as_stars(predr_smooth)
+
+dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
+
+st_write(dom.habs, "output/PtCloates/PtCloates-dominant-habitat.shp",
+         append = F)
 
 
 # # Figure 1.5
