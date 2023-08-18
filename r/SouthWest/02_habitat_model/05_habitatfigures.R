@@ -106,7 +106,7 @@ p1 <- ggplot() +
                alpha = 1, size = 0.5) +
   geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # Add national park zones
   npz_cols+
-  new_scale_colour() +
+  #new_scale_colour() +
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   coord_sf(xlim = c(114.2, 115.2),                              # Set plot limits
           ylim = c(-34.2, -33.5)) +
@@ -124,32 +124,32 @@ p1
 dev.off()
 
 #saving the predictions as a shapefile
-# As a shapefile
-# preddf <- spreddf %>%
-#   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
-#                                         "Kelp" = 1,
-#                                         "Macroalgae" = 2,
-#                                         "Rock" = 3,
-#                                         "Sand" = 4,
-#                                         "Sessile invertebrates" = 5)) %>%
-#   dplyr::select(x, y, dom_tag)
-# 
-# predr <- rast(preddf)
-# plot(predr)
-# 
-# predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
-# plot(predr_smooth)
-# 
-# smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
-#   dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
-#   dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
-# crs(predr_smooth) <- wgscrs
-# pred_stars <- st_as_stars(predr_smooth)
-# 
-# dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
-# 
-# st_write(dom.habs, "output/SWC/SWC-dominant-habitat.shp", 
-#          append = F)
+#As a shapefile
+preddf <- spreddf %>%
+  dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
+                                        "Kelp" = 1,
+                                        "Macroalgae" = 2,
+                                        "Rock" = 3,
+                                        "Sand" = 4,
+                                        "Sessile invertebrates" = 5)) %>%
+  dplyr::select(x, y, dom_tag)
+
+predr <- rast(preddf)
+plot(predr)
+
+predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
+plot(predr_smooth)
+
+smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
+  dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
+  dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
+crs(predr_smooth) <- wgscrs
+pred_stars <- st_as_stars(predr_smooth)
+
+dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
+
+st_write(dom.habs, "output/SWC/SWC-dominant-habitat.shp",
+         append = F)
 
 # # Figure 1.5
 # smooth_plot <- smooth_df %>%
