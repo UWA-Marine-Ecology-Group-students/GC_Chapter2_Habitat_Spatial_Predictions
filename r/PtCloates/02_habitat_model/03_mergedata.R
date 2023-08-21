@@ -22,7 +22,7 @@ library(ggplot2)
 name <- "PtCloates" # Change here
 
 # Load in tidy data from the formatting scripts
-boss <- read_csv("data/tidy/PtCloates_BOSS_random-points_broad.habitat.csv") %>% # Need to type filename manually
+boss <- read.csv("data/tidy/PtCloates_BOSS_random-points_broad.habitat.csv") %>% # Need to type filename manually
   dplyr::mutate(method = "BOSS") %>%                                            # Change here
   dplyr::mutate(broad.unconsolidated=broad.unconsolidated + broad.substrate.unconsolidated.soft.) %>%
   dplyr::select(-c(broad.substrate.unconsolidated.soft.)) %>%
@@ -30,7 +30,7 @@ boss <- read_csv("data/tidy/PtCloates_BOSS_random-points_broad.habitat.csv") %>%
 
 names(boss)
 
-bruv <- read_csv("data/tidy/PtCloates_BRUVs_random-points_broad.habitat.csv") %>% # Need to type filename manually
+bruv <- read.csv("data/tidy/PtCloates_BRUVs_random-points_broad.habitat.csv") %>% # Need to type filename manually
   dplyr::mutate(method = "BRUV") %>%  
   dplyr::mutate(sample= as.character(sample)) %>%# Change here
   glimpse()
@@ -40,9 +40,9 @@ names(bruv)
 #boss$sample <- as.numeric(boss$sample)
 #boss["sample"][is.na(boss["sample"])] <- 1000
 
-hab  <- bind_rows(boss, bruv)  %>%                     # Join together BOSS and BRUV data
-  replace_na(list(broad.bryozoa=0))
-unique(hab$sample)              
+ hab  <- bind_rows(boss, bruv) %>%                     # Join together BOSS and BRUV data
+    mutate(broad.bryozoa = ifelse(is.na(broad.bryozoa), 0, broad.bryozoa))
+unique(hab$sample)
 
 # Extract bathy derivatives for modelling
 # Set up CRS and load spatial covariates from 02_spatial_layers.R 
@@ -73,6 +73,9 @@ allhab <- habi_df %>%
                   broad.bryozoa) %>%
   glimpse()                                                                     # Preview data
 
+#write to csv
+write.csv(allhab, paste(paste0('data/tidy/', name), 
+                        'habitat-bathy-derivatives.csv', sep = "_"))
 # Save the output
 saveRDS(allhab, paste(paste0('data/tidy/', name), 
                       'habitat-bathy-derivatives.rds', sep = "_"))
