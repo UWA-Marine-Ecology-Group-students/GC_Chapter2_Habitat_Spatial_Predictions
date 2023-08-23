@@ -37,6 +37,12 @@ bathy <- rast("data/spatial/rasters/raw bathymetry/depth_195_50m_clipped.tif") %
 plot(bathy)
 summary(bathy)
 
+#crop bathy
+fbath_df <- as.data.frame(bathy, xy = TRUE, na.rm = T)                          # Convert to a dataframe
+saveRDS(fbath_df, paste(paste0('data/spatial/rasters/',                         # Save it for use in the next scripts
+                               name), 'multi_bathy.rds', sep = "_")) 
+
+
 # cbaths <- c("data/spatial/rasters/raw bathymetry/depth_195_50m_clipped.tif")
 # bath_r <- rast(cbaths)
 # plot(bath_r)
@@ -75,21 +81,22 @@ summary(bathy)
 #                                name), 'ga_bathy.rds', sep = "_")) 
 
 # Calculate terrain derivatives
-preds <- terrain(tbath_c, neighbors = 8,
+preds <- terrain(bathy, neighbors = 8,
                  v = c("slope", "aspect", "TPI", "TRI", "roughness"),
                  unit = "degrees")         # Remove here as necessary
-preds <- rast(list(tbath_c, preds))                                                  # Stack the derivatives with the bathymetry
+preds <- rast(list(bathy, preds))                                                  # Stack the derivatives with the bathymetry
 plot(preds)
 # Calculate detrended bathymetry
-zstar <- st_as_stars(tbath_c)                                                   # Convert to a stars object
+zstar <- st_as_stars(bathy)                                                   # Convert to a stars object
 detre <- detrend(zstar, parallel = 8)                                           # Detrend bathymetry - This usually runs quite slow!
 detre <- as(object = detre, Class = "SpatRaster")                                   # Convert it to a raster
 names(detre) <- c("detrended", "lineartrend")
 preds <- rast(list(preds, detre))                                                    # Make a rasterstack
 plot(preds)
-preds <- wrap(preds)
+names(preds)[1] <- "Z"
+preds <- terra::wrap(preds)
 
 # Save the output
-saveRDS(preds, paste(paste0('data/spatial/rasters/', name), 'spatial_covariates.rds', sep = "_"))
+saveRDS(preds, paste(paste0('data/spatial/rasters/', name), 'multi_spatial_covariates.rds', sep = "_"))
 
 # rstudioapi::navigateToFile("add script name here.R")
