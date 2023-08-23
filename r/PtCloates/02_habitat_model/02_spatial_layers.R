@@ -18,6 +18,7 @@ library(sp)
 library(terra)
 library(sf)
 library(stars)
+library(raster)
 
 library(starsExtra)
 
@@ -26,13 +27,20 @@ name <- "PtCloates"                                                             
 
 # Set CRS for bathymetry data
 wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Latlong projection 
-       
+
+# cbaths <- c("data/spatial/rasters/raw bathymetry/depth_195_50m_clipped.tif")       
+# bath_r <- rast(cbaths) 
+# plot(bath_r)
+# 
+# G <- projectRaster(bath_r, proj4string(cbaths))
+# new_bath_r <- spTransform(bath_r, CRS("init=epsg:4326"))
+
 # This next section uses coarse GA bathymetry, replace if you have better bathymetry data (ie. multibeam or LiDAR)
 # Read in and merge GA coarse bathy tiles from https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/67703
 cbaths      <- list.files("data/spatial/rasters/raw bathymetry",                # Bathymetry data too large for git stored here
-                     "*tile", full.names = TRUE) 
+                     "*tile", full.names = TRUE)
 cbathy      <- lapply(cbaths,                                                   # Loads all of the tiles
-                 function(x){read.table(file = x, header = TRUE, sep = ",")})    
+                 function(x){read.table(file = x, header = TRUE, sep = ",")})
 cbathy      <- do.call("rbind", lapply(cbathy, as.data.frame))                  # Turns the list into a data frame
 cbathy      <- cbathy[cbathy$Z <= 0 & cbathy$X < 117, ]                         # Get rid of topography data above 0m, general crop to speed life up
 bath_r      <- rast(cbathy)                                                      # Convert to a raster
@@ -40,15 +48,15 @@ crs(bath_r) <- wgscrs                                                           
 plot(bath_r)                                                                    # Plot to check everything looks ok
 
 # Crop the bathymetry to the general study area
-# tbath <- projectRaster(bath_r, crs = sppcrs)
-# tbath_c <- crop(tbath, extent(c(105000, 165000, 6880000, 7000000)))
-# lats <- read.csv("data/tidy/2021-05_PtCloates_synthesis_random-points_broad.habitat.csv") %>%
-#   glimpse() 
-# 
-# min(lats$latitude)
-# max(lats$latitude)
-# min(lats$longitude)
-# max(lats$longitude)
+tbath <- projectRaster(bath_r, crs = sppcrs)
+tbath_c <- crop(tbath, extent(c(105000, 165000, 6880000, 7000000)))
+lats <- read.csv("data/tidy/2021-05_PtCloates_synthesis_random-points_broad.habitat.csv") %>%
+  glimpse()
+
+min(lats$latitude)
+max(lats$latitude)
+min(lats$longitude)
+max(lats$longitude)
 
 tbath_c <- crop(bath_r, ext(c(113.2, 114.3,-23, -21.5)))
 plot(tbath_c)
