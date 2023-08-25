@@ -48,8 +48,6 @@ crs(bath_r) <- wgscrs                                                           
 plot(bath_r)                                                                    # Plot to check everything looks ok
 
 # Crop the bathymetry to the general study area
-tbath <- projectRaster(bath_r, crs = sppcrs)
-tbath_c <- crop(tbath, extent(c(105000, 165000, 6880000, 7000000)))
 lats <- read.csv("data/tidy/2021-05_PtCloates_synthesis_random-points_broad.habitat.csv") %>%
   glimpse()
 

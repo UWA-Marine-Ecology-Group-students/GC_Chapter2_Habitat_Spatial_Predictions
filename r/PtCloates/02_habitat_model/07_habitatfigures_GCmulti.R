@@ -55,7 +55,7 @@ npz <- mpa[mpa$ZoneName %in% "National Park Zone", ]                            
 
 # Load tidy habitat data from 03_mergedata
 habi    <- readRDS(paste(paste0('data/tidy/', name), 
-                         'multi_habitat-bathy-derivatives.rds', sep = "_")) %>%
+                         'habitat-bathy-derivatives.rds', sep = "_")) %>%
   glimpse()
 
 # Load terrestrial parks
@@ -68,11 +68,11 @@ cwatr  <- st_read('data/spatial/shapefiles/amb_coastal_waters_limit.shp')
 
 # Load bathymetry data
 bathdf <- readRDS(paste(paste0('data/spatial/rasters/',                         
-                               name), 'multi_bathy.rds', sep = "_"))
+                               name), 'ga_bathy.rds', sep = "_"))
 
 # read in spatial predictions from 'R/05_habitat_model.R'
 spreddf <- readRDS(paste(paste0('output/PtCloates/', name),
-                         'multibeam_spatial_habitat_predictions.rds', sep = "_")) %>%
+                         'spatial_habitat_predictions.rds', sep = "_")) %>%
   dplyr::mutate(dom_tag = as.factor(dom_tag)) %>%                               # Factorise
   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
                                  #kelps = "Kelp",
@@ -118,7 +118,7 @@ p1 <- ggplot() +
            size = 2, colour = "#000000") +
   theme_minimal()
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
-                     "multi_dominant_habitat.png", sep = "_"),
+                     "dominant_habitat.png", sep = "_"),
     width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
 p1
 dev.off()
@@ -149,7 +149,7 @@ pred_stars <- st_as_stars(predr_smooth)
 
 dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
 
-st_write(dom.habs, "output/PtCloates/PtCloates-dominant-habitat_multi.shp",
+st_write(dom.habs, "output/PtCloates/PtCloates-dominant-habitat.shp",
          append = F)
 
 
@@ -242,7 +242,7 @@ p22 <- ggplot() +
   facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
-                     "multi_habitat_class_predicted.png", sep = "_"),
+                     "habitat_class_predicted.png", sep = "_"),
     width = 5, heigh = 10, res = 300, units = "in")                             # Change the dimensions here as necessary
 p22
 dev.off()
@@ -268,7 +268,7 @@ p23 <- ggplot() +
   facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
-                     "multi_habitat_SE_predicted.png", sep = "_"),
+                     "habitat_SE_predicted.png", sep = "_"),
     width = 5, heigh = 10, res = 300, units = "in")  
 
 p23
@@ -276,7 +276,7 @@ dev.off()
 
 indierror <- p22 + p23
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
-                     "multi_habitat_indi_error_predicted.png", sep = "_"),
+                     "habitat_indi_error_predicted.png", sep = "_"),
     width = 5, height = 4, res = 300, units = "in") 
 
 indierror
