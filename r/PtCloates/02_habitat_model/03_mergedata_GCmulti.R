@@ -71,6 +71,7 @@ allhab <- habi_df %>%
   dplyr::mutate(rock = ifelse(is.na(rock),0,rock), inverts = broad.sponges + broad.octocoral.black +               # Make a sessile invertebrate column
                   broad.invertebrate.complex +  broad.hydroids + 
                   broad.bryozoa) %>%
+  dplyr::mutate(Z = abs(Z)) %>%                                                      # takes the absolute value of Z
   glimpse()                                                                     # Preview data
 
 #write to csv

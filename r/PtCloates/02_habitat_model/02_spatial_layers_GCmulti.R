@@ -54,7 +54,7 @@ plot(tbath_c)
 #points(lats[,c("longitude","latitude")], pch = 20, cex = 1, col = "red")
 fbath_df <- as.data.frame(tbath_c, xy = TRUE)                                   # Convert this to a dataframe
 saveRDS(fbath_df, paste(paste0('data/spatial/rasters/',                         # Save it for use in the next scripts
-                               name), 'mb_bathy.rds', sep = "_")) 
+                               name), 'multi_bathy.rds', sep = "_")) 
 
 # Calculate terrain derivatives
 preds <- terrain(tbath_c, neighbors = 8,

@@ -35,15 +35,17 @@ name <- "PtCloates"                                                             
 # Bring in and format the data----
 dat <- readRDS(paste(paste0('data/tidy/', name),                                # Merged data from 'R/01_mergedata.R'
                      'multi_habitat-bathy-derivatives.rds', sep = "_")) %>% 
+  dplyr::filter(!is.na(TPI)) %>%
   dplyr::select(sample, longitude, latitude, depth,                             # Select columns to keep
-               TRI, TPI, roughness, slope, aspect, detrended,                  # Bathymetry derivatives
+               TRI, TPI, roughness, slope, aspect, detrended, Z,                  # Bathymetry derivatives
                 broad.total.points.annotated, rock, sand, inverts) %>% # Points annotated and habitat scores
   pivot_longer(cols = c("rock", "sand", "inverts"),      # Set your response columns here 
                names_to = "response", values_to = "number") %>%                 # Pivot habitat columns to long format for modelling
+  dplyr::mutate(Z = abs(Z)) %>%                                                      # takes the absolute value of Z
   glimpse()
 
 # Set predictor variables---
-pred.vars <- c("depth","TRI", "TPI", "roughness", "slope", "aspect", "detrended") 
+pred.vars <- c("Z","TRI", "TPI", "roughness", "slope", "aspect", "detrended") 
 
 # Check for correlation of predictor variables- remove anything highly correlated (>0.95)---
 # Full correlation table
@@ -70,7 +72,7 @@ for (i in pred.vars) {
 }
 
 # # Re-set the predictors for modeling----
-pred.vars <- c("depth","roughness", "detrended", "aspect", "TPI") 
+pred.vars <- c("Z","roughness", "detrended", "aspect", "TPI") 
 
 
 # Check to make sure Response vector has no more than 80% zeros----

@@ -27,7 +27,10 @@ name <- "PtCloates"                                                             
 wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Latlong projection 
 
 # read in
-habi   <- readRDS("data/tidy/PtCloates_multi_habitat-bathy-derivatives.rds")           # Merged data from 'R/03_mergedata.R'
+habi   <- readRDS("data/tidy/PtCloates_multi_habitat-bathy-derivatives.rds") %>%  # Merged data from 'R/03_mergedata.R'
+  dplyr::filter(!is.na(TPI)) %>%
+  dplyr::mutate(Z = abs(Z)) %>% 
+glimpse()
 preds  <- readRDS("data/spatial/rasters/PtCloates_multi_spatial_covariates.rds")       # Spatial covs from 'R/02_spatial_layers.R'
 preds <- rast(list(preds))
 #preds <- rast(preds)
@@ -36,7 +39,7 @@ preds <- mask(preds,preds[[1]])
 plot(preds)
 preddf <- as.data.frame(preds, xy = TRUE, na.rm = TRUE)
 preddf$depth <- abs(preddf$Z)                                                   # Converts depth to absolute value - make sure you aren't predicting onto data with negative values!
-
+glimpse(preddf)
 summary(habi$depth)
 # reduce predictor space to fit survey area
 # habisp <- SpatialPointsDataFrame(coords = cbind(habi$longitude, 
