@@ -284,6 +284,10 @@ p23 <- ggplot() +
 
   # facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
+#adjust the width of the fill legend
+p23 <- p23 + theme(legend.key.width = unit(1, "in"))
+
+
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                      "habitat_SE_predicted.png", sep = "_"),
     width = 10, heigh = 8, res = 400, units = "in")  
@@ -291,7 +295,7 @@ png(filename = paste(paste("plots", name, sep = "/"),                   # Save t
 p23
 dev.off()
 
-install.packages("gridExtra")
+#install.packages("gridExtra")
 
 
 indierror <- p22 + p23
