@@ -33,6 +33,8 @@ library(rgdal)
 library(stars)
 library(smoothr)
 library(ggnewscale)
+library(gridExtra)
+library(patchwork)
 
 # Set your study name
 name <- "PtCloates"                                                              # Change here
@@ -242,21 +244,25 @@ p22 <- ggplot() +
   geom_text(data = dep_ann,aes(x,y,label = label),
             inherit.aes = F, size = 2, colour = "#000000") +
   new_scale_color()+
-  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +
+  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5, show.legend = FALSE) +
   npz_cols+
-  guides(colour = guide_legend(title.position="top", title.hjust = 0.5))+
+  #guides(colour = guide_legend(title.position="top", title.hjust = 0.5))+
   coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
            ylim = c(-22.85, -22.60)) +
-  labs(x = NULL, y = NULL, fill = "Habitat (mean)", title = "Point Cloates") +      # Labels
+  labs(x = NULL, y = NULL, fill = "Habitat (mean)") +      # Labels
   theme_minimal() +
   theme(legend.position = "bottom",
-        legend.box.margin=margin(10,10,10,10))
+        legend.box.margin=margin(10,40,10,10))
 
   #facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
+#adjust the width of the fill legend
+p22 <- p22 + theme(legend.key.width = unit(1, "cm"))
+
+
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                      "habitat_class_predicted.png", sep = "_"),
-    width = 10, height = 8, res = 400, units = "in")                             # Change the dimensions here as necessary
+    width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
 p22
 dev.off()
 
@@ -266,8 +272,6 @@ p23 <- ggplot() +
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, option = "C", limits = c(0, max(widehabitse$value))) +
   guides(fill = guide_colourbar(title.position="top", title.hjust = 0.5))+
-  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # National park zones
-  npz_cols+
   new_scale_colour()+
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +      #Adding in land
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
@@ -275,36 +279,67 @@ p23 <- ggplot() +
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
             inherit.aes = F, size = 2, colour = "#000000") +
+  new_scale_colour()+
+    geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # National park zones
+  npz_cols+
+  guides(colour = guide_legend(title.position="top", title.hjust = 0.5))+
   coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
            ylim = c(-22.85, -22.60)) +
-  labs(x = NULL, y = NULL, fill = "Habitat (SE)", title = "Point Cloates") +      # Labels
+   labs(x = NULL, y = NULL, fill = "Habitat (SE)") +      # Labels
   theme_minimal() +
   theme(legend.position = "bottom",
-        legend.box.margin=margin(10,10,10,10))
+        legend.box.margin=margin(10,160,10,10))
 
   # facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
 #adjust the width of the fill legend
-p23 <- p23 + theme(legend.key.width = unit(1, "in"))
+ p23 <- p23 + theme(legend.key.width = unit(1, "cm"))
 
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                      "habitat_SE_predicted.png", sep = "_"),
-    width = 10, heigh = 8, res = 400, units = "in")  
+    width = 8, height = 4, res = 300, units = "in")  
 
 p23
 dev.off()
 
+#attempting to join plots
 #install.packages("gridExtra")
 
 
-indierror <- p22 + p23
-png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
-                     "habitat_indi_error_predicted.png", sep = "_"),
-    width = 5, height = 4, res = 300, units = "in") 
+p24 <- grid.arrange(
+  p22, p23, top = "Point Cloates",
+ncol =2 ) 
 
-indierror
+#p24 <- p24 + theme(legend.key.width = unit(1, "cm"))
+
+#add common title 
+#combined_plot <- combined_plot + ggtitle("Point Cloates")
+#combined_plot <- p22 + p23 + plot_layout(ncol = 2) & ggtitle("Point Cloates")
+
+
+#print the combined plot
+print(combined_plot)
+
+png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
+                                          "comp_habitat_predicted.png", sep = "_"),
+                          width = 15, height = 4, res = 300, units = "in") 
+
+p24
 dev.off()
+
+# # Save the combined plot as a PNG file
+# ggsave(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
+#                         "habitat_SE_predicted.png", sep = "_"), plot = combined_plot, width = 10, height = 6, dpi = 300)
+
+# 
+# indierror <- p22 + p23
+# png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
+#                      "habitat_indi_error_predicted.png", sep = "_"),
+#     width = 5, height = 4, res = 300, units = "in") 
+# 
+# indierror
+# dev.off()
 
 # # Figure 3. Bathymetry derivatives ----
 # # depth
