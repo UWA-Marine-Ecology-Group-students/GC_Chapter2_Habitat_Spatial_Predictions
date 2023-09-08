@@ -33,6 +33,7 @@ library(stars)
 library(smoothr)
 library(gridExtra)
 library(patchwork)
+library(ggnewscale)
 
 # Set your study name
 name <- "Abrolhos"                                                              # Change here
