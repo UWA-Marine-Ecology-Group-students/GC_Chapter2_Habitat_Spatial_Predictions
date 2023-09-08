@@ -31,6 +31,8 @@ library(dplyr)
 library(rgdal)
 library(stars)
 library(smoothr)
+library(gridExtra)
+library(patchwork)
 
 # Set your study name
 name <- "Abrolhos"                                                              # Change here
@@ -222,19 +224,27 @@ p22 <- ggplot() +
   geom_tile(data = widehabitfit, 
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, limits = c(0, max(widehabitfit$value))) +
-  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # National park zones
-  npz_cols+
-  #new_scale_colour()+
+  guides(fill = guide_colourbar(title.position = "top", title.hjust = 0.5))+
+  new_scale_colour()+
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
-               breaks = c(-30, -70, -200), colour = "#000000",
-               alpha = 1, size = 0.5) +
+                 breaks = c(-30, -70, -200), colour = "#000000",
+                 alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-            inherit.aes = F, size = 2, colour = "#000000") +
+              inherit.aes = F, size = 2, colour = "#000000") +
+  new_scale_colour()+
+  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5, show.legend = FALSE) +                          # National park zones
+  npz_cols+
+  
+  
   coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
            ylim = c(-28.147530871, -27.951387524)) +
-  labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "Abrolhos - Shallow Bank") +      # Labels
+  labs(x = NULL, y = NULL, fill = "Habitat (mean)" ) +      # Labels
   theme_minimal() +
-  facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
+  theme(legend.position = "bottom",
+        legend.box.margin = margin(10,10,10,20),
+        legend.key.width = unit(1, "cm"),
+        plot.margin = margin(10,15,10,10))
+  #facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                       "habitat_class_predicted.png", sep = "_"),
@@ -247,34 +257,63 @@ p23 <- ggplot() +
   geom_tile(data = widehabitse, 
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, option = "C", limits = c(0, max(widehabitse$value))) +
-  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # National park zones
-  npz_cols+
+  guides(fill = guide_colourbar(title.position = "top", title.hjust = 0.5))+
   new_scale_colour()+
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
             inherit.aes = F, size = 2, colour = "#000000") +
+  new_scale_colour()+
+  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # National park zones
+  npz_cols+
+  guides(colour = guide_legend(title.position = "top", title.hjust = 0.5))+
   coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
            ylim = c(-28.147530871, -27.951387524)) +
-  labs(x = NULL, y = NULL, fill = "Habitat (SE)", title = "Abrolhos - Shallow Bank") +      # Labels
+  labs(x = NULL, y = NULL, fill = "Habitat (SE)") +      # Labels
   theme_minimal() +
-  facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
+  theme(legend.position = "bottom",
+        legend.box.margin=margin(10,150,10,10),
+        legend.key.width = unit(1, "cm"),
+        plot.margin = margin(10,15,10,10))
+  #facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                                            "habitat_SE_predicted.png", sep = "_"),
-                          width = 5, heigh = 10, res = 300, units = "in")  
+                          width = 5, height = 10, res = 300, units = "in")  
 
 p23
 dev.off()
 
-indierror <- p22 + p23
-png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
-                     "habitat_indi_error_predicted.png", sep = "_"),
-    width = 5, height = 4, res = 300, units = "in") 
+p24 <- grid.arrange(
+  p22, p23, top = "Shallow Bank, Abrolhos",
+  ncol =2 ) 
 
-indierror
+#p24 <- p24 + theme(legend.key.width = unit(1, "cm"))
+
+#add common title 
+#combined_plot <- combined_plot + ggtitle("Point Cloates")
+#combined_plot <- p22 + p23 + plot_layout(ncol = 2) & ggtitle("Point Cloates")
+
+
+#print the combined plot
+print(p24)
+
+png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
+                     "comp_habitat_predicted.png", sep = "_"),
+    width = 15, height = 4, res = 300, units = "in") 
+
+p24
 dev.off()
+
+
+# indierror <- p22 + p23
+# png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
+#                      "habitat_indi_error_predicted.png", sep = "_"),
+#     width = 5, height = 4, res = 300, units = "in") 
+# 
+# indierror
+# dev.off()
 
 # # Figure 3. Bathymetry derivatives ----
 # # depth
