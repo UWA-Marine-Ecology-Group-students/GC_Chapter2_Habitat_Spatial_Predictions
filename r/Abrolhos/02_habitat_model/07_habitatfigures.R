@@ -35,6 +35,7 @@ library(gridExtra)
 library(patchwork)
 library(ggnewscale)
 
+
 # Set your study name
 name <- "Abrolhos"                                                              # Change here
 
@@ -188,7 +189,7 @@ st_write(dom.habs, "output/Abrolhos/Abrolhos-dominant-habitat.shp",
 
 # Figure 2. Individual habitat class predictions ----
 # Melt classes for faceting
-
+# options(repr.plot.width = 10, repr.plot.height = 10)
 
 widehabitfit <- spreddf %>%
   dplyr::select(pmacroalg.fit, prock.fit, psand.fit, pinverts.fit, x, y) %>%
@@ -215,10 +216,13 @@ widehabitse <- spreddf %>%
                                          pinverts.se.fit = "Sessile Invertebrates SE")) %>%
   glimpse()
 
+
+
 # Make a dataframe for your contour line annotations - doesn't work otherwise for facetted plots
 dep_ann <- data.frame(x = c(113.433617268, 113.392982290, 113.255855826),                            
                       y = c(-28.087180374, -28.087180374, -28.087180374),
                       label = c("30m", "70m", "200m"))
+
 
 # Build the plot for the first site
 p22 <- ggplot() +
@@ -231,7 +235,7 @@ p22 <- ggplot() +
                  breaks = c(-30, -70, -200), colour = "#000000",
                  alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-              inherit.aes = F, size = 2, colour = "#000000") +
+              inherit.aes = F, size = 5, colour = "#000000") +
   new_scale_colour()+
   geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5, show.legend = FALSE) +                          # National park zones
   npz_cols+
@@ -239,17 +243,26 @@ p22 <- ggplot() +
   
   coord_sf(xlim = c(113.169637818, 113.592952023),                              # Set plot limits
            ylim = c(-28.147530871, -27.951387524)) +
-  labs(x = NULL, y = NULL, fill = "Habitat (mean)" ) +      # Labels
+  labs(x = NULL, y = NULL, fill = "Habitat (mean)") +      # Labels
   theme_minimal() +
   theme(legend.position = "bottom",
-        legend.box.margin = margin(10,10,10,20),
-        legend.key.width = unit(1, "cm"),
-        plot.margin = margin(10,15,10,10))
-  #facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
+        legend.box.margin = margin(5,5,5,150),
+        legend.key.width = unit(2, "cm"),
+        legend.text = element_text(size =15),
+        legend.title = element_text(size =15),
+        plot.margin = margin(10,10,10,10), 
+        axis.text.y = element_text(size =15),
+        axis.text.x = element_text(size =15),
+        strip.text = element_text(size = 18, margin = margin()))+
+  facet_wrap(~variable, ncol = 1) 
+  
 
+
+  
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                       "habitat_class_predicted.png", sep = "_"),
-     width = 5, heigh = 10, res = 300, units = "in")                             # Change the dimensions here as necessary
+     width = 6, height = 10, res = 400, units = "in")                             # Change the dimensions here as necessary
+print(p22)
 p22
  dev.off()
 
@@ -264,7 +277,7 @@ p23 <- ggplot() +
                breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-            inherit.aes = F, size = 2, colour = "#000000") +
+            inherit.aes = F, size = 5, colour = "#000000") +
   new_scale_colour()+
   geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # National park zones
   npz_cols+
@@ -274,21 +287,54 @@ p23 <- ggplot() +
   labs(x = NULL, y = NULL, fill = "Habitat (SE)") +      # Labels
   theme_minimal() +
   theme(legend.position = "bottom",
-        legend.box.margin=margin(10,150,10,10),
-        legend.key.width = unit(1, "cm"),
-        plot.margin = margin(10,15,10,10))
-  #facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
+        legend.box.margin=margin(10,500,10,10),
+        legend.key.width = unit(2, "cm"),
+        legend.text = element_text(size =15),
+        legend.title = element_text(size =15),
+        plot.margin = margin(10,10,10,10), 
+        axis.text.y = element_text(size =15),
+        axis.text.x = element_text(size =15),
+        strip.text = element_text(size = 18, margin = margin()))+
+    facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                                            "habitat_SE_predicted.png", sep = "_"),
-                          width = 5, height = 10, res = 300, units = "in")  
+                          width = 6, height = 10, res = 400, units = "in")  
 
-p23
+print(p23)
 dev.off()
 
+# p24 <- ggarrange(p22, p23, top = "Shallow Bank, Abrolhos", widths = c(1.5,2))
+#
+
+
+# p24 <- grid.arrange(
+#   p22, p23, top = "Shallow Bank, Abrolhos",
+#   nrow=1, ncol=2)
+
 p24 <- grid.arrange(
-  p22, p23, top = "Shallow Bank, Abrolhos",
-  ncol =2 ) 
+  p22, p23, top = grid::textGrob('Shallow Bank, Abrolhos', gp=grid::gpar(fontsize=24)),
+  nrow=1, ncol=2)
+
+
+# print(p24)
+ # p27 <- p24 +
+ #   theme(plot.title = element_text(size = 10))
+ # 
+ # print(p27)
+ 
+ 
+ggsave(paste(paste("plots", name, sep = "/"),                   # Save the output
+             "comp_habitat_predicted.png", sep = "_"), p24,
+       width = 20, height = 20
+       )
+
+# png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
+#                      "comp_habitat_predicted.png", sep = "_"),
+#     width = 50, height = 20, res = 300, units = "in") 
+# 
+# p24
+# dev.off()
 
 #p24 <- p24 + theme(legend.key.width = unit(1, "cm"))
 
@@ -298,14 +344,14 @@ p24 <- grid.arrange(
 
 
 #print the combined plot
-print(p24)
 
-png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
-                     "comp_habitat_predicted.png", sep = "_"),
-    width = 15, height = 4, res = 300, units = "in") 
 
-p24
-dev.off()
+
+# # Adjust the plot margins for p24 to ensure everything fits within the saved image
+# p24 <- p24 + theme(plot.margin = margin(2, 2, 2, 2))
+# 
+# p24
+
 
 
 # indierror <- p22 + p23
