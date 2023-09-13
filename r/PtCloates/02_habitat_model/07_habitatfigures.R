@@ -101,6 +101,8 @@ hab_cols <- scale_fill_manual(values = c(#"Macroalgae" = "#009E73",
 npz_cols <- scale_colour_manual(values = c("National Park Zone" = "#7bbc63"),
                                 name = "Australian Marine Parks")
 
+theme_update(plot.title = element_text(hjust = 0.5))
+
 #Build plot elements for site 1
 p1 <- ggplot() +
   geom_tile(data = spreddf, aes(x, y, fill = dom_tag)) +
@@ -119,12 +121,16 @@ p1 <- ggplot() +
   coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
            ylim = c(-22.85, -22.60)) +
   labs(x = NULL, y = NULL,                                     # Labels  
-       colour = NULL, title = "Ningaloo - Point Cloates") +
-  annotate("text", x = c(113.65, 113.57, 113.51),          # Add contour labels manually
+       colour = NULL, title = "Point Cloates, Ningaloo", title.hjust = 0.5) +
+    annotate("text", x = c(113.65, 113.57, 113.51),          # Add contour labels manually
            y = c(-22.75, -22.75, -22.75), 
            label = c("30m", "70m", "200m"),
            size = 2, colour = "#000000") +
   theme_minimal()
+
+
+print(p1)
+  
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
                      "dominant_habitat.png", sep = "_"),
     width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
@@ -242,7 +248,7 @@ p22 <- ggplot() +
                breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-            inherit.aes = F, size = 2, colour = "#000000") +
+            inherit.aes = F, size = 5, colour = "#000000") +
   new_scale_color()+
   geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5, show.legend = FALSE) +
   npz_cols+
@@ -252,17 +258,23 @@ p22 <- ggplot() +
   labs(x = NULL, y = NULL, fill = "Habitat (mean)") +      # Labels
   theme_minimal() +
   theme(legend.position = "bottom",
-        legend.box.margin=margin(10,40,10,10))
-
-  #facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
+        legend.box.margin=margin(10,40,10,10),
+        legend.key.width = unit(2, "cm"),
+        legend.text = element_text(size =15),
+        legend.title = element_text(size =15),
+        plot.margin = margin(10,10,10,10), 
+        axis.text.y = element_text(size =15),
+        axis.text.x = element_text(size =15),
+        strip.text = element_text(size = 18, margin = margin()))+
+  facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
 #adjust the width of the fill legend
-p22 <- p22 + theme(legend.key.width = unit(1, "cm"))
+#p22 <- p22 + theme(legend.key.width = unit(1, "cm"))
 
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                      "habitat_class_predicted.png", sep = "_"),
-    width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
+    width = 6, height = 10, res = 400, units = "in")                             # Change the dimensions here as necessary
 p22
 dev.off()
 
@@ -278,7 +290,7 @@ p23 <- ggplot() +
                breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-            inherit.aes = F, size = 2, colour = "#000000") +
+            inherit.aes = F, size = 5, colour = "#000000") +
   new_scale_colour()+
     geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # National park zones
   npz_cols+
@@ -288,17 +300,23 @@ p23 <- ggplot() +
    labs(x = NULL, y = NULL, fill = "Habitat (SE)") +      # Labels
   theme_minimal() +
   theme(legend.position = "bottom",
-        legend.box.margin=margin(10,160,10,10))
-
-  # facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
+        legend.box.margin=margin(10,210,10,10),
+        legend.key.width = unit(2, "cm"),
+        legend.text = element_text(size =15),
+        legend.title = element_text(size =15),
+        plot.margin = margin(10,10,10,10), 
+        axis.text.y = element_text(size =15),
+        axis.text.x = element_text(size =15),
+        strip.text = element_text(size = 18, margin = margin()))+
+        facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
 #adjust the width of the fill legend
- p23 <- p23 + theme(legend.key.width = unit(1, "cm"))
+# p23 <- p23 + theme(legend.key.width = unit(1, "cm"))
 
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                      "habitat_SE_predicted.png", sep = "_"),
-    width = 8, height = 4, res = 300, units = "in")  
+    width = 6, height = 10, res = 400, units = "in")  
 
 p23
 dev.off()
@@ -308,8 +326,8 @@ dev.off()
 
 
 p24 <- grid.arrange(
-  p22, p23, top = "Point Cloates",
-ncol =2 ) 
+  p22, p23, top = grid::textGrob('Point Cloates, Ningaloo', gp=grid::gpar(fontsize=24)),
+nrow=1, ncol =2) 
 
 #p24 <- p24 + theme(legend.key.width = unit(1, "cm"))
 
@@ -319,14 +337,20 @@ ncol =2 )
 
 
 #print the combined plot
-print(combined_plot)
+print(p24)
 
-png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
-                                          "comp_habitat_predicted.png", sep = "_"),
-                          width = 15, height = 4, res = 300, units = "in") 
+ggsave(paste(paste("plots", name, sep = "/"),                   # Save the output
+             "comp_habitat_predicted.png", sep = "_"), p24,
+       width = 14, height = 10
+)
 
-p24
-dev.off()
+# 
+# png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
+#                                           "comp_habitat_predicted.png", sep = "_"),
+#                           width = 20, height = 20, res = 300, units = "in") 
+# 
+# p24
+# dev.off()
 
 # # Save the combined plot as a PNG file
 # ggsave(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
