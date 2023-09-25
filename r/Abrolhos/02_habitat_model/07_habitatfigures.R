@@ -324,10 +324,6 @@ p24 <- grid.arrange(
  # print(p27)
  
  
-ggsave(paste(paste("plots", name, sep = "/"),                   # Save the output
-             "comp_habitat_predicted.png", sep = "_"), p24,
-       width = 20, height = 20
-       )
 
 # png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
 #                      "comp_habitat_predicted.png", sep = "_"),

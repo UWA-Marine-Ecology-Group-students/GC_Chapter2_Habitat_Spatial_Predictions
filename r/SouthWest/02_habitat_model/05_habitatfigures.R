@@ -31,6 +31,8 @@ library(dplyr)
 library(rgdal)
 library(stars)
 library(smoothr)
+library(ggnewscale)
+library(gridExtra)
 
 # Set your study name
 name <- "SouthWest"                                                              # Change here
@@ -217,29 +219,40 @@ dep_ann <- data.frame(x = c(115.02, 114.8, 114.55),
                       label = c("30m", "70m", "200m"))
 
 # Build the plot for predicted Habitat individual classes
-p22 <- ggplot() +
+p22 <- ggplot() + 
   geom_tile(data = widehabitfit, 
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, limits = c(0, max(widehabitfit$value))) +
-  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # National park zones
-  npz_cols+
+  guides(fill = guide_colourbar(title.position = "top", title.hjust = 0.5))+
   new_scale_colour()+
-  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #GC trying to add in AUSMAP
+  geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
                breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
             inherit.aes = F, size = 2, colour = "#000000") +
+  new_scale_colour()+
+    geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5, show.legend = FALSE) +                          # National park zones
+  npz_cols+
   coord_sf(xlim = c(114.4, 115.05),                              # Set plot limits
            ylim = c(-34.2, -33.5)) +
-  labs(x = NULL, y = NULL, fill = "Habitat (p)", title = "South West - Capes Region") +      # Labels
+  labs(x = NULL, y = NULL, fill = "Habitat (mean)") +      # Labels
   theme_minimal(base_size = 9) +
-  theme(axis.text.x = element_text(angle = 90, size = 9)) +
+  theme(legend.position = "bottom",
+        legend.box.margin = margin(1,1,1,90),
+        legend.key.width = unit(1, "cm"),
+        legend.text = element_text(size =15),
+        legend.title = element_text(size =15),
+        plot.margin = margin(1,1,1,1), 
+        axis.text.y = element_text(size =15),
+    axis.text.x = element_text(angle = 90, size = 15),
+    strip.text = element_text(size = 11, margin = margin())) +
   facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                      "habitat_class_predicted.png", sep = "_"),
-    width = 8, height = 10, res = 300, units = "in")                             # Change the dimensions here as necessary
+    width = 12, height = 15, res = 400, units = "in")                             # Change the dimensions here as necessary
+print(p22)
 p22
 dev.off()
 
@@ -249,29 +262,89 @@ p23 <- ggplot() +
   geom_tile(data = widehabitse,
             aes(x, y, fill = value)) +
   scale_fill_viridis(direction = -1, option = "C", limits = c(0.00, 0.12), breaks=seq(0.00,0.12,by=0.03)) +
-  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +
-  npz_cols+
+  guides(fill = guide_colourbar(title.position = "top", title.hjust = 0.5))+
   new_scale_colour()+
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
-                 breaks = c(-30, -70, -200), colour = "#000000",
-                 alpha = 1, size = 0.5) +
-    geom_text(data = dep_ann,aes(x,y,label = label),
-              inherit.aes = F, size = 2, colour = "#000000") +
-    coord_sf(xlim = c(114.4, 115.05),                              # Set plot limits
-             ylim = c(-34.2, -33.5)) +
-    labs(x = NULL, y = NULL, fill = "Habitat (SE)", title = "South West - Capes Region") +      # Labels
-    theme_minimal(base_size = 9) +
-    theme(axis.text.x = element_text(angle = 90, size = 9)) +
-    facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
+               breaks = c(-30, -70, -200), colour = "#000000",
+               alpha = 1, size = 0.5) +
+  geom_text(data = dep_ann,aes(x,y,label = label),
+            inherit.aes = F, size = 2, colour = "#000000") +
+  new_scale_colour()+
+  geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +
+  npz_cols+
+  guides(colour = guide_legend(title.position = "top", title.hjust = 0.5))+
+  coord_sf(xlim = c(114.4, 115.05),                              # Set plot limits
+           ylim = c(-34.2, -33.5)) +
+  labs(x = NULL, y = NULL, fill = "Habitat (SE)") +      # Labels
+  theme_minimal(base_size = 9) +
+  theme(legend.position = "bottom",
+        legend.box.margin=margin(10,240,10,10),
+        legend.key.width = unit(1, "cm"),
+        legend.text = element_text(size =15),
+        legend.title = element_text(size =15),
+        plot.margin = margin(1,1,1,1), 
+        axis.text.y = element_text(size =15),
+    axis.text.x = element_text(angle = 90, size = 15),
+    strip.text = element_text(size = 11, margin = margin()))+
+  facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
   
+ 
+    # geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +
+  
+    
   png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                        "habitat_SE_predicted.png", sep = "_"),
-      width = 8, heigh = 10, res = 300, units = "in")  
-  
-  p23
+      width =12, height = 15, res = 400, units = "in") 
+  print(p23)
+  p23 
   dev.off()
 
+  
+  # p24 <- grid.arrange(
+  #   p22, p23, top = grid::textGrob('Capes Region, South West', gp=grid::gpar(fontsize=24)),
+  #   nrow=1, ncol=2)
+  # 
+  # # png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
+  # #                      "indi_combined_predicted.png", sep = "_"),
+  # #     width = 20, height = 15, res = 400, units = "in")  
+  # 
+  # print(p24)
+  # dev.off()
+  # 
+  
+  #Combine p22 and p23
+  p24 <- p22 + p23
+
+  # Add a title to the combined plot
+  combined_plot <- p24 +
+    ggtitle("Capes Region, South West") +
+    theme(plot.title = element_text(size = 18, hjust = 0.5))  # Adjust the size as needed
+
+  # Save or display the combined plot
+  png(
+    filename = paste(paste("plots", name, sep = "/"),
+                     "combined_habitat_plots.png", sep = "_"),
+    width = 12, height = 15, res = 400, units = "in"
+  )
+  print(combined_plot)
+  dev.off()
+  
+  # # Combine p22 and p23 using grid.arrange and add a common title
+  # combined_plot <- grid.arrange(
+  #   p22, p23, nrow = 1, top = "Capes Region, South West"
+  # )
+  # 
+  # # Save or display the combined plot
+  # png(
+  #   filename = paste(paste("plots", name, sep = "/"), 
+  #                    "combined_habitat_plots.png", sep = "_"),
+  #   width = 15, height = 15, res = 400, units = "in"
+  # )
+  # print(combined_plot)
+  # dev.off()
+  
+  
 # # Figure 3. Bathymetry derivatives ----
 # # depth
 # pd <- ggplot() +
