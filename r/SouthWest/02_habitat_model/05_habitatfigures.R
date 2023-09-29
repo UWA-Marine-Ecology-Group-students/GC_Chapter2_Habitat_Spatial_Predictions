@@ -113,12 +113,15 @@ p1 <- ggplot() +
   coord_sf(xlim = c(114.2, 115.2),                              # Set plot limits
           ylim = c(-34.2, -33.5)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
-       colour = NULL, title = "South West - Capes region") +
+       colour = NULL, title = "Capes Region, South West") +
      annotate("text", x = c(115.0, 114.79, 114.51),          # Add contour labels manually
            y = c(-34.0, -34.0, -34.0), 
            label = c("30m", "70m", "200m"),
            size = 2, colour = "#000000") +
-  theme_minimal()
+  theme_minimal()+
+  theme(
+    plot.title = element_text(size = 14, hjust = 0.5)  # Center title horizontally
+  )
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
                      "dominant_habitat.png", sep = "_"),
     width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary

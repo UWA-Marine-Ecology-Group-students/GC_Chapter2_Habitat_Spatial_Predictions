@@ -121,13 +121,15 @@ p1 <- ggplot() +
   coord_sf(xlim = c(113.4, 113.8),                              # Set plot limits
            ylim = c(-22.85, -22.60)) +
   labs(x = NULL, y = NULL,                                     # Labels  
-       colour = NULL, title = "Point Cloates, Ningaloo", title.hjust = 0.5) +
+       colour = NULL, title = "Point Cloates, Ningaloo") +
     annotate("text", x = c(113.65, 113.57, 113.51),          # Add contour labels manually
            y = c(-22.75, -22.75, -22.75), 
            label = c("30m", "70m", "200m"),
            size = 2, colour = "#000000") +
-  theme_minimal()
-
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 14, hjust = 0.5)  # Center title horizontally
+  )
 
 print(p1)
   

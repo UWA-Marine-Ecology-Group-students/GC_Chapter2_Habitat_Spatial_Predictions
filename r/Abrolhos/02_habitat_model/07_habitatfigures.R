@@ -113,12 +113,15 @@ p1 <- ggplot() +
   coord_sf(xlim = c(113.169637818, 113.65),                              # Set plot limits
            ylim = c(-28.15, -27.95)) +
   labs(x = NULL, y = NULL, fill = "Habitat",                                    # Labels  
-       colour = NULL, title = "Abrolhos - Shallow Bank") +
+       colour = NULL, title = "Shallow Bank, Abrolhos") +
   annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
            y = c(-28.078038504, -28.078038504, -28.078038504), 
            label = c("30m", "70m", "200m"),
            size = 2, colour = "#000000") +
-  theme_minimal()
+  theme_minimal() +
+theme(
+  plot.title = element_text(size = 14, hjust = 0.5)  # Center title horizontally
+)
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
                      "dominant_habitat.png", sep = "_"),
     width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
