@@ -1,6 +1,0 @@
-"","modname","AICc","BIC","r2.vals","r2.vals.unique","edf","edf.less.1","delta.AICc","delta.BIC","wi.AICc","wi.BIC","depth","roughness","detrended","aspect","cumsum.wi"
-"seagrasses","depth+detrended+roughness",4959.9012956937,5003.28521242997,0.0357,NA,9.51,0,0,0,1,1,1,1,1,0,1
-"rock","depth+detrended+roughness",6774.52344678922,6830.36391177047,0.22178,NA,12.27,0,0,0,1,1,1,1,1,0,1
-"macroalgae","aspect+depth+detrended",9436.08092137714,9494.10630590433,0.43987,NA,12.75,0,0,0,1,1,1,0,1,1,1
-"sand","depth+detrended+roughness",15467.2939895849,15520.4523524346,0.61061,NA,11.67,0,0,0,1,1,1,1,1,0,1
-"inverts","aspect+depth+roughness",8689.29933981695,8746.33531057223,0.24587,NA,12.53,0,0,0,1,1,1,1,0,1,1

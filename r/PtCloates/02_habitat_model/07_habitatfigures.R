@@ -111,7 +111,7 @@ p1 <- ggplot() +
   new_scale_fill() +
   # new_scale_colour()+
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
-               breaks = c( - 30, -70, -100, -120, - 200),                                 # Contour breaks - change to binwidth for regular contours
+               breaks = c( - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
                colour = "#000000",
                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
   geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +  # Add national park zones

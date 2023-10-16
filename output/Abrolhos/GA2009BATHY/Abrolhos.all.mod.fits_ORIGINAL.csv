@@ -1,0 +1,6 @@
+,modname,AICc,BIC,r2.vals,r2.vals.unique,edf,edf.less.1,delta.AICc,delta.BIC,wi.AICc,wi.BIC,depth,roughness,detrended,cumsum.wi
+rock,depth+detrended+roughness,1292.367388,1314.961191,0.08723,NA,12.88,0,0,0,1,1,1,1,1,1
+macroalgae,depth+detrended+roughness,736.3259566,756.2775481,0.28754,NA,10.83,0,0,0,1,0.997,1,1,1,1
+sand.depth+detrended+roughness,depth+detrended+roughness,1842.811627,1865.256584,0.34047,NA,12.76,0,0,4.769,0.57,0.084,1,1,1,0.57
+sand.depth+detrended,depth+detrended,1843.374446,1860.487748,0.34145,NA,8.92,0,0.563,0,0.43,0.916,1,0,1,1
+inverts,depth+detrended+roughness,1178.411349,1200.991933,0.1551,NA,12.87,0,0,0,1,1,1,1,1,1

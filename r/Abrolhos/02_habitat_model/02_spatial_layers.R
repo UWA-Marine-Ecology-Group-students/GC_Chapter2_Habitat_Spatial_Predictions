@@ -30,14 +30,20 @@ wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Lat
        
 # This next section uses coarse GA bathymetry, replace if you have better bathymetry data (ie. multibeam or LiDAR)
 # Read in and merge GA coarse bathy tiles from https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/67703
-cbaths      <- list.files("data/spatial/rasters/raw bathymetry",                # Bathymetry data too large for git stored here
-                     "*tile", full.names = TRUE) 
-cbathy      <- lapply(cbaths,                                                   # Loads all of the tiles
-                 function(x){read.table(file = x, header = TRUE, sep = ",")})    
-cbathy      <- do.call("rbind", lapply(cbathy, as.data.frame))                  # Turns the list into a data frame
-cbathy      <- cbathy[cbathy$Z <= 0 & cbathy$X < 117, ]                         # Get rid of topography data above 0m, general crop to speed life up
-bath_r      <- rast(cbathy)                                                      # Convert to a raster
-crs(bath_r) <- wgscrs                                                           # Set the CRS
+# cbaths      <- list.files("data/spatial/rasters/raw bathymetry",                # Bathymetry data too large for git stored here
+#                      "*tile", full.names = TRUE) 
+# cbathy      <- lapply(cbaths,                                                   # Loads all of the tiles
+#                  function(x){read.table(file = x, header = TRUE, sep = ",")})    
+# cbathy      <- do.call("rbind", lapply(cbathy, as.data.frame))                  # Turns the list into a data frame
+# cbathy      <- cbathy[cbathy$Z <= 0 & cbathy$X < 117, ]                         # Get rid of topography data above 0m, general crop to speed life up
+# bath_r <- rast(cbathy)
+# crs(bath_r) <- wgscrs
+
+#below is GA 2023 BATHY above is old bathy
+bath_r      <- rast("data/spatial/rasters/raw bathymetry/Aus_2023_250m.tif") %>%                                                     # Convert to a raster
+  clamp(upper = 0, values = F)
+names(bath_r)[1]<-"Z"                                                         # Set the CRS
+  
 plot(bath_r)                                                                    # Plot to check everything looks ok
 
 # Crop the bathymetry to the general study area

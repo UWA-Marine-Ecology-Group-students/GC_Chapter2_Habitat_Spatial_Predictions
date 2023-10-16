@@ -1,4 +1,0 @@
-,modname,AICc,BIC,r2.vals,r2.vals.unique,edf,edf.less.1,delta.AICc,delta.BIC,wi.AICc,wi.BIC,depth,roughness,detrended,aspect,TPI,cumsum.wi
-sand,depth+detrended+TPI,2512.662528,2552.413491,0.18117,NA,12.56,0,0,0,1,1,1,0,1,0,1,1
-inverts.depth+detrended+TPI,depth+detrended+TPI,2419.358766,2459.279945,0.17367,NA,12.62,0,0,0,0.563,0.578,1,0,1,0,1,0.563
-inverts.aspect+depth+detrended,aspect+depth+detrended,2419.865362,2459.905554,0.17835,NA,12.66,0,0.507,0.626,0.437,0.422,1,0,1,1,0,1

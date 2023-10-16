@@ -1,6 +1,0 @@
-"","modname","AICc","BIC","r2.vals","r2.vals.unique","edf","edf.less.1","delta.AICc","delta.BIC","wi.AICc","wi.BIC","depth","roughness","detrended","aspect","TPI","cumsum.wi"
-"sand.depth+detrended+TPI","depth+detrended+TPI",2512.66252837869,2552.41349104764,0.18117,NA,12.56,0,0,0,1,1,1,0,1,0,1,1
-"sand.aspect+depth+detrended","aspect+depth+detrended",2586.25849951856,2625.08163091621,0.16947,NA,12.26,0,73.596,72.668,0,0,1,0,1,1,0,1
-"inverts.depth+detrended+TPI","depth+detrended+TPI",2419.35876574982,2459.27994535733,0.17367,NA,12.62,0,0,0,0.563,0.578,1,0,1,0,1,0.563
-"inverts.aspect+depth+detrended","aspect+depth+detrended",2419.86536243312,2459.90555379208,0.17835,NA,12.66,0,0.507,0.626,0.437,0.422,1,0,1,1,0,1
-"inverts.depth+detrended","depth+detrended",2478.03273982884,2505.84345341039,0.15748,NA,8.67,0,58.674,46.564,0,0,1,0,1,0,0,1

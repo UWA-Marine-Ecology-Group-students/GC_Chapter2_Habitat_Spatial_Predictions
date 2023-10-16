@@ -1,0 +1,10 @@
+"","modname","AICc","BIC","r2.vals","r2.vals.unique","edf","edf.less.1","delta.AICc","delta.BIC","wi.AICc","wi.BIC","depth","roughness","detrended","aspect","cumsum.wi"
+"seagrasses.depth+detrended+roughness","depth+detrended+roughness",4959.9012956937,5003.28521242997,0.0357,NA,9.51,0,0,0,1,1,1,1,1,0,1
+"seagrasses.aspect+depth+detrended","aspect+depth+detrended",4988.70592979567,5039.50146317759,0.09441,NA,11.15,0,28.805,36.216,0,0,1,0,1,1,1
+"seagrasses.aspect+depth+roughness","aspect+depth+roughness",5019.52601995044,5067.9342766835,0.03878,NA,10.62,0,59.625,64.649,0,0,1,1,0,1,1
+"seagrasses.depth+detrended","depth+detrended",5024.58963095829,5054.71907026644,0.09547,NA,6.6,0,64.688,51.434,0,0,1,0,1,0,1
+"rock","depth+detrended+roughness",6774.52344678922,6830.36391177047,0.22178,NA,12.27,0,0,0,1,1,1,1,1,0,1
+"macroalgae","aspect+depth+detrended",9436.08092137714,9494.10630590433,0.43987,NA,12.75,0,0,0,1,1,1,0,1,1,1
+"sand","depth+detrended+roughness",15467.2939895849,15520.4523524346,0.61061,NA,11.67,0,0,0,1,1,1,1,1,0,1
+"inverts.aspect+depth+roughness","aspect+depth+roughness",8689.29933981695,8746.33531057223,0.24587,NA,12.53,0,0,0,1,1,1,1,0,1,1
+"inverts.depth+detrended+roughness","depth+detrended+roughness",8715.97183053447,8772.98508401323,0.23908,NA,12.53,0,26.672,26.65,0,0,1,1,1,0,1
