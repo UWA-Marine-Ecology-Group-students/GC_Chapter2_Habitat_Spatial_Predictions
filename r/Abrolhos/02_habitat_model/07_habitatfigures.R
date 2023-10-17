@@ -238,7 +238,7 @@ p22 <- ggplot() +
                  breaks = c(-30, -70, -200), colour = "#000000",
                  alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-              inherit.aes = F, size = 5, colour = "#000000") +
+              inherit.aes = F, size = 3, colour = "#000000") +
   new_scale_colour()+
   geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5, show.legend = FALSE) +                          # National park zones
   npz_cols+
@@ -249,14 +249,14 @@ p22 <- ggplot() +
   labs(x = NULL, y = NULL, fill = "Habitat (mean)") +      # Labels
   theme_minimal() +
   theme(legend.position = "bottom",
-        legend.box.margin = margin(5,5,5,150),
+        legend.box.margin = margin(5,5,5,5),
         legend.key.width = unit(2, "cm"),
         legend.text = element_text(size =15),
         legend.title = element_text(size =15),
         plot.margin = margin(10,10,10,10), 
-        axis.text.y = element_text(size =15),
-        axis.text.x = element_text(size =15),
-        strip.text = element_text(size = 18, margin = margin()))+
+        axis.text.y = element_text(size =12),
+        axis.text.x = element_text(size =12),
+        strip.text = element_text(size = 15, margin = margin()))+
   facet_wrap(~variable, ncol = 1) 
   
 
@@ -264,7 +264,7 @@ p22 <- ggplot() +
   
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                       "habitat_class_predicted.png", sep = "_"),
-     width = 6, height = 10, res = 400, units = "in")                             # Change the dimensions here as necessary
+     width = 8, height = 10, res = 400, units = "in")                             # Change the dimensions here as necessary
 print(p22)
 p22
  dev.off()
@@ -280,7 +280,7 @@ p23 <- ggplot() +
                breaks = c(-30, -70, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-            inherit.aes = F, size = 5, colour = "#000000") +
+            inherit.aes = F, size = 3, colour = "#000000") +
   new_scale_colour()+
   geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +                          # National park zones
   npz_cols+
@@ -290,50 +290,71 @@ p23 <- ggplot() +
   labs(x = NULL, y = NULL, fill = "Habitat (SE)") +      # Labels
   theme_minimal() +
   theme(legend.position = "bottom",
-        legend.box.margin=margin(10,500,10,10),
+        legend.box.margin=margin(10,200,10,10),
         legend.key.width = unit(2, "cm"),
         legend.text = element_text(size =15),
         legend.title = element_text(size =15),
         plot.margin = margin(10,10,10,10), 
-        axis.text.y = element_text(size =15),
-        axis.text.x = element_text(size =15),
-        strip.text = element_text(size = 18, margin = margin()))+
+        axis.text.y = element_text(size =12),
+        axis.text.x = element_text(size =12),
+        strip.text = element_text(size = 15, margin = margin()))+
     facet_wrap(~variable, ncol = 1)                                               # Facet for each variable
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                                            "habitat_SE_predicted.png", sep = "_"),
-                          width = 6, height = 10, res = 400, units = "in")  
+                          width = 8, height = 10, res = 400, units = "in")  
 
 print(p23)
 dev.off()
 
 # p24 <- ggarrange(p22, p23, top = "Shallow Bank, Abrolhos", widths = c(1.5,2))
-#
 
 
-# p24 <- grid.arrange(
-#   p22, p23, top = "Shallow Bank, Abrolhos",
-#   nrow=1, ncol=2)
+##TRIAL##
+p24 <- grid.arrange(
+  p22, p23, top = grid::textGrob('Shallow Bank, Abrolhos', gp=grid::gpar(fontsize=24)),
+  nrow=1, ncol =2) 
+
+#p24 <- p24 + theme(legend.key.width = unit(1, "cm"))
+
+#add common title 
+#combined_plot <- combined_plot + ggtitle("Point Cloates")
+#combined_plot <- p22 + p23 + plot_layout(ncol = 2) & ggtitle("Point Cloates")
+
+
+#print the combined plot
+print(p24)
+
+ggsave(paste(paste("plots", name, sep = "/"),                   # Save the output
+             "comp_habitat_predicted.png", sep = "_"), p24,
+       width = 14, height = 10
+)
+
+
+
+p24 <- grid.arrange(
+  p22, p23, top = "Shallow Bank, Abrolhos",
+  nrow=1, ncol=2)
 
 p24 <- grid.arrange(
   p22, p23, top = grid::textGrob('Shallow Bank, Abrolhos', gp=grid::gpar(fontsize=24)),
   nrow=1, ncol=2)
 
 
-# print(p24)
- # p27 <- p24 +
- #   theme(plot.title = element_text(size = 10))
- # 
- # print(p27)
- 
- 
-
-# png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
-#                      "comp_habitat_predicted.png", sep = "_"),
-#     width = 50, height = 20, res = 300, units = "in") 
+ print(p24)
+# p27 <- p24 +
+#   theme(plot.title = element_text(size = 10))
 # 
-# p24
-# dev.off()
+# print(p27)
+#  
+#  
+# 
+#  png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
+#                       "comp_habitat_predicted.png", sep = "_"),
+#      width = 50, height = 20, res = 300, units = "in") 
+#  
+#  p24
+#  dev.off()
 
 #p24 <- p24 + theme(legend.key.width = unit(1, "cm"))
 
