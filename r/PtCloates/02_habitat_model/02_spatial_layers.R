@@ -54,14 +54,14 @@ names(bath_r)[1]<-"Z"                                                         # 
 
 plot(bath_r)                                                                    # Plot to check everything looks ok
 
-# Crop the bathymetry to the general study area
-lats <- read.csv("data/tidy/2021-05_PtCloates_synthesis_random-points_broad.habitat.csv") %>%
-  glimpse()
-
-min(lats$latitude)
-max(lats$latitude)
-min(lats$longitude)
-max(lats$longitude)
+# # Crop the bathymetry to the general study area
+# lats <- read.csv("data/tidy/2021-05_PtCloates_synthesis_random-points_broad.habitat.csv") %>%
+#   glimpse()
+# 
+# min(lats$latitude)
+# max(lats$latitude)
+# min(lats$longitude)
+# max(lats$longitude)
 
 tbath_c <- crop(bath_r, ext(c(113.2, 114.3,-23, -21.5)))
 plot(tbath_c)
