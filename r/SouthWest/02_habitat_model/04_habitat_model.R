@@ -19,7 +19,7 @@ library(mgcv)
 library(ggplot2)
 library(viridis)
 library(terra)
-library(dismo)
+#library(dismo)
 
 # Set your study name
 name <- "SouthWest"                                                              # Change here
@@ -42,10 +42,10 @@ plot(preds)
 
 preds <- as(preds, Class = "Raster")
 
-dat <- raster::extract(preds[[c(1, 6, 7)]], xy)    # Selecting from a raster stack of your predictors (depth, roughness etc…) – Just select the predictors used in your final models
-messrast <- mess(preds[[c(1, 6, 7)]], dat) %>%
-  raster::clamp(lower = -0.01, useValues = F)   # Set the cutoff as a value very close to 0 – anything above 0 is reliable anything below is less reliable
-plot(messrast)
+# dat <- raster::extract(preds[[c(1, 6, 7)]], xy)    # Selecting from a raster stack of your predictors (depth, roughness etc…) – Just select the predictors used in your final models
+# messrast <- mess(preds[[c(1, 6, 7)]], dat) %>%
+#   raster::clamp(lower = -0.01, useValues = F)   # Set the cutoff as a value very close to 0 – anything above 0 is reliable anything below is less reliable
+# plot(messrast)
 
 
 
@@ -115,8 +115,8 @@ preddf <- cbind(preddf,
                 "pinverts" = predict(m_inverts, preddf, type = "response", se.fit = T))
 
 # reduce prediction area to within sampled range
-# preddf <- preddf[preddf$depth > min(habi$Z) & 
-#                    preddf$depth < max(habi$Z), ]
+preddf <- preddf[preddf$depth > min(habi$Z) &
+                   preddf$depth < max(habi$Z), ]
 
 prasts <- rast(preddf, crs = wgscrs) 
 plot(prasts)
@@ -125,18 +125,18 @@ plot(prasts)
 sprast <- mask(prasts, sbuff)
 plot(sprast)
 
-# Then at the end of the script you need to mask your predictions by ‘messrast’ – do this before you categorise your habitat into the dominant class
-messrast <- as(messrast, Class = "SpatRaster")
-messrast <- crop(messrast, sprast)    # Make the extent of the MESS match with the extent of your predictions
-prasts_m <- mask(sprast, messrast)  # Mask predictions by MESS
-plot(prasts_m)  # Check nothing has messed up
-rastdf <- as.data.frame(prasts_m, xy = T, na.rm = T)  # To a dataframe
+# # Then at the end of the script you need to mask your predictions by ‘messrast’ – do this before you categorise your habitat into the dominant class
+# messrast <- as(messrast, Class = "SpatRaster")
+# messrast <- crop(messrast, sprast)    # Make the extent of the MESS match with the extent of your predictions
+# prasts_m <- mask(sprast, messrast)  # Mask predictions by MESS
+# plot(prasts_m)  # Check nothing has messed up
+# rastdf <- as.data.frame(prasts_m, xy = T, na.rm = T)  # To a dataframe
 
 
 
 # # Tidy and output data as a dataframe #AND filter pipe for depth less than 30m
-# rastdf         <- as.data.frame(sprast, xy = TRUE, na.rm = T) #%>%
-  #dplyr::filter(Z <- -30)
+ rastdf         <- as.data.frame(sprast, xy = TRUE, na.rm = T) #%>%
+  # dplyr::filter(Z <- -25)
 
 #GC ATTEMPT
 rastdf$dom_tag <- apply(rastdf%>% dplyr::select(pseagrasses.fit, pmacroalg.fit, psand.fit, prock.fit, pinverts.fit), 1,
