@@ -30,7 +30,7 @@ wgscrs <- "+proj=longlat +datum=WGS84 +south"                              # Lat
 habi   <- readRDS("data/tidy/Abrolhos_habitat-bathy-derivatives.rds")           # Merged data from 'R/03_mergedata.R'
 preds  <- readRDS("data/spatial/rasters/Abrolhos_spatial_covariates.rds")       # Spatial covs from 'R/02_spatial_layers.R'
 #preds <- rast(preds)
-preds[[1]] <- clamp(preds[[1]], upper=-25, lower=-190, values=FALSE)
+preds[[1]] <- clamp(preds[[1]], upper=-26, lower=-190, values=FALSE)
 preds <- mask(preds,preds[[1]])
 plot(preds)
 preddf <- as.data.frame(preds, xy = TRUE, na.rm = TRUE)
@@ -95,6 +95,14 @@ preddf <- cbind(preddf,
                 "psand" = predict(m_sand, preddf, type = "response", se.fit = T),
                 "prock" = predict(m_rock, preddf, type = "response", se.fit = T),
                 "pinverts" = predict(m_inverts, preddf, type = "response", se.fit = T))
+
+# min_Z <- min(habi$Z)
+# max_Z <- max(habi$Z)
+
+# reduce prediction area to within sampled range
+preddf <- preddf %>%
+  filter(Z >= -189, Z <= -26)
+
 #glimpse(preddf) once rastor sorted. To get SE.
 prasts <- rast(preddf) 
 plot(prasts)

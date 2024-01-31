@@ -141,32 +141,32 @@ dev.off()
 
 
 #saving the predictions as a shapefile
-# As a shapefile
-preddf <- spreddf %>%
-  dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
-                                        #"Kelp" = 1,
-                                        #"Macroalgae" = 2,
-                                        #"Rock" = 3,
-                                        "Sand" = 1,
-                                        "Sessile invertebrates" = 2)) %>%
-  dplyr::select(x, y, dom_tag)
-
-predr <- rast(preddf)
-plot(predr)
-
-predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
-plot(predr_smooth)
-
-smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
-  dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
-  dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
-crs(predr_smooth) <- wgscrs
-pred_stars <- st_as_stars(predr_smooth)
-
-dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
-
-st_write(dom.habs, "output/PtCloates/PtCloates-dominant-habitat.shp",
-         append = F)
+# # As a shapefile
+# preddf <- spreddf %>%
+#   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
+#                                         #"Kelp" = 1,
+#                                         #"Macroalgae" = 2,
+#                                         #"Rock" = 3,
+#                                         "Sand" = 1,
+#                                         "Sessile invertebrates" = 2)) %>%
+#   dplyr::select(x, y, dom_tag)
+# 
+# predr <- rast(preddf)
+# plot(predr)
+# 
+# predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
+# plot(predr_smooth)
+# 
+# smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
+#   dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
+#   dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
+# crs(predr_smooth) <- wgscrs
+# pred_stars <- st_as_stars(predr_smooth)
+# 
+# dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
+# 
+# st_write(dom.habs, "output/PtCloates/PtCloates-dominant-habitat.shp",
+#          append = F)
 
 
 # # Figure 1.5
@@ -276,9 +276,12 @@ p22 <- ggplot() +
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                      "habitat_class_predicted.png", sep = "_"),
-    width = 6, height = 10, res = 400, units = "in")                             # Change the dimensions here as necessary
+    width = 6, height = 10, res = 800, units = "in")                             # Change the dimensions here as necessary
 p22
 dev.off()
+
+
+
 
 #Build the plot for SE
 p23 <- ggplot() +
@@ -318,7 +321,7 @@ p23 <- ggplot() +
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
                      "habitat_SE_predicted.png", sep = "_"),
-    width = 6, height = 10, res = 400, units = "in")  
+    width = 6, height = 10, res = 800, units = "in")  
 
 p23
 dev.off()
@@ -343,7 +346,7 @@ print(p24)
 
 ggsave(paste(paste("plots", name, sep = "/"),                   # Save the output
              "comp_habitat_predicted.png", sep = "_"), p24,
-       width = 14, height = 10
+       width = 14, height = 10, dpi = 800
 )
 
 # 

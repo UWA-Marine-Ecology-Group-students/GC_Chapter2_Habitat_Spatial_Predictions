@@ -327,26 +327,26 @@ print(p24)
 
 ggsave(paste(paste("plots", name, sep = "/"),                   # Save the output
              "comp_habitat_predicted.png", sep = "_"), p24,
-       width = 14, height = 10
+       width = 14, height = 10, dpi = 800
 )
 
 
 
-p24 <- grid.arrange(
-  p22, p23, top = "Shallow Bank, Abrolhos",
-  nrow=1, ncol=2)
-
-p24 <- grid.arrange(
-  p22, p23, top = grid::textGrob('Shallow Bank, Abrolhos', gp=grid::gpar(fontsize=24)),
-  nrow=1, ncol=2)
-
-
- print(p24)
-# p27 <- p24 +
-#   theme(plot.title = element_text(size = 10))
+# p24 <- grid.arrange(
+#   p22, p23, top = "Shallow Bank, Abrolhos",
+#   nrow=1, ncol=2)
 # 
-# print(p27)
-#  
+# p24 <- grid.arrange(
+#   p22, p23, top = grid::textGrob('Shallow Bank, Abrolhos', gp=grid::gpar(fontsize=24)),
+#   nrow=1, ncol=2)
+# 
+# 
+#  print(p24)
+# # p27 <- p24 +
+# #   theme(plot.title = element_text(size = 10))
+# # 
+# # print(p27)
+# #  
 #  
 # 
 #  png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output

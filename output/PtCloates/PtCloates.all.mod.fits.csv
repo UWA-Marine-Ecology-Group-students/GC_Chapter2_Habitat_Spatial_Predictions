@@ -1,8 +1,8 @@
-"","modname","AICc","BIC","r2.vals","r2.vals.unique","edf","edf.less.1","delta.AICc","delta.BIC","wi.AICc","wi.BIC","depth","roughness","detrended","aspect","TPI","cumsum.wi"
-"sand.depth+detrended+TPI","depth+detrended+TPI",2551.77900618974,2592.25644730044,0.16943,NA,12.8,0,0,0,1,1,1,0,1,0,1,1
-"sand.aspect+depth+detrended","aspect+depth+detrended",2598.03346531452,2638.49050291436,0.15201,NA,12.8,0,46.254,46.234,0,0,1,0,1,1,0,1
-"sand.depth+detrended+roughness","depth+detrended+roughness",2608.92812595947,2647.62803282356,0.15158,NA,12.21,0,57.149,55.372,0,0,1,1,1,0,0,1
-"inverts.depth+detrended+TPI","depth+detrended+TPI",2452.82464418406,2493.45500988799,0.16342,NA,12.85,0,0,0,0.99,0.989,1,0,1,0,1,0.99
-"inverts.aspect+depth+detrended","aspect+depth+detrended",2462.09554595459,2502.52124376647,0.15282,NA,12.79,0,9.271,9.066,0.01,0.011,1,0,1,1,0,1
-"inverts.depth+detrended+roughness","depth+detrended+roughness",2473.51359002491,2512.13086331223,0.14939,NA,12.19,0,20.689,18.676,0,0,1,1,1,0,0,1
-"inverts.depth+detrended","depth+detrended",2524.8284222035,2553.44548348225,0.14182,NA,8.93,0,72.004,59.99,0,0,1,0,1,0,0,1
+,modname,AICc,BIC,r2.vals,r2.vals.unique,edf,edf.less.1,delta.AICc,delta.BIC,wi.AICc,wi.BIC,depth,roughness,detrended,aspect,TPI,cumsum.wi
+sand,depth+detrended+TPI,2551.779006,2592.256447,0.16943,NA,12.8,0,0,0,1,1,1,0,1,0,1,1
+sand,aspect+depth+detrended,2598.033465,2638.490503,0.15201,NA,12.8,0,46.254,46.234,0,0,1,0,1,1,0,1
+sand,depth+detrended+roughness,2608.928126,2647.628033,0.15158,NA,12.21,0,57.149,55.372,0,0,1,1,1,0,0,1
+inverts,depth+detrended+TPI,2452.824644,2493.45501,0.16342,NA,12.85,0,0,0,0.99,0.989,1,0,1,0,1,0.99
+inverts,aspect+depth+detrended,2462.095546,2502.521244,0.15282,NA,12.79,0,9.271,9.066,0.01,0.011,1,0,1,1,0,1
+inverts,depth+detrended+roughness,2473.51359,2512.130863,0.14939,NA,12.19,0,20.689,18.676,0,0,1,1,1,0,0,1
+inverts,depth+detrended,2524.828422,2553.445483,0.14182,NA,8.93,0,72.004,59.99,0,0,1,0,1,0,0,1

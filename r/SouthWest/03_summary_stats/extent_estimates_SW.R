@@ -71,39 +71,79 @@ for(classi in unique(sumstat$class)){
 
 #Ben's summary
 group_by(rastdf, dom_tag) %>% count() %>% mutate(area = n *250 *250)
-rastdf.2 <- mutate(.data = rastdf, psand.area = psand.fit * 250 * 250)
+rastdf.2 <- rastdf %>%
+  mutate(
+    psand.area = psand.fit * 250 * 250,
+    pmacroalg.area = pmacroalg.fit * 250 * 250,
+    prock.area = prock.fit * 250 * 250,
+    pinverts.area = pinverts.fit * 250 * 250, 
+    pseagrasses.area = pseagrasses.fit * 250 * 250
+  )
+  
+#Calculate the sums of the individual habitat classes
+total_p_sand_area <- sum(rastdf.2$psand.area)
+total_p_macroalgae_area <- sum(rastdf.2$pmacroalg.area)
+total_p_rock_area <- sum(rastdf.2$prock.area)
+total_p_inverts_area <- sum(rastdf.2$pinverts.area) 
+total_p_seagrasses_area <- sum(rastdf.2$pseagrasses.area)
 
-mutate(.data = rastdf,
-       # pkelps.area = pkelps.fit * 250 * 250,
-       psand.area = psand.fit * 250 * 250,
-       pmacroalg.area = pmacroalg.fit * 250 * 250,
-       prock.area = prock.fit * 250 * 250,
-       pseagrasses.area = pseagrasses.fit * 250 * 250,
-       pinverts.area = pinverts.fit * 250 * 250)  %>%
-  summarise(psand.area.total = sum(psand.area),
-            pmacroalg.area.total = sum(pmacroalg.area),
-            prock.area.total = sum(prock.area),
-            pinverts.area.total = sum(pinverts.area),
-            pseagrasses.area.total = sum(pseagrasses.area))
-
+print(total_p_inverts_area
+    )
+print(total_p_sand_area)
+print(total_p_macroalgae_area)
+print(total_p_rock_area)
+print(total_p_seagrasses_area)
 
 
 
 #Gabby SE
-rastdf.3 <- mutate(.data = rastdf, psand.se.area = psand.se.fit * 250 * 250)
+rastdf.3 <- rastdf %>%
+  mutate(
+    psand.se.area = psand.se.fit * 250 * 250,
+    pmacroalg.se.area = pmacroalg.se.fit * 250 * 250,
+    prock.se.area = prock.se.fit * 250 * 250,
+    pinverts.se.area = pinverts.se.fit * 250 * 250, 
+    pseagrasses.se.area = pseagrasses.se.fit * 250 * 250
+  )
+  
+  
+#Calculate the sums of the SE individual habitat classes
+total_p_sand_SE_area <- sum(rastdf.3$psand.se.area)
+total_p_macroalgae_SE_area <- sum(rastdf.3$pmacroalg.se.area)
+total_p_rock_SE_area <- sum(rastdf.3$prock.se.area)
+total_p_inverts_SE_area <- sum(rastdf.3$pinverts.se.area) 
+total_p_seagrasses_SE_area <- sum(rastdf.3$pseagrasses.se.area)
 
-mutate(.data = rastdf,
-       psand.se.area = psand.se.fit * 250 * 250,
-       pmacroalg.se.area = pmacroalg.se.fit * 250 * 250,
-       prock.se.area = prock.se.fit * 250 * 250,
-       pseagrasses.se.area = pseagrasses.se.fit *250 *250,
-       pinverts.se.area = pinverts.se.fit * 250 * 250)  %>%
-  summarise(psand.se.area.total = sum(psand.se.area),
-            pmacroalg.se.area.total = sum(pmacroalg.se.area),
-            pseagrasses.se.area.total = sum(pseagrasses.se.area),
-            prock.se.area.total = sum(prock.se.area),
-            pinverts.se.area.total = sum(pinverts.se.area))
+print(total_p_inverts_SE_area
+)
+print(total_p_sand_SE_area)
+print(total_p_macroalgae_SE_area)
+print(total_p_rock_SE_area)
+print(total_p_seagrasses_SE_area)
 
+
+#GABBY DOMINANT WAY 2023 DEC
+rastdf.4 <- rastdf.2 %>%
+  mutate(
+    dom.sand.area = if_else(dom_tag == "sand.fit", psand.area, 0),
+    dom.macro.area = if_else(dom_tag == "macroalg.fit", pmacroalg.area, 0), 
+    dom.rock.area =if_else(dom_tag == "rock.fit", prock.area, 0),
+    dom.invert.area = if_else(dom_tag == "inverts.fit", pinverts.area, 0),
+    dom.seagrass.area = if_else(dom_tag == "seagrasses.fit", pseagrasses.area, 0)
+  )
+
+# Calculate the sum of dom.sand.area
+total_dom_sand_area <- sum(rastdf.4$dom.sand.area)
+total_dom_macro_area <- sum(rastdf.4$dom.macro.area)
+total_dom_rock_area <- sum(rastdf.4$dom.rock.area)
+total_dom_invert_area <- sum(rastdf.4$dom.invert.area)
+total_dom_seagrass_area <- sum(rastdf.4$dom.seagrass.area)
+
+print(total_dom_sand_area)
+print(total_dom_macro_area)
+print(total_dom_rock_area)
+print(total_dom_invert_area)
+print(total_dom_seagrass_area)
 
 #Brookes Dom Tag way
 dom <- rastdf.2 %>%

@@ -1,4 +1,6 @@
 location class ndomcell total_p lower_ci upper_ci dom_area p_area lci_area uci_area area_dif
-1 PtCloates psand.fit 0 NA NA NA 0 NA NA NA NA
-2 PtCloates pinverts.fit NA NA NA NA NA NA NA NA NA
-3 Abrolhos total total 0 0 NA NA NA Abrolhos total total
+1 Abrolhos pmacroalg.fit 0 NA NA NA 0 NA NA NA NA
+2 Abrolhos psand.fit NA NA NA NA NA NA NA NA NA
+3 Abrolhos prock.fit NA NA NA NA NA NA NA NA NA
+4 Abrolhos pinverts.fit NA NA NA NA NA NA NA NA NA
+5 Abrolhos total total 0 0 NA NA NA Abrolhos total total

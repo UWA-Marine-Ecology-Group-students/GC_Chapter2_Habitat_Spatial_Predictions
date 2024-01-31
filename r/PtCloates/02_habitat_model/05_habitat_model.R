@@ -90,7 +90,15 @@ preddf <- cbind(preddf,
                 #"prock" = predict(m_rock, preddf, type = "response", se.fit = T),
                 "pinverts" = predict(m_inverts, preddf, type = "response", se.fit = T))
 
-prasts <- rast(preddf) 
+#min_Z <- min(habi$Z)
+#max_Z <- max(habi$Z)
+
+# reduce prediction area to within sampled range
+preddf <- preddf %>%
+  filter(Z >= -215, Z <= -71)
+
+
+prasts <- rast(preddf, crs = wgscrs) 
 plot(prasts)
 
 # subset to 10km from sites only
