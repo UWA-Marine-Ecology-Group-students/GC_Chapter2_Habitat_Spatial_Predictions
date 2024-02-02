@@ -124,3 +124,4 @@ head(spreddf)                                                                   
 # Save the output
 saveRDS(spreddf, paste(paste0('output/Abrolhos/', name), 'spatial_habitat_predictions.rds', sep = "_"))
 
+write.csv(spreddf, file = paste(paste0('output/Abrolhos/', name), 'spatial_habitat_predictions.csv', sep = "_"), row.names = FALSE)
