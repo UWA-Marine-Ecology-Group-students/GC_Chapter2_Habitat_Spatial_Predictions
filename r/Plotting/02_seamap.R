@@ -102,7 +102,7 @@ ggplot(df, aes(x = Depth, y = percentage1, fill = "Percentage1")) +
 #######CHATGPT
 
 # Your data
-depths <- c("<40", "40 - 100", ">100")
+depths <- c("0 - 40", "40 - 100", "100 - 200")
 percentage1 <- c(89.35058734, 9.05870954, 1.590703122)
 percentage2 <- c(10, 17, 73)
 
@@ -118,44 +118,34 @@ percentage2 <- c(10, 17, 73)
 df1 <- data.frame(
   Depth = rep(depths, times = 2),
   Percentage = c(89.35058734, 9.05870954, 1.590703122, 10, 17, 73),
-  Cultivar = rep(c("Proportion of Seamap", "Proportion of Australia's EEZ"), each=3)
+  Cultivar = rep(c("% of Australia's national benthic habitat map (Seamap)", "% of Australia's marine jurisdiction"), each=3)
 ) %>% 
   mutate(Cultivar = as.factor(Cultivar),
          Depth = as.factor(Depth)) %>% 
-  mutate(Depth = fct_relevel(Depth, "<40", "40 - 100", ">100"))
+  mutate(Depth = fct_relevel(Depth, "0 - 40", "40 - 100", "100 - 200"))
 
 # Create a stacked bar chart using ggplot2
 ggplot(df1, aes(x = Depth, y = Percentage, fill = Cultivar)) +
   geom_col(position="stack") +
   #geom_bar(aes(x = Depth, y = percentage2, fill = Percentage2), stat = "identity") +
   labs(x = "Continental shelf water depth (meters)",
-       y = "Percentage of Australia's national benthic habitat map (%)",
+       y = "Percentage (%)",
        fill = "Cultivar") +
   theme_minimal() +
   theme(legend.position = "top", legend.title = element_blank()) +
   coord_flip()
 
-
-library(ggplot2)
-
-# Your data
-depths <- c("<40", "40 - 100", ">100")
-percentage1 <- c(89.35058734, 9.05870954, 1.590703122)
-percentage2 <- c(10, 17, 73)
-
-# Create a dataframe
-df1 <- data.frame(
-  Depth = rep(depths, each = 2),
-  Percentage = c(percentage1, percentage2),
-  Cultivar = rep(c("Percentage1", "Percentage2"), times = 3)
-)
-
-# Create a stacked bar chart using ggplot2
-ggplot(df1, aes(x = Depth, y = Percentage, fill = Cultivar)) +
-  geom_bar(stat = "identity") +
-  labs(x = "Continental shelf water depth (meters)",
-       y = "Percentage of Australia's national benthic habitat map (%)",
+###ATTEMPT 3 FRPM 
+ggplot(df1, aes(fill=Cultivar, y=Depth, x=Percentage))+
+       
+        
+  geom_bar(position = "dodge", stat="identity")+
+  labs(y = "Continental shelf water depth (meters)",
+       x = "Percentage (%)",
        fill = "Cultivar") +
-  theme_minimal() +
-  theme(legend.position = "top") +
-  coord_flip()
+  theme(legend.position = "top", legend.title = element_blank()) +
+  theme(axis.text.y = element_text(angle = 90, hjust =0.5)) +
+  theme(axis.title.y = element_text(margin = margin(r = 20)))+
+  theme(axis.title.x = element_text(margin = margin (t = 10)))+
+  scale_x_continuous(limits = c(0, 100))+
+  guides(fill = guide_legend(reverse = TRUE))
