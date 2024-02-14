@@ -73,3 +73,26 @@ allhab <- habi_df %>%
 saveRDS(allhab, paste(paste0('data/tidy/', name), 
                       'habitat-bathy-derivatives.rds', sep = "_"))
 
+write.csv(allhab, file = paste(paste0('output/PtCloates/', name), 'habitat_bathy_derivatives.csv', sep = "_"), row.names = FALSE)
+
+#Testing the distribution of predictions
+# Assuming 'spreddf' is your dataframe and 'column_name' is the column you want to check
+# Example using a histogram
+ggplot(allhab, aes(x = rock)) +
+  geom_histogram(fill = "skyblue", color = "black") +
+  labs(x = "Values", y = "Frequency", title = "Histogram of Data Distribution")
+
+# Example using a density plot
+ggplot(allhab, aes(x = rock)) +
+  geom_density(fill = "skyblue", color = "black") +
+  labs(x = "Values", y = "Density", title = "Density Plot of Data Distribution")
+
+# Example using a boxplot
+ggplot(allhab, aes(y = rock)) +
+  geom_boxplot(fill = "skyblue", color = "black") +
+  labs(y = "Values", title = "Boxplot of Data Distribution")
+
+# Example using a barplot (for categorical data)
+ggplot(allhab, aes(x = rock)) +
+  geom_bar(fill = "skyblue", color = "black") +
+  labs(x = "Categories", y = "Frequency", title = "Barplot of Data Distribution")

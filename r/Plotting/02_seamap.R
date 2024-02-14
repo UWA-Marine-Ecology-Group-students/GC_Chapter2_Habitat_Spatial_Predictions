@@ -31,11 +31,12 @@ name <- "GC_Chapter2_Habitat_Spatial_Predictions"
 
 # Your data
 depths <- c("<40", "40 - 100", ">100")
-percentages <- c(89.35058734, 9.05870954, 1.590703122)
+percentage1 <- c(89.35058734, 9.05870954, 1.590703122)
+percentage2 <- c(10, 17, 73)
 
 
 # Create a data frame
-data_df <- data.frame(Depth = depths, Percentage = percentages)
+data_df <- data.frame(Depth = depths, Percentage1 = percentage1, Percentage2 = percentage2)
 
 # Set overall plot margins and adjust y-axis title white space
 par(mar = c(5, 6, 2, 2))  # Adjust overall margins
@@ -43,7 +44,7 @@ par(mgp = c(4.7, 1, 0))     # Adjust the margin line for the axis title
 
 
 # Bar chart with flipped axes
-barplot(data_df$Percentage, names.arg = data_df$Depth, ylab = "Continental shelf water depth (meters)",
+barplot(data_df$Percentage1, names.arg = data_df$Depth, ylab = "Continental shelf water depth (meters)",
         xlab = "", col = "steelblue",
         beside = TRUE, horiz = TRUE, xlim = c(0,100), las = 1, cex.axis = 1)
 
@@ -57,3 +58,104 @@ mtext("Percentage of Australia's national benthic habitat map (%)", side = 1, li
 # Display the plot
 dev.off()  # If you're not working in a script, use this line to display the plot in RStudio or another IDE
 
+
+# Creating the dataframe
+# df <- data.frame(
+#   Depth = c("<40", "<40", "40 - 100", "40 - 100", ">100", ">100"),
+#   Percentage = c(percentage1, percentage2),
+#   Cultivar = rep(c("Percentage1", "Percentage2"), times = 3))
+
+# Your data
+depths <- c("<40", "40 - 100", ">100")
+percentage1 <- c(89.35058734, 9.05870954, 1.590703122)
+percentage2 <- c(10, 17, 73)
+
+# Creating the dataframe with fixed depths
+df <- data.frame(
+  Depth = c("<40", "40 - 100", ">100", "<40", "40 - 100", ">100"),
+  Percentage = c(percentage1, percentage2),
+  Cultivar = rep(c("Percentage1", "Percentage2"), each = 3)
+)
+
+# Create a data frame
+# #data_df <- data.frame(Depth = rep(depths, each = 2),
+#                       Percentage = c(percentage1, percentage2),
+#                       Cultivar = rep(c("Percentage1", "Percentage2"), times = 3))
+
+# data_df1 <- data.frame(Depth = depths, Percentage1 = percentage1, Percentage2 = percentage2)
+
+
+# Set your study name
+# name <- "GC_Chapter2_Habitat_Spatial_Predictions"
+
+# Create a stacked bar chart using ggplot2
+ggplot(df, aes(x = Depth, y = percentage1, fill = "Percentage1")) +
+  geom_bar(stat = "identity") +
+  geom_bar(aes(x = Depth, y = percentage2, fill = "Percentage2"), stat = "identity") +
+  labs(x = "Continental shelf water depth (meters)",
+       y = "Percentage of Australia's national benthic habitat map (%)",
+       fill = "Cultivar") +
+  theme_minimal() +
+  theme(legend.position = "top") +
+  coord_flip()
+
+#######CHATGPT
+
+# Your data
+depths <- c("<40", "40 - 100", ">100")
+percentage1 <- c(89.35058734, 9.05870954, 1.590703122)
+percentage2 <- c(10, 17, 73)
+
+# # Create the dataframe
+# df <- data.frame(
+#   Depth = depths,
+#   Percentage1 = percentage1,
+#   Percentage2 = percentage2
+# )
+
+
+# Create a dataframe
+df1 <- data.frame(
+  Depth = rep(depths, times = 2),
+  Percentage = c(89.35058734, 9.05870954, 1.590703122, 10, 17, 73),
+  Cultivar = rep(c("Proportion of Seamap", "Proportion of Australia's EEZ"), each=3)
+) %>% 
+  mutate(Cultivar = as.factor(Cultivar),
+         Depth = as.factor(Depth)) %>% 
+  mutate(Depth = fct_relevel(Depth, "<40", "40 - 100", ">100"))
+
+# Create a stacked bar chart using ggplot2
+ggplot(df1, aes(x = Depth, y = Percentage, fill = Cultivar)) +
+  geom_col(position="stack") +
+  #geom_bar(aes(x = Depth, y = percentage2, fill = Percentage2), stat = "identity") +
+  labs(x = "Continental shelf water depth (meters)",
+       y = "Percentage of Australia's national benthic habitat map (%)",
+       fill = "Cultivar") +
+  theme_minimal() +
+  theme(legend.position = "top", legend.title = element_blank()) +
+  coord_flip()
+
+
+library(ggplot2)
+
+# Your data
+depths <- c("<40", "40 - 100", ">100")
+percentage1 <- c(89.35058734, 9.05870954, 1.590703122)
+percentage2 <- c(10, 17, 73)
+
+# Create a dataframe
+df1 <- data.frame(
+  Depth = rep(depths, each = 2),
+  Percentage = c(percentage1, percentage2),
+  Cultivar = rep(c("Percentage1", "Percentage2"), times = 3)
+)
+
+# Create a stacked bar chart using ggplot2
+ggplot(df1, aes(x = Depth, y = Percentage, fill = Cultivar)) +
+  geom_bar(stat = "identity") +
+  labs(x = "Continental shelf water depth (meters)",
+       y = "Percentage of Australia's national benthic habitat map (%)",
+       fill = "Cultivar") +
+  theme_minimal() +
+  theme(legend.position = "top") +
+  coord_flip()
