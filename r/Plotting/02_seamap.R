@@ -104,7 +104,7 @@ ggplot(df, aes(x = Depth, y = percentage1, fill = "Percentage1")) +
 # Your data
 depths <- c("0 - 40", "40 - 100", "100 - 200")
 percentage1 <- c(89.35058734, 9.05870954, 1.590703122)
-percentage2 <- c(10, 17, 73)
+percentage2 <- c(13, 57, 30)
 
 # # Create the dataframe
 # df <- data.frame(
@@ -117,26 +117,29 @@ percentage2 <- c(10, 17, 73)
 # Create a dataframe
 df1 <- data.frame(
   Depth = rep(depths, times = 2),
-  Percentage = c(89.35058734, 9.05870954, 1.590703122, 10, 17, 73),
-  Cultivar = rep(c("% of Australia's national benthic habitat map (Seamap)", "% of Australia's marine jurisdiction"), each=3)
+  Percentage = c(89.35058734, 9.05870954, 1.590703122, 13, 57, 30),
+  Cultivar = rep(c("% of Australia's national benthic habitat map (Seamap)", "% of Australia's area in continental shelf waters (0-200m)"), each=3)
 ) %>% 
   mutate(Cultivar = as.factor(Cultivar),
          Depth = as.factor(Depth)) %>% 
   mutate(Depth = fct_relevel(Depth, "0 - 40", "40 - 100", "100 - 200"))
 
-# Create a stacked bar chart using ggplot2
-ggplot(df1, aes(x = Depth, y = Percentage, fill = Cultivar)) +
-  geom_col(position="stack") +
-  #geom_bar(aes(x = Depth, y = percentage2, fill = Percentage2), stat = "identity") +
-  labs(x = "Continental shelf water depth (meters)",
-       y = "Percentage (%)",
-       fill = "Cultivar") +
-  theme_minimal() +
-  theme(legend.position = "top", legend.title = element_blank()) +
-  coord_flip()
+# # Create a stacked bar chart using ggplot2
+# ggplot(df1, aes(x = Depth, y = Percentage, fill = Cultivar)) +
+#   geom_col(position="stack") +
+#   #geom_bar(aes(x = Depth, y = percentage2, fill = Percentage2), stat = "identity") +
+#   labs(x = "Continental shelf water depth (meters)",
+#        y = "Percentage (%)",
+#        fill = "Cultivar") +
+#   theme_minimal() +
+#   theme(legend.position = "top", legend.title = element_blank()) +
+#   coord_flip()
+# Assuming Depth is a factor variable
 
 ###ATTEMPT 3 FRPM 
-ggplot(df1, aes(fill=Cultivar, y=Depth, x=Percentage))+
+df1$Depth <- factor(df1$Depth, levels = c("100 - 200", "40 - 100", "0 - 40"))
+
+ggplot(df1, aes(fill=Cultivar, y= Depth, x=Percentage))+
        
         
   geom_bar(position = "dodge", stat="identity")+
@@ -149,3 +152,4 @@ ggplot(df1, aes(fill=Cultivar, y=Depth, x=Percentage))+
   theme(axis.title.x = element_text(margin = margin (t = 10)))+
   scale_x_continuous(limits = c(0, 100))+
   guides(fill = guide_legend(reverse = TRUE))
+

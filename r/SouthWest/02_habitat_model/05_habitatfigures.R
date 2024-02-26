@@ -128,66 +128,6 @@ png(filename = paste(paste("plots", name, sep = "/"),                   # Save o
 p1
 dev.off()
 
-# #saving the predictions as a shapefile
-# #As a shapefile
-# preddf <- spreddf %>%
-#   dplyr::mutate(dom_tag = dplyr::recode(dom_tag,                                # Tidy names for plot legend
-#                                         "Kelp" = 1,
-#                                         "Macroalgae" = 2,
-#                                         "Rock" = 3,
-#                                         "Sand" = 4,
-#                                         "Sessile invertebrates" = 5)) %>%
-#   dplyr::select(x, y, dom_tag)
-# 
-# predr <- rast(preddf)
-# plot(predr)
-# 
-# predr_smooth <- disagg(predr, fact = 10, method = "bilinear")
-# plot(predr_smooth)
-# 
-# smooth_df <- as.data.frame(predr_smooth, xy = T, na.rm = T) %>%
-#   dplyr::mutate(smoothed = round(dom_tag, digits = 0)) %>%
-#   dplyr::mutate(smoothed = ifelse(smoothed == 6, 5, smoothed))
-# crs(predr_smooth) <- wgscrs
-# pred_stars <- st_as_stars(predr_smooth)
-# 
-# dom.habs <- st_as_sf(pred_stars, as_points = FALSE, merge = TRUE)
-# 
-# st_write(dom.habs, "output/SWC/SWC-dominant-habitat.shp",
-#          append = F)
-
-# # Figure 1.5
-# smooth_plot <- smooth_df %>%
-#   dplyr::mutate(smoothed = dplyr::recode(smoothed,                                # Tidy names for plot legend
-#                                         "1" = "Seagrasses",
-#                                         "2" = "Macroalgae",
-#                                         "3" = "Rock",
-#                                         "4" = "Sand",
-#                                         "5" = "Sessile invertebrates"))
-# 
-# p1.5 <- ggplot() +
-#   geom_tile(data = smooth_plot, aes(x, y, fill = smoothed)) +
-#   hab_cols +                                                                    # Class colours
-#  # geom_sf(data = npz, fill = NA, colour = "#7bbc63") +                          # Add national park zones
-#   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
-#                breaks = c(0, - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
-#                colour = "grey54",
-#                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
-#   coord_sf(xlim = c(114.2, 115.2),                              # Set plot limits
-#            ylim = c(-34.2, -33.5)) +
-#   labs(x = "Longitude", y = "Latitude", fill = "Habitat",                                    # Labels  
-#        colour = NULL, title = "Capes Region") + 
-#      annotate("text", x = c(113.428836237, 113.388204915, 113.255153069),          # Add contour labels manually
-#            y = c(-28.078038504, -28.078038504, -28.078038504), 
-#            label = c("30m", "70m", "200m"),
-#            size = 2, colour = "grey54") +
-#   theme_minimal()
-# png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
-#                      "dominant_habitat_smoothed.png", sep = "_"),
-#     width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
-# p1.5
-# dev.off()
-
 
 # Figure 2. Individual habitat class predictions ----
 # Melt classes for faceting

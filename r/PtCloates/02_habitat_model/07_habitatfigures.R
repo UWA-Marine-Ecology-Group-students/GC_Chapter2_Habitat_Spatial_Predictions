@@ -103,7 +103,7 @@ npz_cols <- scale_colour_manual(values = c("National Park Zone" = "#7bbc63"),
 
 theme_update(plot.title = element_text(hjust = 0.5))
 
-#Build plot elements for site 1
+#Build plot elements for site 1 DOMINANT HABITAT MAP
 p1 <- ggplot() +
   geom_tile(data = spreddf, aes(x, y, fill = dom_tag)) +
   hab_cols +   # Class colours
@@ -111,7 +111,7 @@ p1 <- ggplot() +
   new_scale_fill() +
   # new_scale_colour()+
   geom_contour(data = bathdf, aes(x = x, y = y, z = Z),                         # Contour lines
-               breaks = c( - 30, -70, - 200),                                 # Contour breaks - change to binwidth for regular contours
+               breaks = c( - 30, -70, -130, - 200),                                 # Contour breaks - change to binwidth for regular contours
                colour = "#000000",
                alpha = 1, size = 0.5) +                                         # Transparency and linewidth
   geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5) +  # Add national park zones
@@ -122,9 +122,9 @@ p1 <- ggplot() +
            ylim = c(-22.85, -22.60)) +
   labs(x = NULL, y = NULL,                                     # Labels  
        colour = NULL, title = "Point Cloates, Ningaloo") +
-    annotate("text", x = c(113.65, 113.57, 113.51),          # Add contour labels manually
-           y = c(-22.75, -22.75, -22.75), 
-           label = c("30m", "70m", "200m"),
+    annotate("text", x = c(113.64, 113.562, 113.52, 113.475),          # Add contour labels manually
+           y = c(-22.75,-22.75, -22.75, -22.75), 
+           label = c("30m", "70m", "130m", "200m"),
            size = 2, colour = "#000000") +
   theme_minimal() +
   theme(
@@ -233,9 +233,9 @@ widehabitse <- spreddf %>%
   glimpse()
 
 # Make a dataframe for your contour line annotations - doesn't work otherwise for facetted plots
-dep_ann <- data.frame(x = c(113.66, 113.57, 113.52),                            
-                      y = c(-22.75, -22.75, -22.75), 
-                      label = c("30m", "70m", "200m"))
+dep_ann <- data.frame(x = c(113.655, 113.565, 113.52, 113.46),                            
+                      y = c(-22.76, -22.76, -22.76, -22.76), 
+                      label = c("30m", "70m", "130m", "200m"))
 
 # Build the plot for the first site
 p22 <- ggplot() +
@@ -247,10 +247,10 @@ p22 <- ggplot() +
   new_scale_colour()+
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +       #trying to add in AUSMAP
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
-               breaks = c(-30, -70, -200), colour = "#000000",
+               breaks = c(-30, -70, -130, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
-            inherit.aes = F, size = 5, colour = "#000000") +
+            inherit.aes = F, size = 4, colour = "#000000") +
   new_scale_color()+
   geom_sf(data = npz, fill = NA, aes(colour = ZoneName), linewidth = 0.5, show.legend = FALSE) +
   npz_cols+
@@ -292,7 +292,7 @@ p23 <- ggplot() +
   new_scale_colour()+
   geom_sf(data = aus, fill = "seashell2", colour = "grey80", size = 0.5) +      #Adding in land
   geom_contour(data = bathdf, aes(x, y, z = Z),                                 # Contour lines
-               breaks = c(-30, -70, -200), colour = "#000000",
+               breaks = c(-30, -70, -130, -200), colour = "#000000",
                alpha = 1, size = 0.5) +
   geom_text(data = dep_ann,aes(x,y,label = label),
             inherit.aes = F, size = 5, colour = "#000000") +
