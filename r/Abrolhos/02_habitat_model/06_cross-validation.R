@@ -18,7 +18,7 @@ library(sf)
 sf_use_s2(T)
 library(ggplot2)
  library(devtools)
- install_github("bleutner/RStoolbox")
+  # install_github("bleutner/RStoolbox")
 library(RStoolbox)
 library(blockCV)
 library(ggnewscale)
@@ -42,11 +42,10 @@ dat <- readRDS(paste(paste0('data/tidy/', name),
 
 stack <- readRDS(paste(paste0('data/spatial/rasters/', name),      # This is ignored - too big!
                        'spatial_covariates.rds', sep = "_")) %>%
+  crop(ext(112.980138888859, 113.622638888858, -28.1473608399029, -27.9)) %>%
+  brick() 
 
-  brick<- brick(stack) 
-  
- # brick <- rastToBrick(stack)  
-  #brick()
+ext(stack)
 rpc = rasterPCA(stack, nComp = 1 , spca = TRUE, nSamples = 5000) ### first PCA component of the raster stack to estimate spatial AC
 
 poly_sf <- st_sf(geometry = st_as_sfc(st_bbox(stack)))   ###### convert the polygon to sf for later
@@ -54,24 +53,26 @@ aoi_r <- as(object = poly_sf, Class = "Spatial") ###### an sp polygon of your st
 boss_sf <- dat %>%   ###### any csv with lat lon that has your samples and rasters extracted at those points 
   sf::st_as_sf(coords = c("x", "y"), crs = "epsg:4326")  ###### can use 'coords = c("x", "y")' instead of wkt if there is no geometry colomn
 
+plot(stack[[1]])
+plot(boss_sf["Z"],add = T)
 # THIS BIT IS HAVING SOME ISSUES -  NEED TO FIX
 
 # AC range estimation
 
-range1 <- cv_spatial_autocor(
-  r = rast(rpc$map),                                                            # For some reason even if you input spatraster the output is rasterbrick
-  num_sample = 30,
-  progress = F,
-  plot = T
-)
-
-range1$range
+# range1 <- cv_spatial_autocor(
+#   r = rpc$map,                                                            # For some reason even if you input spatraster the output is rasterbrick
+#   num_sample = 5000,
+#   progress = F,
+#   plot = T
+# )
+# 
+# range1$range
 
 plot(rpc$map)
 
 sb1 = cv_spatial(x = boss_sf,
                  r = rpc$map,
-                 size = 86656,
+                 size = 5000,
                  k = 5,
                  selection = "random",
                  iteration = 100,
@@ -93,7 +94,7 @@ mod_df = as_Spatial(boss_sf) %>%
 
 # # Loop through cross validation for each taxa (habitat) and each fold
 habi <- mod_df %>%
-  pivot_longer(cols = c("sand", "inverts", "macroalgae", "rock", "seagrass"),
+  pivot_longer(cols = c("sand", "inverts", "macroalgae", "rock"),
                names_to = "taxa",
                values_to = "value") %>%
   dplyr::select(-ID) %>%
@@ -103,7 +104,7 @@ habi <- mod_df %>%
 resp.vars <- unique(habi$taxa)
 blocks <- unique(habi$block)
 
-preds  <- readRDS(paste(paste0('data/spatial/rasters/raw bathymetry/', name),      # This is ignored - too big!
+preds  <- readRDS(paste(paste0('data/spatial/rasters/', name),      # This is ignored - too big!
                         'spatial_covariates.rds', sep = "_"))
 preddf <- as.data.frame(preds, xy = TRUE, na.rm = TRUE)
 wgscrs <- "+proj=longlat +datum=WGS84 +south" 
@@ -153,14 +154,14 @@ for (i in 1:length(resp.vars)) {
                   s(Z, k = 5, bs = "cr"), 
                 data = train.dat, method = "REML", family = binomial("logit"))
     
-    # Seagrass
-    mod5 <- gam(cbind(value, total.pts - value) ~ 
-                  s(SLA, k = 5, bs = "cr") +
-                  s(SST, k = 5, bs = "cr") +
-                  s(Z, k = 5, bs = "cr"), 
-                data = train.dat, method = "REML", family = binomial("logit"))
-    
-    mod <- list(mod1, mod2, mod3, mod4, mod5)
+    # # Seagrass
+    # mod5 <- gam(cbind(value, total.pts - value) ~ 
+    #               s(SLA, k = 5, bs = "cr") +
+    #               s(SST, k = 5, bs = "cr") +
+    #               s(Z, k = 5, bs = "cr"), 
+    #             data = train.dat, method = "REML", family = binomial("logit"))
+    # 
+    mod <- list(mod1, mod2, mod3, mod4)
     
     modpred <- cbind(preddf, 
                      "predicted" = predict(mod[[i]], preddf, type = "response"))
