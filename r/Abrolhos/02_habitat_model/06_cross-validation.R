@@ -1,5 +1,4 @@
-###
-# Project: GC CHapter 2 PhD 
+#### Project: GC CHapter 2 PhD 
 # Data:    BRUVS, BOSS Habitat data
 # Task:    Cross validation & Kappa stats
 # Author:  Claude Spencer & Gabby Cummins
@@ -34,9 +33,12 @@ name <- "Abrolhos"
 
 # Load data
 dat <- readRDS(paste(paste0('data/tidy/', name), 
-                     'habitat-bathy-derivatives.rds', sep = "_")) %>%           # From 
+                     'habitat-bathy-derivatives.rds', sep = "_")) %>%         
+  rename(sampleold = sample) %>% 
+  mutate(sample =paste(sampleold, method, sep = "_")) %>%# From 
   glimpse()
 
+unique(length(dat$sample))
 # Read in and crop the rasters to your study extent
 # the rasters should be the same as the as the values in the shapefile
 
@@ -55,6 +57,9 @@ boss_sf <- dat %>%   ###### any csv with lat lon that has your samples and raste
 
 plot(stack[[1]])
 plot(boss_sf["Z"],add = T)
+
+length(unique(boss_sf$sample))
+test <- boss_sf %>% group_by(sample) %>% summarise(n = n())
 # THIS BIT IS HAVING SOME ISSUES -  NEED TO FIX
 
 # AC range estimation
@@ -92,6 +97,8 @@ mod_df = as_Spatial(boss_sf) %>%
   add_column(block = sb1$folds_ids) %>%
   drop_na(roughness) ## drop any nas in your covariates
 
+length(unique(mod_df$sample))
+
 # # Loop through cross validation for each taxa (habitat) and each fold
 habi <- mod_df %>%
   pivot_longer(cols = c("sand", "inverts", "macroalgae", "rock"),
@@ -101,6 +108,8 @@ habi <- mod_df %>%
   dplyr::rename(x = coords.x1, y = coords.x2) %>%
   glimpse()
 
+length(unique(habi$sample))
+
 resp.vars <- unique(habi$taxa)
 blocks <- unique(habi$block)
 
@@ -109,8 +118,12 @@ preds  <- readRDS(paste(paste0('data/spatial/rasters/', name),      # This is ig
 preddf <- as.data.frame(preds, xy = TRUE, na.rm = TRUE)
 wgscrs <- "+proj=longlat +datum=WGS84 +south" 
 
+
+
 # Set the models manually here
 resp.vars
+
+
 
 # Loop through each taxa
 # Train GAM off 4 folds, test against last fold
@@ -118,7 +131,7 @@ resp.vars
 for (i in 1:length(resp.vars)) {
   use.dat <- habi[habi$taxa == resp.vars[i],]
   use.dat   <- as.data.frame(use.dat)
-  use.dat$observed <- use.dat$value/use.dat$total.pts
+  use.dat$observed <- use.dat$value/use.dat$broad.total.points.annotated
   print(resp.vars[i])
   
   for (b in 1:length(blocks)) {
@@ -127,31 +140,31 @@ for (i in 1:length(resp.vars)) {
     test.dat  <- use.dat %>% dplyr::filter(block == blocks[b])
     
     # Sand
-    mod1 <- gam(cbind(value, total.pts - value) ~ 
-                  s(detrended,     k = 5, bs = "cr")  +
-                  s(UCUR, k = 5, bs = "cr") + 
-                  s(Z, k = 5, bs = "cr"), 
+    mod1 <- gam(cbind(value, broad.total.points.annotated - value) ~ 
+                  s(Z,     k = 5, bs = "cr")  +
+                  s(roughness, k = 5, bs = "cr") + 
+                  s(TPI, k = 5, bs = "cr"), 
                 data = train.dat, method = "REML", family = binomial("logit"))
     
     # Inverts
-    mod2 <- gam(cbind(value, total.pts - value) ~ 
-                  s(detrended,     k = 5, bs = "cr")  + 
+    mod2 <- gam(cbind(value, broad.total.points.annotated - value) ~ 
+                  s(Z,     k = 5, bs = "cr")  + 
                   s(roughness, k = 5, bs = "cr") +
-                  s(Z, k = 5, bs = "cr"), 
+                  s(TPI, k = 5, bs = "cr"), 
                 data = train.dat, method = "REML", family = binomial("logit"))
     
     # Macroalgae
-    mod3 <- gam(cbind(value, total.pts - value) ~ 
-                  s(detrended,     k = 5, bs = "cr")  + 
-                  s(SLA, k = 5, bs = "cr") +
-                  s(Z, k = 5, bs = "cr"), 
+    mod3 <- gam(cbind(value, broad.total.points.annotated - value) ~ 
+                  s(Z,     k = 5, bs = "cr")  + 
+                  s(detrended, k = 5, bs = "cr") +
+                  s(TPI, k = 5, bs = "cr"), 
                 data = train.dat, method = "REML", family = binomial("logit"))
     
     # Rock
-    mod4 <- gam(cbind(value, total.pts - value) ~ 
-                  s(detrended,     k = 5, bs = "cr")  +
-                  s(UCUR, k = 5, bs = "cr") +
-                  s(Z, k = 5, bs = "cr"), 
+    mod4 <- gam(cbind(value, broad.total.points.annotated - value) ~ 
+                  s(Z,     k = 5, bs = "cr")  +
+                  s(detrended, k = 5, bs = "cr") +
+                  s(TPI, k = 5, bs = "cr"), 
                 data = train.dat, method = "REML", family = binomial("logit"))
     
     # # Seagrass
@@ -201,6 +214,7 @@ for (i in 1:length(resp.vars)) {
   }
 }
 
+
 pearsons_final <- pearsons_table %>%
   dplyr::mutate(fold = as.character(fold)) %>%
   group_by(taxa) %>%
@@ -210,12 +224,13 @@ pearsons_final <- pearsons_table %>%
   glimpse()
 
 # Save output
-write.csv(pearsons_final, paste0("output/habitat/", name, "_pearsons-coefficient.csv"),
+write.csv(pearsons_final, paste0("output/crossval/", name, "_pearsons-coefficient.csv"),
           row.names = F)
 
 # Loop through each taxa
 # Train GAM off 4 folds, test against last fold
 # Accuracy - number of True positives / total observations
+###FOR KAPPA STATS
 
 for (i in 1:length(resp.vars)) {
   use.dat <- habi[habi$taxa == resp.vars[i],] 
@@ -228,41 +243,41 @@ for (i in 1:length(resp.vars)) {
     print(blocks[b])
     
     # Sand
-    mod1 <- gam(cbind(value, total.pts - value) ~ 
-                  s(detrended,     k = 5, bs = "cr")  +
-                  s(UCUR, k = 5, bs = "cr") + 
-                  s(Z, k = 5, bs = "cr"), 
+    mod1 <- gam(cbind(value, broad.total.points.annotated - value) ~ 
+                  s(Z,     k = 5, bs = "cr")  +
+                  s(roughness, k = 5, bs = "cr") + 
+                  s(TPI, k = 5, bs = "cr"), 
                 data = train.dat, method = "REML", family = binomial("logit"))
     
     # Inverts
-    mod2 <- gam(cbind(value, total.pts - value) ~ 
-                  s(detrended,     k = 5, bs = "cr")  + 
+    mod2 <- gam(cbind(value, broad.total.points.annotated - value) ~ 
+                  s(Z,     k = 5, bs = "cr")  + 
                   s(roughness, k = 5, bs = "cr") +
-                  s(Z, k = 5, bs = "cr"), 
+                  s(TPI, k = 5, bs = "cr"), 
                 data = train.dat, method = "REML", family = binomial("logit"))
     
     # Macroalgae
-    mod3 <- gam(cbind(value, total.pts - value) ~ 
-                  s(detrended,     k = 5, bs = "cr")  + 
-                  s(SLA, k = 5, bs = "cr") +
-                  s(Z, k = 5, bs = "cr"), 
+    mod3 <- gam(cbind(value, broad.total.points.annotated - value) ~ 
+                  s(Z,     k = 5, bs = "cr")  + 
+                  s(detrended, k = 5, bs = "cr") +
+                  s(TPI, k = 5, bs = "cr"), 
                 data = train.dat, method = "REML", family = binomial("logit"))
     
     # Rock
-    mod4 <- gam(cbind(value, total.pts - value) ~ 
-                  s(detrended,     k = 5, bs = "cr")  +
-                  s(UCUR, k = 5, bs = "cr") +
-                  s(Z, k = 5, bs = "cr"), 
+    mod4 <- gam(cbind(value, broad.total.points.annotated - value) ~ 
+                  s(Z,     k = 5, bs = "cr")  +
+                  s(detrended, k = 5, bs = "cr") +
+                  s(TPI, k = 5, bs = "cr"), 
                 data = train.dat, method = "REML", family = binomial("logit"))
     
-    # Seagrass
-    mod5 <- gam(cbind(value, total.pts - value) ~ 
-                  s(SLA, k = 5, bs = "cr") +
-                  s(SST, k = 5, bs = "cr") +
-                  s(Z, k = 5, bs = "cr"), 
-                data = train.dat, method = "REML", family = binomial("logit"))
+    # # Seagrass
+    # mod5 <- gam(cbind(value, broad.total.points.annotated - value) ~ 
+    #               s(SLA, k = 5, bs = "cr") +
+    #               s(SST, k = 5, bs = "cr") +
+    #               s(Z, k = 5, bs = "cr"), 
+    #             data = train.dat, method = "REML", family = binomial("logit"))
     
-    mod <- list(mod1, mod2, mod3, mod4, mod5)
+    mod <- list(mod1, mod2, mod3, mod4)
     
     if (b == 1 & i == 1) {
       modpred <- cbind(preddf, "predicted" = predict(mod[[i]], preddf, type = "response")) %>%
@@ -282,19 +297,30 @@ for (i in 1:length(resp.vars)) {
 }
 
 # Save out so you don't need to keep running loop
-saveRDS(modpred, "data/tidy/sw-network_modpreds.rds")                           # Save out to stop re running mega loop -- ignored
+saveRDS(modpred, "data/tidy/Abrolhos_modpreds.rds")                           # Save out to stop re running mega loop -- ignored
+
+# # Categorise raw data into habitat classes
+# max.dat <- habi %>%
+#   group_by(campaignid, sample, block) %>%
+#   slice(which.max(value/broad.total.points.annotated)) %>%
+#   ungroup() %>%
+#   dplyr::select(x, y, sample, taxa, block) %>%
+#   dplyr::rename(observed = taxa) %>%
+#   glimpse()
 
 # Categorise raw data into habitat classes
 max.dat <- habi %>%
-  group_by(campaignid, sample, block) %>%
-  slice(which.max(value/total.pts)) %>%
+  group_by(sample, block) %>%
+  slice(which.max(value/broad.total.points.annotated)) %>%
   ungroup() %>%
-  dplyr::select(x, y, sample, taxa, block) %>%
+  dplyr::select(x, y, taxa, block) %>%
   dplyr::rename(observed = taxa) %>%
   glimpse()
 
+length(unique(habi$sample))
+
 # Categorise model predictions into habitat classes for each fold
-modpred <- readRDS("data/tidy/sw-network_modpreds.rds")
+modpred <- readRDS("data/tidy/Abrolhos_modpreds.rds")
 
 # Make a raster of predicted values for each taxa per fold
 for (b in 1:5) {
@@ -323,9 +349,14 @@ plot(testrast[[1]])
 plot(max.datv, add = T) # Aligns correctly
 
 # Load in predicted habitat from 04_predict-gam
-predhabdf <- readRDS(paste0("output/habitat/", name, "_predicted-habitat.rds")) %>%   # Ignored
-  dplyr::select(x, y, dom_tag_1) %>%
-  dplyr::rename(dom_tag = dom_tag_1)
+predhabdf <- readRDS(paste0("output/Abrolhos/", name, "_spatial_habitat_predictions.rds")) %>%   # Ignored
+  dplyr::select(x, y, dom_tag) %>%
+  dplyr::mutate(dom_tag=case_when(dom_tag%in%"inverts.fit"~"inverts",
+                                  dom_tag%in%"sand.fit"~"sand",
+                                  dom_tag%in%"macroalg.fit"~"macroalgae",
+                                  dom_tag%in%"rock.fit"~"rock"))
+unique(max.dat$observed)
+                unique(predhabdf$dom_tag)
 
 roc.dat <- cbind(max.dat, terra::extract(testrast, max.datv)) %>%
   dplyr::select(-c(ID, block)) %>%
@@ -336,7 +367,7 @@ roc.dat <- cbind(max.dat, terra::extract(testrast, max.datv)) %>%
   dplyr::filter(!is.na(sand)) %>% 
   glimpse()
 
-roc.dat$predicted <- apply(roc.dat %>% dplyr::select(sand, inverts, macroalgae, rock, seagrass), 1, 
+roc.dat$predicted <- apply(roc.dat %>% dplyr::select(sand, inverts, macroalgae, rock), 1, 
                            FUN = function(x){names(which.max(x))})
 unique(roc.dat$predicted)
 
@@ -351,7 +382,7 @@ for (i in 1:5) {
   levels(test.dat$predicted) <- levels(test.dat$observed)
   
   test.matrix <- as.matrix(test.dat %>% 
-                             dplyr::select(sand, rock, macroalgae, inverts, seagrass))
+                             dplyr::select(sand, rock, macroalgae, inverts))
   conf = confusionMatrix(test.dat$predicted, test.dat$observed)
   kapp = conf$overall[1]
   
@@ -378,5 +409,5 @@ kappa.dat <- kappa.dat %>%
           kappa = mean(.$kappa),
           auc = mean(.$auc))
 
-write.csv(kappa.dat, paste0("output/habitat/", name, "_kappa-auc.csv"),
+write.csv(kappa.dat, paste0("output/crossval/", name, "_kappa-auc.csv"),
           row.names = F)
