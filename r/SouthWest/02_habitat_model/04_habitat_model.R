@@ -160,3 +160,4 @@ head(rastdf)
 # Save the output
 saveRDS(rastdf, paste(paste0('output/SWC/', name), 'spatial_habitat_predictions.rds', sep = "_"))
 
+write.csv(rastdf, file = paste(paste0('output/SWC/', name), 'spatial_habitat_predictions.csv', sep = "_"), row.names = FALSE)

@@ -348,6 +348,7 @@ max.datv <- vect(max.dat, geom = c("x", "y"))
 plot(testrast[[1]])
 plot(max.datv, add = T) # Aligns correctly
 
+
 # Load in predicted habitat from 04_predict-gam
 predhabdf <- readRDS(paste0("output/Abrolhos/", name, "_spatial_habitat_predictions.rds")) %>%   # Ignored
   dplyr::select(x, y, dom_tag) %>%
