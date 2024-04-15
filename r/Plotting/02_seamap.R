@@ -136,20 +136,26 @@ df1 <- data.frame(
 #   coord_flip()
 # Assuming Depth is a factor variable
 
-###ATTEMPT 3 FRPM 
+###ATTEMPT 3 FRPM FINAL
 df1$Depth <- factor(df1$Depth, levels = c("100 - 200", "40 - 100", "0 - 40"))
 
 ggplot(df1, aes(fill=Cultivar, y= Depth, x=Percentage))+
        
-        
+     
   geom_bar(position = "dodge", stat="identity")+
   labs(y = "Continental shelf water depth (meters)",
        x = "Percentage (%)",
        fill = "Cultivar") +
+  
+   theme_bw()+
   theme(legend.position = "top", legend.title = element_blank()) +
   theme(axis.text.y = element_text(angle = 90, hjust =0.5)) +
   theme(axis.title.y = element_text(margin = margin(r = 20)))+
   theme(axis.title.x = element_text(margin = margin (t = 10)))+
-  scale_x_continuous(limits = c(0, 100))+
+  theme(panel.background = element_blank())+ 
+  theme(panel.grid.minor = element_blank())+
+  theme(panel.grid.major = element_blank())+
+  theme(axis.line = element_line(colour = "black"))+
+   scale_x_continuous(limits = c(0, 100))+
   guides(fill = guide_legend(reverse = TRUE))
 
