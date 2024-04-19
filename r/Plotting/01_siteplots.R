@@ -196,6 +196,7 @@ i1 <- ggplot() +
   guides(fill = guide_legend(override.aes = list(size = 0.25), ncol = 2)) +
   new_scale_fill() +
   geom_sf(data = cwatr, colour = "firebrick", alpha = 4/5, size = 0.2) +
+  #tm_add_legend(type = 'line', labels = "Coastal waters limit", col = 'red', lwd = 2, size = 2)+
   geom_point(data = nin, aes(longitude, latitude),
              alpha = 0.6, shape = 10, size = 0.1) +
   coord_sf(xlim = c(113.4, 113.75), 

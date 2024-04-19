@@ -31,7 +31,7 @@ habi   <- readRDS("data/tidy/PtCloates_habitat-bathy-derivatives.rds")          
 preds  <- readRDS("data/spatial/rasters/PtCloates_spatial_covariates.rds")       # Spatial covs from 'R/02_spatial_layers.R'
 preds <- rast(list(preds))
 #preds <- rast(preds)
-preds[[1]] <- clamp(preds[[1]], upper=-25, lower=-190, values=FALSE)
+preds[[1]] <- clamp(preds[[1]], upper=-25, lower=-215, values=FALSE)
 preds <- mask(preds,preds[[1]])
 plot(preds)
 preddf <- as.data.frame(preds, xy = TRUE, na.rm = TRUE)

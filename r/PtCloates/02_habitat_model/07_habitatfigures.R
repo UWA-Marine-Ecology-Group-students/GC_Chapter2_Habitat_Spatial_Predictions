@@ -134,7 +134,7 @@ p1 <- ggplot() +
 print(p1)
   
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save output
-                     "dominant_habitat.png", sep = "_"),
+                     "dominant_habitat_2024.png", sep = "_"),
     width = 8, height = 4, res = 300, units = "in")                             # Change the dimensions here as necessary
 p1
 dev.off()
@@ -275,7 +275,7 @@ p22 <- ggplot() +
 
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
-                     "habitat_class_predicted.png", sep = "_"),
+                     "habitat_class_predicted2024.png", sep = "_"),
     width = 6, height = 10, res = 800, units = "in")                             # Change the dimensions here as necessary
 p22
 dev.off()
@@ -320,7 +320,7 @@ p23 <- ggplot() +
 
 
 png(filename = paste(paste("plots", name, sep = "/"),                   # Save the output
-                     "habitat_SE_predicted.png", sep = "_"),
+                     "habitat_SE_predicted2024.png", sep = "_"),
     width = 6, height = 10, res = 800, units = "in")  
 
 p23
@@ -345,7 +345,7 @@ nrow=1, ncol =2)
 print(p24)
 
 ggsave(paste(paste("plots", name, sep = "/"),                   # Save the output
-             "comp_habitat_predicted.png", sep = "_"), p24,
+             "comp_habitat_predicted2024.png", sep = "_"), p24,
        width = 14, height = 10, dpi = 800
 )
 
