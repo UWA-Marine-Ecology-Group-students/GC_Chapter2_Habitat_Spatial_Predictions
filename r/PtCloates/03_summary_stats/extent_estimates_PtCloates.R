@@ -30,8 +30,9 @@ rastdfgc <- readRDS("output/PtCloates/PtCloates_spatial_habitat_predictions.rds"
    i_area_scaled_km2 = rep(NA, 2)
  )
  
+ 
+ 
 #Calculate individual habitat class areas
-#group_by(rastdf, dom_tag) %>% count() %>% mutate(area = n *250 *250)
 rastdf.2 <- rastdf %>%
   mutate(
     psand.area = psand.fit * 250 * 250,
@@ -64,16 +65,13 @@ OEA_results$SE_area_m2 <- c(sesand_area, seinvert_area)
 # Calculate SE_area_km2 based on SE_area_m2
 OEA_results$SE_area_km2 <- OEA_results$SE_area_m2 * 0.000001
 
-#DOMINANT Habitat calcs 2023 DEc
-rastdf.4 <- rastdf.2 %>%
-  mutate(
-    dom.sand.area = if_else(dom_tag == "sand.fit", psand.area, if_else(dom_tag == "inverts.fit", 0, NA_real_)),
-    dom.invert.area = if_else(dom_tag == "inverts.fit", pinverts.area, if_else(dom_tag == "sand.fit", 0, NA_real_))
-  )
+#DOMINANT Habitat calcs 
+#Calculate dominant habitat class areas and table
+group_by(rastdf, dom_tag) %>% count() %>% mutate(area = n *250 *250)
 
 # Calculate the sum of dom.sand.area and dom.inver areas
-total_dom_sand_area <- sum(rastdf.4$dom.sand.area)
-total_dom_invert_area <- sum(rastdf.4$dom.invert.area)
+total_dom_sand_area <-256875000
+total_dom_invert_area <- 12937500
 
 # Assign dominant habitat class areas to the OEA_results dataframe
 OEA_results$dom_area_m2 <- c(total_dom_sand_area, total_dom_invert_area)
@@ -104,7 +102,7 @@ OEA_results$i_area_scaled_km2 <- OEA_results$i_area_scaled_m2 * 0.000001
 write.csv(OEA_results, file = paste(paste0('output/PtCloates/', name), "OEA_results.csv", sep = "_"), row.names = FALSE)
 
 
-# #Brookes Dom Tag way
+# # #Brookes Dom Tag way
 # dom <- rastdf %>%
 #   mutate(dom_area = case_when(
 #     dom_tag == "inverts.fit" ~ pinverts.fit,
