@@ -1,0 +1,685 @@
+campaignid,period,level_1,level_2,level_3,level_4,level_5,caab_code,count
+2020-10_south-west_BOSS,1,Physical,Relief,High,High (>3m),3,82003006,14
+2020-10_south-west_BOSS,1,Physical,Relief,Low / moderate,Low (<1m),1,82003003,11
+2020-10_south-west_BOSS,1,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,25
+2020-10_south-west_BOSS,100,Physical,Relief,High,High (>3m),3,82003006,26
+2020-10_south-west_BOSS,100,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,100,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,33
+2020-10_south-west_BOSS,101,Physical,Relief,High,High (>3m),3,82003006,22
+2020-10_south-west_BOSS,101,Physical,Relief,Low / moderate,Low (<1m),1,82003003,8
+2020-10_south-west_BOSS,101,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,33
+2020-10_south-west_BOSS,102,Physical,Relief,High,High (>3m),3,82003006,29
+2020-10_south-west_BOSS,102,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,102,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,32
+2020-10_south-west_BOSS,110,Physical,Relief,Flat,NA,0,82003001,34
+2020-10_south-west_BOSS,110,Physical,Relief,Low / moderate,Low (<1m),1,82003003,20
+2020-10_south-west_BOSS,113,Physical,Relief,Low / moderate,Low (<1m),1,82003003,58
+2020-10_south-west_BOSS,115,Physical,Relief,Flat,NA,0,82003001,7
+2020-10_south-west_BOSS,115,Physical,Relief,Low / moderate,Low (<1m),1,82003003,51
+2020-10_south-west_BOSS,115,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,1
+2020-10_south-west_BOSS,117,Physical,Relief,Low / moderate,Low (<1m),1,82003003,53
+2020-10_south-west_BOSS,119,Physical,Relief,High,High (>3m),3,82003006,10
+2020-10_south-west_BOSS,119,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,50
+2020-10_south-west_BOSS,122,Physical,Relief,High,High (>3m),3,82003006,28
+2020-10_south-west_BOSS,122,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,122,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,29
+2020-10_south-west_BOSS,123,Physical,Relief,High,High (>3m),3,82003006,15
+2020-10_south-west_BOSS,123,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,123,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,45
+2020-10_south-west_BOSS,125,Physical,Relief,Flat,NA,0,82003001,1
+2020-10_south-west_BOSS,125,Physical,Relief,High,High (>3m),3,82003006,22
+2020-10_south-west_BOSS,125,Physical,Relief,Low / moderate,Low (<1m),1,82003003,7
+2020-10_south-west_BOSS,125,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,27
+2020-10_south-west_BOSS,126,Physical,Relief,High,High (>3m),3,82003006,16
+2020-10_south-west_BOSS,126,Physical,Relief,Low / moderate,Low (<1m),1,82003003,18
+2020-10_south-west_BOSS,126,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,25
+2020-10_south-west_BOSS,130,Physical,Relief,High,High (>3m),3,82003006,31
+2020-10_south-west_BOSS,130,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,29
+2020-10_south-west_BOSS,132,Physical,Relief,High,High (>3m),3,82003006,32
+2020-10_south-west_BOSS,132,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,28
+2020-10_south-west_BOSS,133,Physical,Relief,High,High (>3m),3,82003006,51
+2020-10_south-west_BOSS,133,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,133,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,6
+2020-10_south-west_BOSS,134,Physical,Relief,High,High (>3m),3,82003006,24
+2020-10_south-west_BOSS,134,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,134,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,35
+2020-10_south-west_BOSS,135,Physical,Relief,Flat,NA,0,82003001,1
+2020-10_south-west_BOSS,135,Physical,Relief,High,High (>3m),3,82003006,3
+2020-10_south-west_BOSS,135,Physical,Relief,Low / moderate,Low (<1m),1,82003003,29
+2020-10_south-west_BOSS,135,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,20
+2020-10_south-west_BOSS,136,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,136,Physical,Relief,High,High (>3m),3,82003006,9
+2020-10_south-west_BOSS,136,Physical,Relief,Low / moderate,Low (<1m),1,82003003,29
+2020-10_south-west_BOSS,136,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,16
+2020-10_south-west_BOSS,145,Physical,Relief,High,High (>3m),3,82003006,4
+2020-10_south-west_BOSS,145,Physical,Relief,Low / moderate,Low (<1m),1,82003003,5
+2020-10_south-west_BOSS,145,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,41
+2020-10_south-west_BOSS,146,Physical,Relief,High,High (>3m),3,82003006,3
+2020-10_south-west_BOSS,146,Physical,Relief,Low / moderate,Low (<1m),1,82003003,30
+2020-10_south-west_BOSS,146,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,27
+2020-10_south-west_BOSS,147,Physical,Relief,High,High (>3m),3,82003006,11
+2020-10_south-west_BOSS,147,Physical,Relief,Low / moderate,Low (<1m),1,82003003,4
+2020-10_south-west_BOSS,147,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,45
+2020-10_south-west_BOSS,15,Physical,Relief,High,High (>3m),3,82003006,22
+2020-10_south-west_BOSS,15,Physical,Relief,Low / moderate,Low (<1m),1,82003003,2
+2020-10_south-west_BOSS,15,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,35
+2020-10_south-west_BOSS,152,Physical,Relief,High,High (>3m),3,82003006,11
+2020-10_south-west_BOSS,152,Physical,Relief,Low / moderate,Low (<1m),1,82003003,25
+2020-10_south-west_BOSS,152,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,24
+2020-10_south-west_BOSS,157,Physical,Relief,High,High (>3m),3,82003006,28
+2020-10_south-west_BOSS,157,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,157,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,30
+2020-10_south-west_BOSS,158,Physical,Relief,Low / moderate,Low (<1m),1,82003003,45
+2020-10_south-west_BOSS,158,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,11
+2020-10_south-west_BOSS,16,Physical,Relief,High,High (>3m),3,82003006,23
+2020-10_south-west_BOSS,16,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,16,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,39
+2020-10_south-west_BOSS,17,Physical,Relief,High,High (>3m),3,82003006,21
+2020-10_south-west_BOSS,17,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,36
+2020-10_south-west_BOSS,180,Physical,Relief,Flat,NA,0,82003001,59
+2020-10_south-west_BOSS,180,Physical,Relief,Low / moderate,Low (<1m),1,82003003,2
+2020-10_south-west_BOSS,181,Physical,Relief,Flat,NA,0,82003001,36
+2020-10_south-west_BOSS,181,Physical,Relief,Low / moderate,Low (<1m),1,82003003,24
+2020-10_south-west_BOSS,189,Physical,Relief,Flat,NA,0,82003001,23
+2020-10_south-west_BOSS,189,Physical,Relief,Low / moderate,Low (<1m),1,82003003,36
+2020-10_south-west_BOSS,191,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,191,Physical,Relief,Low / moderate,Low (<1m),1,82003003,53
+2020-10_south-west_BOSS,192,Physical,Relief,Flat,NA,0,82003001,9
+2020-10_south-west_BOSS,192,Physical,Relief,Low / moderate,Low (<1m),1,82003003,51
+2020-10_south-west_BOSS,194,Physical,Relief,Flat,NA,0,82003001,6
+2020-10_south-west_BOSS,194,Physical,Relief,Low / moderate,Low (<1m),1,82003003,52
+2020-10_south-west_BOSS,195,Physical,Relief,High,High (>3m),3,82003006,14
+2020-10_south-west_BOSS,195,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,48
+2020-10_south-west_BOSS,199,Physical,Relief,High,High (>3m),3,82003006,9
+2020-10_south-west_BOSS,199,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,50
+2020-10_south-west_BOSS,201,Physical,Relief,Low / moderate,Low (<1m),1,82003003,50
+2020-10_south-west_BOSS,201,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,10
+2020-10_south-west_BOSS,204,Physical,Relief,High,High (>3m),3,82003006,1
+2020-10_south-west_BOSS,204,Physical,Relief,Low / moderate,Low (<1m),1,82003003,34
+2020-10_south-west_BOSS,204,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,24
+2020-10_south-west_BOSS,206,Physical,Relief,High,High (>3m),3,82003006,3
+2020-10_south-west_BOSS,206,Physical,Relief,Low / moderate,Low (<1m),1,82003003,53
+2020-10_south-west_BOSS,206,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,6
+2020-10_south-west_BOSS,207,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,207,Physical,Relief,High,High (>3m),3,82003006,3
+2020-10_south-west_BOSS,207,Physical,Relief,Low / moderate,Low (<1m),1,82003003,19
+2020-10_south-west_BOSS,207,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,37
+2020-10_south-west_BOSS,210,Physical,Relief,High,High (>3m),3,82003006,22
+2020-10_south-west_BOSS,210,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,38
+2020-10_south-west_BOSS,215,Physical,Relief,Flat,NA,0,82003001,7
+2020-10_south-west_BOSS,215,Physical,Relief,Low / moderate,Low (<1m),1,82003003,47
+2020-10_south-west_BOSS,216,Physical,Relief,High,High (>3m),3,82003006,12
+2020-10_south-west_BOSS,216,Physical,Relief,Low / moderate,Low (<1m),1,82003003,16
+2020-10_south-west_BOSS,216,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,32
+2020-10_south-west_BOSS,217,Physical,Relief,Low / moderate,Low (<1m),1,82003003,59
+2020-10_south-west_BOSS,218,Physical,Relief,Flat,NA,0,82003001,3
+2020-10_south-west_BOSS,218,Physical,Relief,Low / moderate,Low (<1m),1,82003003,57
+2020-10_south-west_BOSS,220,Physical,Relief,High,High (>3m),3,82003006,26
+2020-10_south-west_BOSS,220,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,34
+2020-10_south-west_BOSS,222,Physical,Relief,High,High (>3m),3,82003006,9
+2020-10_south-west_BOSS,222,Physical,Relief,Low / moderate,Low (<1m),1,82003003,14
+2020-10_south-west_BOSS,222,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,41
+2020-10_south-west_BOSS,223,Physical,Relief,High,High (>3m),3,82003006,16
+2020-10_south-west_BOSS,223,Physical,Relief,Low / moderate,Low (<1m),1,82003003,12
+2020-10_south-west_BOSS,223,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,36
+2020-10_south-west_BOSS,224,Physical,Relief,High,High (>3m),3,82003006,1
+2020-10_south-west_BOSS,224,Physical,Relief,Low / moderate,Low (<1m),1,82003003,19
+2020-10_south-west_BOSS,224,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,39
+2020-10_south-west_BOSS,225,Physical,Relief,High,High (>3m),3,82003006,4
+2020-10_south-west_BOSS,225,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,59
+2020-10_south-west_BOSS,226,Physical,Relief,High,High (>3m),3,82003006,34
+2020-10_south-west_BOSS,226,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,226,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,27
+2020-10_south-west_BOSS,227,Physical,Relief,High,High (>3m),3,82003006,17
+2020-10_south-west_BOSS,227,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,227,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,45
+2020-10_south-west_BOSS,228,Physical,Relief,High,High (>3m),3,82003006,2
+2020-10_south-west_BOSS,228,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,58
+2020-10_south-west_BOSS,229,Physical,Relief,High,High (>3m),3,82003006,19
+2020-10_south-west_BOSS,229,Physical,Relief,Low / moderate,Low (<1m),1,82003003,11
+2020-10_south-west_BOSS,229,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,32
+2020-10_south-west_BOSS,235,Physical,Relief,High,High (>3m),3,82003006,26
+2020-10_south-west_BOSS,235,Physical,Relief,Low / moderate,Low (<1m),1,82003003,12
+2020-10_south-west_BOSS,235,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,26
+2020-10_south-west_BOSS,235REDO,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,235REDO,Physical,Relief,Low / moderate,Low (<1m),1,82003003,54
+2020-10_south-west_BOSS,236,Physical,Relief,High,High (>3m),3,82003006,9
+2020-10_south-west_BOSS,236,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,51
+2020-10_south-west_BOSS,237,Physical,Relief,Flat,NA,0,82003001,3
+2020-10_south-west_BOSS,237,Physical,Relief,Low / moderate,Low (<1m),1,82003003,46
+2020-10_south-west_BOSS,239,Physical,Relief,Flat,NA,0,82003001,3
+2020-10_south-west_BOSS,239,Physical,Relief,Low / moderate,Low (<1m),1,82003003,52
+2020-10_south-west_BOSS,241,Physical,Relief,High,High (>3m),3,82003006,20
+2020-10_south-west_BOSS,241,Physical,Relief,Low / moderate,Low (<1m),1,82003003,7
+2020-10_south-west_BOSS,241,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,32
+2020-10_south-west_BOSS,244,Physical,Relief,High,High (>3m),3,82003006,12
+2020-10_south-west_BOSS,244,Physical,Relief,Low / moderate,Low (<1m),1,82003003,26
+2020-10_south-west_BOSS,244,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,20
+2020-10_south-west_BOSS,245,Physical,Relief,High,High (>3m),3,82003006,2
+2020-10_south-west_BOSS,245,Physical,Relief,Low / moderate,Low (<1m),1,82003003,10
+2020-10_south-west_BOSS,245,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,47
+2020-10_south-west_BOSS,247,Physical,Relief,Flat,NA,0,82003001,7
+2020-10_south-west_BOSS,247,Physical,Relief,Low / moderate,Low (<1m),1,82003003,29
+2020-10_south-west_BOSS,247,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,16
+2020-10_south-west_BOSS,248,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,248,Physical,Relief,Low / moderate,Low (<1m),1,82003003,32
+2020-10_south-west_BOSS,248,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,14
+2020-10_south-west_BOSS,250,Physical,Relief,Flat,NA,0,82003001,26
+2020-10_south-west_BOSS,250,Physical,Relief,Low / moderate,Low (<1m),1,82003003,34
+2020-10_south-west_BOSS,251,Physical,Relief,Flat,NA,0,82003001,15
+2020-10_south-west_BOSS,251,Physical,Relief,Low / moderate,Low (<1m),1,82003003,36
+2020-10_south-west_BOSS,251,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,4
+2020-10_south-west_BOSS,252,Physical,Relief,Flat,NA,0,82003001,22
+2020-10_south-west_BOSS,252,Physical,Relief,Low / moderate,Low (<1m),1,82003003,38
+2020-10_south-west_BOSS,253,Physical,Relief,Flat,NA,0,82003001,17
+2020-10_south-west_BOSS,253,Physical,Relief,Low / moderate,Low (<1m),1,82003003,41
+2020-10_south-west_BOSS,254,Physical,Relief,Flat,NA,0,82003001,20
+2020-10_south-west_BOSS,254,Physical,Relief,Low / moderate,Low (<1m),1,82003003,38
+2020-10_south-west_BOSS,258,Physical,Relief,High,High (>3m),3,82003006,13
+2020-10_south-west_BOSS,258,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,47
+2020-10_south-west_BOSS,259,Physical,Relief,High,High (>3m),3,82003006,15
+2020-10_south-west_BOSS,259,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,45
+2020-10_south-west_BOSS,260,Physical,Relief,High,High (>3m),3,82003006,4
+2020-10_south-west_BOSS,260,Physical,Relief,Low / moderate,Low (<1m),1,82003003,4
+2020-10_south-west_BOSS,260,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,50
+2020-10_south-west_BOSS,261,Physical,Relief,High,High (>3m),3,82003006,46
+2020-10_south-west_BOSS,261,Physical,Relief,Low / moderate,Low (<1m),1,82003003,2
+2020-10_south-west_BOSS,261,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,15
+2020-10_south-west_BOSS,262,Physical,Relief,High,High (>3m),3,82003006,6
+2020-10_south-west_BOSS,262,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,53
+2020-10_south-west_BOSS,263,Physical,Relief,High,High (>3m),3,82003006,20
+2020-10_south-west_BOSS,263,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,40
+2020-10_south-west_BOSS,264,Physical,Relief,Low / moderate,Low (<1m),1,82003003,31
+2020-10_south-west_BOSS,264,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,28
+2020-10_south-west_BOSS,265,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,265,Physical,Relief,Low / moderate,Low (<1m),1,82003003,49
+2020-10_south-west_BOSS,265,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,7
+2020-10_south-west_BOSS,266,Physical,Relief,High,High (>3m),3,82003006,3
+2020-10_south-west_BOSS,266,Physical,Relief,Low / moderate,Low (<1m),1,82003003,40
+2020-10_south-west_BOSS,266,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,22
+2020-10_south-west_BOSS,267,Physical,Relief,High,High (>3m),3,82003006,3
+2020-10_south-west_BOSS,267,Physical,Relief,Low / moderate,Low (<1m),1,82003003,39
+2020-10_south-west_BOSS,267,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,20
+2020-10_south-west_BOSS,269,Physical,Relief,High,High (>3m),3,82003006,3
+2020-10_south-west_BOSS,269,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,269,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,55
+2020-10_south-west_BOSS,272,Physical,Relief,High,High (>3m),3,82003006,6
+2020-10_south-west_BOSS,272,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,272,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,51
+2020-10_south-west_BOSS,273,Physical,Relief,High,High (>3m),3,82003006,5
+2020-10_south-west_BOSS,273,Physical,Relief,Low / moderate,Low (<1m),1,82003003,5
+2020-10_south-west_BOSS,273,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,48
+2020-10_south-west_BOSS,274,Physical,Relief,Low / moderate,Low (<1m),1,82003003,51
+2020-10_south-west_BOSS,275,Physical,Relief,Flat,NA,0,82003001,2
+2020-10_south-west_BOSS,275,Physical,Relief,Low / moderate,Low (<1m),1,82003003,56
+2020-10_south-west_BOSS,276,Physical,Relief,Flat,NA,0,82003001,3
+2020-10_south-west_BOSS,276,Physical,Relief,Low / moderate,Low (<1m),1,82003003,53
+2020-10_south-west_BOSS,276,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,1
+2020-10_south-west_BOSS,277,Physical,Relief,Flat,NA,0,82003001,5
+2020-10_south-west_BOSS,277,Physical,Relief,Low / moderate,Low (<1m),1,82003003,48
+2020-10_south-west_BOSS,278,Physical,Relief,Flat,NA,0,82003001,5
+2020-10_south-west_BOSS,278,Physical,Relief,Low / moderate,Low (<1m),1,82003003,48
+2020-10_south-west_BOSS,278REDO,Physical,Relief,Flat,NA,0,82003001,3
+2020-10_south-west_BOSS,278REDO,Physical,Relief,Low / moderate,Low (<1m),1,82003003,56
+2020-10_south-west_BOSS,280,Physical,Relief,Flat,NA,0,82003001,8
+2020-10_south-west_BOSS,280,Physical,Relief,Low / moderate,Low (<1m),1,82003003,49
+2020-10_south-west_BOSS,281,Physical,Relief,High,High (>3m),3,82003006,1
+2020-10_south-west_BOSS,281,Physical,Relief,Low / moderate,Low (<1m),1,82003003,55
+2020-10_south-west_BOSS,282,Physical,Relief,Flat,NA,0,82003001,3
+2020-10_south-west_BOSS,282,Physical,Relief,Low / moderate,Low (<1m),1,82003003,53
+2020-10_south-west_BOSS,282,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,1
+2020-10_south-west_BOSS,283,Physical,Relief,Flat,NA,0,82003001,9
+2020-10_south-west_BOSS,283,Physical,Relief,Low / moderate,Low (<1m),1,82003003,46
+2020-10_south-west_BOSS,283,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,5
+2020-10_south-west_BOSS,284,Physical,Relief,Low / moderate,Low (<1m),1,82003003,45
+2020-10_south-west_BOSS,285,Physical,Relief,Low / moderate,Low (<1m),1,82003003,41
+2020-10_south-west_BOSS,285,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,9
+2020-10_south-west_BOSS,286,Physical,Relief,Flat,NA,0,82003001,15
+2020-10_south-west_BOSS,286,Physical,Relief,Low / moderate,Low (<1m),1,82003003,30
+2020-10_south-west_BOSS,288,Physical,Relief,Flat,NA,0,82003001,16
+2020-10_south-west_BOSS,288,Physical,Relief,Low / moderate,Low (<1m),1,82003003,29
+2020-10_south-west_BOSS,290,Physical,Relief,Flat,NA,0,82003001,32
+2020-10_south-west_BOSS,290,Physical,Relief,Low / moderate,Low (<1m),1,82003003,22
+2020-10_south-west_BOSS,291,Physical,Relief,Flat,NA,0,82003001,3
+2020-10_south-west_BOSS,291,Physical,Relief,Low / moderate,Low (<1m),1,82003003,58
+2020-10_south-west_BOSS,293,Physical,Relief,High,High (>3m),3,82003006,10
+2020-10_south-west_BOSS,293,Physical,Relief,Low / moderate,Low (<1m),1,82003003,14
+2020-10_south-west_BOSS,293,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,37
+2020-10_south-west_BOSS,294,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,294,Physical,Relief,Low / moderate,Low (<1m),1,82003003,50
+2020-10_south-west_BOSS,294,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,1
+2020-10_south-west_BOSS,295,Physical,Relief,Flat,NA,0,82003001,23
+2020-10_south-west_BOSS,295,Physical,Relief,Low / moderate,Low (<1m),1,82003003,31
+2020-10_south-west_BOSS,297,Physical,Relief,Low / moderate,Low (<1m),1,82003003,53
+2020-10_south-west_BOSS,298,Physical,Relief,Flat,NA,0,82003001,9
+2020-10_south-west_BOSS,298,Physical,Relief,Low / moderate,Low (<1m),1,82003003,50
+2020-10_south-west_BOSS,299,Physical,Relief,Flat,NA,0,82003001,18
+2020-10_south-west_BOSS,299,Physical,Relief,Low / moderate,Low (<1m),1,82003003,38
+2020-10_south-west_BOSS,3,Physical,Relief,High,High (>3m),3,82003006,1
+2020-10_south-west_BOSS,3,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,60
+2020-10_south-west_BOSS,302,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,302,Physical,Relief,Low / moderate,Low (<1m),1,82003003,47
+2020-10_south-west_BOSS,307,Physical,Relief,Flat,NA,0,82003001,17
+2020-10_south-west_BOSS,307,Physical,Relief,Low / moderate,Low (<1m),1,82003003,32
+2020-10_south-west_BOSS,308,Physical,Relief,Flat,NA,0,82003001,8
+2020-10_south-west_BOSS,308,Physical,Relief,Low / moderate,Low (<1m),1,82003003,50
+2020-10_south-west_BOSS,310,Physical,Relief,High,High (>3m),3,82003006,3
+2020-10_south-west_BOSS,310,Physical,Relief,Low / moderate,Low (<1m),1,82003003,29
+2020-10_south-west_BOSS,310,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,31
+2020-10_south-west_BOSS,311,Physical,Relief,High,High (>3m),3,82003006,1
+2020-10_south-west_BOSS,311,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,311,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,56
+2020-10_south-west_BOSS,312,Physical,Relief,Flat,NA,0,82003001,17
+2020-10_south-west_BOSS,312,Physical,Relief,High,High (>3m),3,82003006,3
+2020-10_south-west_BOSS,312,Physical,Relief,Low / moderate,Low (<1m),1,82003003,23
+2020-10_south-west_BOSS,312,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,16
+2020-10_south-west_BOSS,313,Physical,Relief,Low / moderate,Low (<1m),1,82003003,59
+2020-10_south-west_BOSS,321,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,321,Physical,Relief,Low / moderate,Low (<1m),1,82003003,34
+2020-10_south-west_BOSS,322,Physical,Relief,Flat,NA,0,82003001,13
+2020-10_south-west_BOSS,322,Physical,Relief,Low / moderate,Low (<1m),1,82003003,43
+2020-10_south-west_BOSS,322,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,1
+2020-10_south-west_BOSS,323,Physical,Relief,Low / moderate,Low (<1m),1,82003003,51
+2020-10_south-west_BOSS,323,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,10
+2020-10_south-west_BOSS,324,Physical,Relief,Flat,NA,0,82003001,22
+2020-10_south-west_BOSS,324,Physical,Relief,Low / moderate,Low (<1m),1,82003003,38
+2020-10_south-west_BOSS,325,Physical,Relief,High,High (>3m),3,82003006,3
+2020-10_south-west_BOSS,325,Physical,Relief,Low / moderate,Low (<1m),1,82003003,5
+2020-10_south-west_BOSS,325,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,55
+2020-10_south-west_BOSS,326,Physical,Relief,High,High (>3m),3,82003006,37
+2020-10_south-west_BOSS,326,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,326,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,15
+2020-10_south-west_BOSS,327,Physical,Relief,High,High (>3m),3,82003006,14
+2020-10_south-west_BOSS,327,Physical,Relief,High,Wall,4,82003007,2
+2020-10_south-west_BOSS,327,Physical,Relief,Low / moderate,Low (<1m),1,82003003,5
+2020-10_south-west_BOSS,327,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,43
+2020-10_south-west_BOSS,328,Physical,Relief,High,High (>3m),3,82003006,40
+2020-10_south-west_BOSS,328,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,25
+2020-10_south-west_BOSS,329,Physical,Relief,High,High (>3m),3,82003006,16
+2020-10_south-west_BOSS,329,Physical,Relief,Low / moderate,Low (<1m),1,82003003,13
+2020-10_south-west_BOSS,329,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,30
+2020-10_south-west_BOSS,330,Physical,Relief,Low / moderate,Low (<1m),1,82003003,54
+2020-10_south-west_BOSS,330,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,7
+2020-10_south-west_BOSS,331,Physical,Relief,Low / moderate,Low (<1m),1,82003003,61
+2020-10_south-west_BOSS,333,Physical,Relief,High,High (>3m),3,82003006,4
+2020-10_south-west_BOSS,333,Physical,Relief,Low / moderate,Low (<1m),1,82003003,39
+2020-10_south-west_BOSS,333,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,17
+2020-10_south-west_BOSS,334,Physical,Relief,Flat,NA,0,82003001,11
+2020-10_south-west_BOSS,334,Physical,Relief,Low / moderate,Low (<1m),1,82003003,42
+2020-10_south-west_BOSS,334,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,10
+2020-10_south-west_BOSS,335,Physical,Relief,High,High (>3m),3,82003006,20
+2020-10_south-west_BOSS,335,Physical,Relief,Low / moderate,Low (<1m),1,82003003,15
+2020-10_south-west_BOSS,335,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,28
+2020-10_south-west_BOSS,336,Physical,Relief,High,High (>3m),3,82003006,17
+2020-10_south-west_BOSS,336,Physical,Relief,Low / moderate,Low (<1m),1,82003003,2
+2020-10_south-west_BOSS,336,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,41
+2020-10_south-west_BOSS,337,Physical,Relief,High,High (>3m),3,82003006,50
+2020-10_south-west_BOSS,337,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,9
+2020-10_south-west_BOSS,338,Physical,Relief,High,High (>3m),3,82003006,5
+2020-10_south-west_BOSS,338,Physical,Relief,Low / moderate,Low (<1m),1,82003003,20
+2020-10_south-west_BOSS,338,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,35
+2020-10_south-west_BOSS,339,Physical,Relief,High,High (>3m),3,82003006,50
+2020-10_south-west_BOSS,339,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,9
+2020-10_south-west_BOSS,34,Physical,Relief,High,High (>3m),3,82003006,17
+2020-10_south-west_BOSS,34,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,43
+2020-10_south-west_BOSS,340,Physical,Relief,Flat,NA,0,82003001,3
+2020-10_south-west_BOSS,340,Physical,Relief,Low / moderate,Low (<1m),1,82003003,41
+2020-10_south-west_BOSS,340,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,12
+2020-10_south-west_BOSS,341,Physical,Relief,Low / moderate,Low (<1m),1,82003003,4
+2020-10_south-west_BOSS,341,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,49
+2020-10_south-west_BOSS,342,Physical,Relief,High,High (>3m),3,82003006,16
+2020-10_south-west_BOSS,342,Physical,Relief,Low / moderate,Low (<1m),1,82003003,12
+2020-10_south-west_BOSS,342,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,22
+2020-10_south-west_BOSS,343,Physical,Relief,Flat,NA,0,82003001,34
+2020-10_south-west_BOSS,343,Physical,Relief,Low / moderate,Low (<1m),1,82003003,11
+2020-10_south-west_BOSS,344,Physical,Relief,Flat,NA,0,82003001,26
+2020-10_south-west_BOSS,344,Physical,Relief,Low / moderate,Low (<1m),1,82003003,33
+2020-10_south-west_BOSS,345,Physical,Relief,Flat,NA,0,82003001,10
+2020-10_south-west_BOSS,345,Physical,Relief,Low / moderate,Low (<1m),1,82003003,48
+2020-10_south-west_BOSS,346,Physical,Relief,Flat,NA,0,82003001,9
+2020-10_south-west_BOSS,346,Physical,Relief,Low / moderate,Low (<1m),1,82003003,47
+2020-10_south-west_BOSS,346,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,2
+2020-10_south-west_BOSS,347,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,347,Physical,Relief,Low / moderate,Low (<1m),1,82003003,57
+2020-10_south-west_BOSS,349,Physical,Relief,Flat,NA,0,82003001,1
+2020-10_south-west_BOSS,349,Physical,Relief,Low / moderate,Low (<1m),1,82003003,58
+2020-10_south-west_BOSS,350,Physical,Relief,Flat,NA,0,82003001,8
+2020-10_south-west_BOSS,350,Physical,Relief,Low / moderate,Low (<1m),1,82003003,47
+2020-10_south-west_BOSS,351,Physical,Relief,Flat,NA,0,82003001,5
+2020-10_south-west_BOSS,351,Physical,Relief,Low / moderate,Low (<1m),1,82003003,54
+2020-10_south-west_BOSS,352,Physical,Relief,Flat,NA,0,82003001,7
+2020-10_south-west_BOSS,352,Physical,Relief,Low / moderate,Low (<1m),1,82003003,48
+2020-10_south-west_BOSS,353,Physical,Relief,High,High (>3m),3,82003006,43
+2020-10_south-west_BOSS,353,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,17
+2020-10_south-west_BOSS,356,Physical,Relief,High,High (>3m),3,82003006,35
+2020-10_south-west_BOSS,356,Physical,Relief,Low / moderate,Low (<1m),1,82003003,16
+2020-10_south-west_BOSS,356,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,10
+2020-10_south-west_BOSS,358,Physical,Relief,Flat,NA,0,82003001,14
+2020-10_south-west_BOSS,358,Physical,Relief,Low / moderate,Low (<1m),1,82003003,34
+2020-10_south-west_BOSS,36,Physical,Relief,Flat,NA,0,82003001,32
+2020-10_south-west_BOSS,36,Physical,Relief,Low / moderate,Low (<1m),1,82003003,28
+2020-10_south-west_BOSS,360,Physical,Relief,Flat,NA,0,82003001,46
+2020-10_south-west_BOSS,360,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,361,Physical,Relief,High,High (>3m),3,82003006,10
+2020-10_south-west_BOSS,361,Physical,Relief,Low / moderate,Low (<1m),1,82003003,31
+2020-10_south-west_BOSS,361,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,27
+2020-10_south-west_BOSS,363,Physical,Relief,High,High (>3m),3,82003006,25
+2020-10_south-west_BOSS,363,Physical,Relief,High,Wall,4,82003007,1
+2020-10_south-west_BOSS,363,Physical,Relief,Low / moderate,Low (<1m),1,82003003,17
+2020-10_south-west_BOSS,363,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,16
+2020-10_south-west_BOSS,364,Physical,Relief,Flat,NA,0,82003001,18
+2020-10_south-west_BOSS,364,Physical,Relief,Low / moderate,Low (<1m),1,82003003,41
+2020-10_south-west_BOSS,365,Physical,Relief,High,High (>3m),3,82003006,15
+2020-10_south-west_BOSS,365,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,365,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,44
+2020-10_south-west_BOSS,369,Physical,Relief,Flat,NA,0,82003001,5
+2020-10_south-west_BOSS,369,Physical,Relief,Low / moderate,Low (<1m),1,82003003,55
+2020-10_south-west_BOSS,37,Physical,Relief,Flat,NA,0,82003001,27
+2020-10_south-west_BOSS,37,Physical,Relief,Low / moderate,Low (<1m),1,82003003,33
+2020-10_south-west_BOSS,370,Physical,Relief,Flat,NA,0,82003001,14
+2020-10_south-west_BOSS,370,Physical,Relief,Low / moderate,Low (<1m),1,82003003,43
+2020-10_south-west_BOSS,372,Physical,Relief,Flat,NA,0,82003001,21
+2020-10_south-west_BOSS,372,Physical,Relief,Low / moderate,Low (<1m),1,82003003,38
+2020-10_south-west_BOSS,374,Physical,Relief,High,High (>3m),3,82003006,15
+2020-10_south-west_BOSS,374,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,47
+2020-10_south-west_BOSS,377,Physical,Relief,Low / moderate,Low (<1m),1,82003003,58
+2020-10_south-west_BOSS,378,Physical,Relief,Flat,NA,0,82003001,6
+2020-10_south-west_BOSS,378,Physical,Relief,Low / moderate,Low (<1m),1,82003003,54
+2020-10_south-west_BOSS,4,Physical,Relief,High,High (>3m),3,82003006,9
+2020-10_south-west_BOSS,4,Physical,Relief,Low / moderate,Low (<1m),1,82003003,13
+2020-10_south-west_BOSS,4,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,41
+2020-10_south-west_BOSS,40,Physical,Relief,Flat,NA,0,82003001,17
+2020-10_south-west_BOSS,40,Physical,Relief,Low / moderate,Low (<1m),1,82003003,38
+2020-10_south-west_BOSS,46,Physical,Relief,High,High (>3m),3,82003006,18
+2020-10_south-west_BOSS,46,Physical,Relief,Low / moderate,Low (<1m),1,82003003,8
+2020-10_south-west_BOSS,46,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,29
+2020-10_south-west_BOSS,47,Physical,Relief,Flat,NA,0,82003001,16
+2020-10_south-west_BOSS,47,Physical,Relief,Low / moderate,Low (<1m),1,82003003,39
+2020-10_south-west_BOSS,49,Physical,Relief,Flat,NA,0,82003001,9
+2020-10_south-west_BOSS,49,Physical,Relief,Low / moderate,Low (<1m),1,82003003,44
+2020-10_south-west_BOSS,5,Physical,Relief,Flat,NA,0,82003001,5
+2020-10_south-west_BOSS,5,Physical,Relief,High,High (>3m),3,82003006,5
+2020-10_south-west_BOSS,5,Physical,Relief,High,Wall,4,82003007,2
+2020-10_south-west_BOSS,5,Physical,Relief,Low / moderate,Low (<1m),1,82003003,31
+2020-10_south-west_BOSS,5,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,20
+2020-10_south-west_BOSS,58,Physical,Relief,Low / moderate,Low (<1m),1,82003003,56
+2020-10_south-west_BOSS,58,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,3
+2020-10_south-west_BOSS,59,Physical,Relief,Low / moderate,Low (<1m),1,82003003,52
+2020-10_south-west_BOSS,62,Physical,Relief,Flat,NA,0,82003001,1
+2020-10_south-west_BOSS,62,Physical,Relief,Low / moderate,Low (<1m),1,82003003,60
+2020-10_south-west_BOSS,62,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,1
+2020-10_south-west_BOSS,63,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,63,Physical,Relief,Low / moderate,Low (<1m),1,82003003,45
+2020-10_south-west_BOSS,63,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,2
+2020-10_south-west_BOSS,64,Physical,Relief,High,High (>3m),3,82003006,4
+2020-10_south-west_BOSS,64,Physical,Relief,Low / moderate,Low (<1m),1,82003003,14
+2020-10_south-west_BOSS,64,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,42
+2020-10_south-west_BOSS,65,Physical,Relief,Low / moderate,Low (<1m),1,82003003,44
+2020-10_south-west_BOSS,65,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,11
+2020-10_south-west_BOSS,66,Physical,Relief,High,High (>3m),3,82003006,29
+2020-10_south-west_BOSS,66,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,31
+2020-10_south-west_BOSS,71,Physical,Relief,Flat,NA,0,82003001,31
+2020-10_south-west_BOSS,71,Physical,Relief,Low / moderate,Low (<1m),1,82003003,25
+2020-10_south-west_BOSS,72,Physical,Relief,High,High (>3m),3,82003006,15
+2020-10_south-west_BOSS,72,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,46
+2020-10_south-west_BOSS,73,Physical,Relief,High,High (>3m),3,82003006,37
+2020-10_south-west_BOSS,73,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,73,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,22
+2020-10_south-west_BOSS,74,Physical,Relief,High,High (>3m),3,82003006,28
+2020-10_south-west_BOSS,74,Physical,Relief,Low / moderate,Low (<1m),1,82003003,9
+2020-10_south-west_BOSS,74,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,23
+2020-10_south-west_BOSS,75,Physical,Relief,High,High (>3m),3,82003006,32
+2020-10_south-west_BOSS,75,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,75,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,27
+2020-10_south-west_BOSS,76,Physical,Relief,Flat,NA,0,82003001,35
+2020-10_south-west_BOSS,76,Physical,Relief,Low / moderate,Low (<1m),1,82003003,10
+2020-10_south-west_BOSS,77,Physical,Relief,Flat,NA,0,82003001,24
+2020-10_south-west_BOSS,77,Physical,Relief,Low / moderate,Low (<1m),1,82003003,20
+2020-10_south-west_BOSS,78,Physical,Relief,Flat,NA,0,82003001,3
+2020-10_south-west_BOSS,78,Physical,Relief,Low / moderate,Low (<1m),1,82003003,45
+2020-10_south-west_BOSS,80,Physical,Relief,High,High (>3m),3,82003006,29
+2020-10_south-west_BOSS,80,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,80,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,30
+2020-10_south-west_BOSS,81,Physical,Relief,High,High (>3m),3,82003006,20
+2020-10_south-west_BOSS,81,Physical,Relief,Low / moderate,Low (<1m),1,82003003,4
+2020-10_south-west_BOSS,81,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,37
+2020-10_south-west_BOSS,91,Physical,Relief,High,High (>3m),3,82003006,10
+2020-10_south-west_BOSS,91,Physical,Relief,Low / moderate,Low (<1m),1,82003003,6
+2020-10_south-west_BOSS,91,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,44
+2020-10_south-west_BOSS,92,Physical,Relief,High,High (>3m),3,82003006,15
+2020-10_south-west_BOSS,92,Physical,Relief,Low / moderate,Low (<1m),1,82003003,10
+2020-10_south-west_BOSS,92,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,35
+2020-10_south-west_BOSS,95,Physical,Relief,Flat,NA,0,82003001,49
+2020-10_south-west_BOSS,95,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,96,Physical,Relief,Flat,NA,0,82003001,39
+2020-10_south-west_BOSS,96,Physical,Relief,Low / moderate,Low (<1m),1,82003003,15
+2020-10_south-west_BOSS,96,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,3
+2020-10_south-west_BOSS,98,Physical,Relief,Flat,NA,0,82003001,21
+2020-10_south-west_BOSS,98,Physical,Relief,Low / moderate,Low (<1m),1,82003003,32
+2020-10_south-west_BOSS,C01,Physical,Relief,High,High (>3m),3,82003006,51
+2020-10_south-west_BOSS,C01,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,9
+2020-10_south-west_BOSS,C02,Physical,Relief,High,Caves,5,82003008,2
+2020-10_south-west_BOSS,C02,Physical,Relief,High,High (>3m),3,82003006,56
+2020-10_south-west_BOSS,C02,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,7
+2020-10_south-west_BOSS,C03.1,Physical,Relief,High,Caves,5,82003008,2
+2020-10_south-west_BOSS,C03.1,Physical,Relief,High,High (>3m),3,82003006,44
+2020-10_south-west_BOSS,C03.1,Physical,Relief,High,Wall,4,82003007,5
+2020-10_south-west_BOSS,C03.1,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,13
+2020-10_south-west_BOSS,C03.2,Physical,Relief,High,Caves,5,82003008,10
+2020-10_south-west_BOSS,C03.2,Physical,Relief,High,High (>3m),3,82003006,35
+2020-10_south-west_BOSS,C03.2,Physical,Relief,High,Wall,4,82003007,7
+2020-10_south-west_BOSS,C03.2,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,C03.2,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,5
+2020-10_south-west_BOSS,C04,Physical,Relief,Flat,NA,0,82003001,31
+2020-10_south-west_BOSS,C04,Physical,Relief,Low / moderate,Low (<1m),1,82003003,29
+2020-10_south-west_BOSS,CP11-1,Physical,Relief,Flat,NA,0,82003001,25
+2020-10_south-west_BOSS,CP11-1,Physical,Relief,High,Caves,5,82003008,1
+2020-10_south-west_BOSS,CP11-1,Physical,Relief,High,High (>3m),3,82003006,14
+2020-10_south-west_BOSS,CP11-1,Physical,Relief,High,Wall,4,82003007,1
+2020-10_south-west_BOSS,CP11-1,Physical,Relief,Low / moderate,Low (<1m),1,82003003,8
+2020-10_south-west_BOSS,CP11-1,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,10
+2020-10_south-west_BOSS,CP11-2,Physical,Relief,High,High (>3m),3,82003006,37
+2020-10_south-west_BOSS,CP11-2,Physical,Relief,High,Wall,4,82003007,1
+2020-10_south-west_BOSS,CP11-2,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,12
+2020-10_south-west_BOSS,FH10,Physical,Relief,High,High (>3m),3,82003006,8
+2020-10_south-west_BOSS,FH10,Physical,Relief,Low / moderate,Low (<1m),1,82003003,18
+2020-10_south-west_BOSS,FH10,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,31
+2020-10_south-west_BOSS,FH106,Physical,Relief,High,High (>3m),3,82003006,15
+2020-10_south-west_BOSS,FH106,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,FH106,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,42
+2020-10_south-west_BOSS,FH110,Physical,Relief,High,High (>3m),3,82003006,18
+2020-10_south-west_BOSS,FH110,Physical,Relief,Low / moderate,Low (<1m),1,82003003,11
+2020-10_south-west_BOSS,FH110,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,34
+2020-10_south-west_BOSS,FH111,Physical,Relief,High,High (>3m),3,82003006,4
+2020-10_south-west_BOSS,FH111,Physical,Relief,Low / moderate,Low (<1m),1,82003003,23
+2020-10_south-west_BOSS,FH111,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,33
+2020-10_south-west_BOSS,FH14,Physical,Relief,Flat,NA,0,82003001,1
+2020-10_south-west_BOSS,FH14,Physical,Relief,Low / moderate,Low (<1m),1,82003003,21
+2020-10_south-west_BOSS,FH14,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,39
+2020-10_south-west_BOSS,FH17,Physical,Relief,High,High (>3m),3,82003006,11
+2020-10_south-west_BOSS,FH17,Physical,Relief,Low / moderate,Low (<1m),1,82003003,22
+2020-10_south-west_BOSS,FH17,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,27
+2020-10_south-west_BOSS,FH18,Physical,Relief,High,High (>3m),3,82003006,7
+2020-10_south-west_BOSS,FH18,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,FH18,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,46
+2020-10_south-west_BOSS,FH20,Physical,Relief,High,High (>3m),3,82003006,3
+2020-10_south-west_BOSS,FH20,Physical,Relief,Low / moderate,Low (<1m),1,82003003,30
+2020-10_south-west_BOSS,FH20,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,27
+2020-10_south-west_BOSS,FH21,Physical,Relief,High,High (>3m),3,82003006,23
+2020-10_south-west_BOSS,FH21,Physical,Relief,Low / moderate,Low (<1m),1,82003003,2
+2020-10_south-west_BOSS,FH21,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,30
+2020-10_south-west_BOSS,FH26,Physical,Relief,High,High (>3m),3,82003006,17
+2020-10_south-west_BOSS,FH26,Physical,Relief,Low / moderate,Low (<1m),1,82003003,14
+2020-10_south-west_BOSS,FH26,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,29
+2020-10_south-west_BOSS,FH27,Physical,Relief,High,High (>3m),3,82003006,2
+2020-10_south-west_BOSS,FH27,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,FH27,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,56
+2020-10_south-west_BOSS,FH30,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,48
+2020-10_south-west_BOSS,FH34,Physical,Relief,High,High (>3m),3,82003006,11
+2020-10_south-west_BOSS,FH34,Physical,Relief,Low / moderate,Low (<1m),1,82003003,8
+2020-10_south-west_BOSS,FH34,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,40
+2020-10_south-west_BOSS,FH44,Physical,Relief,High,High (>3m),3,82003006,26
+2020-10_south-west_BOSS,FH44,Physical,Relief,Low / moderate,Low (<1m),1,82003003,12
+2020-10_south-west_BOSS,FH44,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,23
+2020-10_south-west_BOSS,FH48,Physical,Relief,High,High (>3m),3,82003006,9
+2020-10_south-west_BOSS,FH48,Physical,Relief,Low / moderate,Low (<1m),1,82003003,8
+2020-10_south-west_BOSS,FH48,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,39
+2020-10_south-west_BOSS,FH52,Physical,Relief,High,High (>3m),3,82003006,1
+2020-10_south-west_BOSS,FH52,Physical,Relief,Low / moderate,Low (<1m),1,82003003,31
+2020-10_south-west_BOSS,FH52,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,23
+2020-10_south-west_BOSS,FH56,Physical,Relief,High,High (>3m),3,82003006,22
+2020-10_south-west_BOSS,FH56,Physical,Relief,Low / moderate,Low (<1m),1,82003003,5
+2020-10_south-west_BOSS,FH56,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,26
+2020-10_south-west_BOSS,FH57,Physical,Relief,High,High (>3m),3,82003006,30
+2020-10_south-west_BOSS,FH57,Physical,Relief,Low / moderate,Low (<1m),1,82003003,8
+2020-10_south-west_BOSS,FH57,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,28
+2020-10_south-west_BOSS,FH60,Physical,Relief,High,High (>3m),3,82003006,4
+2020-10_south-west_BOSS,FH60,Physical,Relief,Low / moderate,Low (<1m),1,82003003,23
+2020-10_south-west_BOSS,FH60,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,24
+2020-10_south-west_BOSS,FH61,Physical,Relief,High,High (>3m),3,82003006,26
+2020-10_south-west_BOSS,FH61,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,FH61,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,33
+2020-10_south-west_BOSS,FH62,Physical,Relief,High,High (>3m),3,82003006,37
+2020-10_south-west_BOSS,FH62,Physical,Relief,Low / moderate,Low (<1m),1,82003003,4
+2020-10_south-west_BOSS,FH62,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,21
+2020-10_south-west_BOSS,FH7,Physical,Relief,High,High (>3m),3,82003006,24
+2020-10_south-west_BOSS,FH7,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,36
+2020-10_south-west_BOSS,FH77,Physical,Relief,High,High (>3m),3,82003006,20
+2020-10_south-west_BOSS,FH77,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,FH77,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,37
+2020-10_south-west_BOSS,FH92,Physical,Relief,High,High (>3m),3,82003006,17
+2020-10_south-west_BOSS,FH92,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,38
+2020-10_south-west_BOSS,FH93,Physical,Relief,High,High (>3m),3,82003006,27
+2020-10_south-west_BOSS,FH93,Physical,Relief,High,Wall,4,82003007,3
+2020-10_south-west_BOSS,FH93,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,FH93,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,32
+2020-10_south-west_BOSS,FH95,Physical,Relief,High,High (>3m),3,82003006,7
+2020-10_south-west_BOSS,FH95,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,48
+2020-10_south-west_BOSS,FH96,Physical,Relief,High,High (>3m),3,82003006,20
+2020-10_south-west_BOSS,FH96,Physical,Relief,Low / moderate,Low (<1m),1,82003003,4
+2020-10_south-west_BOSS,FH96,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,40
+2020-10_south-west_BOSS,J1,Physical,Relief,Flat,NA,0,82003001,43
+2020-10_south-west_BOSS,J1,Physical,Relief,High,High (>3m),3,82003006,12
+2020-10_south-west_BOSS,J1,Physical,Relief,Low / moderate,Low (<1m),1,82003003,6
+2020-10_south-west_BOSS,J1,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,1
+2020-10_south-west_BOSS,J10,Physical,Relief,High,High (>3m),3,82003006,44
+2020-10_south-west_BOSS,J10,Physical,Relief,High,Wall,4,82003007,1
+2020-10_south-west_BOSS,J10,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,1
+2020-10_south-west_BOSS,J11,Physical,Relief,High,High (>3m),3,82003006,47
+2020-10_south-west_BOSS,J12,Physical,Relief,High,High (>3m),3,82003006,43
+2020-10_south-west_BOSS,J12,Physical,Relief,Low / moderate,Low (<1m),1,82003003,2
+2020-10_south-west_BOSS,J12,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,18
+2020-10_south-west_BOSS,J13,Physical,Relief,Flat,NA,0,82003001,6
+2020-10_south-west_BOSS,J13,Physical,Relief,High,High (>3m),3,82003006,33
+2020-10_south-west_BOSS,J13,Physical,Relief,Low / moderate,Low (<1m),1,82003003,12
+2020-10_south-west_BOSS,J13,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,10
+2020-10_south-west_BOSS,J14,Physical,Relief,High,High (>3m),3,82003006,39
+2020-10_south-west_BOSS,J14,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,J14,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,12
+2020-10_south-west_BOSS,J15,Physical,Relief,High,High (>3m),3,82003006,28
+2020-10_south-west_BOSS,J15,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,J15,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,36
+2020-10_south-west_BOSS,J16,Physical,Relief,High,High (>3m),3,82003006,8
+2020-10_south-west_BOSS,J16,Physical,Relief,Low / moderate,Low (<1m),1,82003003,12
+2020-10_south-west_BOSS,J16,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,40
+2020-10_south-west_BOSS,J17,Physical,Relief,High,High (>3m),3,82003006,45
+2020-10_south-west_BOSS,J17,Physical,Relief,Low / moderate,Low (<1m),1,82003003,2
+2020-10_south-west_BOSS,J17,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,17
+2020-10_south-west_BOSS,J18,Physical,Relief,High,High (>3m),3,82003006,47
+2020-10_south-west_BOSS,J18,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,5
+2020-10_south-west_BOSS,J19,Physical,Relief,High,High (>3m),3,82003006,55
+2020-10_south-west_BOSS,J19,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,5
+2020-10_south-west_BOSS,J2,Physical,Relief,Flat,NA,0,82003001,1
+2020-10_south-west_BOSS,J2,Physical,Relief,High,High (>3m),3,82003006,46
+2020-10_south-west_BOSS,J2,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,J2,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,7
+2020-10_south-west_BOSS,J20,Physical,Relief,High,High (>3m),3,82003006,21
+2020-10_south-west_BOSS,J20,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,38
+2020-10_south-west_BOSS,J21,Physical,Relief,High,High (>3m),3,82003006,17
+2020-10_south-west_BOSS,J21,Physical,Relief,Low / moderate,Low (<1m),1,82003003,13
+2020-10_south-west_BOSS,J21,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,30
+2020-10_south-west_BOSS,J22,Physical,Relief,High,High (>3m),3,82003006,6
+2020-10_south-west_BOSS,J22,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,J22,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,46
+2020-10_south-west_BOSS,J24,Physical,Relief,Flat,NA,0,82003001,1
+2020-10_south-west_BOSS,J24,Physical,Relief,High,High (>3m),3,82003006,8
+2020-10_south-west_BOSS,J24,Physical,Relief,Low / moderate,Low (<1m),1,82003003,17
+2020-10_south-west_BOSS,J24,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,32
+2020-10_south-west_BOSS,J25,Physical,Relief,High,High (>3m),3,82003006,21
+2020-10_south-west_BOSS,J25,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,J25,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,32
+2020-10_south-west_BOSS,J26,Physical,Relief,High,High (>3m),3,82003006,5
+2020-10_south-west_BOSS,J26,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,J26,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,48
+2020-10_south-west_BOSS,J27,Physical,Relief,High,High (>3m),3,82003006,5
+2020-10_south-west_BOSS,J27,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,55
+2020-10_south-west_BOSS,J28,Physical,Relief,High,High (>3m),3,82003006,31
+2020-10_south-west_BOSS,J28,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,29
+2020-10_south-west_BOSS,J29,Physical,Relief,Flat,NA,0,82003001,4
+2020-10_south-west_BOSS,J29,Physical,Relief,High,High (>3m),3,82003006,33
+2020-10_south-west_BOSS,J29,Physical,Relief,Low / moderate,Low (<1m),1,82003003,5
+2020-10_south-west_BOSS,J29,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,17
+2020-10_south-west_BOSS,J3,Physical,Relief,High,High (>3m),3,82003006,40
+2020-10_south-west_BOSS,J3,Physical,Relief,High,Wall,4,82003007,4
+2020-10_south-west_BOSS,J3,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,16
+2020-10_south-west_BOSS,J30,Physical,Relief,High,High (>3m),3,82003006,36
+2020-10_south-west_BOSS,J30,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,J30,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,21
+2020-10_south-west_BOSS,J31,Physical,Relief,High,High (>3m),3,82003006,24
+2020-10_south-west_BOSS,J31,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,J31,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,32
+2020-10_south-west_BOSS,J32,Physical,Relief,High,High (>3m),3,82003006,29
+2020-10_south-west_BOSS,J32,Physical,Relief,Low / moderate,Low (<1m),1,82003003,3
+2020-10_south-west_BOSS,J32,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,26
+2020-10_south-west_BOSS,J33,Physical,Relief,High,High (>3m),3,82003006,7
+2020-10_south-west_BOSS,J33,Physical,Relief,Low / moderate,Low (<1m),1,82003003,10
+2020-10_south-west_BOSS,J33,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,42
+2020-10_south-west_BOSS,J34,Physical,Relief,High,High (>3m),3,82003006,8
+2020-10_south-west_BOSS,J34,Physical,Relief,Low / moderate,Low (<1m),1,82003003,2
+2020-10_south-west_BOSS,J34,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,48
+2020-10_south-west_BOSS,J35,Physical,Relief,Flat,NA,0,82003001,1
+2020-10_south-west_BOSS,J35,Physical,Relief,High,High (>3m),3,82003006,19
+2020-10_south-west_BOSS,J35,Physical,Relief,Low / moderate,Low (<1m),1,82003003,11
+2020-10_south-west_BOSS,J35,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,32
+2020-10_south-west_BOSS,J36,Physical,Relief,High,High (>3m),3,82003006,5
+2020-10_south-west_BOSS,J36,Physical,Relief,Low / moderate,Low (<1m),1,82003003,9
+2020-10_south-west_BOSS,J36,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,46
+2020-10_south-west_BOSS,J37,Physical,Relief,Flat,NA,0,82003001,11
+2020-10_south-west_BOSS,J37,Physical,Relief,High,High (>3m),3,82003006,8
+2020-10_south-west_BOSS,J37,Physical,Relief,Low / moderate,Low (<1m),1,82003003,15
+2020-10_south-west_BOSS,J37,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,29
+2020-10_south-west_BOSS,J38,Physical,Relief,Flat,NA,0,82003001,6
+2020-10_south-west_BOSS,J38,Physical,Relief,High,High (>3m),3,82003006,6
+2020-10_south-west_BOSS,J38,Physical,Relief,Low / moderate,Low (<1m),1,82003003,20
+2020-10_south-west_BOSS,J38,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,29
+2020-10_south-west_BOSS,J4,Physical,Relief,High,High (>3m),3,82003006,8
+2020-10_south-west_BOSS,J4,Physical,Relief,Low / moderate,Low (<1m),1,82003003,1
+2020-10_south-west_BOSS,J4,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,44
+2020-10_south-west_BOSS,J5,Physical,Relief,High,High (>3m),3,82003006,9
+2020-10_south-west_BOSS,J5,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,50
+2020-10_south-west_BOSS,J6,Physical,Relief,High,High (>3m),3,82003006,44
+2020-10_south-west_BOSS,J6,Physical,Relief,High,Wall,4,82003007,4
+2020-10_south-west_BOSS,J6,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,3
+2020-10_south-west_BOSS,J7,Physical,Relief,High,High (>3m),3,82003006,29
+2020-10_south-west_BOSS,J7,Physical,Relief,Low / moderate,Low (<1m),1,82003003,13
+2020-10_south-west_BOSS,J7,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,17
+2020-10_south-west_BOSS,J8,Physical,Relief,High,High (>3m),3,82003006,2
+2020-10_south-west_BOSS,J8,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,59
+2020-10_south-west_BOSS,J9,Physical,Relief,Flat,NA,0,82003001,6
+2020-10_south-west_BOSS,J9,Physical,Relief,High,High (>3m),3,82003006,25
+2020-10_south-west_BOSS,J9,Physical,Relief,Low / moderate,Low (<1m),1,82003003,5
+2020-10_south-west_BOSS,J9,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,27
+2020-10_south-west_BOSS,OMR1,Physical,Relief,High,High (>3m),3,82003006,13
+2020-10_south-west_BOSS,OMR1,Physical,Relief,High,Wall,4,82003007,10
+2020-10_south-west_BOSS,OMR1,Physical,Relief,Low / moderate,Low (<1m),1,82003003,39
+2020-10_south-west_BOSS,OMR1,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,9
+2020-10_south-west_BOSS,OMR2,Physical,Relief,Flat,NA,0,82003001,30
+2020-10_south-west_BOSS,OMR2,Physical,Relief,High,High (>3m),3,82003006,10
+2020-10_south-west_BOSS,OMR2,Physical,Relief,High,Wall,4,82003007,2
+2020-10_south-west_BOSS,OMR2,Physical,Relief,Low / moderate,Low (<1m),1,82003003,21
+2020-10_south-west_BOSS,OMR3,Physical,Relief,Low / moderate,Low (<1m),1,82003003,45
+2020-10_south-west_BOSS,OMR3,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,15
+2020-10_south-west_BOSS,OMR4,Physical,Relief,High,High (>3m),3,82003006,13
+2020-10_south-west_BOSS,OMR4,Physical,Relief,High,Wall,4,82003007,1
+2020-10_south-west_BOSS,OMR4,Physical,Relief,Low / moderate,Low (<1m),1,82003003,42
+2020-10_south-west_BOSS,OMR4,Physical,Relief,Low / moderate,Moderate (1-3m),2,82003004,4
