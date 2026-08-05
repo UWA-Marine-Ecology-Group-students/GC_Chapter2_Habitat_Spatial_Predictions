@@ -1,0 +1,263 @@
+campaignid,period,level_1,level_2,level_3,level_4,level_5,level_6,level_7,level_8,family,genus,species,caab_code,count
+2022-05_PtCloates_Naked-BOSS,201,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2022-05_PtCloates_Naked-BOSS,201,Biota,Cnidaria,Corals,Black & Octocorals,Whip,NA,NA,NA,NA,NA,NA,11168917,1
+2022-05_PtCloates_Naked-BOSS,201,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2022-05_PtCloates_Naked-BOSS,201,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2022-05_PtCloates_Naked-BOSS,201,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,201,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,70
+2022-05_PtCloates_Naked-BOSS,202,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,57
+2022-05_PtCloates_Naked-BOSS,203,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,203,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,203,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,71
+2022-05_PtCloates_Naked-BOSS,204,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,3
+2022-05_PtCloates_Naked-BOSS,204,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,10
+2022-05_PtCloates_Naked-BOSS,204,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,1
+2022-05_PtCloates_Naked-BOSS,204,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,204,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2022-05_PtCloates_Naked-BOSS,204,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,41
+2022-05_PtCloates_Naked-BOSS,205,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,13
+2022-05_PtCloates_Naked-BOSS,205,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,5
+2022-05_PtCloates_Naked-BOSS,205,Biota,Cnidaria,Corals,Black & Octocorals,Whip,NA,NA,NA,NA,NA,NA,11168917,2
+2022-05_PtCloates_Naked-BOSS,205,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,4
+2022-05_PtCloates_Naked-BOSS,205,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,205,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2022-05_PtCloates_Naked-BOSS,205,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,5
+2022-05_PtCloates_Naked-BOSS,205,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,28
+2022-05_PtCloates_Naked-BOSS,206,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,6
+2022-05_PtCloates_Naked-BOSS,206,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,2
+2022-05_PtCloates_Naked-BOSS,206,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,2
+2022-05_PtCloates_Naked-BOSS,206,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,49
+2022-05_PtCloates_Naked-BOSS,207,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,79
+2022-05_PtCloates_Naked-BOSS,208,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2022-05_PtCloates_Naked-BOSS,208,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,1
+2022-05_PtCloates_Naked-BOSS,208,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2022-05_PtCloates_Naked-BOSS,208,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,208,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,54
+2022-05_PtCloates_Naked-BOSS,209,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,4
+2022-05_PtCloates_Naked-BOSS,209,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,72
+2022-05_PtCloates_Naked-BOSS,210,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,48
+2022-05_PtCloates_Naked-BOSS,211,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,2
+2022-05_PtCloates_Naked-BOSS,211,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,2
+2022-05_PtCloates_Naked-BOSS,211,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2022-05_PtCloates_Naked-BOSS,211,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,73
+2022-05_PtCloates_Naked-BOSS,212,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2022-05_PtCloates_Naked-BOSS,212,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Pebble (10-64mm),NA,NA,NA,NA,NA,NA,82001012,1
+2022-05_PtCloates_Naked-BOSS,212,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,70
+2022-05_PtCloates_Naked-BOSS,213,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2022-05_PtCloates_Naked-BOSS,213,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,53
+2022-05_PtCloates_Naked-BOSS,214,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,2
+2022-05_PtCloates_Naked-BOSS,214,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,74
+2022-05_PtCloates_Naked-BOSS,215,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,53
+2022-05_PtCloates_Naked-BOSS,216,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,1
+2022-05_PtCloates_Naked-BOSS,216,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,216,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,64
+2022-05_PtCloates_Naked-BOSS,217,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,1
+2022-05_PtCloates_Naked-BOSS,217,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,66
+2022-05_PtCloates_Naked-BOSS,218,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,2
+2022-05_PtCloates_Naked-BOSS,218,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2022-05_PtCloates_Naked-BOSS,218,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,48
+2022-05_PtCloates_Naked-BOSS,219,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,55
+2022-05_PtCloates_Naked-BOSS,220,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,7
+2022-05_PtCloates_Naked-BOSS,220,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,14
+2022-05_PtCloates_Naked-BOSS,220,Biota,Cnidaria,Corals,Black & Octocorals,Whip,NA,NA,NA,NA,NA,NA,11168917,4
+2022-05_PtCloates_Naked-BOSS,220,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,2
+2022-05_PtCloates_Naked-BOSS,220,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2022-05_PtCloates_Naked-BOSS,220,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2022-05_PtCloates_Naked-BOSS,220,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2022-05_PtCloates_Naked-BOSS,220,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,5
+2022-05_PtCloates_Naked-BOSS,220,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,16
+2022-05_PtCloates_Naked-BOSS,221,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,80
+2022-05_PtCloates_Naked-BOSS,222,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,59
+2022-05_PtCloates_Naked-BOSS,223,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2022-05_PtCloates_Naked-BOSS,223,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,63
+2022-05_PtCloates_Naked-BOSS,224,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,74
+2022-05_PtCloates_Naked-BOSS,225,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,3
+2022-05_PtCloates_Naked-BOSS,225,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,1
+2022-05_PtCloates_Naked-BOSS,225,Biota,Cnidaria,Corals,Black & Octocorals,Whip,NA,NA,NA,NA,NA,NA,11168917,2
+2022-05_PtCloates_Naked-BOSS,225,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,2
+2022-05_PtCloates_Naked-BOSS,225,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2022-05_PtCloates_Naked-BOSS,225,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2022-05_PtCloates_Naked-BOSS,225,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,47
+2022-05_PtCloates_Naked-BOSS,226,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,226,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,78
+2022-05_PtCloates_Naked-BOSS,227,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2022-05_PtCloates_Naked-BOSS,227,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,1
+2022-05_PtCloates_Naked-BOSS,227,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,227,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,227,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,72
+2022-05_PtCloates_Naked-BOSS,228,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,60
+2022-05_PtCloates_Naked-BOSS,229,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2022-05_PtCloates_Naked-BOSS,229,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,1
+2022-05_PtCloates_Naked-BOSS,229,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2022-05_PtCloates_Naked-BOSS,229,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,37
+2022-05_PtCloates_Naked-BOSS,230,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,2
+2022-05_PtCloates_Naked-BOSS,230,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,62
+2022-05_PtCloates_Naked-BOSS,231,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,77
+2022-05_PtCloates_Naked-BOSS,232,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,2
+2022-05_PtCloates_Naked-BOSS,232,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,1
+2022-05_PtCloates_Naked-BOSS,232,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,1
+2022-05_PtCloates_Naked-BOSS,232,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,3
+2022-05_PtCloates_Naked-BOSS,232,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2022-05_PtCloates_Naked-BOSS,232,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,232,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,65
+2022-05_PtCloates_Naked-BOSS,233,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,58
+2022-05_PtCloates_Naked-BOSS,234,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,49
+2022-05_PtCloates_Naked-BOSS,235,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,57
+2022-05_PtCloates_Naked-BOSS,236,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,49
+2022-05_PtCloates_Naked-BOSS,237,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,79
+2022-05_PtCloates_Naked-BOSS,238,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,55
+2022-05_PtCloates_Naked-BOSS,239,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2022-05_PtCloates_Naked-BOSS,239,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,239,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,47
+2022-05_PtCloates_Naked-BOSS,240,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,240,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,76
+2022-05_PtCloates_Naked-BOSS,241,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,60
+2022-05_PtCloates_Naked-BOSS,242,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,2
+2022-05_PtCloates_Naked-BOSS,242,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,11
+2022-05_PtCloates_Naked-BOSS,242,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,242,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2022-05_PtCloates_Naked-BOSS,242,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2022-05_PtCloates_Naked-BOSS,242,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2022-05_PtCloates_Naked-BOSS,242,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,32
+2022-05_PtCloates_Naked-BOSS,243,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,243,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,72
+2022-05_PtCloates_Naked-BOSS,244,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,52
+2022-05_PtCloates_Naked-BOSS,245,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2022-05_PtCloates_Naked-BOSS,245,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,245,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,76
+2022-05_PtCloates_Naked-BOSS,246,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,52
+2022-05_PtCloates_Naked-BOSS,247,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,2
+2022-05_PtCloates_Naked-BOSS,247,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,35
+2022-05_PtCloates_Naked-BOSS,247,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2022-05_PtCloates_Naked-BOSS,247,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,13
+2022-05_PtCloates_Naked-BOSS,248,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,78
+2022-05_PtCloates_Naked-BOSS,249,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,50
+2022-05_PtCloates_Naked-BOSS,250,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2022-05_PtCloates_Naked-BOSS,250,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,2
+2022-05_PtCloates_Naked-BOSS,250,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,2
+2022-05_PtCloates_Naked-BOSS,250,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,45
+2022-05_PtCloates_Naked-BOSS,251,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2022-05_PtCloates_Naked-BOSS,251,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,58
+2022-05_PtCloates_Naked-BOSS,252,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,2
+2022-05_PtCloates_Naked-BOSS,252,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,1
+2022-05_PtCloates_Naked-BOSS,252,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2022-05_PtCloates_Naked-BOSS,252,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,55
+2022-05_PtCloates_Naked-BOSS,253,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,2
+2022-05_PtCloates_Naked-BOSS,253,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,2
+2022-05_PtCloates_Naked-BOSS,253,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,3
+2022-05_PtCloates_Naked-BOSS,253,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2022-05_PtCloates_Naked-BOSS,253,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2022-05_PtCloates_Naked-BOSS,253,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,253,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,63
+2022-05_PtCloates_Naked-BOSS,254,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,6
+2022-05_PtCloates_Naked-BOSS,254,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,6
+2022-05_PtCloates_Naked-BOSS,254,Biota,Cnidaria,Corals,Black & Octocorals,Whip,NA,NA,NA,NA,NA,NA,11168917,2
+2022-05_PtCloates_Naked-BOSS,254,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,2
+2022-05_PtCloates_Naked-BOSS,254,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,254,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,4
+2022-05_PtCloates_Naked-BOSS,254,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,2
+2022-05_PtCloates_Naked-BOSS,254,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,254,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,32
+2022-05_PtCloates_Naked-BOSS,255,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,2
+2022-05_PtCloates_Naked-BOSS,255,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,70
+2022-05_PtCloates_Naked-BOSS,256,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,4
+2022-05_PtCloates_Naked-BOSS,256,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,2
+2022-05_PtCloates_Naked-BOSS,256,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,48
+2022-05_PtCloates_Naked-BOSS,257,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,3
+2022-05_PtCloates_Naked-BOSS,257,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2022-05_PtCloates_Naked-BOSS,257,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,3
+2022-05_PtCloates_Naked-BOSS,257,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2022-05_PtCloates_Naked-BOSS,257,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,28
+2022-05_PtCloates_Naked-BOSS,258,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2022-05_PtCloates_Naked-BOSS,258,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,57
+2022-05_PtCloates_Naked-BOSS,259,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,63
+2022-05_PtCloates_Naked-BOSS,260,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,1
+2022-05_PtCloates_Naked-BOSS,260,Biota,Cnidaria,Corals,Black & Octocorals,Whip,NA,NA,NA,NA,NA,NA,11168917,2
+2022-05_PtCloates_Naked-BOSS,260,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,260,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2022-05_PtCloates_Naked-BOSS,260,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,48
+2022-05_PtCloates_Naked-BOSS,261,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,6
+2022-05_PtCloates_Naked-BOSS,261,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,5
+2022-05_PtCloates_Naked-BOSS,261,Biota,Cnidaria,Corals,Black & Octocorals,Whip,NA,NA,NA,NA,NA,NA,11168917,1
+2022-05_PtCloates_Naked-BOSS,261,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,37
+2022-05_PtCloates_Naked-BOSS,262,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,6
+2022-05_PtCloates_Naked-BOSS,262,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,3
+2022-05_PtCloates_Naked-BOSS,262,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2022-05_PtCloates_Naked-BOSS,262,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2022-05_PtCloates_Naked-BOSS,262,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2022-05_PtCloates_Naked-BOSS,262,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,53
+2022-05_PtCloates_Naked-BOSS,263,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,7
+2022-05_PtCloates_Naked-BOSS,263,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,6
+2022-05_PtCloates_Naked-BOSS,263,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,263,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2022-05_PtCloates_Naked-BOSS,263,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,5
+2022-05_PtCloates_Naked-BOSS,263,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,4
+2022-05_PtCloates_Naked-BOSS,263,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2022-05_PtCloates_Naked-BOSS,263,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,8
+2022-05_PtCloates_Naked-BOSS,263,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,9
+2022-05_PtCloates_Naked-BOSS,264,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,6
+2022-05_PtCloates_Naked-BOSS,264,Biota,Cnidaria,Corals,Black & Octocorals,Organ pipe coral (Tubipora),NA,NA,NA,NA,NA,NA,11201901,1
+2022-05_PtCloates_Naked-BOSS,264,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2022-05_PtCloates_Naked-BOSS,264,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2022-05_PtCloates_Naked-BOSS,264,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2022-05_PtCloates_Naked-BOSS,264,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,8
+2022-05_PtCloates_Naked-BOSS,264,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,25
+2022-05_PtCloates_Naked-BOSS,264,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,11
+2022-05_PtCloates_Naked-BOSS,265,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,3
+2022-05_PtCloates_Naked-BOSS,265,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,1
+2022-05_PtCloates_Naked-BOSS,265,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2022-05_PtCloates_Naked-BOSS,265,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,265,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,3
+2022-05_PtCloates_Naked-BOSS,265,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2022-05_PtCloates_Naked-BOSS,265,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,2
+2022-05_PtCloates_Naked-BOSS,265,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,63
+2022-05_PtCloates_Naked-BOSS,266,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2022-05_PtCloates_Naked-BOSS,266,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,3
+2022-05_PtCloates_Naked-BOSS,266,Biota,Cnidaria,Corals,Black & Octocorals,Whip,NA,NA,NA,NA,NA,NA,11168917,2
+2022-05_PtCloates_Naked-BOSS,266,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,3
+2022-05_PtCloates_Naked-BOSS,266,Biota,Sponges,Crusts,NA,NA,NA,NA,NA,NA,NA,NA,10000901,1
+2022-05_PtCloates_Naked-BOSS,266,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,3
+2022-05_PtCloates_Naked-BOSS,266,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2022-05_PtCloates_Naked-BOSS,266,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2022-05_PtCloates_Naked-BOSS,266,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,2
+2022-05_PtCloates_Naked-BOSS,266,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,56
+2022-05_PtCloates_Naked-BOSS,267,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,2
+2022-05_PtCloates_Naked-BOSS,267,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,4
+2022-05_PtCloates_Naked-BOSS,267,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2022-05_PtCloates_Naked-BOSS,267,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2022-05_PtCloates_Naked-BOSS,267,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2022-05_PtCloates_Naked-BOSS,267,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,2
+2022-05_PtCloates_Naked-BOSS,267,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,55
+2022-05_PtCloates_Naked-BOSS,268,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2022-05_PtCloates_Naked-BOSS,268,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,268,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,50
+2022-05_PtCloates_Naked-BOSS,269,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,2
+2022-05_PtCloates_Naked-BOSS,269,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2022-05_PtCloates_Naked-BOSS,269,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2022-05_PtCloates_Naked-BOSS,269,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,75
+2022-05_PtCloates_Naked-BOSS,270,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,3
+2022-05_PtCloates_Naked-BOSS,270,Biota,Cnidaria,Corals,Black & Octocorals,Whip,NA,NA,NA,NA,NA,NA,11168917,1
+2022-05_PtCloates_Naked-BOSS,270,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,1
+2022-05_PtCloates_Naked-BOSS,270,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,2
+2022-05_PtCloates_Naked-BOSS,270,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,4
+2022-05_PtCloates_Naked-BOSS,270,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,2
+2022-05_PtCloates_Naked-BOSS,270,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2022-05_PtCloates_Naked-BOSS,270,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,31
+2022-05_PtCloates_Naked-BOSS,271,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2022-05_PtCloates_Naked-BOSS,271,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,14
+2022-05_PtCloates_Naked-BOSS,271,Biota,Cnidaria,Corals,Black & Octocorals,Whip,NA,NA,NA,NA,NA,NA,11168917,2
+2022-05_PtCloates_Naked-BOSS,271,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,271,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2022-05_PtCloates_Naked-BOSS,271,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,33
+2022-05_PtCloates_Naked-BOSS,272,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,58
+2022-05_PtCloates_Naked-BOSS,273,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,9
+2022-05_PtCloates_Naked-BOSS,273,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,1
+2022-05_PtCloates_Naked-BOSS,273,Biota,Sessile invertebrates,NA,NA,NA,NA,NA,NA,NA,NA,NA,99900044,1
+2022-05_PtCloates_Naked-BOSS,273,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2022-05_PtCloates_Naked-BOSS,273,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,22
+2022-05_PtCloates_Naked-BOSS,273,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,40
+2022-05_PtCloates_Naked-BOSS,274,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2022-05_PtCloates_Naked-BOSS,274,Biota,Cnidaria,Corals,Black & Octocorals,Whip,NA,NA,NA,NA,NA,NA,11168917,1
+2022-05_PtCloates_Naked-BOSS,274,Biota,Cnidaria,Corals,Black & Octocorals,NA,NA,NA,NA,NA,NA,NA,11168901,2
+2022-05_PtCloates_Naked-BOSS,274,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2022-05_PtCloates_Naked-BOSS,274,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Fine sand (no shell fragments),NA,NA,NA,NA,NA,NA,82001015,52

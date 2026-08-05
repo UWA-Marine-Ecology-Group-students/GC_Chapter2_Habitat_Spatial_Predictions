@@ -22,20 +22,20 @@ physical_categories <- c("Substrate", "Relief", "Bedform")
 num.points <- 80
 
 # HABITAT -----
-
-metadata <- read_metadata(here::here("data/raw"), method = "BOSS") %>%
+metadata <- read_csv(here::here("data/uploads/west-coast-BOSS_metadata.csv")) %>%
   dplyr::filter(campaignid == "2022-05_PtCloates_Naked-BOSS") %>%
-  dplyr::select(campaignid, sample, emob, longitude_dd, latitude_dd, date_time,
-                location, site, depth_m, successful_count, successful_length, successful_habitat_panoramic, observer_habitat_panoramic) %>%
+  dplyr::rename(sample = period) %>%
   glimpse()
+
 
 # read in panoramic annotations
 panoramic <- read.delim(
-  here::here("data/raw/2022-05 Naked/2022-05_PtCloates_Naked-BOSS_Dot Point Measurements.txt"),
+  here::here("data/raw/ga upload/BOSS/habitat/2022-05_PtCloates_BOSS_Dot Point Measurements.txt"),
   header = TRUE, skip = 4, stringsAsFactors = FALSE,
   colClasses = "character", na.strings = ""
 ) %>%
   clean_names() %>%
+  dplyr::rename(level_2 = broad, level_3 = morphology, level_4 = type, level_5 = relief) %>%
   dplyr::mutate(sample = str_match(filename, "NAKED_(.*?)_[0-9]+_")[, 2]) %>% 
   tidyr::separate(filename, into = c("emob", "extra"), sep = "_") %>%
   dplyr::select(-extra) %>%
@@ -48,7 +48,7 @@ panoramic <- read.delim(
 head(panoramic)
 
 habitat_with_schema <- panoramic %>%
-  rename(caab_code = scientific) %>%
+  rename(caab_code = code) %>%
   dplyr::mutate(caab_code = as.numeric(caab_code)) %>%
   # TransectMeasure doesn't auto-populate a caab_code for every valid
   # category. Patch the known cases here before we drop the raw text
@@ -70,7 +70,7 @@ habitat_with_schema <- panoramic %>%
   )
 
 unmapped_categories <- panoramic %>%
-  dplyr::mutate(caab_code = as.numeric(scientific)) %>%
+  dplyr::mutate(caab_code = as.numeric(code)) %>%
   dplyr::filter(is.na(caab_code)) %>%
   dplyr::distinct(level_2, level_3, level_4, level_5) %>%
   glimpse()
@@ -132,14 +132,13 @@ write_csv(tidy_habitat %>%
 
 # RELIEF ----
 # read in forwards annotations
-relief <- read.delim("data/raw/2022-05 Naked/2022-05_PtCloates_Naked-BOSS_Relief_Dot Point Measurements.txt", 
+relief <- read.delim("data/raw/ga upload/BOSS/habitat/2022-05_PtCloates_BOSS_Relief_Dot Point Measurements.txt", 
                      header = T, skip = 4, stringsAsFactors = FALSE, 
                      colClasses = "character", na.strings = "") %>%
   clean_names() %>%
   glimpse
 
 relief_with_schema <- relief %>%
-  dplyr::rename(relief = level_5) %>%
   dplyr::select(filename, relief) %>%
   dplyr::mutate(sample = str_match(filename, "NAKED_(.*?)_[0-9]+_")[, 2]) %>%
   tidyr::separate(filename, into = c("emob", "extra"), sep = "_") %>%
