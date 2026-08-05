@@ -1,0 +1,457 @@
+campaignid,opcode,status,longitude_dd,latitude_dd,observer_count,observer_length,date_time,location,site,depth_m,successful_count,successful_length,successful_habitat_forward,successful_habitat_backward,observer_habitat_forward,observer_habitat_backward
+2020-06_south-west_stereoBRUVs,01,No-take,114.930865,-34.128599,Hayley Sims,Rachel,2020-06-02T09:10+08:00,South-west,c1,46.7,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,02,No-take,114.928838,-34.125316,Hayley Sims,Rachel,2020-06-02T09:18+08:00,South-west,c1,44.4,Yes,No,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,03,No-take,114.925945,-34.126906,Hayley Sims,Rachel,2020-06-02T09:27+08:00,South-west,c1,39.3,Yes,Yes,Yes,No,Unknown,NA
+2020-06_south-west_stereoBRUVs,04,No-take,114.920337,-34.122634,Hayley Sims,Rachel,2020-06-02T09:44+08:00,South-west,c2,44.1,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,05,No-take,114.915753,-34.131497,Hayley Sims,Rachel,2020-06-02T09:57+08:00,South-west,c3,44.1,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,06,No-take,114.912405,-34.132842,Hayley Sims,Rachel,2020-06-02T10:06+08:00,South-west,c3,43.2,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,07,No-take,114.910241,-34.134771,Hayley Sims,upside down + 2k,2020-06-02T10:16+08:00,South-west,c3,43.9,Yes,No,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,08,No-take,114.911755,-34.129352,Hayley Sims,Rachel,2020-06-02T13:48+08:00,South-west,c3,39.6,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,09,No-take,114.916105,-34.119541,Hayley Sims,Rachel,2020-06-02T11:45+08:00,South-west,c2,43.8,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,10,No-take,114.918685,-34.117294,Hayley Sims,Rachel,2020-06-02T11:51+08:00,South-west,c2,45.7,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,11,No-take,114.92306,-34.117752,Hayley Sims,Rachel,2020-06-02T13:55+08:00,South-west,c2,45.08,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,12,No-take,114.928545,-34.132262,Hayley Sims,Rachel,2020-06-02T12:03+08:00,South-west,c1,40.1,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,13,No-take,114.930547,-34.128506,Hayley Sims,Rachel,2020-06-02T12:09+08:00,South-west,c1,45.2,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,14,No-take,114.925457,-34.128381,Hayley Sims,Rachel,2020-06-02T12:16+08:00,South-west,c1,35,Yes,No,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,15,No-take,114.91032,-34.125012,Hayley Sims,Rachel,2020-06-02T14:09+08:00,South-west,c3,43,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,16,No-take,114.906548,-34.126181,Hayley Sims,Rachel,2020-06-02T14:14+08:00,South-west,c3,40.9,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,17,No-take,114.92083,-34.132142,Hayley Sims,Rachel,2020-06-02T14:20+08:00,South-west,c3,40.2,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,18,No-take,114.924078,-34.128679,Hayley Sims,Rachel,2020-06-02T14:25+08:00,South-west,c1,35.8,Yes,No,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,19,No-take,114.927818,-34.122542,NA,gopro,2020-06-02T14:30+08:00,South-west,c1,44.9,No,No,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,20,No-take,114.820233,-34.130219,Hayley Sims,NA,2020-06-03T08:16+08:00,South-west,c8,51.7,Yes,No,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,21,No-take,114.817448,-34.128151,Hayley Sims,Rachel,2020-06-03T08:24+08:00,South-west,c8,52.4,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,22,No-take,114.819552,-34.126271,Hayley Sims,Rachel,2020-06-03T08:32+08:00,South-west,c8,51.9,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,23,No-take,114.817017,-34.124217,Hayley Sims,Rachel,2020-06-03T08:38+08:00,South-west,c8,51.3,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,24,No-take,114.826402,-34.118739,Hayley Sims,Rachel,2020-06-03T08:47+08:00,South-west,c7,49.8,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,25,No-take,114.828432,-34.116829,Hayley Sims,Rachel,2020-06-03T08:54+08:00,South-west,c7,48.4,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,26,No-take,114.828907,-34.120881,Hayley Sims,Rachel,2020-06-03T09:02+08:00,South-west,c7,48.4,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,27,No-take,114.832898,-34.121824,Hayley Sims,Rachel,2020-06-03T10:19+08:00,South-west,c7,47.8,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,28,No-take,114.852137,-34.112916,Hayley Sims,Rachel,2020-06-03T10:27+08:00,South-west,c6,44.7,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,29,No-take,114.855648,-34.111084,Hayley Sims,Rachel,2020-06-03T10:31+08:00,South-west,c6,43,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,30,No-take,114.85946,-34.112094,Hayley Sims,Rachel,2020-06-03T10:37+08:00,South-west,c6,42.9,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,31,No-take,114.860738,-34.116007,Hayley Sims,Rachel,2020-06-03T10:42+08:00,South-west,c6,44.4,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,32,No-take,114.86109,-34.130076,Hayley Sims,Rachel,2020-06-03T10:49+08:00,South-west,c5,43.2,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,33,No-take,114.8627,-34.133067,Hayley Sims,upside down,2020-06-03T10:54+08:00,South-west,c5,43.6,Yes,No,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,34,No-take,114.866053,-34.131334,Hayley Sims,Claude,2020-06-03T12:18+08:00,South-west,c5,42.7,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,35,No-take,114.869348,-34.134801,Hayley Sims,Rachel,2020-06-03T12:23+08:00,South-west,c5,43.8,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,36,No-take,114.878263,-34.130484,Hayley Sims,Rachel,2020-06-03T12:29+08:00,South-west,c4,42.2,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,37,No-take,114.878937,-34.126354,Hayley Sims,Rachel,2020-06-03T12:34+08:00,South-west,c4,41.2,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,38,No-take,114.883938,-34.127912,Hayley Sims,Rachel,2020-06-03T12:39+08:00,South-west,c4,41.8,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,39,No-take,114.884797,-34.132294,Hayley Sims,Rachel,2020-06-03T12:42+08:00,South-west,c4,42.2,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,40,No-take,114.880443,-34.133669,Hayley Sims,Rachel,2020-06-03T12:46+08:00,South-west,c4,41.2,Yes,Yes,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,08 - failed,No-take,114.911822,-34.129336,NA,NA,2020-06-02T11:36+08:00,South-west,c3,41.7,No,No,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,11 - failed,No-take,114.923158,-34.117769,NA,NA,2020-06-02T11:55+08:00,South-west,c2,46.7,No,No,Yes,Yes,Unknown,Unknown
+2020-10_south-west_stereoBRUVs,FH10,Fished,114.8863721,-33.98618897,Hayley,Rachel,2020-10-13T12:32:00+08:00,South-west,C.FH.24,42.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH102,No-take,114.9288721,-33.68868897,Daphne,Rachel,2020-10-17T06:42:00+08:00,South-west,C.FH.3,44.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH106,Fished,114.8163721,-33.78868897,Hayley,Claude,2020-10-12T13:16:00+08:00,South-west,C.FH.12,47.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH108,Fished,114.9238721,-33.76118897,Daphne,Rachel,2020-10-17T09:32:00+08:00,South-west,C.FH.9,44.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH109,Fished,114.9088721,-33.91618897,Rachel,Claude,2020-10-29T13:04:00+08:00,South-west,C.FH.20,45.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH11,Fished,114.9388721,-33.89868897,Rachel,Claude,2020-10-29T14:48:00+08:00,South-west,C.FH.18,42.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH110,Fished,114.8213721,-33.80868897,Daphne,Rachel,2020-10-12T15:06:00+08:00,South-west,C.FH.13,44.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH111,Fished,114.8788721,-33.98618897,Daphne,Rachel,2020-10-13T12:28:00+08:00,South-west,C.FH.24,41.4,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH113,Fished,114.7963721,-33.72368897,Daphne,NA,2020-10-12T12:41:00+08:00,South-west,C.FH.7,45,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH12,Fished,114.8963721,-33.91868897,Rachel,Claude,2020-10-29T12:46:00+08:00,South-west,C.FH.21,46.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH14,Fished,114.8713721,-33.76618897,Daphne,NA,2020-10-17T11:24:00+08:00,South-west,C.FH.10,44.4,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH15,Fished,114.8063721,-33.68868897,Daphne,Rachel,2020-10-12T10:29:00+08:00,South-west,C.FH.4,48,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH16,Fished,114.8563721,-33.90118897,Hayley,Rachel,2020-10-13T08:02:00+08:00,South-west,C.FH.19,43.1,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH17,Fished,114.8763721,-33.83368897,Daphne,Rachel,2020-10-12T15:35:00+08:00,South-west,C.FH.14,42.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH18,Fished,114.8213721,-33.79118897,Daphne,Rachel,2020-10-12T13:19:00+08:00,South-west,C.FH.12,43.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH2,Fished,114.8913721,-33.91868897,Daphne,NA,2020-10-29T12:43:00+08:00,South-west,C.FH.21,43.9,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH20,Fished,114.8738721,-33.78618897,Daphne,Rachel,2020-10-17T11:40:00+08:00,South-west,C.FH.11,43.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH21,Fished,114.8088721,-33.79368897,Daphne,Rachel,2020-10-12T13:26:00+08:00,South-west,C.FH.12,45,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH23,Fished,114.8288721,-33.94618897,Daphne,Rachel,2020-10-13T09:51:00+08:00,South-west,C.FH.22,44.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH24,Fished,114.8438721,-33.66868897,Brooke Gibbons,Ramesh/Claude,2020-10-12T07:55:00+08:00,South-west,C.FH.1,47.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH25,Fished,114.8163721,-33.87868897,Hayley,Claude,2020-10-13T07:34:00+08:00,South-west,C.FH.16,45.4,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH26,Fished,114.8288721,-33.81118897,Daphne,Rachel,2020-10-12T15:10:00+08:00,South-west,C.FH.13,44.1,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH27,Fished,114.8713721,-33.83618897,Daphne,Rachel,2020-10-12T15:39:00+08:00,South-west,C.FH.14,42.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH28,Fished,114.9338721,-33.76368897,Daphne,Brooke Gibbons,2020-10-17T09:24:00+08:00,South-west,C.FH.9,44.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH30,Fished,114.8888721,-33.75118897,Daphne,Brooke Gibbons,2020-10-17T11:12:00+08:00,South-west,C.FH.8,46.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH31,Fished,114.8238721,-33.67368897,Daphne,Rachel,2020-10-12T08:27:00+08:00,South-west,C.FH.2,45.4,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH32,No-take,114.9463721,-33.69618897,Daphne,NA,2020-10-17T08:50:00+08:00,South-west,C.FH.5,42.9,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH33,Fished,114.8263721,-33.70868897,Daphne,NA,2020-10-12T10:54:00+08:00,South-west,C.FH.6,42.3,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH34,Fished,114.8838721,-33.78618897,Daphne,Rachel,2020-10-17T11:51:00+08:00,South-west,C.FH.11,44.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH35,Fished,114.9313721,-33.88368897,Rachel,Claude,2020-10-29T15:09:00+08:00,South-west,C.FH.17,45.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH36,No-take,114.9338721,-33.69868897,NA,NA,2020-10-17T08:59:00+08:00,South-west,C.FH.5,44.4,No,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH37,Fished,114.8138721,-33.71118897,Daphne,Claude,2020-10-12T11:03:00+08:00,South-west,C.FH.6,44.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH39,Fished,114.9313721,-33.90368897,Daphne,Rachel,2020-10-29T14:44:00+08:00,South-west,C.FH.18,44.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH40,Fished,114.8888721,-33.92368897,Daphne,NA,2020-10-29T12:40:00+08:00,South-west,C.FH.21,42.9,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH41,Fished,114.8388721,-33.67118897,Claude,Rachel,2020-10-12T08:01:00+08:00,South-west,C.FH.1,44.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH42,Fished,114.8113721,-33.88118897,Hayley,Claude,2020-10-13T07:38:00+08:00,South-west,C.FH.16,45.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH44,Fished,114.8638721,-33.77118897,Daphne,Rachel,2020-10-17T11:28:00+08:00,South-west,C.FH.10,43.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH45,Fished,114.7988721,-33.69368897,Claude,Rachel,2020-10-12T10:39:00+08:00,South-west,C.FH.4,47.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH46,Fished,114.9288721,-33.76618897,Daphne,Brooke Gibbons,2020-10-17T09:28:00+08:00,South-west,C.FH.9,44.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH47,Fished,114.8488721,-33.90618897,Hayley,Claude,2020-10-13T08:09:00+08:00,South-west,C.FH.19,43.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH48,Fished,114.8138721,-33.79618897,Claude,Rachel,2020-10-12T13:23:00+08:00,South-west,C.FH.12,48.5,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH49,Fished,114.9163721,-33.92118897,Daphne,Rachel,2020-10-29T13:00:00+08:00,South-west,C.FH.20,43.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH5,No-take,114.9413721,-33.69368897,Daphne,Rachel,2020-10-17T08:46:00+08:00,South-west,C.FH.5,44.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH50,No-take,114.9313721,-33.68118897,Daphne,Brooke Gibbons,2020-10-17T06:51:00+08:00,South-west,C.FH.3,44.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH51,Fished,114.8538721,-33.90618897,Hayley,Claude,2020-10-13T08:06:00+08:00,South-west,C.FH.19,43,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH52,Fished,114.8888721,-33.99118897,Hayley,Claude,2020-10-13T12:36:00+08:00,South-west,C.FH.24,42.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH54,Fished,114.9388721,-33.76618897,Daphne,NA,2020-10-17T09:20:00+08:00,South-west,C.FH.9,43.2,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH55,Fished,114.9088721,-33.92368897,Rachel,Claude,2020-10-29T12:52:00+08:00,South-west,C.FH.20,44.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH56,Fished,114.8663721,-33.83118897,Claude,Rachel,2020-10-12T15:31:00+08:00,South-west,C.FH.14,43.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH57,Fished,114.8113721,-33.78868897,Claude,Rachel,2020-10-12T13:12:00+08:00,South-west,C.FH.12,45.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH58,Fished,114.8413721,-33.66368897,Daphne,Claude,2020-10-12T07:47:00+08:00,South-west,C.FH.1,45.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH59,Fished,114.8188721,-33.66868897,Claude,Rachel,2020-10-12T08:32:00+08:00,South-west,C.FH.2,44.6,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH6,Fished,114.8213721,-33.70618897,Daphne,Rachel,2020-10-12T10:50:00+08:00,South-west,C.FH.6,46,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH60,Fished,114.8213721,-33.81618897,Claude,Rachel,2020-10-12T15:14:00+08:00,South-west,C.FH.13,44.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH61,Fished,114.8638721,-33.84118897,Claude,Brooke Gibbons,2020-10-12T15:43:00+08:00,South-west,C.FH.14,43.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH62,Fished,114.8813721,-33.75618897,Daphne,NA,2020-10-17T11:17:00+08:00,South-west,C.FH.8,45.1,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH63,Fished,114.8163721,-33.67868897,Claude,Brooke Gibbons,2020-10-12T08:20:00+08:00,South-west,C.FH.2,46.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH64,No-take,114.9388721,-33.70118897,Daphne,Claude,2020-10-17T08:56:00+08:00,South-west,C.FH.5,44.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH65,Fished,114.8188721,-33.71368897,Daphne,Claude,2020-10-12T10:59:00+08:00,South-west,C.FH.6,45.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH66,Fished,114.9363721,-33.90618897,Daphne,Rachel,2020-10-29T14:40:00+08:00,South-west,C.FH.18,41.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH67,Fished,114.9238721,-33.88868897,Rachel,Claude,2020-10-29T15:00:00+08:00,South-west,C.FH.17,46.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH68,Fished,114.8288721,-33.95118897,Rachel,Claude,2020-10-13T10:01:00+08:00,South-west,C.FH.22,44.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH69,Fished,114.8038721,-33.69618897,Ramesh,Claude,2020-10-12T10:43:00+08:00,South-west,C.FH.4,46.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH7,Fished,114.8788721,-33.78368897,Daphne,Rachel,2020-10-17T11:45:00+08:00,South-west,C.FH.11,45,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH70,Fished,114.8463721,-33.67368897,Daphne,Claude,2020-10-12T08:07:00+08:00,South-west,C.FH.1,48.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH71,Fished,114.8188721,-33.88368897,Daphne,Brooke Gibbons,2020-10-13T07:30:00+08:00,South-west,C.FH.16,45.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH72,Fished,114.9288721,-33.88868897,Rachel,Claude,2020-10-29T15:06:00+08:00,South-west,C.FH.17,44.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH74,Fished,114.8063721,-33.73118897,Daphne,Claude,2020-10-12T12:47:00+08:00,South-west,C.FH.7,44.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH77,Fished,114.8763721,-33.99618897,Daphne,NA,2020-10-13T12:42:00+08:00,South-west,C.FH.24,42,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH78,Fished,114.9163721,-33.89118897,Rachel,Claude,2020-10-29T14:56:00+08:00,South-west,C.FH.17,45.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH79,Fished,114.8088721,-33.88618897,Daphne,Brooke Gibbons,2020-10-13T07:43:00+08:00,South-west,C.FH.16,44.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH8,Fished,114.8013721,-33.72368897,Daphne,Rachel,2020-10-12T12:34:00+08:00,South-west,C.FH.7,43.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH82,No-take,114.9238721,-33.68618897,Daphne,Claude,2020-10-17T06:46:00+08:00,South-west,C.FH.3,44.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH83,Fished,114.8463721,-33.91118897,Daphne,Rachel,2020-10-13T08:13:00+08:00,South-west,C.FH.19,40.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH84,Fished,114.7988721,-33.73368897,Daphne,Rachel,2020-10-12T12:50:00+08:00,South-west,C.FH.7,45.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH85,Fished,114.9138721,-33.92618897,Daphne,Rachel/Brooke,2020-10-29T12:55:00+08:00,South-west,C.FH.20,44.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH87,Fished,114.8938721,-33.92868897,Rachel,Claude,2020-10-29T12:36:00+08:00,South-west,C.FH.21,43.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH89,Fished,114.8013721,-33.68618897,Daphne,Claude,2020-10-12T10:34:00+08:00,South-west,C.FH.4,45.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH9,Fished,114.8513721,-33.90118897,Hayley,Mystery,2020-10-13T07:58:00+08:00,South-west,C.FH.19,43.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH92,Fished,114.8713721,-33.84368897,Daphne,Rachel,2020-10-12T15:47:00+08:00,South-west,C.FH.14,44.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH93,Fished,114.8688721,-33.77618897,Daphne,Claude,2020-10-17T11:33:00+08:00,South-west,C.FH.10,43.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH94,Fished,114.9413721,-33.90868897,Rachel,Claude,2020-10-29T14:36:00+08:00,South-west,C.FH.18,41.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH95,Fished,114.8913721,-33.75868897,Daphne,Rachel,2020-10-17T11:07:00+08:00,South-west,C.FH.8,46.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH96,Fished,114.8338721,-33.81868897,Daphne,Claude,2020-10-12T15:20:00+08:00,South-west,C.FH.13,44.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FH99,Fished,114.8363721,-33.95368897,Hayley,Claude,2020-10-13T10:04:00+08:00,South-west,C.FH.22,43.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FHA,No-take,114.937827,-33.683135,Daphne,Rachel,2020-10-17T06:55:00+08:00,South-west,C.FH.3,44.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FHB,No-take,114.957127,-33.681655,Daphne,Rachel,2020-10-17T07:02:00+08:00,South-west,C.FH.A,41.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FHC,No-take,114.965092,-33.680718,Daphne,Claude,2020-10-17T07:07:00+08:00,South-west,C.FH.A,36.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FHC01,Fished,114.809825,-33.669869,Daphne,Rachel,2020-10-12T08:38:00+08:00,South-west,C.FH.2,44.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FHC02,Fished,114.813293,-33.72358,Daphne,Rachel,2020-10-12T11:13:00+08:00,South-west,C.FH.6,42,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FHC03,Fished,114.819555,-33.948622,Claude,Brooke Gibbons,2020-10-13T09:56:00+08:00,South-west,C.FH.22,44.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FHD,No-take,114.958507,-33.686897,Daphne,Rachel,2020-10-17T07:12:00+08:00,South-west,C.FH.A,39.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,FHE,No-take,114.951172,-33.687267,Daphne,Rachel,2020-10-17T07:16:00+08:00,South-west,C.FH.A,42.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO1,No-take,114.7788721,-34.07868897,Hayley,Daphne,2020-10-15T12:07:00+08:00,South-west,C.IO.43,64.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO100,No-take,114.9088721,-34.07618897,Rachel,Brooke Gibbons,2020-10-29T10:21:00+08:00,South-west,C.IO.39,43.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO101,No-take,114.8963721,-34.07868897,Rachel,Claude,2020-10-29T10:10:00+08:00,South-west,C.IO.39,43.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO102,No-take,114.9113721,-34.07118897,Rachel,Claude,2020-10-29T10:26:00+08:00,South-west,C.IO.2,45.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO105,No-take,114.6688721,-34.06368897,Rachel,Claude,2020-10-23T09:45:00+08:00,South-west,C.IO.30,139,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO107,No-take,114.6763721,-34.06368897,Rachel,Claude,2020-10-23T09:50:00+08:00,South-west,C.IO.30,137,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO108,No-take,114.6688721,-34.05118897,Rachel,Claude,2020-10-23T10:04:00+08:00,South-west,C.IO.30,138,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO109,No-take,114.6738721,-34.05618897,Rachel,Brooke Gibbons,2020-10-23T09:57:00+08:00,South-west,C.IO.30,138,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO110,No-take,114.7288721,-34.14118897,Brooke Gibbons,Claude,2020-10-22T08:00:00+08:00,South-west,C.IO.68,128,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO113,No-take,114.7388721,-34.05868897,Rachel,Claude,2020-10-23T07:30:00+08:00,South-west,C.IO.31,111,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO115,No-take,114.7363721,-34.05368897,Rachel,Claude,2020-10-23T07:34:00+08:00,South-west,C.IO.31,112,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO117,No-take,114.7388721,-34.06368897,Rachel,Brooke Gibbons,2020-10-23T07:25:00+08:00,South-west,C.IO.31,115,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO119,No-take,114.9038721,-34.07618897,Rachel,Brooke Gibbons,2020-10-29T10:17:00+08:00,South-west,C.IO.39,43.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO122,No-take,114.8263721,-34.11618897,Brooke Gibbons,Claude,2020-10-15T12:35:00+08:00,South-west,C.IO.59,57.4,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO123,No-take,114.8188721,-34.10618897,Hayley,Daphne,2020-10-15T12:42:00+08:00,South-west,C.IO.59,49.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO125,No-take,114.8263721,-34.10868897,Hayley,Daphne,2020-10-15T12:38:00+08:00,South-west,C.IO.59,55.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO126,No-take,114.8188721,-34.11368897,Brooke Gibbons,Claude,2020-10-15T12:31:00+08:00,South-west,C.IO.59,58.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO130,Fished,114.8763721,-33.98118897,Daphne,NA,2020-10-13T12:24:00+08:00,South-west,C.IO.37,41.1,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO132,Fished,114.8713721,-33.99118897,Hayley,Daphne,2020-10-13T12:47:00+08:00,South-west,C.IO.37,42.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO133,Fished,114.8663721,-33.99118897,Daphne,Rachel,2020-10-13T12:50:00+08:00,South-west,C.IO.37,40.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO134,Fished,114.8613721,-33.98368897,Claude,Brooke Gibbons,2020-10-13T12:14:00+08:00,South-west,C.IO.37,41.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO145,Fished,114.8238721,-33.98618897,Hayley,Daphne,2020-10-13T10:24:00+08:00,South-west,C.IO.22,45.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO146,Fished,114.8213721,-33.97618897,Claude,Brooke Gibbons,2020-10-13T10:17:00+08:00,South-west,C.IO.33,45.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO147,Fished,114.8313721,-33.98118897,Claude,Brooke Gibbons,2020-10-13T10:28:00+08:00,South-west,C.IO.33,44,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO148,Fished,114.5963721,-34.01118897,Rachel,Claude,2020-11-23T10:31+08:00,South-west,C.IO.46,140,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO15,No-take,114.8663721,-34.06118897,Brooke Gibbons,Claude,2020-10-16T07:59:00+08:00,South-west,C.IO.35,40.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO152,Fished,114.8688721,-33.98118897,Hayley,Daphne,2020-10-13T12:18:00+08:00,South-west,C.IO.37,41.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO153,Fished,114.8888721,-34.04618897,Brooke Gibbons,Claude,2020-10-16T07:36:00+08:00,South-west,C.IO.65,42.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO155,Fished,114.8838721,-34.04368897,Hayley,Claude,2020-10-16T07:42:00+08:00,South-west,C.IO.65,41.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO157,Fished,114.8238721,-33.97118897,Daphne,NA,2020-10-13T10:14:00+08:00,South-west,C.IO.33,45.6,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO158,Fished,114.8188721,-33.98118897,Hayley,Claude,2020-10-13T10:21:00+08:00,South-west,C.IO.33,44.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO16,No-take,114.8688721,-34.07368897,Daphne,NA,2020-10-16T09:43:00+08:00,South-west,C.IO.35,41.4,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO164,Fished,114.9038721,-34.03368897,Hayley,Daphne,2020-10-16T07:14:00+08:00,South-west,C.IO.62,44.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO165,Fished,114.8988721,-34.04368897,Hayley,Ramesh/Claude,2020-10-16T07:23:00+08:00,South-west,C.IO.62,42.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO17,No-take,114.8763721,-34.06368897,Daphne,NA,2020-10-16T08:07:00+08:00,South-west,C.IO.35,41.1,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO180,Fished,114.7038721,-33.99618897,Brooke Gibbons,Claude,2020-11-23T12:36+08:00,South-west,C.IO.41,122,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO184,Fished,114.9038721,-34.04118897,Hayley,Ramesh/Brooke,2020-10-16T07:19:00+08:00,South-west,C.IO.62,45.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO189,Fished,114.6638721,-33.98868897,Daphne,NA,2020-10-23T12:31:00+08:00,South-west,C.IO.40,139,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO191,Fished,114.6713721,-33.99868897,Rachel,Brooke Gibbons,2020-10-23T12:20:00+08:00,South-west,C.IO.40,137,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO192,Fished,114.6688721,-33.98618897,Rachel,Claude,2020-10-23T12:36:00+08:00,South-west,C.IO.40,138,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO194,Fished,114.6638721,-33.99618897,Rachel,Brooke Gibbons,2020-10-23T12:24:00+08:00,South-west,C.IO.40,139,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO195,No-take,114.8588721,-34.09368897,Brooke Gibbons,Claude,2020-10-16T09:57:00+08:00,South-west,C.IO.6,43.4,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO199,No-take,114.8613721,-34.08618897,Claude,Brooke Gibbons,2020-10-16T09:51:00+08:00,South-west,C.IO.6,42.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO201,No-take,114.8338721,-34.05618897,Hayley,Ramesh/Claude,2020-10-15T14:46:00+08:00,South-west,C.IO.5,45.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO204,No-take,114.7863721,-34.06618897,Hayley,Ramesh/Claude,2020-10-15T10:35:00+08:00,South-west,C.IO.7,61.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO206,No-take,114.7913721,-34.06368897,Daphne,NA,2020-10-15T10:28:00+08:00,South-west,C.IO.7,58.2,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO207,No-take,114.7863721,-34.06118897,Hayley,Ramesh/Claude,2020-10-15T10:23:00+08:00,South-west,C.IO.7,60.4,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO210,No-take,114.8738721,-34.09118897,Hayley,Ramesh/Claude,2020-10-16T10:09:00+08:00,South-west,C.IO.6,43.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO211,No-take,114.9063721,-34.05618897,Rachel,Claude,2020-10-29T10:42:00+08:00,South-west,C.IO.3,43.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IOC06,Fished,114.876372,-34.048689,Ramesh,Claude,2020-10-16T07:48:00+08:00,South-west,C.IO.65,41.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO216,No-take,114.9163721,-34.06118897,Rachel,Claude,2020-10-29T10:33:00+08:00,South-west,C.IO.3,47.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO217,No-take,114.9188721,-34.06618897,Claude,Brooke Gibbons,2020-10-16T12:43:00+08:00,South-west,C.IO.2,47.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO218,No-take,114.9213721,-34.07368897,Hayley,Ramesh/Claude,2020-10-16T12:28:00+08:00,South-west,C.IO.2,46.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO220,No-take,114.8438721,-34.05618897,Brooke Gibbons,Claude,2020-10-15T14:39:00+08:00,South-west,C.IO.5,43.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO222,No-take,114.8313721,-34.06618897,Hayley,Ramesh/Claude,2020-10-15T14:54:00+08:00,South-west,C.IO.4,45,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO223,No-take,114.8463721,-34.07118897,Hayley,Ramesh/Claude,2020-10-15T14:25:00+08:00,South-west,C.IO.4,42.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO224,No-take,114.8388721,-34.06118897,Hayley,Claude,2020-10-15T14:35:00+08:00,South-west,C.IO.4,43.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO225,No-take,114.8338721,-34.07118897,Hayley,Claude,2020-10-15T14:20:00+08:00,South-west,C.IO.4,44.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO226,No-take,114.8438721,-34.06368897,Brooke Gibbons,Claude,2020-10-15T14:32:00+08:00,South-west,C.IO.4,42.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO227,Fished,114.7838721,-33.99868897,Ramesh,Claude,2020-10-19T06:37:00+08:00,South-west,C.IO.42,52.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO228,Fished,114.7938721,-34.00368897,Rachel,Claude,2020-10-19T06:46:00+08:00,South-west,C.IO.42,50.4,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO229,Fished,114.7863721,-33.99368897,Ramesh,Hayley,2020-10-19T06:31:00+08:00,South-west,C.IO.42,53,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO235,No-take,114.9138721,-34.06618897,Daphne,NA,2020-10-16T12:49:00+08:00,South-west,C.IO.2,46.5,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO236,No-take,114.9238721,-34.08118897,Hayley,Brooke Gibbons,2020-10-16T12:22:00+08:00,South-west,C.IO.1,46.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO237,No-take,114.9363721,-34.08118897,Hayley,Claude,2020-10-16T12:15:00+08:00,South-west,C.IO.1,43.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO239,No-take,114.9313721,-34.09118897,Hayley,Claude,2020-10-16T12:05:00+08:00,South-west,C.IO.1,45.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO241,Fished,114.7913721,-33.99368897,Ramesh,Hayley,2020-10-19T06:26:00+08:00,South-west,C.IO.42,50.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO244,Fished,114.9063721,-34.00368897,Ramesh,Claude,2020-10-19T11:35:00+08:00,South-west,C.IO.47,44.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO245,Fished,114.9013721,-34.00868897,Ramesh,Claude,2020-10-19T11:30:00+08:00,South-west,C.IO.47,42.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO253,Fished,114.7038721,-34.01368897,Brooke Gibbons,Claude,2020-11-23T12:15+08:00,South-west,C.IO.49,124,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO254_old,Fished,114.6963721,-34.01868897,NA,NA,2020-10-29T08:51:00+08:00,South-west,C.IO.49,129,No,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO254,Fished,114.6963721,-34.01868897,Rachel,Claude,2020-11-23T12:10+08:00,South-west,C.IO.49,119,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO258,Fished,114.9138721,-33.96618897,Ramesh,Claude,2020-10-19T12:05:00+08:00,South-west,C.IO.20,45.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO259,Fished,114.9213721,-33.96868897,Rachel,Claude,2020-10-19T12:00:00+08:00,South-west,C.IO.20,46.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO260,Fished,114.9163721,-33.97118897,Rachel,Claude,2020-10-19T11:55:00+08:00,South-west,C.IO.20,46.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO261,Fished,114.9213721,-33.97618897,Ramesh,Claude,2020-10-19T11:46:00+08:00,South-west,C.IO.20,46.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO262,Fished,114.8738721,-34.01368897,Rachel,Claude,2020-10-19T09:46:00+08:00,South-west,C.IO.19,41.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO263,Fished,114.8788721,-34.00868897,Brooke Gibbons,Claude,2020-10-19T09:52:00+08:00,South-west,C.IO.19,42.4,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO264,Fished,114.8738721,-34.01868897,Brooke Gibbons,Claude,2020-10-19T09:31:00+08:00,South-west,C.IO.19,42,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO266,Fished,114.7588721,-34.02118897,Hayley,Claude,2020-10-15T08:06:00+08:00,South-west,C.IO.23,67.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO267,Fished,114.7638721,-34.02618897,Daphne,NA,2020-10-15T08:11:00+08:00,South-west,C.IO.23,62.5,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO269,Fished,114.8138721,-33.98868897,Brooke Gibbons,Claude,2020-10-19T07:18:00+08:00,South-west,C.IO.22,47.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO272,Fished,114.8138721,-34.00868897,Daphne,NA,2020-10-19T06:56:00+08:00,South-west,C.IO.21,49.2,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO273,Fished,114.8213721,-33.99868897,Rachel,Claude,2020-10-19T07:07:00+08:00,South-west,C.IO.22,44.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO275,No-take,114.6463721,-34.09868897,Daphne,NA,2020-11-23T14:38+08:00,South-west,C.IO.15,140,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO276,No-take,114.6363721,-34.10118897,Rachel,Claude,2020-11-23T07:34+08:00,South-west,C.IO.15,140,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO277,No-take,114.6463721,-34.10618897,Brooke Gibbons,Claude,2020-11-23T07:53+08:00,South-west,C.IO.15,139,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO278,No-take,114.6388721,-34.11118897,Brooke Gibbons,Claude,2020-11-23T07:45+08:00,South-west,C.IO.15,140,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO280,No-take,114.6738721,-34.08868897,Rachel,Claude,2020-10-23T09:24:00+08:00,South-west,C.IO.14,139,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO282,No-take,114.5438721,-34.14618897,NA,NA,2020-10-29T07:20:00+08:00,South-west,C.IO.18,146,No,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO290,No-take,114.7188721,-34.06868897,Rachel,Claude,2020-10-23T07:07:00+08:00,South-west,C.IO.13,124,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO291,No-take,114.7488721,-34.08368897,Rachel,Claude,2020-10-22T13:09:00+08:00,South-west,C.IO.12,109,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO293,No-take,114.7588721,-34.08868897,Claude,Brooke,2020-10-22T12:55:00+08:00,South-west,C.IO.12,111,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO294,No-take,114.7538721,-34.08368897,Rachel,Brooke Gibbons,2020-10-22T13:04:00+08:00,South-west,C.IO.12,114,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO295,No-take,114.7538721,-34.10368897,Rachel,Claude,2020-10-22T12:25:00+08:00,South-west,C.IO.11,109,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO297,No-take,114.7488721,-34.10618897,Rachel,Claude,2020-10-22T12:21:00+08:00,South-west,C.IO.11,114,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO298,No-take,114.6713721,-34.07618897,Rachel,Brooke Gibbons,2020-10-23T09:39:00+08:00,South-west,C.IO.14,138,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO299,No-take,114.6763721,-34.08118897,Rachel,Brooke Gibbons,2020-10-23T09:32:00+08:00,South-west,C.IO.14,139,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO3,No-take,114.7838721,-34.07618897,Hayley,Claude,2020-10-15T12:03:00+08:00,South-west,C.IO.43,62,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO300,No-take,114.6688721,-34.08618897,Brooke Gibbons,Claude,2020-11-23T07:18+08:00,South-west,C.IO.14,138,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO302,No-take,114.7238721,-34.07118897,Rachel,Claude,2020-10-23T07:13:00+08:00,South-west,C.IO.13,122,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO306,No-take,114.7338721,-34.10118897,Rachel,Claude,2020-10-22T10:29:00+08:00,South-west,C.IO.10,124,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO307,No-take,114.7263721,-34.11868897,Daphne - finishes at 59:36,Claude,2020-10-22T09:56:00+08:00,South-west,C.IO.9,128,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO308,No-take,114.7288721,-34.11118897,Rachel,Claude,2020-10-22T10:06:00+08:00,South-west,C.IO.9,126,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO310,No-take,114.7738721,-34.05868897,Brooke Gibbons,Claude,2020-10-15T10:06:00+08:00,South-west,C.IO.8,64.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO311,No-take,114.7688721,-34.05618897,Brooke Gibbons,Claude,2020-10-15T10:03:00+08:00,South-west,C.IO.8,66.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO312,No-take,114.7788721,-34.05868897,Hayley,Claude,2020-10-15T10:17:00+08:00,South-west,C.IO.8,61.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO313,No-take,114.7563721,-34.09618897,Rachel,Brooke Gibbons,2020-10-22T12:47:00+08:00,South-west,C.IO.11,108,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO319,No-take,114.7313721,-34.09368897,Rachel,Claude,2020-10-22T10:37:00+08:00,South-west,C.IO.10,124,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO323,Fished,114.6001,-34.03103333,Daphne,Claude,2020-11-23T09:48+08:00,South-west,C.IO.27,141,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO324,Fished,114.639778,-34.00006,Rachel,Brooke Gibbons,2020-10-23T11:59:00+08:00,South-west,C.IO.26,141,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO325,Fished,114.743378,-33.991557,Hayley,Claude,2020-10-15T07:44:00+08:00,South-west,C.IO.25,85,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO326,Fished,114.6892833,-34.00425,Daphne,NA,2020-11-23T12:26+08:00,South-west,C.IO.24,121,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO327,Fished,114.7623833,-34.02946667,Hayley,Claude,2020-10-15T08:17:00+08:00,South-west,C.IO.23,65.4,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO328,Fished,114.8213667,-33.99356667,Rachel,Claude,2020-10-19T07:13:00+08:00,South-west,C.IO.22,43.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO329,No-take,114.7266333,-34.06481667,Rachel,Brooke Gibbons,2020-10-23T07:18:00+08:00,South-west,C.IO.13,121,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO330,No-take,114.7545,-34.08833333,Rachel,Claude,2020-10-22T13:00:00+08:00,South-west,C.IO.12,116,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO331,No-take,114.75005,-34.0984,Rachel,Brooke Gibbons,2020-10-22T12:30:00+08:00,South-west,C.IO.11,112,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO332,No-take,114.7344833,-34.09718333,Rachel,Claude,2020-10-22T10:33:00+08:00,South-west,C.IO.10,124,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO333,No-take,114.7251333,-34.11301667,Rachel,Claude,2020-10-22T10:01:00+08:00,South-west,C.IO.9,127,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO334,No-take,114.7753667,-34.06155,Hayley,Claude,2020-10-15T10:11:00+08:00,South-west,C.IO.8,64,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO335,No-take,114.7939833,-34.06686667,Hayley,Claude,2020-10-15T10:31:00+08:00,South-west,C.IO.7,58,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO336,No-take,114.8663667,-34.0924,Daphne,NA,2020-10-16T10:03:00+08:00,South-west,C.IO.6,43.2,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO337,Fished,114.8202333,-34.00536667,Daphne,Claude,2020-10-19T07:02:00+08:00,South-west,C.IO.21,43,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO338,Fished,114.92245,-33.97231667,Daphne,Claude,2020-10-19T11:50:00+08:00,South-west,C.IO.20,46,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO339,Fished,114.8785,-34.01461667,Daphne,Claude,2020-10-19T09:41:00+08:00,South-west,C.IO.19,41.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO34,No-take,114.8713721,-34.06118897,Brooke Gibbons,Ramesh/Claude,2020-10-16T08:02:00+08:00,South-west,C.IO.35,41.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO343,No-take,114.6407167,-34.10261667,Rachel,Claude,2020-11-23T07:38+08:00,South-west,C.IO.15,140,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO344,No-take,114.6744,-34.0844,Daphne,NA,2020-10-23T09:28:00+08:00,South-west,C.IO.14,138,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO349,Fished,114.5963721,-34.02368897,Rachel,Claude,2020-11-23T10:03+08:00,South-west,C.IO.27,133,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO350,Fished,114.6038721,-34.02618897,Brooke Gibbons,Claude,2020-11-23T09:56+08:00,South-west,C.IO.27,135,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO351,Fished,114.5963721,-34.03118897,Daphne,Claude,2020-11-23T10:13+08:00,South-west,C.IO.27,142,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO352,Fished,114.5988721,-34.03618897,Rachel,Claude,2020-11-23T09:43+08:00,South-west,C.IO.27,133,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO353,No-take,114.8390667,-34.05436667,Hayley,Claude,2020-10-15T14:43:00+08:00,South-west,C.IO.5,44.1,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO354,No-take,114.84,-34.06605,Brooke Gibbons,Claude,2020-10-15T14:29:00+08:00,South-west,C.IO.4,45,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO355,No-take,114.9111,-34.05473333,Rachel,Claude,2020-10-29T10:38:00+08:00,South-west,C.IO.3,45,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO356,No-take,114.9184667,-34.06956667,Claude,Brooke Gibbons,2020-10-16T12:39:00+08:00,South-west,C.IO.2,46.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO357,No-take,114.928,-34.08496667,Hayley,Claude,2020-10-16T12:08:00+08:00,South-west,C.IO.1,45.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO36,No-take,114.7188721,-34.10368897,Rachel,Claude,2020-10-22T10:23:00+08:00,South-west,C.IO.55,130,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO361,Fished,114.7413721,-33.98868897,Hayley,Claude,2020-10-15T07:35:00+08:00,South-west,C.IO.25,84.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO363,Fished,114.7513721,-33.98618897,Brooke Gibbons,Claude,2020-10-15T07:26:00+08:00,South-west,C.IO.25,66.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO364,Fished,114.6888721,-34.00868897,Daphne,Claude,2020-11-23T12:21+08:00,South-west,C.IO.24,130,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO365,Fished,114.7538721,-34.02368897,Brooke Gibbons,Claude,2020-10-15T08:23:00+08:00,South-west,C.IO.23,73.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO369,Fished,114.5913721,-34.02868897,Rachel,Claude,2020-11-23T10:08+08:00,South-west,C.IO.27,133,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO37,No-take,114.7188721,-34.10868897,Brooke Gibbons,Claude,2020-10-22T10:12:00+08:00,South-west,C.IO.55,130,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO370,Fished,114.6463721,-33.99618897,Rachel,Claude,2020-10-23T12:10:00+08:00,South-west,C.IO.26,141,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO372,Fished,114.6438721,-34.00618897,Daphne - period end @ 58:40,NA,2020-10-23T11:53:00+08:00,South-west,C.IO.26,140,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO374,Fished,114.7463721,-33.98618897,Hayley,Claude,2020-10-15T07:31:00+08:00,South-west,C.IO.25,72.9,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO377,No-take,114.7588721,-34.13868897,Rachel,Claude,2020-10-22T07:40:00+08:00,South-west,C.IO.69,113,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO378,Fished,114.6388721,-33.99368897,Rachel,Claude,2020-10-23T12:04:00+08:00,South-west,C.IO.26,141,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO379,No-take,114.6813721,-34.08368897,Rachel,Claude,2020-11-23T06:58+08:00,South-west,C.IO.14,138,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO4,No-take,114.7813721,-34.09118897,Hayley,Claude,2020-10-15T12:17:00+08:00,South-west,C.IO.43,65.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO40,No-take,114.7138721,-34.10368897,Brooke Gibbons,Claude,2020-10-22T10:17:00+08:00,South-west,C.IO.55,131,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO46,No-take,114.7113721,-34.06868897,Rachel,Claude,2020-10-23T06:44:00+08:00,South-west,C.IO.34,129,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO47,No-take,114.7113721,-34.06368897,Rachel,Claude,2020-10-23T06:53:00+08:00,South-west,C.IO.34,127,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO49,No-take,114.7063721,-34.06118897,Rachel,Brooke Gibbons,2020-10-23T06:59:00+08:00,South-west,C.IO.34,129,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO5,No-take,114.7763721,-34.08868897,Claude,Brooke Gibbons,2020-10-15T12:12:00+08:00,South-west,C.IO.43,66.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO58,No-take,114.7738721,-34.13618897,Brooke Gibbons,Claude,2020-10-22T07:21:00+08:00,South-west,C.IO.69,92.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO59,No-take,114.7663721,-34.14118897,Rachel,Claude,2020-10-22T07:33:00+08:00,South-west,C.IO.69,109,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO62,No-take,114.7663721,-34.13368897,Brooke Gibbons,Claude,2020-10-22T07:45:00+08:00,South-west,C.IO.69,105,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO64,Fished,114.8963721,-34.01368897,Ramesh,Claude,2020-10-19T11:26:00+08:00,South-west,C.IO.47,43.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO65,Fished,114.8888721,-34.01118897,Ramesh,Claude,2020-10-19T11:20:00+08:00,South-west,C.IO.53,43,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO66,Fished,114.8813721,-34.01618897,Rachel,Claude,2020-10-19T09:36:00+08:00,South-west,C.IO.19,42.8,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO71,Fished,114.6988721,-34.00368897,Rachel,Claude,2020-11-23T12:31+08:00,South-west,C.IO.41,121,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO72,Fished,114.8463721,-34.03618897,Ramesh,Claude,2020-10-19T09:05:00+08:00,South-west,C.IO.60,43.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO73,Fished,114.8588721,-34.02868897,Ramesh,NA,2020-10-19T09:22:00+08:00,South-west,C.IO.60,40.4,Yes,No,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO74,Fished,114.8513721,-34.02868897,Rachel,Claude,2020-10-19T09:14:00+08:00,South-west,C.IO.60,42.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO75,Fished,114.8538721,-34.03368897,Rachel,Claude,2020-10-19T09:10:00+08:00,South-west,C.IO.60,42.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO80,No-take,114.8888721,-34.09368897,Hayley,Claude,2020-10-16T10:30:00+08:00,South-west,C.IO.52,41.6,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO81,No-take,114.8913721,-34.09868897,Hayley,Claude,2020-10-16T10:20:00+08:00,South-west,C.IO.52,42,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO91,No-take,114.8938721,-34.09368897,Hayley,Claude,2020-10-16T10:25:00+08:00,South-west,C.IO.52,43.5,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO92,No-take,114.8863721,-34.09868897,Brooke Gibbons,Claude,2020-10-16T10:16:00+08:00,South-west,C.IO.52,42.3,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO95,No-take,114.7338721,-34.12618897,Daphne,Claude,2020-10-22T08:21:00+08:00,South-west,C.IO.68,124,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO96,No-take,114.7363721,-34.13618897,Brooke Gibbons,Rachel,2020-10-22T08:06:00+08:00,South-west,C.IO.68,127,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO98,No-take,114.7313721,-34.13368897,Daphne,Claude,2020-10-22T08:13:00+08:00,South-west,C.IO.68,128,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IOC04,No-take,114.749265,-34.08755,Rachel,Claude,2020-10-22T13:16:00+08:00,South-west,C.IO.12,109,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IOC05,No-take,114.899843,-34.05394,Rachel,Claude,2020-10-29T10:46:00+08:00,South-west,C.IO.3,43.2,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IO215,No-take,114.9263721,-34.06868897,Hayley,Ramesh/Claude,2020-10-16T12:34:00+08:00,South-west,C.IO.2,46.7,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IOCP11-1,Fished,114.696642,-33.992845,Daphne,Claude,2020-11-23T12:39+08:00,South-west,C.IO.41,124,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IOCP11-2,Fished,114.692773,-33.974332,Daphne,Claude,2020-11-23T12:47+08:00,South-west,C.IO.41,124,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IOCP2311,Fished,114.601465,-34.01858,Daphne,Claude,2020-11-23T10:19+08:00,South-west,C.IO.46,142,Yes,Yes,NA,NA,NA,NA
+2020-10_south-west_stereoBRUVs,IOREDO344,No-take,114.6744,-34.0844,Daphne - finishes at 59:27,Claude,2020-11-23T07:12+08:00,South-west,C.IO.14,138,Yes,Yes,NA,NA,NA,NA
+2021-05_Abrolhos_stereo-BRUVs,npz6.26,No-take,113.4563,-28.0937,Molly Gerrans,Molly Gerrans,2021-05-12T08:43:00+08:00,NPZ6,npz6.29,33.7,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.27,No-take,113.4464,-28.0562,Molly Gerrans,Molly Gerrans,2021-05-12T09:21:00+08:00,NPZ6,npz6.30,39,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.14,No-take,113.4213,-28.0937,Molly Gerrans,Molly Gerrans,2021-05-12T08:56:00+08:00,NPZ6,npz6.14,42.1,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.18,No-take,113.4438,-28.0962,Molly Gerrans,Molly Gerrans,2021-05-12T08:48:00+08:00,NPZ6,npz6.19,42.7,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.2,No-take,113.4339,-28.0612,Molly Gerrans,Molly Gerrans,2021-05-12T09:26:00+08:00,NPZ6,npz6.2,43.6,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.22,No-take,113.4512,-28.0687,Molly Gerrans,Molly Gerrans,2021-05-12T09:16:00+08:00,NPZ6,npz6.23,45,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.20,No-take,113.4593,-28.0736,Molly Gerrans,Molly Gerrans,2021-05-12T09:13:00+08:00,NPZ6,npz6.21,50.4,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.24,No-take,113.4414,-28.0787,Molly Gerrans,Molly Gerrans,2021-05-12T09:07:00+08:00,NPZ6,npz6.27,53.7,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.6,No-take,113.4439,-28.0837,Molly Gerrans,Molly Gerrans,2021-05-12T09:04:00+08:00,NPZ6,npz6.6,55.1,Yes,Yes,Yes,No,Unknown,NA
+2021-05_Abrolhos_stereo-BRUVs,npz6.21,No-take,113.3992,-28.0714,Molly Gerrans,Molly Gerrans,2021-05-12T10:54:00+08:00,NPZ6,npz6.22,59.3,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.5,No-take,113.3935,-28.0636,Molly Gerrans,Molly Gerrans,2021-05-12T10:50:00+08:00,NPZ6,npz6.5,65.8,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.36,Fished,113.4089,-28.1062,Molly Gerrans,Molly Gerrans,2021-05-12T15:02:00+08:00,NPZ6,out6.9,66.5,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.4,No-take,113.3988,-28.0814,Molly Gerrans,Molly Gerrans,2021-05-12T10:57:00+08:00,NPZ6,npz6.4,67.5,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.9,No-take,113.3814,-28.0386,Molly Gerrans,Claude Spencer,2021-05-12T11:28:00+08:00,NPZ6,npz6.9,77.2,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.9,No-take,113.1888,-27.1288,Molly Gerrans,Molly Gerrans,2021-05-15T08:48:00+08:00,NPZ9,npz9.9,82.1,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.11,No-take,113.1889,-27.1238,Molly Gerrans,Claude Spencer,2021-05-15T08:46:00+08:00,NPZ9,npz9.11,85.8,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.19,No-take,113.1764,-27.1539,Molly Gerrans,N/A,2021-05-15T08:58:00+08:00,NPZ9,npz9.19,87.1,Yes,No,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.5,No-take,113.214,-27.151,Molly Gerrans,Molly Gerrans,2021-05-15T08:09:00+08:00,NPZ9,npz9.5,87.8,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.30,No-take,113.1864,-27.1187,Molly Gerrans,Claude Spencer/Molly Gerrans,2021-05-15T08:43:00+08:00,NPZ9,npz9.30,90.3,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.26,No-take,113.2139,-27.1437,Molly Gerrans,Claude Spencer,2021-05-15T08:14:00+08:00,NPZ9,npz9.26,90.9,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.2,No-take,113.1465,-27.1411,Molly Gerrans,Claude Spencer,2021-05-15T10:52:00+08:00,NPZ9,npz9.2,92.1,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.12,No-take,113.2039,-27.1462,Molly Gerrans,Molly Gerrans,2021-05-15T08:19:00+08:00,NPZ9,npz9.12,92.2,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.10,No-take,113.1565,-27.1638,Molly Gerrans,Claude Spencer/Molly Gerrans,2021-05-15T10:36:00+08:00,NPZ9,npz9.10,93.6,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.17,No-take,113.3839,-28.0837,Molly Gerrans,Molly Gerrans,2021-05-12T11:03:00+08:00,NPZ6,npz6.18,94,Yes,Yes,Yes,No,Unknown,NA
+2021-05_Abrolhos_stereo-BRUVs,npz9.29,No-take,113.2089,-27.1313,Molly Gerrans,Molly Gerrans,2021-05-15T08:27:00+08:00,NPZ9,npz9.29,96.7,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.7,No-take,113.1964,-27.1162,Molly Gerrans,Molly Gerrans,2021-05-15T08:37:00+08:00,NPZ9,npz9.7,97.2,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.14,No-take,113.1364,-27.1438,Molly Gerrans,Claude Spencer/Molly Gerrans,2021-05-15T10:56:00+08:00,NPZ9,npz9.14,101,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.22,No-take,113.1413,-27.1537,Molly Gerrans,Claude Spencer,2021-05-15T10:34:00+08:00,NPZ9,npz9.22,102,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.3,No-take,113.1239,-27.1312,Molly Gerrans,Claude Spencer/Molly Gerrans,2021-05-15T11:04:00+08:00,NPZ9,npz9.3,104,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.BOSS41,Fished,113.3939,-28.1137,Molly Gerrans,Molly Gerrans,2021-05-12T14:57:00+08:00,NPZ6,NA,104,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.4,No-take,113.1139,-27.1163,Molly Gerrans,N/A,2021-05-15T13:11:00+08:00,NPZ9,npz9.4,104,Yes,No,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.8,No-take,113.1189,-27.1261,Molly Gerrans,Claude Spencer,2021-05-15T11:08:00+08:00,NPZ9,npz9.8,105,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.16,No-take,113.109,-27.1187,Molly Gerrans,Claude Spencer,2021-05-15T13:16:00+08:00,NPZ9,npz9.16,108,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.13,No-take,113.1038,-27.1113,Molly Gerrans,Claude Spencer/Molly Gerrans,2021-05-15T13:27:00+08:00,NPZ9,npz9.13,109,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.13,No-take,113.3714,-28.0611,Molly Gerrans,Molly Gerrans,2021-05-12T11:19:00+08:00,NPZ6,npz6.13,109,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.10,No-take,113.3764,-28.0787,Molly Gerrans,Molly Gerrans,2021-05-12T11:07:00+08:00,NPZ6,npz6.10,112,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.17,No-take,113.0913,-27.1012,Molly Gerrans,Claude Spencer,2021-05-15T13:37:00+08:00,NPZ9,npz9.17,114,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.27,No-take,113.1014,-27.1164,Molly Gerrans,Claude Spencer/Molly Gerrans,2021-05-15T13:21:00+08:00,NPZ9,npz9.27,114,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.1,No-take,113.0863,-27.0962,Molly Gerrans,Claude Spencer,2021-05-15T13:43:00+08:00,NPZ9,npz9.1,116,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.24,No-take,113.1067,-27.1311,Molly Gerrans,Claude Spencer/Molly Gerrans,2021-05-15T11:14:00+08:00,NPZ9,npz9.24,117,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.21,No-take,113.1014,-27.1362,Molly Gerrans,Claude Spencer,2021-05-15T11:26:00+08:00,NPZ9,npz9.21,122,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.C02,Fished,113.385,-28.118,Molly Gerrans,Molly Gerrans,2021-05-12T14:52:00+08:00,NPZ6,NA,125,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.18,No-take,113.0664,-27.1236,Molly Gerrans,Claude Spencer,2021-05-15T14:08:00+08:00,NPZ9,npz9.18,132,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.28,No-take,113.0538,-27.1013,Molly Gerrans,Claude Spencer,2021-05-15T13:57:00+08:00,NPZ9,npz9.28,132,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz9.25,No-take,113.074,-27.1462,Molly Gerrans,Claude Spencer,2021-05-15T14:17:00+08:00,NPZ9,npz9.25,133,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.C01,Fished,113.3706,-28.1078,Molly Gerrans,Molly Gerrans,2021-05-12T14:39:00+08:00,NPZ6,NA,138,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.15,No-take,113.3488,-28.0588,Molly Gerrans,Claude Spencer,2021-05-12T11:41:00+08:00,NPZ6,npz6.15,145,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.28,Fished,113.3663,-28.1237,Molly Gerrans,Molly Gerrans,2021-05-12T14:45:00+08:00,NPZ6,out6.1,149,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.8,No-take,113.3413,-28.0688,Molly Gerrans,Molly Gerrans,2021-05-12T11:45:00+08:00,NPZ6,npz6.8,154,Yes,Yes,Yes,Yes,Unknown,Unknown
+2021-05_Abrolhos_stereo-BRUVs,npz6.12,No-take,113.2763,-28.0512,NA,N/A,2021-05-12T13:48:00+08:00,NPZ6,npz6.12,185,No,No,Yes,Yes,Unknown,Unknown
+2021-05_PtCloates_stereo-BRUVs,17,Fished,113.5195,-22.7757,Charlotte Aston,Henry Evans,2021-05-18T12:28+08:00,Point Cloates,outNP.5,104,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,22,Fished,113.4964,-22.7812,Charlotte Aston,Henry Evans,2021-05-18T12:19+08:00,Point Cloates,outNP.10,138,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,25,Fished,113.4939,-22.7937,Charlotte Aston,Henry Evans,2021-05-18T12:11+08:00,Point Cloates,outNP.13,135,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,15,Fished,113.5138,-22.7461,Charlotte Aston,Henry Evans,2021-05-18T12:40+08:00,Point Cloates,outNP.3,130,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,7,No-take,113.5365,-22.7287,Charlotte Aston,Molly Gerrans,2021-05-18T12:57+08:00,Point Cloates,inNP.7,100,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,13,Fished,113.5041,-22.7963,Charlotte Aston,Molly Gerrans,2021-05-18T12:08+08:00,Point Cloates,outNP.1,116,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,12,No-take,113.5214,-22.7262,Charlotte Aston,Molly Gerrans,2021-05-18T12:48+08:00,Point Cloates,inNP.12,126,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,16,Fished,113.5115,-22.7812,Gabby Cummins,N/A,2021-05-18T12:24+08:00,Point Cloates,outNP.4,111,Yes,No,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,21,Fished,113.5189,-22.7563,Gabby Cummins,Molly Gerrans,2021-05-18T12:36+08:00,Point Cloates,outNP.9,112,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,6,No-take,113.5465,-22.721,Charlotte Aston,Molly Gerrans,2021-05-18T14:41+08:00,Point Cloates,inNP.6,88.5,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,2,No-take,113.5386,-22.7108,Charlotte Aston,Molly Gerrans,2021-05-18T14:46+08:00,Point Cloates,inNP.2,104,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,3,No-take,113.5263,-22.7087,Charlotte Aston,Molly Gerrans,2021-05-18T14:51+08:00,Point Cloates,inNP.3,129,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,1,No-take,113.5315,-22.696,Charlotte Aston/Henry Evans,Molly Gerrans,2021-05-18T14:56+08:00,Point Cloates,inNP.1,129,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,4,No-take,113.5413,-22.6937,Charlotte Aston,Molly Gerrans,2021-05-18T15:00+08:00,Point Cloates,inNP.4,110,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,27,No-take,113.556,-22.7027,Gabby Cummins,Molly Gerrans,2021-05-18T15:06+08:00,Point Cloates,NA,77.8,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,8,No-take,113.5563,-22.6884,Charlotte Aston,Molly Gerrans,2021-05-18T15:12+08:00,Point Cloates,inNP.8,89.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,11,No-take,113.5387,-22.6761,Charlotte Aston,Molly Gerrans,2021-05-18T15:20+08:00,Point Cloates,inNP.11,139,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,10,No-take,113.524,-22.6734,Charlotte Aston,Molly Gerrans,2021-05-18T15:27+08:00,Point Cloates,inNP.10,197,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,5,No-take,113.5139,-22.6837,Gabby Cummins,Molly Gerrans,2021-05-19T07:59+08:00,Point Cloates,inNP.5,206,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,9,No-take,113.5064,-22.6962,Gabby Cummins,In progress - weird jumping (check with Claude),2021-05-19T08:27+08:00,Point Cloates,inNP.9,207,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,18,Fished,113.4913,-22.7311,Gabby Cummins,Molly Gerrans,2021-05-19T08:40+08:00,Point Cloates,outNP.6,204,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,23,Fished,113.4887,-22.7362,Gabby Cummins,Molly Gerrans,2021-05-19T08:42+08:00,Point Cloates,outNP.11,204,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,14,Fished,113.4991,-22.7413,Gabby Cummins,Molly Gerrans,2021-05-19T08:48+08:00,Point Cloates,outNP.2,179,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,19,Fished,113.484,-22.7437,Gabby Cummins,Molly Gerrans,2021-05-19T08:53+08:00,Point Cloates,outNP.7,206,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2021-05_PtCloates_stereo-BRUVs,26,Fished,113.4763,-22.7537,Gabby Cummins,Molly Gerrans,2021-05-19T08:59+08:00,Point Cloates,outNP.14,209,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,1,No-take,113.5447,-22.7221,Kaitlin McCloghry,Henry Evans,2022-05-22T10:03:24+08:00,NA,NA,93.9,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,2,No-take,113.5628,-22.6957,Kaitlin McCloghry,Henry Evans,2022-05-22T14:16:25+08:00,NA,NA,77.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,3,No-take,113.5515,-22.7379,Kaitlin McCloghry,Henry Evans,2022-05-20T14:34:36+08:00,NA,NA,78.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,4,No-take,113.5555,-22.7337,Kaitlin McCloghry,Henry Evans,2022-05-20T14:40:43+08:00,NA,NA,73.9,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,5,No-take,113.5506,-22.7218,Kaitlin McCloghry,Henry Evans,2022-05-22T08:50:54+08:00,NA,NA,81.9,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,6,No-take,113.5531,-22.7459,Kaitlin McCloghry,Henry Evans,2022-05-20T12:30:12+08:00,NA,NA,74.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,7,No-take,113.5382,-22.7574,Kaitlin McCloghry,Molly Gerrans/Kaitlin McCloghry,2022-05-20T09:36:32+08:00,NA,NA,89.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,8,No-take,113.5538,-22.7298,Kaitlin McCloghry,Henry Evans,2022-05-22T08:12:35+08:00,NA,NA,76.4,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,9,No-take,113.5571,-22.6934,Henry Evans,Kaitlin McCloghry,2022-05-22T14:27:15+08:00,NA,NA,84.9,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,10,No-take,113.5424,-22.7272,NA,NA,2022-05-22T08:25:30+08:00,NA,NA,94.7,No,No,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,11,No-take,113.5498,-22.7274,Henry Evans,Kaitlin McCloghry,2022-05-22T08:18:17+08:00,NA,NA,81,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,12,No-take,113.5476,-22.7505,Henry Evans,Kaitlin McCloghry,2022-05-20T12:11:27+08:00,NA,NA,80.5,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,13,No-take,113.5606,-22.6872,Kaitlin McCloghry,Henry Evans,2022-05-26T08:42:37+08:00,NA,NA,82.1,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,14,No-take,113.5568,-22.6876,Kaitlin McCloghry,Molly Gerrans/Kaitlin McCloghry,2022-05-26T08:48:10+08:00,NA,NA,90.5,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,15,No-take,113.5561,-22.6977,Kaitlin McCloghry,Henry Evans,2022-05-22T12:55:29+08:00,NA,NA,83.9,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,16,No-take,113.5395,-22.7406,Henry Evans,Kaitlin McCloghry,2022-05-20T14:06:11+08:00,NA,NA,93.2,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,17,No-take,113.5532,-22.7011,Henry Evans,Kaitlin McCloghry,2022-05-22T12:45:32+08:00,NA,NA,86.5,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,18,No-take,113.5492,-22.7101,Henry Evans,Kaitlin McCloghry,2022-05-22T10:29:53+08:00,NA,NA,91.5,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,19,No-take,113.5669,-22.6847,Kaitlin McCloghry,Henry Evans,2022-05-26T08:33:41+08:00,NA,NA,76.4,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,20,No-take,113.5561,-22.7212,Henry Evans,Kaitlin McCloghry,2022-05-22T08:44:53+08:00,NA,NA,76,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,21,No-take,113.5652,-22.6893,Kaitlin McCloghry,Henry Evans,2022-05-22T14:43:14+08:00,NA,NA,77.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,22,No-take,113.5554,-22.7072,Henry Evans,Kaitlin McCloghry,2022-05-22T10:42:04+08:00,NA,NA,81.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,23,No-take,113.542,-22.734,Henry Evans,Kaitlin McCloghry,2022-05-20T14:15:28+08:00,NA,NA,91.4,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,24,No-take,113.5507,-22.7426,Kaitlin McCloghry,Henry Evans,2022-05-20T12:42:58+08:00,NA,NA,79.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,25,No-take,113.5466,-22.7053,Kaitlin McCloghry,Henry Evans,2022-05-22T12:34:21+08:00,NA,NA,99.5,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,26,No-take,113.5484,-22.7615,Kaitlin McCloghry,Molly Gerrans/Kaitlin McCloghry,2022-05-20T09:08:31+08:00,NA,NA,77.2,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,27,No-take,113.5459,-22.7254,Kaitlin McCloghry,Henry Evans,2022-05-22T08:31:16+08:00,NA,NA,90.4,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,28,No-take,113.5625,-22.6987,Kaitlin McCloghry,Molly Gerrans/Kaitlin McCloghry,2022-05-22T13:05:17+08:00,NA,NA,76.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,29,No-take,113.5564,-22.691,Henry Evans,Kaitlin McCloghry,2022-05-22T14:54:59+08:00,NA,NA,87.9,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,30,No-take,113.5588,-22.7058,Kaitlin McCloghry,Henry Evans,2022-05-22T10:47:54+08:00,NA,NA,78.5,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,31,No-take,113.5424,-22.7542,Kaitlin McCloghry,Molly Gerrans/Kaitlin McCloghry,2022-05-20T10:27:48+08:00,NA,NA,82.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,32,No-take,113.5552,-22.7239,Henry Evans,Kaitlin McCloghry,2022-05-22T08:39:35+08:00,NA,NA,78.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,33,No-take,113.549,-22.719,Kaitlin McCloghry,Henry Evans,2022-05-22T10:09:30+08:00,NA,NA,85.4,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,34,No-take,113.5645,-22.6928,Kaitlin McCloghry,Molly Gerrans/Kaitlin McCloghry,2022-05-22T14:38:27+08:00,NA,NA,76.4,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,35,No-take,113.551,-22.6987,Kaitlin McCloghry,Henry Evans,2022-05-22T12:46:10+08:00,NA,NA,94.6,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,36,No-take,113.5477,-22.7318,Henry Evans,Kaitlin McCloghry,2022-05-20T14:25:23+08:00,NA,NA,83.2,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,37,No-take,113.5445,-22.7475,Kaitlin McCloghry,Molly Gerrans/Kaitlin McCloghry,2022-05-20T12:23:05+08:00,NA,NA,81.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,38,No-take,113.5642,-22.6868,Kaitlin McCloghry,Henry Evans,2022-05-26T08:38:39+08:00,NA,NA,78.6,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,39,No-take,113.5539,-22.7105,Kaitlin McCloghry,Henry Evans,2022-05-22T10:35:24+08:00,NA,NA,78.9,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,40,No-take,113.5444,-22.7522,Henry Evans,Kaitlin McCloghry,2022-05-20T11:58:07+08:00,NA,NA,84.1,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,41,No-take,113.5479,-22.7154,Henry Evans,Kaitlin McCloghry,2022-05-22T10:21:59+08:00,NA,NA,89.7,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,42,No-take,113.5537,-22.6952,Kaitlin McCloghry,Henry Evans,2022-05-22T12:51:14+08:00,NA,NA,92.3,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,43,No-take,113.5589,-22.7328,Henry Evans,Kaitlin McCloghry,2022-05-22T08:03:30+08:00,NA,NA,70.6,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,44,No-take,113.549,-22.7482,Henry Evans,Kaitlin McCloghry,2022-05-20T12:17:32+08:00,NA,NA,79.4,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,45,No-take,113.5432,-22.7602,test video,Kaitlin McCloghry,2022-05-20T09:23:19+08:00,NA,NA,81.8,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,46,No-take,113.5605,-22.693,Kaitlin McCloghry,Molly Gerrans/Kaitlin McCloghry,2022-05-22T14:30:54+08:00,NA,NA,79.5,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,47,No-take,113.5592,-22.6999,Kaitlin McCloghry,Henry Evans,2022-05-22T12:59:50+08:00,NA,NA,80.8,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,48,No-take,113.5596,-22.696,Henry Evans,Kaitlin McCloghry,2022-05-22T14:21:46+08:00,NA,NA,80.2,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,49,No-take,113.5443,-22.7309,NA,NA,2022-05-20T14:20:55+08:00,NA,NA,89.5,No,No,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,50,No-take,113.5528,-22.7173,Kaitlin McCloghry,Henry Evans,2022-05-22T10:14:30+08:00,NA,NA,81.9,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,51,No-take,113.5609,-22.69,Henry Evans,Kaitlin McCloghry,2022-05-22T14:49:13+08:00,NA,NA,79.4,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,52,No-take,113.5348,-22.7635,Molly Gerrans,Kaitlin McCloghry,2022-05-20T08:50:37+08:00,NA,NA,91,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,53,No-take,113.5636,-22.6839,Kaitlin McCloghry,Henry Evans,2022-05-26T08:29:10+08:00,NA,NA,78.2,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,54,No-take,113.5392,-22.7654,Molly Gerrans,Kaitlin McCloghry,2022-05-20T08:32:36+08:00,NA,NA,83.1,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,55,No-take,113.529,-22.7564,test video,Kaitlin McCloghry,2022-05-20T09:48:49+08:00,NA,NA,89.1,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,56,No-take,113.5302,-22.7534,Kaitlin McCloghry,Molly Gerrans/Kaitlin McCloghry,2022-05-20T10:09:08+08:00,NA,NA,99.8,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,57,No-take,113.561,-22.6751,Kaitlin McCloghry,Molly Gerrans/Kaitlin McCloghry,2022-05-26T08:11:51+08:00,NA,NA,88.2,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,58,No-take,113.5502,-22.7056,Kaitlin McCloghry,Henry Evans,2022-05-22T12:28:44+08:00,NA,NA,90.9,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,59,No-take,113.5452,-22.7437,Kaitlin McCloghry,Henry Evans,2022-05-20T12:37:35+08:00,NA,NA,83.5,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,60,No-take,113.5386,-22.7516,Kaitlin McCloghry,Henry Evans,2022-05-20T12:05:02+08:00,NA,NA,91,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,61,No-take,113.5654,-22.6779,Kaitlin McCloghry,Henry Evans,2022-05-26T08:23:34+08:00,NA,NA,79.8,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,62,No-take,113.542,-22.7375,Henry Evans,Kaitlin McCloghry,2022-05-20T14:11:26+08:00,NA,NA,90.1,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,63,No-take,113.5666,-22.6744,Kaitlin McCloghry,Henry Evans,2022-05-26T08:17:59+08:00,NA,NA,81.1,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
+2022-05_PtCloates_stereo-BRUVs,64,No-take,113.5508,-22.7343,Kaitlin McCloghry,Henry Evans,2022-05-20T14:30:16+08:00,NA,NA,79.2,Yes,Yes,Yes,Yes,Gabby Cummins,Gabby Cummins
