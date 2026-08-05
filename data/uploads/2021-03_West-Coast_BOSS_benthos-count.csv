@@ -1,0 +1,1071 @@
+campaignid,period,level_1,level_2,level_3,level_4,level_5,level_6,level_7,level_8,family,genus,species,caab_code,count
+2021-03_West-Coast_BOSS,1,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,24
+2021-03_West-Coast_BOSS,1,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,29
+2021-03_West-Coast_BOSS,1,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,2
+2021-03_West-Coast_BOSS,1,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,8
+2021-03_West-Coast_BOSS,1,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2021-03_West-Coast_BOSS,1,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,9
+2021-03_West-Coast_BOSS,10,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,11
+2021-03_West-Coast_BOSS,10,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,44
+2021-03_West-Coast_BOSS,10,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,3
+2021-03_West-Coast_BOSS,10,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,2
+2021-03_West-Coast_BOSS,10,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2021-03_West-Coast_BOSS,10,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,7
+2021-03_West-Coast_BOSS,10,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,5
+2021-03_West-Coast_BOSS,100,Biota,Macroalgae,Articulated calcareous,NA,NA,NA,NA,NA,NA,NA,NA,80300911,1
+2021-03_West-Coast_BOSS,100,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,8
+2021-03_West-Coast_BOSS,100,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,24
+2021-03_West-Coast_BOSS,100,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,9
+2021-03_West-Coast_BOSS,100,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,100,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,9
+2021-03_West-Coast_BOSS,100,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,100,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,22
+2021-03_West-Coast_BOSS,101,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,101,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,1
+2021-03_West-Coast_BOSS,101,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,2
+2021-03_West-Coast_BOSS,101,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,3
+2021-03_West-Coast_BOSS,101,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,101,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,2
+2021-03_West-Coast_BOSS,101,Physical,Substrate,Consolidated (hard),Boulders,NA,NA,NA,NA,NA,NA,NA,82001003,1
+2021-03_West-Coast_BOSS,101,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,22
+2021-03_West-Coast_BOSS,101,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,40
+2021-03_West-Coast_BOSS,102,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,102,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,11
+2021-03_West-Coast_BOSS,102,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,34
+2021-03_West-Coast_BOSS,102,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,26
+2021-03_West-Coast_BOSS,102,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,102,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,103,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2021-03_West-Coast_BOSS,103,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,2
+2021-03_West-Coast_BOSS,103,Biota,Macroalgae,Erect coarse branching,Red,NA,NA,NA,NA,NA,NA,NA,80300906,1
+2021-03_West-Coast_BOSS,103,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,4
+2021-03_West-Coast_BOSS,103,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,2
+2021-03_West-Coast_BOSS,103,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,8
+2021-03_West-Coast_BOSS,103,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,103,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,3
+2021-03_West-Coast_BOSS,103,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,6
+2021-03_West-Coast_BOSS,103,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,32
+2021-03_West-Coast_BOSS,104,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,12
+2021-03_West-Coast_BOSS,104,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,32
+2021-03_West-Coast_BOSS,104,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,20
+2021-03_West-Coast_BOSS,104,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,104,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,5
+2021-03_West-Coast_BOSS,105,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,4
+2021-03_West-Coast_BOSS,105,Biota,Sponges,Crusts,NA,NA,NA,NA,NA,NA,NA,NA,10000901,3
+2021-03_West-Coast_BOSS,105,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,6
+2021-03_West-Coast_BOSS,105,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,3
+2021-03_West-Coast_BOSS,105,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,6
+2021-03_West-Coast_BOSS,105,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,105,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2021-03_West-Coast_BOSS,105,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,23
+2021-03_West-Coast_BOSS,106,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,6
+2021-03_West-Coast_BOSS,106,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,26
+2021-03_West-Coast_BOSS,106,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,16
+2021-03_West-Coast_BOSS,106,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,18
+2021-03_West-Coast_BOSS,106,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,106,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,106,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,106,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,2
+2021-03_West-Coast_BOSS,107,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,9
+2021-03_West-Coast_BOSS,107,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,52
+2021-03_West-Coast_BOSS,107,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,10
+2021-03_West-Coast_BOSS,107,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,107,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,6
+2021-03_West-Coast_BOSS,108,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,108,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,33
+2021-03_West-Coast_BOSS,108,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,4
+2021-03_West-Coast_BOSS,108,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,25
+2021-03_West-Coast_BOSS,108,Biota,Sponges,Crusts,NA,NA,NA,NA,NA,NA,NA,NA,10000901,1
+2021-03_West-Coast_BOSS,108,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2021-03_West-Coast_BOSS,108,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,108,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,6
+2021-03_West-Coast_BOSS,109,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,80
+2021-03_West-Coast_BOSS,11,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,1
+2021-03_West-Coast_BOSS,11,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,11,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,11,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,19
+2021-03_West-Coast_BOSS,11,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,36
+2021-03_West-Coast_BOSS,110,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,110,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,24
+2021-03_West-Coast_BOSS,110,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,6
+2021-03_West-Coast_BOSS,110,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,33
+2021-03_West-Coast_BOSS,110,Biota,Sponges,Crusts,NA,NA,NA,NA,NA,NA,NA,NA,10000901,1
+2021-03_West-Coast_BOSS,110,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2021-03_West-Coast_BOSS,110,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,8
+2021-03_West-Coast_BOSS,111,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,111,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,35
+2021-03_West-Coast_BOSS,111,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,18
+2021-03_West-Coast_BOSS,111,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,3
+2021-03_West-Coast_BOSS,111,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,111,Physical,Substrate,Consolidated (hard),Boulders,NA,NA,NA,NA,NA,NA,NA,82001003,1
+2021-03_West-Coast_BOSS,111,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,8
+2021-03_West-Coast_BOSS,111,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,6
+2021-03_West-Coast_BOSS,111,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,5
+2021-03_West-Coast_BOSS,112,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2021-03_West-Coast_BOSS,112,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,1
+2021-03_West-Coast_BOSS,112,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,19
+2021-03_West-Coast_BOSS,112,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2021-03_West-Coast_BOSS,112,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,44
+2021-03_West-Coast_BOSS,112,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,9
+2021-03_West-Coast_BOSS,113,Biota,Bryozoa,NA,NA,NA,NA,NA,NA,NA,NA,NA,20000000,1
+2021-03_West-Coast_BOSS,113,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2021-03_West-Coast_BOSS,113,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,113,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,5
+2021-03_West-Coast_BOSS,113,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,113,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,113,Physical,Substrate,Consolidated (hard),Boulders,NA,NA,NA,NA,NA,NA,NA,82001003,2
+2021-03_West-Coast_BOSS,113,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,113,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,66
+2021-03_West-Coast_BOSS,114,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,114,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,40
+2021-03_West-Coast_BOSS,114,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,4
+2021-03_West-Coast_BOSS,114,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,24
+2021-03_West-Coast_BOSS,114,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,114,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,7
+2021-03_West-Coast_BOSS,114,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,1
+2021-03_West-Coast_BOSS,115,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2021-03_West-Coast_BOSS,115,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,2
+2021-03_West-Coast_BOSS,115,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,1
+2021-03_West-Coast_BOSS,115,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,12
+2021-03_West-Coast_BOSS,115,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,5
+2021-03_West-Coast_BOSS,115,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,27
+2021-03_West-Coast_BOSS,115,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,11
+2021-03_West-Coast_BOSS,115,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,20
+2021-03_West-Coast_BOSS,116,Biota,Macroalgae,Articulated calcareous,NA,NA,NA,NA,NA,NA,NA,NA,80300911,1
+2021-03_West-Coast_BOSS,116,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,5
+2021-03_West-Coast_BOSS,116,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,40
+2021-03_West-Coast_BOSS,116,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,12
+2021-03_West-Coast_BOSS,116,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,1
+2021-03_West-Coast_BOSS,116,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,116,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2021-03_West-Coast_BOSS,116,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,12
+2021-03_West-Coast_BOSS,117,Biota,Sponges,Crusts,NA,NA,NA,NA,NA,NA,NA,NA,10000901,1
+2021-03_West-Coast_BOSS,117,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2021-03_West-Coast_BOSS,117,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,14
+2021-03_West-Coast_BOSS,117,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,39
+2021-03_West-Coast_BOSS,118,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,7
+2021-03_West-Coast_BOSS,118,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,51
+2021-03_West-Coast_BOSS,118,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,2
+2021-03_West-Coast_BOSS,118,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,2
+2021-03_West-Coast_BOSS,118,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,118,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,10
+2021-03_West-Coast_BOSS,118,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,118,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,5
+2021-03_West-Coast_BOSS,119,Biota,Bryozoa,NA,NA,NA,NA,NA,NA,NA,NA,NA,20000000,1
+2021-03_West-Coast_BOSS,119,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2021-03_West-Coast_BOSS,119,Biota,Macroalgae,Encrusting,Red,NA,NA,NA,NA,NA,NA,NA,80300929,1
+2021-03_West-Coast_BOSS,119,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,5
+2021-03_West-Coast_BOSS,119,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2021-03_West-Coast_BOSS,119,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,8
+2021-03_West-Coast_BOSS,119,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,119,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,13
+2021-03_West-Coast_BOSS,119,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,119,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,15
+2021-03_West-Coast_BOSS,119,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,12,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,3
+2021-03_West-Coast_BOSS,12,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,12,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,1
+2021-03_West-Coast_BOSS,12,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,12,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,12,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,4
+2021-03_West-Coast_BOSS,12,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,6
+2021-03_West-Coast_BOSS,12,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,30
+2021-03_West-Coast_BOSS,12,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,21
+2021-03_West-Coast_BOSS,12,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,120,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,8
+2021-03_West-Coast_BOSS,120,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,46
+2021-03_West-Coast_BOSS,120,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,1
+2021-03_West-Coast_BOSS,120,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,7
+2021-03_West-Coast_BOSS,120,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,120,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,120,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,2
+2021-03_West-Coast_BOSS,120,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,11
+2021-03_West-Coast_BOSS,121,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,121,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,47
+2021-03_West-Coast_BOSS,121,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,10
+2021-03_West-Coast_BOSS,121,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,2
+2021-03_West-Coast_BOSS,121,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,4
+2021-03_West-Coast_BOSS,121,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,4
+2021-03_West-Coast_BOSS,121,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,121,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,8
+2021-03_West-Coast_BOSS,122,Biota,Macroalgae,Articulated calcareous,NA,NA,NA,NA,NA,NA,NA,NA,80300911,1
+2021-03_West-Coast_BOSS,122,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,26
+2021-03_West-Coast_BOSS,122,Biota,Macroalgae,Globose / saccate,NA,NA,NA,NA,NA,NA,NA,NA,80300914,2
+2021-03_West-Coast_BOSS,122,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,122,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,122,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,5
+2021-03_West-Coast_BOSS,122,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,21
+2021-03_West-Coast_BOSS,122,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,2
+2021-03_West-Coast_BOSS,122,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,17
+2021-03_West-Coast_BOSS,123,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,1
+2021-03_West-Coast_BOSS,123,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,16
+2021-03_West-Coast_BOSS,123,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,123,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,4
+2021-03_West-Coast_BOSS,123,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,123,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,5
+2021-03_West-Coast_BOSS,123,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,123,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,7
+2021-03_West-Coast_BOSS,123,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Pebble (10-64mm),NA,NA,NA,NA,NA,NA,82001012,1
+2021-03_West-Coast_BOSS,123,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,40
+2021-03_West-Coast_BOSS,124,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,124,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,37
+2021-03_West-Coast_BOSS,124,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,124,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,124,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,124,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,36
+2021-03_West-Coast_BOSS,125,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,125,Biota,Macroalgae,Erect fine branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300908,1
+2021-03_West-Coast_BOSS,125,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,30
+2021-03_West-Coast_BOSS,125,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,7
+2021-03_West-Coast_BOSS,125,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,6
+2021-03_West-Coast_BOSS,125,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,4
+2021-03_West-Coast_BOSS,125,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,125,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2021-03_West-Coast_BOSS,125,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,3
+2021-03_West-Coast_BOSS,125,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,125,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,15
+2021-03_West-Coast_BOSS,126,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,10
+2021-03_West-Coast_BOSS,126,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,28
+2021-03_West-Coast_BOSS,126,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,3
+2021-03_West-Coast_BOSS,126,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,126,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,10
+2021-03_West-Coast_BOSS,126,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,126,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,21
+2021-03_West-Coast_BOSS,127,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,17
+2021-03_West-Coast_BOSS,127,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,9
+2021-03_West-Coast_BOSS,127,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,10
+2021-03_West-Coast_BOSS,127,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,20
+2021-03_West-Coast_BOSS,127,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,127,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,127,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,12
+2021-03_West-Coast_BOSS,127,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,1
+2021-03_West-Coast_BOSS,128,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,128,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,59
+2021-03_West-Coast_BOSS,128,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,4
+2021-03_West-Coast_BOSS,128,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,128,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,2
+2021-03_West-Coast_BOSS,128,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,128,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,4
+2021-03_West-Coast_BOSS,128,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,3
+2021-03_West-Coast_BOSS,128,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,129,Biota,Bryozoa,NA,NA,NA,NA,NA,NA,NA,NA,NA,20000000,4
+2021-03_West-Coast_BOSS,129,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,3
+2021-03_West-Coast_BOSS,129,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,2
+2021-03_West-Coast_BOSS,129,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,1
+2021-03_West-Coast_BOSS,129,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,129,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,8
+2021-03_West-Coast_BOSS,129,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,28
+2021-03_West-Coast_BOSS,129,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,8
+2021-03_West-Coast_BOSS,129,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,6
+2021-03_West-Coast_BOSS,13,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,13,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,55
+2021-03_West-Coast_BOSS,13,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,2
+2021-03_West-Coast_BOSS,13,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,13,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,2
+2021-03_West-Coast_BOSS,13,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,11
+2021-03_West-Coast_BOSS,13,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,5
+2021-03_West-Coast_BOSS,130,Biota,Cnidaria,Corals,Stony corals,Foliose / plate,NA,NA,NA,NA,NA,NA,11290907,18
+2021-03_West-Coast_BOSS,130,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,6
+2021-03_West-Coast_BOSS,130,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,17
+2021-03_West-Coast_BOSS,130,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,12
+2021-03_West-Coast_BOSS,130,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,2
+2021-03_West-Coast_BOSS,130,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,17
+2021-03_West-Coast_BOSS,130,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,130,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,7
+2021-03_West-Coast_BOSS,131,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,5
+2021-03_West-Coast_BOSS,131,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,131,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,4
+2021-03_West-Coast_BOSS,131,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,28
+2021-03_West-Coast_BOSS,131,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2021-03_West-Coast_BOSS,131,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,9
+2021-03_West-Coast_BOSS,132,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,2
+2021-03_West-Coast_BOSS,132,Biota,Sponges,Crusts,NA,NA,NA,NA,NA,NA,NA,NA,10000901,4
+2021-03_West-Coast_BOSS,132,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,9
+2021-03_West-Coast_BOSS,132,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,60
+2021-03_West-Coast_BOSS,133,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,133,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,25
+2021-03_West-Coast_BOSS,133,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,14
+2021-03_West-Coast_BOSS,133,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,19
+2021-03_West-Coast_BOSS,133,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,133,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,133,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,3
+2021-03_West-Coast_BOSS,133,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,2
+2021-03_West-Coast_BOSS,134,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,134,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,55
+2021-03_West-Coast_BOSS,134,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,3
+2021-03_West-Coast_BOSS,134,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,14
+2021-03_West-Coast_BOSS,134,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,134,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,134,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,2
+2021-03_West-Coast_BOSS,135,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,3
+2021-03_West-Coast_BOSS,135,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2021-03_West-Coast_BOSS,135,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,6
+2021-03_West-Coast_BOSS,135,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,135,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,9
+2021-03_West-Coast_BOSS,135,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,3
+2021-03_West-Coast_BOSS,135,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,6
+2021-03_West-Coast_BOSS,136,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,136,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,60
+2021-03_West-Coast_BOSS,136,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,8
+2021-03_West-Coast_BOSS,136,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,8
+2021-03_West-Coast_BOSS,136,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,1
+2021-03_West-Coast_BOSS,137,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,13
+2021-03_West-Coast_BOSS,137,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,30
+2021-03_West-Coast_BOSS,137,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,2
+2021-03_West-Coast_BOSS,137,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,9
+2021-03_West-Coast_BOSS,137,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,4
+2021-03_West-Coast_BOSS,137,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,3
+2021-03_West-Coast_BOSS,137,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,15
+2021-03_West-Coast_BOSS,138,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,19
+2021-03_West-Coast_BOSS,138,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,28
+2021-03_West-Coast_BOSS,138,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,26
+2021-03_West-Coast_BOSS,138,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,139,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,41
+2021-03_West-Coast_BOSS,139,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,17
+2021-03_West-Coast_BOSS,139,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,3
+2021-03_West-Coast_BOSS,139,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,139,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,10
+2021-03_West-Coast_BOSS,139,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,5
+2021-03_West-Coast_BOSS,14,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,14,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,33
+2021-03_West-Coast_BOSS,14,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,5
+2021-03_West-Coast_BOSS,14,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2021-03_West-Coast_BOSS,14,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,14,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2021-03_West-Coast_BOSS,14,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,8
+2021-03_West-Coast_BOSS,14,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,15
+2021-03_West-Coast_BOSS,140,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,140,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,50
+2021-03_West-Coast_BOSS,140,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,9
+2021-03_West-Coast_BOSS,140,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,140,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,6
+2021-03_West-Coast_BOSS,140,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,3
+2021-03_West-Coast_BOSS,140,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,5
+2021-03_West-Coast_BOSS,141,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,76
+2021-03_West-Coast_BOSS,142,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,34
+2021-03_West-Coast_BOSS,142,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,21
+2021-03_West-Coast_BOSS,142,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,14
+2021-03_West-Coast_BOSS,142,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,142,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,142,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,2
+2021-03_West-Coast_BOSS,143,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,2
+2021-03_West-Coast_BOSS,143,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2021-03_West-Coast_BOSS,143,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,143,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,12
+2021-03_West-Coast_BOSS,143,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,51
+2021-03_West-Coast_BOSS,143,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,8
+2021-03_West-Coast_BOSS,144,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,144,Biota,Macroalgae,Erect coarse branching,Red,NA,NA,NA,NA,NA,NA,NA,80300906,1
+2021-03_West-Coast_BOSS,144,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,23
+2021-03_West-Coast_BOSS,144,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,2
+2021-03_West-Coast_BOSS,144,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,9
+2021-03_West-Coast_BOSS,144,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,144,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,144,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,144,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,144,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,5
+2021-03_West-Coast_BOSS,144,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,24
+2021-03_West-Coast_BOSS,145,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,80
+2021-03_West-Coast_BOSS,146,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,8
+2021-03_West-Coast_BOSS,146,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,1
+2021-03_West-Coast_BOSS,146,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,1
+2021-03_West-Coast_BOSS,146,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,2
+2021-03_West-Coast_BOSS,146,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,146,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,6
+2021-03_West-Coast_BOSS,146,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,146,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,5
+2021-03_West-Coast_BOSS,146,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,51
+2021-03_West-Coast_BOSS,146,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,147,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,21
+2021-03_West-Coast_BOSS,147,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,28
+2021-03_West-Coast_BOSS,147,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,2
+2021-03_West-Coast_BOSS,147,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,147,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,7
+2021-03_West-Coast_BOSS,147,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,7
+2021-03_West-Coast_BOSS,147,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,10
+2021-03_West-Coast_BOSS,148,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,22
+2021-03_West-Coast_BOSS,148,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,148,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,148,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,148,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,45
+2021-03_West-Coast_BOSS,149,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,149,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,41
+2021-03_West-Coast_BOSS,149,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,2
+2021-03_West-Coast_BOSS,149,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,7
+2021-03_West-Coast_BOSS,149,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,149,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,149,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,21
+2021-03_West-Coast_BOSS,15,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,3
+2021-03_West-Coast_BOSS,15,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2021-03_West-Coast_BOSS,15,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,4
+2021-03_West-Coast_BOSS,15,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,11
+2021-03_West-Coast_BOSS,15,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,25
+2021-03_West-Coast_BOSS,15,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,8
+2021-03_West-Coast_BOSS,15,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,11
+2021-03_West-Coast_BOSS,150,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,16
+2021-03_West-Coast_BOSS,150,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,18
+2021-03_West-Coast_BOSS,150,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,10
+2021-03_West-Coast_BOSS,150,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,150,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,26
+2021-03_West-Coast_BOSS,16,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,14
+2021-03_West-Coast_BOSS,16,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,30
+2021-03_West-Coast_BOSS,16,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,20
+2021-03_West-Coast_BOSS,16,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,16,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,16,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,5
+2021-03_West-Coast_BOSS,16,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,1
+2021-03_West-Coast_BOSS,17,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2021-03_West-Coast_BOSS,17,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,4
+2021-03_West-Coast_BOSS,17,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,17,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,70
+2021-03_West-Coast_BOSS,18,Biota,Macroalgae,Erect coarse branching,Red,NA,NA,NA,NA,NA,NA,NA,80300906,2
+2021-03_West-Coast_BOSS,18,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,16
+2021-03_West-Coast_BOSS,18,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,9
+2021-03_West-Coast_BOSS,18,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,11
+2021-03_West-Coast_BOSS,18,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,30
+2021-03_West-Coast_BOSS,19,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,27
+2021-03_West-Coast_BOSS,19,Biota,Macroalgae,Laminate,NA,NA,NA,NA,NA,NA,NA,NA,80300918,2
+2021-03_West-Coast_BOSS,19,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,29
+2021-03_West-Coast_BOSS,19,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,3
+2021-03_West-Coast_BOSS,19,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,11
+2021-03_West-Coast_BOSS,19,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,19,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2021-03_West-Coast_BOSS,19,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,19,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,19,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,1
+2021-03_West-Coast_BOSS,2,Biota,Macroalgae,Articulated calcareous,NA,NA,NA,NA,NA,NA,NA,NA,80300911,1
+2021-03_West-Coast_BOSS,2,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,31
+2021-03_West-Coast_BOSS,2,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,2,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,8
+2021-03_West-Coast_BOSS,2,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,3
+2021-03_West-Coast_BOSS,2,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,2,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,9
+2021-03_West-Coast_BOSS,2,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,17
+2021-03_West-Coast_BOSS,20,Biota,Macroalgae,Erect fine branching,Green,NA,NA,NA,NA,NA,NA,NA,80300909,1
+2021-03_West-Coast_BOSS,20,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,7
+2021-03_West-Coast_BOSS,20,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,2
+2021-03_West-Coast_BOSS,20,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,7
+2021-03_West-Coast_BOSS,20,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,9
+2021-03_West-Coast_BOSS,20,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,19
+2021-03_West-Coast_BOSS,20,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,35
+2021-03_West-Coast_BOSS,21,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,6
+2021-03_West-Coast_BOSS,21,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2021-03_West-Coast_BOSS,21,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,4
+2021-03_West-Coast_BOSS,21,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,4
+2021-03_West-Coast_BOSS,21,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,25
+2021-03_West-Coast_BOSS,21,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,26
+2021-03_West-Coast_BOSS,21,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,6
+2021-03_West-Coast_BOSS,22,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2021-03_West-Coast_BOSS,22,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,69
+2021-03_West-Coast_BOSS,23,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,11
+2021-03_West-Coast_BOSS,23,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,43
+2021-03_West-Coast_BOSS,23,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,1
+2021-03_West-Coast_BOSS,23,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,3
+2021-03_West-Coast_BOSS,23,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,23,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,7
+2021-03_West-Coast_BOSS,23,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,7
+2021-03_West-Coast_BOSS,24,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,13
+2021-03_West-Coast_BOSS,24,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,41
+2021-03_West-Coast_BOSS,24,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,17
+2021-03_West-Coast_BOSS,24,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,25,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,2
+2021-03_West-Coast_BOSS,25,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,25,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2021-03_West-Coast_BOSS,25,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,11
+2021-03_West-Coast_BOSS,25,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,27
+2021-03_West-Coast_BOSS,25,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,13
+2021-03_West-Coast_BOSS,25,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,15
+2021-03_West-Coast_BOSS,26,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,4
+2021-03_West-Coast_BOSS,26,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,1
+2021-03_West-Coast_BOSS,26,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,52
+2021-03_West-Coast_BOSS,26,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,2
+2021-03_West-Coast_BOSS,26,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,2
+2021-03_West-Coast_BOSS,26,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2021-03_West-Coast_BOSS,26,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,13
+2021-03_West-Coast_BOSS,27,Biota,Macroalgae,Encrusting,Red,NA,NA,NA,NA,NA,NA,NA,80300929,1
+2021-03_West-Coast_BOSS,27,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,27,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,25
+2021-03_West-Coast_BOSS,27,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,24
+2021-03_West-Coast_BOSS,27,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,2
+2021-03_West-Coast_BOSS,27,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,27,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,3
+2021-03_West-Coast_BOSS,27,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,28,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,28,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,39
+2021-03_West-Coast_BOSS,28,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,1
+2021-03_West-Coast_BOSS,28,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,14
+2021-03_West-Coast_BOSS,28,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2021-03_West-Coast_BOSS,28,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,7
+2021-03_West-Coast_BOSS,28,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,3
+2021-03_West-Coast_BOSS,28,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,28,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,5
+2021-03_West-Coast_BOSS,29,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2021-03_West-Coast_BOSS,29,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,13
+2021-03_West-Coast_BOSS,29,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2021-03_West-Coast_BOSS,29,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2021-03_West-Coast_BOSS,29,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,29,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2021-03_West-Coast_BOSS,29,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,29,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Pebble (10-64mm),NA,NA,NA,NA,NA,NA,82001012,1
+2021-03_West-Coast_BOSS,29,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,43
+2021-03_West-Coast_BOSS,3,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,10
+2021-03_West-Coast_BOSS,3,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,53
+2021-03_West-Coast_BOSS,3,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,5
+2021-03_West-Coast_BOSS,3,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,7
+2021-03_West-Coast_BOSS,3,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,30,Biota,Macroalgae,Erect coarse branching,Red,NA,NA,NA,NA,NA,NA,NA,80300906,1
+2021-03_West-Coast_BOSS,30,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,22
+2021-03_West-Coast_BOSS,30,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,31
+2021-03_West-Coast_BOSS,30,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,30,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,15
+2021-03_West-Coast_BOSS,30,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,30,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,30,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,31,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,4
+2021-03_West-Coast_BOSS,31,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,18
+2021-03_West-Coast_BOSS,31,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,11
+2021-03_West-Coast_BOSS,31,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,31,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,18
+2021-03_West-Coast_BOSS,31,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,31,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,3
+2021-03_West-Coast_BOSS,31,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,16
+2021-03_West-Coast_BOSS,31,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,31,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,4
+2021-03_West-Coast_BOSS,32,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,32,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,37
+2021-03_West-Coast_BOSS,32,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,5
+2021-03_West-Coast_BOSS,32,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,18
+2021-03_West-Coast_BOSS,32,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,3
+2021-03_West-Coast_BOSS,32,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,32,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,10
+2021-03_West-Coast_BOSS,33,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,33,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,62
+2021-03_West-Coast_BOSS,33,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,9
+2021-03_West-Coast_BOSS,33,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,1
+2021-03_West-Coast_BOSS,33,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,33,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,2
+2021-03_West-Coast_BOSS,33,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,1
+2021-03_West-Coast_BOSS,34,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,17
+2021-03_West-Coast_BOSS,34,Biota,Macroalgae,Erect coarse branching,Red,NA,NA,NA,NA,NA,NA,NA,80300906,1
+2021-03_West-Coast_BOSS,34,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,8
+2021-03_West-Coast_BOSS,34,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,14
+2021-03_West-Coast_BOSS,34,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,4
+2021-03_West-Coast_BOSS,34,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,35
+2021-03_West-Coast_BOSS,35,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,4
+2021-03_West-Coast_BOSS,35,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,48
+2021-03_West-Coast_BOSS,35,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,7
+2021-03_West-Coast_BOSS,35,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,9
+2021-03_West-Coast_BOSS,35,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,3
+2021-03_West-Coast_BOSS,35,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,7
+2021-03_West-Coast_BOSS,36,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,36,Biota,Macroalgae,Erect fine branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300908,2
+2021-03_West-Coast_BOSS,36,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,53
+2021-03_West-Coast_BOSS,36,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,7
+2021-03_West-Coast_BOSS,36,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,36,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,36,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,4
+2021-03_West-Coast_BOSS,37,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,37,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,75
+2021-03_West-Coast_BOSS,37,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,4
+2021-03_West-Coast_BOSS,38,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,31
+2021-03_West-Coast_BOSS,38,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,1
+2021-03_West-Coast_BOSS,38,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,19
+2021-03_West-Coast_BOSS,38,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,38,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,4
+2021-03_West-Coast_BOSS,38,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,38,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2021-03_West-Coast_BOSS,38,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,38,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,2
+2021-03_West-Coast_BOSS,39,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,37
+2021-03_West-Coast_BOSS,39,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,24
+2021-03_West-Coast_BOSS,39,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,7
+2021-03_West-Coast_BOSS,39,Biota,Sponges,Crusts,NA,NA,NA,NA,NA,NA,NA,NA,10000901,1
+2021-03_West-Coast_BOSS,39,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,39,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,39,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,4,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2021-03_West-Coast_BOSS,4,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,4,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,1
+2021-03_West-Coast_BOSS,4,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,27
+2021-03_West-Coast_BOSS,4,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,1
+2021-03_West-Coast_BOSS,4,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,3
+2021-03_West-Coast_BOSS,4,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2021-03_West-Coast_BOSS,4,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,4
+2021-03_West-Coast_BOSS,4,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,11
+2021-03_West-Coast_BOSS,4,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,16
+2021-03_West-Coast_BOSS,4,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,10
+2021-03_West-Coast_BOSS,40,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,40,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,77
+2021-03_West-Coast_BOSS,41,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,41,Biota,Macroalgae,Erect coarse branching,Red,NA,NA,NA,NA,NA,NA,NA,80300906,12
+2021-03_West-Coast_BOSS,41,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,47
+2021-03_West-Coast_BOSS,41,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,1
+2021-03_West-Coast_BOSS,41,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,1
+2021-03_West-Coast_BOSS,41,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,41,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,41,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,41,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,1
+2021-03_West-Coast_BOSS,42,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,1
+2021-03_West-Coast_BOSS,42,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,9
+2021-03_West-Coast_BOSS,42,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,69
+2021-03_West-Coast_BOSS,43,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,1
+2021-03_West-Coast_BOSS,43,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,9
+2021-03_West-Coast_BOSS,43,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,22
+2021-03_West-Coast_BOSS,43,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,8
+2021-03_West-Coast_BOSS,43,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,4
+2021-03_West-Coast_BOSS,43,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,9
+2021-03_West-Coast_BOSS,43,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,43,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,5
+2021-03_West-Coast_BOSS,43,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,6
+2021-03_West-Coast_BOSS,43,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,13
+2021-03_West-Coast_BOSS,44,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,46
+2021-03_West-Coast_BOSS,44,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,5
+2021-03_West-Coast_BOSS,44,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,18
+2021-03_West-Coast_BOSS,44,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,2
+2021-03_West-Coast_BOSS,44,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,5
+2021-03_West-Coast_BOSS,45,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,7
+2021-03_West-Coast_BOSS,45,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,45,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,45,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,38
+2021-03_West-Coast_BOSS,45,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,16
+2021-03_West-Coast_BOSS,45,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,8
+2021-03_West-Coast_BOSS,46,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,46,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,31
+2021-03_West-Coast_BOSS,46,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,6
+2021-03_West-Coast_BOSS,46,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,7
+2021-03_West-Coast_BOSS,46,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,5
+2021-03_West-Coast_BOSS,46,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,17
+2021-03_West-Coast_BOSS,46,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,46,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,6
+2021-03_West-Coast_BOSS,47,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,7
+2021-03_West-Coast_BOSS,47,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,48
+2021-03_West-Coast_BOSS,47,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,5
+2021-03_West-Coast_BOSS,47,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,18
+2021-03_West-Coast_BOSS,47,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,48,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,4
+2021-03_West-Coast_BOSS,48,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,41
+2021-03_West-Coast_BOSS,48,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,13
+2021-03_West-Coast_BOSS,48,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,8
+2021-03_West-Coast_BOSS,48,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,48,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,3
+2021-03_West-Coast_BOSS,48,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,48,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,4
+2021-03_West-Coast_BOSS,49,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2021-03_West-Coast_BOSS,49,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,49,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,72
+2021-03_West-Coast_BOSS,5,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,5
+2021-03_West-Coast_BOSS,5,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,1
+2021-03_West-Coast_BOSS,5,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,54
+2021-03_West-Coast_BOSS,5,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,6
+2021-03_West-Coast_BOSS,5,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2021-03_West-Coast_BOSS,5,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,5,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,5,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,5,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,50,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,50,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,37
+2021-03_West-Coast_BOSS,50,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,19
+2021-03_West-Coast_BOSS,50,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,50,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,16
+2021-03_West-Coast_BOSS,50,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,50,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,50,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,3
+2021-03_West-Coast_BOSS,51,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,51,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,30
+2021-03_West-Coast_BOSS,51,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,15
+2021-03_West-Coast_BOSS,51,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,27
+2021-03_West-Coast_BOSS,51,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,51,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2021-03_West-Coast_BOSS,51,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,2
+2021-03_West-Coast_BOSS,52,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,49
+2021-03_West-Coast_BOSS,52,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,13
+2021-03_West-Coast_BOSS,52,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,3
+2021-03_West-Coast_BOSS,52,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,52,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2021-03_West-Coast_BOSS,52,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2021-03_West-Coast_BOSS,52,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,2
+2021-03_West-Coast_BOSS,53,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,5
+2021-03_West-Coast_BOSS,53,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,42
+2021-03_West-Coast_BOSS,53,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,53,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,2
+2021-03_West-Coast_BOSS,53,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,5
+2021-03_West-Coast_BOSS,53,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,21
+2021-03_West-Coast_BOSS,54,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2021-03_West-Coast_BOSS,54,Biota,Cnidaria,Corals,Stony corals,Foliose / plate,NA,NA,NA,NA,NA,NA,11290907,2
+2021-03_West-Coast_BOSS,54,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,2
+2021-03_West-Coast_BOSS,54,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,7
+2021-03_West-Coast_BOSS,54,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,54,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,4
+2021-03_West-Coast_BOSS,54,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,54,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,4
+2021-03_West-Coast_BOSS,54,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,28
+2021-03_West-Coast_BOSS,54,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,11
+2021-03_West-Coast_BOSS,54,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,55,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2021-03_West-Coast_BOSS,55,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,2
+2021-03_West-Coast_BOSS,55,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2021-03_West-Coast_BOSS,55,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,55,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,8
+2021-03_West-Coast_BOSS,55,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,26
+2021-03_West-Coast_BOSS,55,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,10
+2021-03_West-Coast_BOSS,55,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,6
+2021-03_West-Coast_BOSS,56,Biota,Macroalgae,Encrusting,Red,NA,NA,NA,NA,NA,NA,NA,80300929,1
+2021-03_West-Coast_BOSS,56,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,56,Biota,Macroalgae,Erect coarse branching,Red,NA,NA,NA,NA,NA,NA,NA,80300906,1
+2021-03_West-Coast_BOSS,56,Biota,Macroalgae,Erect fine branching,Green,NA,NA,NA,NA,NA,NA,NA,80300909,1
+2021-03_West-Coast_BOSS,56,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,48
+2021-03_West-Coast_BOSS,56,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,6
+2021-03_West-Coast_BOSS,56,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,2
+2021-03_West-Coast_BOSS,56,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,1
+2021-03_West-Coast_BOSS,56,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,2
+2021-03_West-Coast_BOSS,56,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,56,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,13
+2021-03_West-Coast_BOSS,57,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,10
+2021-03_West-Coast_BOSS,57,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,36
+2021-03_West-Coast_BOSS,57,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,57,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,14
+2021-03_West-Coast_BOSS,57,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,57,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,57,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2021-03_West-Coast_BOSS,57,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,3
+2021-03_West-Coast_BOSS,57,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,8
+2021-03_West-Coast_BOSS,58,Biota,Macroalgae,Erect coarse branching,Red,NA,NA,NA,NA,NA,NA,NA,80300906,1
+2021-03_West-Coast_BOSS,58,Biota,Macroalgae,Erect fine branching,Green,NA,NA,NA,NA,NA,NA,NA,80300909,5
+2021-03_West-Coast_BOSS,58,Biota,Macroalgae,Filamentous / filiform,NA,NA,NA,NA,NA,NA,NA,NA,80300930,2
+2021-03_West-Coast_BOSS,58,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,3
+2021-03_West-Coast_BOSS,58,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,3
+2021-03_West-Coast_BOSS,58,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,11
+2021-03_West-Coast_BOSS,58,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,7
+2021-03_West-Coast_BOSS,58,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,32
+2021-03_West-Coast_BOSS,58,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,10
+2021-03_West-Coast_BOSS,59,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2021-03_West-Coast_BOSS,59,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,5
+2021-03_West-Coast_BOSS,59,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,59,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,8
+2021-03_West-Coast_BOSS,59,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,31
+2021-03_West-Coast_BOSS,59,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,14
+2021-03_West-Coast_BOSS,59,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,7
+2021-03_West-Coast_BOSS,6,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,6,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,44
+2021-03_West-Coast_BOSS,6,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,22
+2021-03_West-Coast_BOSS,6,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,3
+2021-03_West-Coast_BOSS,6,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,5
+2021-03_West-Coast_BOSS,60,Biota,Macroalgae,Erect coarse branching,Red,NA,NA,NA,NA,NA,NA,NA,80300906,2
+2021-03_West-Coast_BOSS,60,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,45
+2021-03_West-Coast_BOSS,60,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,2
+2021-03_West-Coast_BOSS,60,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,5
+2021-03_West-Coast_BOSS,60,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,3
+2021-03_West-Coast_BOSS,60,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,19
+2021-03_West-Coast_BOSS,60,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,4
+2021-03_West-Coast_BOSS,61,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,2
+2021-03_West-Coast_BOSS,61,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,5
+2021-03_West-Coast_BOSS,61,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2021-03_West-Coast_BOSS,61,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,61,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,61,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,61,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,16
+2021-03_West-Coast_BOSS,61,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,16
+2021-03_West-Coast_BOSS,61,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2021-03_West-Coast_BOSS,61,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,22
+2021-03_West-Coast_BOSS,62,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,7
+2021-03_West-Coast_BOSS,62,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,21
+2021-03_West-Coast_BOSS,62,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,1
+2021-03_West-Coast_BOSS,62,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,6
+2021-03_West-Coast_BOSS,62,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2021-03_West-Coast_BOSS,62,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,41
+2021-03_West-Coast_BOSS,63,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,2
+2021-03_West-Coast_BOSS,63,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,6
+2021-03_West-Coast_BOSS,63,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,8
+2021-03_West-Coast_BOSS,63,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,8
+2021-03_West-Coast_BOSS,63,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,63,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2021-03_West-Coast_BOSS,63,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,37
+2021-03_West-Coast_BOSS,64,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,64,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,34
+2021-03_West-Coast_BOSS,64,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,1
+2021-03_West-Coast_BOSS,64,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,64,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,13
+2021-03_West-Coast_BOSS,64,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,2
+2021-03_West-Coast_BOSS,64,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,4
+2021-03_West-Coast_BOSS,64,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,3
+2021-03_West-Coast_BOSS,64,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,14
+2021-03_West-Coast_BOSS,65,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,7
+2021-03_West-Coast_BOSS,65,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,41
+2021-03_West-Coast_BOSS,65,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,1
+2021-03_West-Coast_BOSS,65,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,65,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,3
+2021-03_West-Coast_BOSS,65,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,65,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,65,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,65,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,16
+2021-03_West-Coast_BOSS,66,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,4
+2021-03_West-Coast_BOSS,66,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,21
+2021-03_West-Coast_BOSS,66,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,34
+2021-03_West-Coast_BOSS,66,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,66,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,66,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,11
+2021-03_West-Coast_BOSS,66,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,6
+2021-03_West-Coast_BOSS,67,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,19
+2021-03_West-Coast_BOSS,67,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,32
+2021-03_West-Coast_BOSS,67,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,1
+2021-03_West-Coast_BOSS,67,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,2
+2021-03_West-Coast_BOSS,67,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,11
+2021-03_West-Coast_BOSS,67,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,13
+2021-03_West-Coast_BOSS,68,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,5
+2021-03_West-Coast_BOSS,68,Biota,Macroalgae,Erect coarse branching,Red,NA,NA,NA,NA,NA,NA,NA,80300906,1
+2021-03_West-Coast_BOSS,68,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,29
+2021-03_West-Coast_BOSS,68,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,5
+2021-03_West-Coast_BOSS,68,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,15
+2021-03_West-Coast_BOSS,68,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,15
+2021-03_West-Coast_BOSS,68,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,2
+2021-03_West-Coast_BOSS,69,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,69,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,17
+2021-03_West-Coast_BOSS,69,Biota,Macroalgae,Filamentous / filiform,NA,NA,NA,NA,NA,NA,NA,NA,80300930,3
+2021-03_West-Coast_BOSS,69,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,20
+2021-03_West-Coast_BOSS,69,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,9
+2021-03_West-Coast_BOSS,69,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,19
+2021-03_West-Coast_BOSS,7,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,7,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,21
+2021-03_West-Coast_BOSS,7,Biota,Macroalgae,Filamentous / filiform,NA,NA,NA,NA,NA,NA,NA,NA,80300930,2
+2021-03_West-Coast_BOSS,7,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,4
+2021-03_West-Coast_BOSS,7,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,10
+2021-03_West-Coast_BOSS,7,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,7,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,3
+2021-03_West-Coast_BOSS,7,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,1
+2021-03_West-Coast_BOSS,7,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,28
+2021-03_West-Coast_BOSS,70,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,2
+2021-03_West-Coast_BOSS,70,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,4
+2021-03_West-Coast_BOSS,70,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,17
+2021-03_West-Coast_BOSS,70,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,52
+2021-03_West-Coast_BOSS,71,Biota,Macroalgae,Erect fine branching,Green,NA,NA,NA,NA,NA,NA,NA,80300909,3
+2021-03_West-Coast_BOSS,71,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,56
+2021-03_West-Coast_BOSS,71,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,6
+2021-03_West-Coast_BOSS,71,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,5
+2021-03_West-Coast_BOSS,71,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,71,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,3
+2021-03_West-Coast_BOSS,71,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,5
+2021-03_West-Coast_BOSS,72,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2021-03_West-Coast_BOSS,72,Physical,Substrate,Consolidated (hard),Boulders,NA,NA,NA,NA,NA,NA,NA,82001003,3
+2021-03_West-Coast_BOSS,72,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,76
+2021-03_West-Coast_BOSS,73,Biota,Macroalgae,Articulated calcareous,NA,NA,NA,NA,NA,NA,NA,NA,80300911,1
+2021-03_West-Coast_BOSS,73,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,7
+2021-03_West-Coast_BOSS,73,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,58
+2021-03_West-Coast_BOSS,73,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,1
+2021-03_West-Coast_BOSS,73,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,3
+2021-03_West-Coast_BOSS,73,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,73,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,4
+2021-03_West-Coast_BOSS,73,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,2
+2021-03_West-Coast_BOSS,74,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,3
+2021-03_West-Coast_BOSS,74,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,74,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,4
+2021-03_West-Coast_BOSS,74,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,4
+2021-03_West-Coast_BOSS,74,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,13
+2021-03_West-Coast_BOSS,74,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,31
+2021-03_West-Coast_BOSS,74,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,8
+2021-03_West-Coast_BOSS,74,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,75,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,42
+2021-03_West-Coast_BOSS,75,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,9
+2021-03_West-Coast_BOSS,75,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,1
+2021-03_West-Coast_BOSS,75,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,2
+2021-03_West-Coast_BOSS,75,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,16
+2021-03_West-Coast_BOSS,75,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,1
+2021-03_West-Coast_BOSS,76,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,76,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,30
+2021-03_West-Coast_BOSS,76,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,11
+2021-03_West-Coast_BOSS,76,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,22
+2021-03_West-Coast_BOSS,76,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,76,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2021-03_West-Coast_BOSS,76,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,2
+2021-03_West-Coast_BOSS,76,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,4
+2021-03_West-Coast_BOSS,77,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,78
+2021-03_West-Coast_BOSS,78,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,9
+2021-03_West-Coast_BOSS,78,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,27
+2021-03_West-Coast_BOSS,78,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,17
+2021-03_West-Coast_BOSS,78,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,14
+2021-03_West-Coast_BOSS,78,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2021-03_West-Coast_BOSS,78,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,78,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,78,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,78,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,79,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,1
+2021-03_West-Coast_BOSS,79,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,14
+2021-03_West-Coast_BOSS,79,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,79,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,79,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,5
+2021-03_West-Coast_BOSS,79,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,8
+2021-03_West-Coast_BOSS,79,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,36
+2021-03_West-Coast_BOSS,8,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,18
+2021-03_West-Coast_BOSS,8,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,19
+2021-03_West-Coast_BOSS,8,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,9
+2021-03_West-Coast_BOSS,8,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,8,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,8,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,8,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,2
+2021-03_West-Coast_BOSS,8,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,9
+2021-03_West-Coast_BOSS,8,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,16
+2021-03_West-Coast_BOSS,80,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,25
+2021-03_West-Coast_BOSS,80,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,17
+2021-03_West-Coast_BOSS,80,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,9
+2021-03_West-Coast_BOSS,80,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,2
+2021-03_West-Coast_BOSS,80,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,80,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,24
+2021-03_West-Coast_BOSS,80,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,2
+2021-03_West-Coast_BOSS,81,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2021-03_West-Coast_BOSS,81,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,1
+2021-03_West-Coast_BOSS,81,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,2
+2021-03_West-Coast_BOSS,81,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,4
+2021-03_West-Coast_BOSS,81,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,2
+2021-03_West-Coast_BOSS,81,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2021-03_West-Coast_BOSS,81,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,14
+2021-03_West-Coast_BOSS,81,Physical,Substrate,Consolidated (hard),Boulders,NA,NA,NA,NA,NA,NA,NA,82001003,1
+2021-03_West-Coast_BOSS,81,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,41
+2021-03_West-Coast_BOSS,82,Biota,Ascidians,NA,NA,NA,NA,NA,NA,NA,NA,NA,35000000,1
+2021-03_West-Coast_BOSS,82,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,2
+2021-03_West-Coast_BOSS,82,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2021-03_West-Coast_BOSS,82,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,82,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,82,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,82,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,8
+2021-03_West-Coast_BOSS,82,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,50
+2021-03_West-Coast_BOSS,83,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,4
+2021-03_West-Coast_BOSS,83,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,21
+2021-03_West-Coast_BOSS,83,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,4
+2021-03_West-Coast_BOSS,83,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,1
+2021-03_West-Coast_BOSS,83,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,36
+2021-03_West-Coast_BOSS,83,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,8
+2021-03_West-Coast_BOSS,84,Biota,Macroalgae,Filamentous / filiform,NA,NA,NA,NA,NA,NA,NA,NA,80300930,1
+2021-03_West-Coast_BOSS,84,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,84,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,5
+2021-03_West-Coast_BOSS,84,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,5
+2021-03_West-Coast_BOSS,84,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,5
+2021-03_West-Coast_BOSS,84,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,50
+2021-03_West-Coast_BOSS,84,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,3
+2021-03_West-Coast_BOSS,85,Biota,Cnidaria,Corals,Black & Octocorals,Fan (2D),NA,NA,NA,NA,NA,NA,11168912,1
+2021-03_West-Coast_BOSS,85,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,85,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,85,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,3
+2021-03_West-Coast_BOSS,85,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,17
+2021-03_West-Coast_BOSS,85,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,8
+2021-03_West-Coast_BOSS,85,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,26
+2021-03_West-Coast_BOSS,86,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,4
+2021-03_West-Coast_BOSS,86,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,37
+2021-03_West-Coast_BOSS,86,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,2
+2021-03_West-Coast_BOSS,86,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,7
+2021-03_West-Coast_BOSS,86,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,6
+2021-03_West-Coast_BOSS,86,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,9
+2021-03_West-Coast_BOSS,86,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,6
+2021-03_West-Coast_BOSS,87,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,87,Biota,Macroalgae,Erect coarse branching,Green,NA,NA,NA,NA,NA,NA,NA,80300905,3
+2021-03_West-Coast_BOSS,87,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,11
+2021-03_West-Coast_BOSS,87,Biota,Macroalgae,Filamentous / filiform,NA,NA,NA,NA,NA,NA,NA,NA,80300930,4
+2021-03_West-Coast_BOSS,87,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,5
+2021-03_West-Coast_BOSS,87,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,4
+2021-03_West-Coast_BOSS,87,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,17
+2021-03_West-Coast_BOSS,87,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2021-03_West-Coast_BOSS,87,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,26
+2021-03_West-Coast_BOSS,87,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,2
+2021-03_West-Coast_BOSS,88,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,88,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,28
+2021-03_West-Coast_BOSS,88,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,7
+2021-03_West-Coast_BOSS,88,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,15
+2021-03_West-Coast_BOSS,88,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,5
+2021-03_West-Coast_BOSS,88,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,2
+2021-03_West-Coast_BOSS,88,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,3
+2021-03_West-Coast_BOSS,88,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,15
+2021-03_West-Coast_BOSS,89,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,7
+2021-03_West-Coast_BOSS,89,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,2
+2021-03_West-Coast_BOSS,89,Physical,Substrate,Consolidated (hard),Boulders,NA,NA,NA,NA,NA,NA,NA,82001003,2
+2021-03_West-Coast_BOSS,89,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,25
+2021-03_West-Coast_BOSS,89,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,43
+2021-03_West-Coast_BOSS,9,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,9,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,12
+2021-03_West-Coast_BOSS,9,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,23
+2021-03_West-Coast_BOSS,9,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,12
+2021-03_West-Coast_BOSS,9,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,4
+2021-03_West-Coast_BOSS,9,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,8
+2021-03_West-Coast_BOSS,9,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,9,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,15
+2021-03_West-Coast_BOSS,90,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,90,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,79
+2021-03_West-Coast_BOSS,91,Biota,Macroalgae,Articulated calcareous,NA,NA,NA,NA,NA,NA,NA,NA,80300911,1
+2021-03_West-Coast_BOSS,91,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,4
+2021-03_West-Coast_BOSS,91,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,61
+2021-03_West-Coast_BOSS,91,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,1
+2021-03_West-Coast_BOSS,91,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,8
+2021-03_West-Coast_BOSS,92,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,6
+2021-03_West-Coast_BOSS,92,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,11
+2021-03_West-Coast_BOSS,92,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,27
+2021-03_West-Coast_BOSS,92,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,5
+2021-03_West-Coast_BOSS,92,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,10
+2021-03_West-Coast_BOSS,92,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,2
+2021-03_West-Coast_BOSS,92,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,12
+2021-03_West-Coast_BOSS,92,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,7
+2021-03_West-Coast_BOSS,93,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,16
+2021-03_West-Coast_BOSS,93,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,12
+2021-03_West-Coast_BOSS,93,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,5
+2021-03_West-Coast_BOSS,93,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,26
+2021-03_West-Coast_BOSS,93,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,19
+2021-03_West-Coast_BOSS,94,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,94,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,4
+2021-03_West-Coast_BOSS,94,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,94,Physical,Substrate,Consolidated (hard),Boulders,NA,NA,NA,NA,NA,NA,NA,82001003,5
+2021-03_West-Coast_BOSS,94,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,1
+2021-03_West-Coast_BOSS,94,Physical,Substrate,Unconsolidated (soft),Pebble / gravel,Gravel (2-10mm),NA,NA,NA,NA,NA,NA,82001011,6
+2021-03_West-Coast_BOSS,94,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,59
+2021-03_West-Coast_BOSS,95,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,3
+2021-03_West-Coast_BOSS,95,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,16
+2021-03_West-Coast_BOSS,95,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,20
+2021-03_West-Coast_BOSS,95,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,1
+2021-03_West-Coast_BOSS,95,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,7
+2021-03_West-Coast_BOSS,95,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,95,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,4
+2021-03_West-Coast_BOSS,95,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,9
+2021-03_West-Coast_BOSS,95,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,12
+2021-03_West-Coast_BOSS,96,Biota,Cnidaria,Corals,Black & Octocorals,Branching (3D),NA,NA,NA,NA,NA,NA,11168902,1
+2021-03_West-Coast_BOSS,96,Biota,Cnidaria,Hydroids,NA,NA,NA,NA,NA,NA,NA,NA,11001000,3
+2021-03_West-Coast_BOSS,96,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,5
+2021-03_West-Coast_BOSS,96,Biota,Macroalgae,NA,NA,NA,NA,NA,NA,NA,NA,NA,80300000,10
+2021-03_West-Coast_BOSS,96,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,96,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,96,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,26
+2021-03_West-Coast_BOSS,96,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,30
+2021-03_West-Coast_BOSS,97,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,10
+2021-03_West-Coast_BOSS,97,Biota,Macroalgae,Erect fine branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300908,2
+2021-03_West-Coast_BOSS,97,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,33
+2021-03_West-Coast_BOSS,97,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,1
+2021-03_West-Coast_BOSS,97,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,17
+2021-03_West-Coast_BOSS,97,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,97,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,11
+2021-03_West-Coast_BOSS,98,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,7
+2021-03_West-Coast_BOSS,98,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,49
+2021-03_West-Coast_BOSS,98,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,2
+2021-03_West-Coast_BOSS,98,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,12
+2021-03_West-Coast_BOSS,98,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,1
+2021-03_West-Coast_BOSS,98,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,2
+2021-03_West-Coast_BOSS,98,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,5
+2021-03_West-Coast_BOSS,99,Biota,Macroalgae,Encrusting,Red,NA,NA,NA,NA,NA,NA,NA,80300929,2
+2021-03_West-Coast_BOSS,99,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,1
+2021-03_West-Coast_BOSS,99,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,43
+2021-03_West-Coast_BOSS,99,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,1
+2021-03_West-Coast_BOSS,99,Biota,Sponges,Cup-likes,NA,NA,NA,NA,NA,NA,NA,NA,10000909,1
+2021-03_West-Coast_BOSS,99,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,99,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,2
+2021-03_West-Coast_BOSS,99,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,3
+2021-03_West-Coast_BOSS,99,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,10
+2021-03_West-Coast_BOSS,99,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,7
+2021-03_West-Coast_BOSS,99,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,1
+2021-03_West-Coast_BOSS,Old Point,Biota,Macroalgae,Erect coarse branching,Brown,NA,NA,NA,NA,NA,NA,NA,80300904,9
+2021-03_West-Coast_BOSS,Old Point,Biota,Macroalgae,Erect fine branching,Red,NA,NA,NA,NA,NA,NA,NA,80300910,31
+2021-03_West-Coast_BOSS,Old Point,Biota,Macroalgae,Large canopy-forming,Brown,NA,NA,NA,NA,Lessoniaceae,Ecklonia,radiata,54079009,2
+2021-03_West-Coast_BOSS,Old Point,Biota,Seagrasses,Strap-like leaves,NA,NA,NA,NA,NA,NA,NA,NA,63600903,6
+2021-03_West-Coast_BOSS,Old Point,Biota,Sponges,Erect forms,NA,NA,NA,NA,NA,NA,NA,NA,10000912,3
+2021-03_West-Coast_BOSS,Old Point,Biota,Sponges,NA,NA,NA,NA,NA,NA,NA,NA,NA,10000000,1
+2021-03_West-Coast_BOSS,Old Point,Physical,Substrate,Consolidated (hard),Boulders,NA,NA,NA,NA,NA,NA,NA,82001003,1
+2021-03_West-Coast_BOSS,Old Point,Physical,Substrate,Consolidated (hard),Cobbles,NA,NA,NA,NA,NA,NA,NA,82001004,9
+2021-03_West-Coast_BOSS,Old Point,Physical,Substrate,Consolidated (hard),Rock,NA,NA,NA,NA,NA,NA,NA,82001002,6
+2021-03_West-Coast_BOSS,Old Point,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,9
+2021-03_West-Coast_BOSS,S1,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,79
+2021-03_West-Coast_BOSS,S2,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,4
+2021-03_West-Coast_BOSS,S2,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,74
+2021-03_West-Coast_BOSS,S3,Biota,Sponges,Massive forms,NA,NA,NA,NA,NA,NA,NA,NA,10000903,1
+2021-03_West-Coast_BOSS,S3,Physical,Substrate,Unconsolidated (soft),Sand / mud (<2mm),Coarse sand (with shell fragments),NA,NA,NA,NA,NA,NA,82001014,77

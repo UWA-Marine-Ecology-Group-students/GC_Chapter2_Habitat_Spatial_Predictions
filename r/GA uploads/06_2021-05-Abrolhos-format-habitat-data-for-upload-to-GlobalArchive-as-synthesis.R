@@ -14,33 +14,60 @@ ensure_cols <- function(df, cols) {
   df
 }
 
+# Older TransectMeasure/CATAMI exports use different column names for the
+# classification fields than newer exports. This helper renames the old
+# names to the ones the rest of the script expects (level_2, level_3,
+# level_4, level_5, scientific, qualifiers). If a file already uses the
+# new names, the corresponding entries are simply skipped (no error), so
+# this works on either format.
+standardise_catami_names <- function(df) {
+  rename_map <- c(
+    level_2    = "broad",
+    level_3    = "morphology",
+    level_4    = "type",
+    level_5    = "fine",
+    scientific = "field_of_view",
+    qualifiers = "caab_code"
+  )
+  rename_map <- rename_map[rename_map %in% names(df)]
+  if (length(rename_map) > 0) {
+    df <- dplyr::rename(df, !!!rename_map)
+  }
+  df
+}
+
 schema <- CheckEM::catami %>%
   dplyr::mutate(caab_code = as.numeric(caab_code)) %>%
   dplyr::select(-qualifiers)
 
 # HABITAT -----
-metadata <- read_metadata(here::here("data/2021-05_Abrolhos_BOSS/"), method = "BOSS") %>%
-  dplyr::select(campaignid, sample, longitude_dd, latitude_dd, date_time,
-                location, site, depth_m, successful_count, successful_length) %>%
+metadata <- read_csv(here::here("data/uploads/west-coast-BOSS_metadata.csv")) %>%
+  dplyr::filter(campaignid == "2021-05_Abrolhos_BOSS") %>%
+  dplyr::rename(sample = period) %>%
   glimpse()
 
 # read in panoramic annotations
 panoramic <- read.delim(
-  here::here("data/2021-05_Abrolhos_BOSS/2021-05_Abrolhos_BOSS_Dot Point Measurements.txt"),
+  here::here("data/raw/ga upload/BOSS/habitat/2021-05_Abrolhos_BOSS_Dot Point Measurements.txt"),
   header = TRUE, skip = 4, stringsAsFactors = FALSE,
   colClasses = "character", na.strings = ""
 ) %>%
   clean_names() %>%
+  standardise_catami_names() %>%
   dplyr::mutate(sample = str_remove(filename, "\\.jpg$"))
 
 
 names(panoramic)
-head(panoramic[, c("scientific", "qualifiers", "check")], 10)
+head(panoramic[, c("scientific", "qualifiers")], 10)
 
 
 habitat_with_schema <- panoramic %>%
   rename(caab_code = qualifiers) %>%
   mutate(
+    # Some older exports append a "_N" suffix to duplicated CAAB codes
+    # (e.g. "80300000_2"). Strip it before converting to numeric so the
+    # code still parses instead of silently becoming NA.
+    caab_code = str_remove(caab_code, "_[0-9]+$"),
     caab_code = as.numeric(caab_code),
     level_1 = case_when(
       is.na(level_2) ~ NA_character_,
@@ -125,7 +152,7 @@ habitat_with_schema_clean <- habitat_with_schema_filtered %>%
   dplyr::select(-level_1_schema, -level_2_schema, -level_3_schema, -level_4_schema, -level_5_schema)
 
 missing_caab_code_raw <- panoramic %>%
-  filter(is.na(suppressWarnings(as.numeric(qualifiers)))) %>%
+  filter(is.na(suppressWarnings(as.numeric(str_remove(qualifiers, "_[0-9]+$"))))) %>%
   distinct(qualifiers)
 missing_caab_code_raw
 
@@ -182,7 +209,7 @@ metadata.missing.habitat <- anti_join(
 ) %>%
   glimpse()
 
-write_csv(tidy_habitat, here::here("data/to upload/2021-05_Abrolhos_BOSS_benthos-count.csv"))
+write_csv(tidy_habitat, here::here("data/uploads/2021-05_Abrolhos_BOSS_benthos-count.csv"))
 
 schema %>%
   dplyr::filter(level_2 == "Macroalgae", level_3 == "Erect coarse branching") %>%
@@ -197,15 +224,24 @@ habitat_with_schema %>% filter(str_detect(level_4, "Ecklonia")) %>% distinct(lev
 # read in forwards annotations
 # RELIEF (BOSS - panoramic only) ----
 relief_file <- read.delim(
-  here::here("data/2021-05_Abrolhos_BOSS/2021-05_Abrolhos_BOSS_Relief_Dot Point Measurements.txt"),
+  here::here("data/raw/ga upload/BOSS/habitat/2021-05_Abrolhos_BOSS_Relief_Dot Point Measurements.txt"),
   header = T, skip = 4, stringsAsFactors = FALSE,
   colClasses = "character", na.strings = ""
 ) %>%
   clean_names() %>%
+  standardise_catami_names() %>%
   glimpse()
 
 relief_with_schema <- relief_file %>%
-  dplyr::select(filename, relief = scientific) %>%          # BOSS "scientific" = BRUVs "Relief"
+  # Newer exports store the relief annotation text in a column called
+  # "scientific" (renamed from "field_of_view" by standardise_catami_names()).
+  # Older exports like this one have it in a column literally called
+  # "Relief", while "field_of_view" just holds an unrelated Open/Closed flag.
+  # Ensure both possible columns exist, then take whichever one actually
+  # has the relief text.
+  ensure_cols(c("relief", "scientific")) %>%
+  dplyr::mutate(relief = dplyr::coalesce(relief, scientific)) %>%
+  dplyr::select(filename, relief) %>%
   dplyr::mutate(sample = str_replace_all(filename, c(".JPG" = "", ".jpg" = ""))) %>%
   dplyr::filter(!is.na(relief)) %>%
   dplyr::mutate(level_5 = str_sub(relief, 2, 2)) %>%
@@ -233,7 +269,7 @@ tidy_relief <- relief_with_schema %>%
   dplyr::rename(period = sample) %>%
   glimpse()
 
-write_csv(tidy_relief, "data/to upload/2021-05_Abrolhos_BOSS_benthos-relief.csv")
+write_csv(tidy_relief, "data/uploads/2021-05_Abrolhos_BOSS_benthos-relief.csv")
 
 relief_samples <- tidy_relief %>%
   distinct(campaignid, period) %>%
@@ -246,3 +282,4 @@ benthos_samples <- tidy_habitat %>%
   summarise(benthos_sample = n(), .groups = "drop")
 
 sample_summary <- full_join(relief_samples, benthos_samples, by = c("campaignid"))
+

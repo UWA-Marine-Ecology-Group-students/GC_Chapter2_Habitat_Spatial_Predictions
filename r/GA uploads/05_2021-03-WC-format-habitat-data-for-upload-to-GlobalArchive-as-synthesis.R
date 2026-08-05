@@ -22,15 +22,14 @@ schema <- CheckEM::catami %>%
   dplyr::select(-qualifiers)
 
 # HABITAT -----
-metadata <- read_metadata(here::here("data/raw"), method = "BOSS") %>%
+metadata <- read_csv(here::here("data/uploads/west-coast-BOSS_metadata.csv")) %>%
   dplyr::filter(campaignid == "2021-03_West-Coast_BOSS") %>%
-  dplyr::select(campaignid, sample, longitude_dd, latitude_dd, date_time,
-                location, site, depth_m, successful_count, successful_length, successful_habitat_panoramic, observer_habitat_panoramic) %>%
+  dplyr::rename(sample = period) %>%
   glimpse()
 
 # read in panoramic annotations
 panoramic <- read.delim(
-  here::here("data/raw/2021-03-habitat/2021-03_West-Coast_BOSS_Dot Point Measurements.txt"),
+  here::here("data/raw/ga upload/BOSS/habitat/2021-03_West-Coast_BOSS_Dot Point Measurements.txt"),
   header = TRUE, skip = 4, stringsAsFactors = FALSE,
   colClasses = "character", na.strings = ""
 ) %>%
@@ -43,6 +42,13 @@ names(panoramic)
 
 habitat_with_schema <- panoramic %>%
   dplyr::mutate(caab_code = as.numeric(code)) %>%   # raw "CODE" column holds the CATAMI code
+  dplyr::mutate(
+    caab_code = dplyr::case_when(
+      caab_code == 54080001 ~ 54079009,  # Ecklonia radiata - old caab_code, schema now uses 54079009
+      caab_code == 90300910 ~ 80300910,  # Erect fine branching, Red - old caab_code, schema now uses 80300910
+      TRUE ~ caab_code
+    )
+  ) %>%
   dplyr::left_join(schema, by = "caab_code") %>%
   dplyr::mutate(
     level_1 = dplyr::if_else(caab_code == 2, "Biota", level_1)
@@ -110,7 +116,7 @@ write_csv(tidy_habitat, here::here("data/uploads/2021-03_West-Coast_BOSS_benthos
 
 #RELIEF
 relief_file <- read.delim(
-  here::here("data/raw/2021-03-habitat/2021-03_SouthWest_BOSS_Relief_Dot Point Measurements.txt"),
+  here::here("data/raw/ga upload/BOSS/habitat/2021-03_West-Coast_BOSS_Relief_Dot Point Measurements.txt"),
   header = TRUE, skip = 4, stringsAsFactors = FALSE,
   colClasses = "character", na.strings = "", quote = ""
 ) %>%
@@ -207,4 +213,8 @@ metadata.missing.relief <- anti_join(
 
 catami %>% dplyr::filter(level_2 == "Relief") %>%
   dplyr::distinct(level_3, level_4, level_5, caab_code)
+
+
+
+
 
