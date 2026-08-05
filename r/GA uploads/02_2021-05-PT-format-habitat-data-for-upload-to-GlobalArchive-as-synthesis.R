@@ -46,9 +46,9 @@ habitat_with_schema <- panoramic %>%
   dplyr::mutate(caab_code = as.numeric(caab_code)) %>%
   dplyr::mutate(
     caab_code = dplyr::case_when(
-      !is.na(caab_code) ~ caab_code,
+      level_2 == "Sponges" & level_3 == "Hollow forms" ~ 10000909,      # map to Cup-likes
       level_2 == "Invertebrate Complex" & level_3 == "Complex 1" ~ 99900044,
-      level_2 == "Sponges" & level_3 == "Hollow formed" ~ 10000000,
+      !is.na(caab_code) ~ caab_code,
       TRUE ~ caab_code
     )
   ) %>%
@@ -167,3 +167,4 @@ metadata.missing.relief <- anti_join(metadata %>% dplyr::filter(successful_count
 
 write_csv(tidy_relief %>%
             dplyr::rename(period = sample), "data/uploads/2021-05_PtCloates_BOSS_benthos-relief.csv")
+
