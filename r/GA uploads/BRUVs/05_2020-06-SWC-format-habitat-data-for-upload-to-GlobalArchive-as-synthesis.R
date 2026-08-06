@@ -77,7 +77,7 @@ metadata.missing.habitat <- anti_join(metadata, habitat_with_schema, by = c("opc
 
 tidy_habitat <- habitat_with_schema %>%
   dplyr::mutate(number = 1) %>%                                     
-  dplyr::mutate(campaignid = "2020-06_south-west_stereo-BRUVs") %>%
+  dplyr::mutate(campaignid = unique(metadata$campaignid)) %>%
   dplyr::select(campaignid, sample, number, starts_with("level"), family, genus, species, caab_code) %>%
   dplyr::filter(!level_2 %in% c("","Unscorable", NA)) %>%  
   group_by(campaignid, sample, across(starts_with("level")), family, genus, species, caab_code) %>%
@@ -123,7 +123,7 @@ metadata.missing.relief <- anti_join(metadata, relief_with_schema, by = c("opcod
 
 tidy_relief <- relief_with_schema %>%
   dplyr::mutate(number = 1) %>%                                     
-  dplyr::mutate(campaignid = "2020-06_south-west_stereo-BRUVs") %>%
+  dplyr::mutate(campaignid = unique(metadata$campaignid)) %>%
   dplyr::select(campaignid, sample, number, starts_with("level"), family, genus, species, caab_code) %>%
   dplyr::filter(!level_2 %in% c("","Unscorable", NA)) %>%  
   group_by(campaignid, sample, across(starts_with("level")), family, genus, species, caab_code) %>%
