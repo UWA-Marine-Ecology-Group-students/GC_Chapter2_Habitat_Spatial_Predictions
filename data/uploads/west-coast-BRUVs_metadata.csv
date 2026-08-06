@@ -39,8 +39,8 @@ campaignid,opcode,status,longitude_dd,latitude_dd,observer_count,observer_length
 2020-06_south-west_stereoBRUVs,38,No-take,114.883938,-34.127912,Hayley Sims,Rachel,2020-06-03T12:39+08:00,South-west,c4,41.8,Yes,Yes,Yes,Yes,Unknown,Unknown
 2020-06_south-west_stereoBRUVs,39,No-take,114.884797,-34.132294,Hayley Sims,Rachel,2020-06-03T12:42+08:00,South-west,c4,42.2,Yes,Yes,Yes,Yes,Unknown,Unknown
 2020-06_south-west_stereoBRUVs,40,No-take,114.880443,-34.133669,Hayley Sims,Rachel,2020-06-03T12:46+08:00,South-west,c4,41.2,Yes,Yes,Yes,Yes,Unknown,Unknown
-2020-06_south-west_stereoBRUVs,08 - failed,No-take,114.911822,-34.129336,NA,NA,2020-06-02T11:36+08:00,South-west,c3,41.7,No,No,Yes,Yes,Unknown,Unknown
-2020-06_south-west_stereoBRUVs,11 - failed,No-take,114.923158,-34.117769,NA,NA,2020-06-02T11:55+08:00,South-west,c2,46.7,No,No,Yes,Yes,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,08 - failed,No-take,114.911822,-34.129336,NA,NA,2020-06-02T11:36+08:00,South-west,c3,41.7,No,No,No,No,Unknown,Unknown
+2020-06_south-west_stereoBRUVs,11 - failed,No-take,114.923158,-34.117769,NA,NA,2020-06-02T11:55+08:00,South-west,c2,46.7,No,No,No,No,Unknown,Unknown
 2020-10_south-west_stereoBRUVs,FH10,Fished,114.8863721,-33.98618897,Hayley,Rachel,2020-10-13T12:32:00+08:00,South-west,C.FH.24,42.9,Yes,Yes,NA,NA,NA,NA
 2020-10_south-west_stereoBRUVs,FH102,No-take,114.9288721,-33.68868897,Daphne,Rachel,2020-10-17T06:42:00+08:00,South-west,C.FH.3,44.1,Yes,Yes,NA,NA,NA,NA
 2020-10_south-west_stereoBRUVs,FH106,Fished,114.8163721,-33.78868897,Hayley,Claude,2020-10-12T13:16:00+08:00,South-west,C.FH.12,47.1,Yes,Yes,NA,NA,NA,NA

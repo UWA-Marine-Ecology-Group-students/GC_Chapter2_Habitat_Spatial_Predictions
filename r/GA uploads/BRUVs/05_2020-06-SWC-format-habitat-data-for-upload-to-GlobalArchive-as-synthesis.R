@@ -34,7 +34,7 @@ habitat_with_schema <- bind_rows(forwards, backwards) %>%
   dplyr::mutate(caab_code = as.numeric(caab_code)) %>%
   dplyr::mutate(caab_code = case_when(
     broad %in% c("Unknown", "Open Water") ~ 1,
-    broad %in% "Invertebrate Complex" ~ 2,
+    broad %in% "Invertebrate Complex" ~ 99900044,   # was 2 - now matches schema's "Sessile invertebrates"
     
     type %in% "Thalassodendrum sp." ~ 63618905, # fix incorrect caab code
     type %in% "Thalassodendrum sp. with epiphytes algae" ~ 63618905, # fix incorrect caab code
@@ -45,7 +45,7 @@ habitat_with_schema <- bind_rows(forwards, backwards) %>%
     .default = caab_code
   )) %>%
   dplyr::left_join(schema) %>%
-  dplyr::mutate(sample = str_replace_all(filename, c(".JPG"= "", ".jpg" = ""))) 
+  dplyr::mutate(sample = str_replace_all(filename, c(".JPG"= "", ".jpg" = "")))
 
 missing_in_schema <- anti_join(habitat_with_schema, schema)
 
@@ -59,19 +59,15 @@ missing_caab_code <- habitat_with_schema %>%
 
 unique(habitat_with_schema$sample) %>% sort()
 
-num.points <- 20
-
+num.points <- 40
 wrong_points_habitat <- habitat_with_schema %>%
-  group_by(sample) %>%
-  summarise(points.annotated = n()) %>%
-  left_join(metadata, by = c("sample" = "opcode")) %>%
-  # dplyr::mutate(expected = case_when(
-  #   successful_habitat_forward %in% "Yes" & successful_habitat_backward %in% "Yes" ~ num.points * 2, 
-  #   successful_habitat_forward %in% "Yes" & successful_habitat_backward %in% "No" ~ num.points * 1, 
-  #   successful_habitat_forward %in% "No" & successful_habitat_backward %in% "Yes" ~ num.points * 1, 
-  #   successful_habitat_forward %in% "No" & successful_habitat_backward %in% "No" ~ num.points * 0)) %>%
-  # dplyr::filter(!points.annotated == expected) %>%
-  glimpse()
+  dplyr::count(sample, name = "points_annotated") %>%
+  dplyr::full_join(metadata %>% dplyr::select(opcode, campaignid), by = c("sample" = "opcode")) %>%
+  dplyr::mutate(points_annotated = tidyr::replace_na(points_annotated, 0)) %>%
+  dplyr::filter(points_annotated != num.points) %>%
+  dplyr::arrange(sample)
+
+wrong_points_habitat
 
 habitat.missing.metadata <- anti_join(habitat_with_schema, metadata, by = c("sample" = "opcode")) %>%
   glimpse()
