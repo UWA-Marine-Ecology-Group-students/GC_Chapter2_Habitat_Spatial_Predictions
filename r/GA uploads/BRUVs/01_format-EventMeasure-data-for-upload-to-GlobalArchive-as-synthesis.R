@@ -73,3 +73,4 @@ metadata_dropped <- metadata %>%
 metadata_dropped
 
 write_csv(metadata, paste0("data/uploads/", name, "_metadata.csv"))
+
