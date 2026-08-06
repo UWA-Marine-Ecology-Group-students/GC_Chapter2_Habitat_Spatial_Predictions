@@ -35,17 +35,17 @@ habitat_with_schema <- bind_rows(forwards, backwards) %>%
   dplyr::mutate(caab_code = as.numeric(caab_code)) %>%
   dplyr::mutate(caab_code = case_when(
     broad %in% c("Unknown", "Open Water") ~ 1,
-    broad %in% "Invertebrate Complex" ~ 2,
+    broad %in% "Invertebrate Complex" ~ 99900044,   # was 2 - now matches schema's "Sessile invertebrates"
     
-    type %in% "Thalassodendrum sp." ~ 63618905, # fix incorrect caab code
-    type %in% "Ecklonia radiata" ~ 54079009, # fix incorrect caab code
+    type %in% "Thalassodendrum sp." ~ 63618905,
+    type %in% "Ecklonia radiata" ~ 54079009,
     
-    caab_code %in% 90300910 ~ 80300910, # fix incorrect caab code
+    caab_code %in% 90300910 ~ 80300910,
     
     .default = caab_code
   )) %>%
   dplyr::left_join(schema) %>%
-  dplyr::mutate(sample = str_replace_all(filename, c(".JPG"= "", ".jpg" = ""))) 
+  dplyr::mutate(sample = str_replace_all(filename, c(".JPG"= "", ".jpg" = "")))
 
 distinct_hab_types <- habitat_with_schema %>%
   select(broad, morphology, type, starts_with("level"), family, genus, species, caab_code) %>%
